@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0,74],u:['../content/aboutiftdss/aboutiftdss.htm'],s:['+','don\u0027t','model','the'],p:[['+',8],['add',44],['assumes',60],['carol',75],['dbh',16],['evaluation',26],['from',85],['iftdss',17],['landscape',16],['may',20],['of',13],['plans',18],['running',61],['state',76],['the',65],['tu3',72],['will',38]]});
