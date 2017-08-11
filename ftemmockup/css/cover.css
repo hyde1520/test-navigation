@@ -1,0 +1,11 @@
+.navbar-cover {
+  background-color: #EEEEEE;
+  border-color: #EEEEEE;
+}
+.jumbotron-cover {
+    margin-bottom: 0px;
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
