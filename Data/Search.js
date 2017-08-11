@@ -1,1 +1,0 @@
-define({r:0.5,st:'Stem',n:1,t:[0,75],u:['../content/aboutiftdss/aboutiftdss.htm'],s:['+','desktop','load','slider'],p:[['+',7],['accurately',23],['area',15],['but',69],['convert',60],['downloaded',75],['fire',12],['give',24],['in',80],['latest',84],['mg',76],['of',50],['playground',24],['rules',15],['spread',69],['the',31],['to',85],['w',69],['your',18]]});
