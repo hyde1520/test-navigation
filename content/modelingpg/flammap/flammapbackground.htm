@@ -6,7 +6,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta charset="utf-8" />
         <meta name="description" content="" />
-        <meta name="author" content="" /><title>FlamMap 5.0 Technical Documentation</title>
+        <meta name="author" content="" /><title>Landscape Fire Behavior with FlamMap 5.0 - Technical Documentation</title>
         <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
         <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
@@ -133,14 +133,16 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            </ul>
                                         </div>
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
                                             </div>
                                         </div>
-                                        <h1><a name="kanchor9"></a>FlamMap 5.0 Technical Documentation</h1>
+                                        <h1><a name="kanchor136"></a>Landscape Fire Behavior with FlamMap 5.0 - Technical Documentation</h1>
                                         <p>
-                                            <img src="../../resources/images/flammap5_449x336.jpg" style="float: right;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;width: 449;height: 336;" alt="Flammap 5 logo" />In <span class="GeneralProductName">IFTDSS</span>, Landscape Fire Behavior is driven by FlamMap. FlamMap  is a fire behavior mapping and analysis software application that computes potential fire behavior characteristics (such as spread rate, flame length, and fireline intensity) over an entire landscape under constant weather and fuel moisture conditions. FlamMap simulates surface and crown fire behavior characteristics using Rothermel’s <a href="../../references/referencelist.htm#Rothermel1972">1972</a> surface fire model, Van Wagner’s <a href="../../references/referencelist.htm"><a href="../../references/referencelist.htm#VanWagner1977">1977</a></a> crown fire initiation model, and Rothermel’s <a href="../../references/referencelist.htm#Rothermel1991">1991</a> crown fire spread model for a single instance in time. </p>
+                                            <img src="../../resources/images/flammap5_449x336.jpg" style="float: right;padding-left: 5px;padding-right: 5px;padding-top: 5px;padding-bottom: 5px;width: 449;height: 336;" alt="Flammap 5 logo" title="Jump to image of Flammap 5 logo" />In <span class="GeneralProductName">IFTDSS</span>, Landscape Fire Behavior is driven by FlamMap. FlamMap  is a fire behavior mapping and analysis software application that computes potential fire behavior characteristics (such as spread rate, flame length, and fireline intensity) over an entire landscape under constant weather and fuel moisture conditions. FlamMap simulates surface and crown fire behavior characteristics using Rothermel’s <a href="../../references/referencelist.htm#Rothermel1972" target="_blank">1972</a> surface fire model, Van Wagner’s <a href="../../references/referencelist.htm"><a href="../../references/referencelist.htm#VanWagner1977" target="_blank">1977</a></a> crown fire initiation model, and Rothermel’s <a href="../../references/referencelist.htm#Rothermel1991" target="_blank">1991</a> crown fire spread model for a single instance in time. </p>
                                         <h2>Winds</h2>
                                         <p>Wind is one of the most influential environmental factors affecting wildland fire behavior. Terrain causes changes in wind speed as air flows over it. Directional changes also occur due to channeling of the flow. The complex terrain and vegetation of fire-prone landscapes causes local changes in wind speed and direction that are not predicted well by standard weather models or expert judgment.</p>
                                         <p>FlamMap uses a 20 foot wind speed and direction at one point in time to calculate fire behavior characteristics. Winds are automatically adjusted to midflame speed where appropriate using the individual cell canopy characteristics.</p>
@@ -153,11 +155,13 @@
                                         <p> <span class="GeneralProductName">IFTDSS</span> uses WindNinja to compute spatially varying wind fields for landscape model runs. Keep in mind, WindNinja does not predict wind for future times, rather it simulates the spatial variation of wind for one instant in time making it ideal for model runs in IFTDSS.</p>
                                         <p>WindNinja uses information that is already part of a landscape model run. The landscape file provides elevation to simulate wind flow across your area and canopy characteristics and surface fuel model to approximate the drag effect that vegetation has on wind flow. The domain wind direction and wind speed needed for WindNinja are the same as those used to run landscape fire behavior in IFTDSS.</p>
                                         <ul>
-                                            <li value="1"><a href="flammapinput.htm" class="MCXref xref">FlamMap Fire Behavior Inputs</a>
+                                            <li value="1"><a href="flammapabout.htm" target="_blank" style="font-weight: bold;">L</a><a href="flammapabout.htm" style="font-weight: bold;" target="_blank">andscape Fire Behavior Walkthrough</a>
                                             </li>
-                                            <li value="2"><a href="flammapoutput.htm" class="MCXref xref">FlamMap Fire Behavior Outputs</a>
+                                            <li value="2"><a href="flammapinput.htm" target="_blank" class="MCXref xref">FlamMap Fire Behavior Inputs</a>
                                             </li>
-                                            <li value="3"><a href="flammapcrowns.htm" class="MCXref xref">Crown Fire Calculation Options</a>
+                                            <li value="3"><a href="flammapoutput.htm" target="_blank" class="MCXref xref">FlamMap Fire Behavior Outputs</a>
+                                            </li>
+                                            <li value="4"><a href="flammapcrowns.htm" target="_blank" class="MCXref xref">Crown Fire Calculation Options</a>
                                             </li>
                                         </ul>
                                     </div>

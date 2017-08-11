@@ -505,16 +505,22 @@ iframe.youtube-player_0
 .dropDownHotspot
 {
 	color: #404040;
-	font-size: 1.0em;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	line-height: normal;
 	text-decoration: none;
 }
 
 .dropDownHotspot:link
 {
 	color: #404040;
-	font-size: 1.0em;
-	font-weight: bold;
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	line-height: normal;
 	text-decoration: none;
 }
 
@@ -526,16 +532,16 @@ iframe.youtube-player_0
 .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
 {
 	background-position: left;
-	background-image: url('DropDownOpen_orange.png');
-	padding-left: 0px;
+	background-image: url('droparrowdown.png');
+	padding-left: 5px;
 	padding-right: 0;
 }
 
 .MCDropDown_Closed .MCDropDownHotSpot_.MCHotSpotImage
 {
 	background-position: left;
-	background-image: url('DropDownClosed_orange.png');
-	padding-left: 0px;
+	background-image: url('droparrowright.png');
+	padding-left: 5px;
 	padding-right: 0;
 }
 

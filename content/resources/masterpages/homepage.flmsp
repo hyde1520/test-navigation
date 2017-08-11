@@ -5,6 +5,7 @@
         <meta name="description" content="" />
         <meta name="author" content="" /><title></title>
         <link href="../Stylesheets/StylesForHomePage.css" rel="stylesheet" type="text/css" />
+		<script src="https://use.fontawesome.com/78f39c078c.js"></script>
     </head>
     <body>
 		<script src="https://www.google.com/jsapi" type="text/javascript"></script>

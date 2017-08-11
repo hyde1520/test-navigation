@@ -252,6 +252,35 @@ ul.menu li > a.selected
 	border-top: solid 1px #e2e2e6;
 }
 
+ul.menu._Skins_SideMenu.mc-component li > a:hover
+{
+	color: #000000;
+	background-color: #AFBFD0;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul > li > a:hover
+{
+	color: #000000;
+	background-color: #AFBFD0;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul > li > a:hover
+{
+	color: #000000;
+	background-color: #AFBFD0;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a:hover
+{
+	background-color: #AFBFD0;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
+{
+	color: #000000;
+	background-color: #AFBFD0;
+}
+
 #resultList.communitySearch .title
 {
 	display: none;
@@ -568,6 +597,96 @@ a.activityText:visited
 	height: 24px;
 }
 
+ul.menu._Skins_SideMenu.mc-component
+{
+	color: #000000;
+	font-family: Arial, 'FontAwesome', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+	line-height: 1em;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 100%;
+	max-height: 100%;
+	background-color: #2d3d4f;
+}
+
+ul.menu._Skins_SideMenu.mc-component a
+{
+	color: #000000;
+	font-family: Arial, 'FontAwesome', Helvetica, sans-serif;
+	font-size: 1em;
+	font-weight: normal;
+	font-style: normal;
+}
+
+ul.menu._Skins_SideMenu.mc-component li > a
+{
+	color: #ffffff;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul > li > a
+{
+	padding-left: 20px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul > li > a
+{
+	padding-left: 40px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul > li > a
+{
+	padding-left: 60px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a
+{
+	padding-left: 80px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected
+{
+	font-weight: bold;
+	background-color: transparent;
+}
+
+ul.menu._Skins_SideMenu.mc-component li > a.selected:hover
+{
+	color: #000000;
+	font-weight: bold;
+	background-color: #AFBFD0;
+}
+
 .search-bar._Skins_HomeSearchBar.mc-component
 {
 	display: block;
@@ -579,10 +698,10 @@ a.activityText:visited
 .search-bar._Skins_HomeSearchBar.mc-component .search-field
 {
 	height: 40px;
-	border-top: solid 2px #2e3e4f;
-	border-right: solid 2px #2e3e4f;
-	border-bottom: solid 2px #2e3e4f;
-	border-left: solid 2px #2e3e4f;
+	border-top: solid 1px #2e3e4f;
+	border-right: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
+	border-left: solid 1px #2e3e4f;
 	border-top-left-radius: 0px;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
@@ -596,8 +715,8 @@ a.activityText:visited
 .search-bar._Skins_HomeSearchBar.mc-component .search-filter
 {
 	height: 40px;
-	border-top: solid 2px #2e3e4f;
-	border-bottom: solid 2px #2e3e4f;
+	border-top: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
 	border-right: solid 1px #000000;
 	border-left: solid 1px #000000;
 	width: 45px;
@@ -608,9 +727,9 @@ a.activityText:visited
 .search-bar._Skins_HomeSearchBar.mc-component .search-submit
 {
 	height: 40px;
-	border-top: solid 2px #2e3e4f;
-	border-right: solid 2px #2e3e4f;
-	border-bottom: solid 2px #2e3e4f;
+	border-top: solid 1px #2e3e4f;
+	border-right: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
 	border-top-right-radius: 0px;
 	border-bottom-right-radius: 0px;
 }
@@ -680,12 +799,12 @@ a.activityText:visited
 .search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit
 {
 	width: 56px;
-	background: #ffffff url('Images/SearchIcon.png') no-repeat center center;
-	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
+	background: #f5f5f5 url('Images/SearchIcon.png') no-repeat center center;
+	-pie-background: #f5f5f5 url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
 }
 
 .search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit:hover
 {
-	background-color: #ffffff;
+	background-color: #f5f5f5;
 }
 

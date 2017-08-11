@@ -133,6 +133,8 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            </ul>
                                         </div>
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
@@ -145,7 +147,7 @@
                                         </p>
                                         <p>Developing Treatment Alternatives facilitates evaluation of fuel treatment alternatives and their spatial arrangement on the landscape. It allows you to create several edited versions of a landscape or treatment area, run a fire behavior simulation for some or all of the edited landscapes, and compare the results for each treatment on fire behavior spatially, and create reports with charts and tables if desired. The task is divided into five steps:</p>
                                         <ul>
-                                            <li value="1">Pick a landscape</li>
+                                            <li value="1">Pick a landscape and (optional) <a href="../../concepts/usingmasks.htm" target="_blank">area of interest</a></li>
                                             <li value="2">Edit the landscape</li>
                                             <li value="3">Enter model inputs</li>
                                             <li value="4">Run the model for some or all of the edited landscapes</li>
@@ -154,18 +156,18 @@
                                         <p>We'll progress through each of these steps as you complete this final part of the tutorial.</p>
                                         <h3>Pick a landscape</h3>
                                         <p>
-                                            <img src="../../resources/images/treatment_compare/select_landscape_541x265.png" style="float: right;padding-left: 5px;padding-right: 5px;width: 541;height: 265;" alt="treatment comparison interface with a dropdown list of landscapes to select, or button to create a new landscape" />Use the <span class="UIcomponent">Pick a Landscape</span> tab to create or select a starting unedited landscape. The landscape selected in this step initiates your comparison session and will be marked with “0” throughout the workflow.  The “0” indicates the original landscape extracted from LANDFIRE that has not been edited. In subsequent tabs, all landscapes that match this extent will be available for you to work with. In the next tab, the <span class="UIcomponent">Edit Landscape</span> tab, you may edit any of these landscapes. </p>
-                                        <p>For this tutorial, select the 'Haypress LF2012 Unedited' file we created at the start. Our Existing landscape version of that file will become available during subsequent steps. As we proceed to the edit step, we'll focus solely on creating treatment alternatives; However, if we had not created any files in <span class="GeneralProductName">IFTDSS</span>, we could have started here at this <span class="UIcomponent">Pick a landscape</span> step, and use the next step (edit) to both create our existing landscape (Haypress LF2012 EC), and create treatment alternatives from that existing landscape.</p>
+                                            <img src="../../resources/images/treatment_compare/select_landscape_541x265.png" style="float: right;padding-left: 5px;padding-right: 5px;width: 541;height: 265;" alt="treatment comparison interface with a dropdown list of landscapes to select, or button to create a new landscape" />Use the <span class="UIcomponent">Pick a Landscape</span> tab to create or choose a starting unedited landscape. The landscape chosen or created in this step initiates your comparison session and will be marked with “0” throughout the workflow.  The “0” indicates the original landscape extracted from LANDFIRE that has not been edited. In subsequent tabs, all landscapes that match this extent will be available for you to work with. In the next tab, the <span class="UIcomponent">Edit Landscape</span> tab, you may edit any of these landscapes. You may use the area of Interest field to constrain your analysis to a specific area within the landscape.</p>
+                                        <p>For this tutorial, select the 'Haypress LF2012 Unedited' file we created at the start. Our Existing landscape version of that file will become available during subsequent steps. Next, select 'Haypress Treatments All' to constrain the area of interest to the treatment units we created earlier. When we generate reports later, doing this constrain our report summaries to the area within our treatment area. As we proceed to the edit step, we'll focus solely on creating treatment alternatives; However, if we had not created any files in <span class="GeneralProductName">IFTDSS</span>, we could have started here at this <span class="UIcomponent">Pick a landscape</span> step, and use the next step (edit) to both create our existing landscape (Haypress LF2012 EC), and create treatment alternatives from that existing landscape.</p>
                                         <h3>Edit the landscape</h3>
                                         <p>
                                             <img src="../../resources/images/treatment_compare/edit_660x324.png" alt="The edit landscape interface with default treatment rule options that can be selected upon clicking, or landscape edit rules that can be created by the user." style="float: right;padding-left: 5px;padding-right: 5px;width: 660;height: 324;" />Here you will edit landscapes to develop your treatment alternatives. The landscape(s) available here will include: </p>
                                         <ul>
-                                            <li value="1">your unedited LANDFIRE landscape selected in the previous step (these will be referred to as the “0” landscape) </li>
+                                            <li value="1">your unedited LANDFIRE landscape chosen or created in the previous step (these will be referred to as the “0” landscape) </li>
                                             <li value="2">and any landscapes matching that extent. </li>
                                         </ul>
                                         <p>Create your treatment alternatives by altering your your Existing Condition landscape.</p>
                                         <p>You may use Default Treatment/Disturbance Rules to edit and create your alternatives, or custom rules to create your alternatives.</p>
-                                        <p>Each option is described in detail in the <a href="../../pcstrategicplanning/trtmtaltseditlandscp.htm">Editing a Landscape to Develop Treatment Alternatives</a> Topic.</p>
+                                        <p>Each option is described in detail in the <a href="../../pcstrategicplanning/trtmtaltseditlandscp.htm" target="_blank">Editing a Landscape to Develop Treatment Alternatives</a> Topic.</p>
                                         <p>For this example we'll use the Default Treatment/Disturbance option to create two treatment alternatives.</p>
                                         <ul>
                                             <li value="1">One will simulate the treatment area 2-5 years after a low severity prescribed fire in which less than 25% of the above ground vegetation is killed.</li>
@@ -174,7 +176,7 @@
                                         <p>To learn more about the Default rules, visit the <a href="../../pclandscapeeval/treatmentrulebackground.htm" target="_blank">Treatment Rule Background Topic</a>.</p>
                                         <p>For the first treatment alternative we'll look at low severity prescribed fire:</p>
                                         <p>
-                                            <img src="../../resources/images/tutorial_1_comparison/tutorial_default_rule_745x638.png" alt="The default editing buttons in the editing interface. Make selections based on the text" style="width: 745;height: 638;" />
+                                            <img src="../../resources/images/tutorial_1_comparison/tutorial_default_rule_987x631.png" alt="The default editing buttons in the editing interface. Make selections based on the text" style="width: 987;height: 631;" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Select HaypressCrk LF2012 EC as our starting landscape. </li>
@@ -183,10 +185,10 @@
                                             <li value="4">Make sure 'low severity' is selected</li>
                                             <li value="5">For Time Since Treatment, select '2-5 years'. </li>
                                             <li value="6">We'll apply this to the treatment polygons we created earlier, so under <span class="UIcomponent">Apply Landscape Mask</span>, select 'Haypress Treatments All'</li>
-                                            <li value="7">Select <span class="UIcomponent">Add to Rules</span></li>
+                                            <li value="7">Click <span class="UIcomponent">Add to Rules</span></li>
                                         </ol>
-                                        <p>Select a name for the new landscape:&#160;'HaypressCrk LF2012 EC Rx Low 4yrs' and select <span class="UIcomponent">Save new Landscape</span></p>
-                                        <p>Next, while still in the edit step, repeat this process, again starting with HaypressCrk LF2012 EC. This time select the 'Thin: Slash Removed', 'Heavy Thinning:&#160;Pile&#160;Burning' and '2-5 years' since disturbance. Add the rule and name the landscape 'HaypressCrk LF2012 EC HvyThin 4yrs'.</p>
+                                        <p>Now, choose a name for the new landscape:&#160;'HaypressCrk LF2012 EC Rx Low 4yrs' and click <span class="UIcomponent">Save</span></p>
+                                        <p>Next, while still in the edit step, repeat this process, again starting with HaypressCrk LF2012 EC. This time select the 'Thin: Slash Removed', 'Heavy Thinning:&#160;Pile&#160;Burning' and '2-5 years' since disturbance. Specify the Landscape Mask as 'HayPress Treatments All' and add the rule and name the landscape 'HaypressCrk LF2012 EC HvyThin 4yrs'.</p>
                                         <p>Next we'll select model inputs to run fire behavior with these treatments</p>
                                         <h3>Enter model inputs</h3>
                                         <div class="notificationImportant">
@@ -203,18 +205,18 @@
                                         <p>
                                             <img src="../../resources/images/tutorial_1_comparison/tutorial_modelinputs_586x499.png" alt="model inputs as described in text" style="width: 586;height: 499;" />
                                         </p>
-                                        <p>In <span class="UIcomponent">Model&#160;Input</span>, enter the following values, and select <span class="UIcomponent">Save Inputs</span> when finished.</p>
+                                        <p>In <span class="UIcomponent">Model&#160;Input</span>, enter the following values, and click <span class="UIcomponent">Save Inputs</span> when finished.</p>
                                         <ul>
                                             <li value="1">Wind speed: 20 mph</li>
                                             <li value="2">Wind Direction:&#160;225 degrees</li>
                                             <li value="3">Crown Fire Method: Scott/Reinhardt</li>
                                             <li value="4">Fuel Moisture Content: 100</li>
                                             <li value="5">Initial Fuel Moistures of</li>
-                                            <li value="6">1 hr 3</li>
-                                            <li value="7">10 hr 4</li>
-                                            <li value="8">100 hr 5</li>
-                                            <li value="9">Herb 119</li>
-                                            <li value="10">Woody 99</li>
+                                            <li value="6">1 hr FM: 3</li>
+                                            <li value="7">10 hr FM: 4</li>
+                                            <li value="8">100 hr FM: 5</li>
+                                            <li value="9">Herb FM: 119</li>
+                                            <li value="10">Woody FM: 99</li>
                                         </ul>
                                         <p>When you save your inputs a verification will appear at the top of the screen to confirm your inputs have been saved</p>
                                         <p>
@@ -230,7 +232,10 @@
                                         <p>
                                             <img src="../../resources/images/treatment_compare/comparison_model_list_809x274.png" alt="a list of available landscapes for which the fire behavior model may be run" style="width: 809;height: 274;" />
                                         </p>
-                                        <p>Select <span class="UIcomponent">Run Model </span>next to the three landscaped indicated above</p>
+                                        <p>Click <span class="UIcomponent">Run Model </span>next to the three landscaped indicated above</p>
+                                        <div class="notificationTip">
+                                            <p>Note if your last edit landscape is not visible, you may need to click the refresh button <img src="../../resources/images/button_refresh.png" alt="Refresh button" /> next to 'Landscapes'</p>
+                                        </div>
                                         <h3>
                                             <img src="../../resources/images/treatment_compare/comparison_model_list_verify.png" alt="A green box at the top of the page, and hourglass next to each landscape, indicates the model for each one is running" />
                                         </h3>
@@ -253,7 +258,7 @@
 					</li>
                                             <li value="3">The second box you check will be tagged with “2” and should represent the initial landscape you are comparing against, such as the untreated existing condition landscape.  </li>
                                         </ul>
-                                        <p>To begin,  select the low severity prescribed fire treatment, which will be tagged with a "1", then our existing landscape, which will be tagged with a "2". The comparison display the difference in landscape features and fire behavior between the two landscapes. When finished, select <span class="UIcomponent">View in Map</span>.</p>
+                                        <p>To begin,  select the low severity prescribed fire treatment, which will be tagged with a "1", then our existing landscape, which will be tagged with a "2". The comparison display the difference in landscape features and fire behavior between the two landscapes. When finished, click <span class="UIcomponent">View in Map</span>.</p>
                                         <p>
                                             <img src="../../resources/images/tutorial_1_comparison/tut_compare_alts_1_2_834x302.png" alt="comparison screen with the rows for each landscape described in text are highlighted" style="width: 834;height: 302;" />
                                         </p>
@@ -284,13 +289,19 @@
                                             <img src="../../resources/images/tutorial_1_comparison/tutswipe_1113x479.png" alt="swiping between two layers in the the map" style="width: 1113;height: 479;" />
                                         </p>
                                         <p>As you swipe back and forth you will notice the EC flame lengths in the top portion, and the prescribed layer flame lengths revealed on the bottom portion when swiping back and forth. For details on specific pixels, you may use the <span class="UIcomponent">Identify</span> tool <img src="../../resources/images/mapstudio/button_identify.png" alt="identify tool" /> in the top left as well.</p>
-                                        <p>Try it yourself.... You can revisit the comparison tool and compare the Thinned modeled landscape with the existing condition landscape. The two treatments can also be compared.</p>
-                                        <p>You may also generate side by side landscape comparison reports using the <span class="UIcomponent">Compare in Summary Report</span> button</p>
+                                        <p>With these same landscapes selected generate a fire behavior summary report, click the <span class="UIcomponent">Compare in Summary Report</span> button. Next to the Fire Behavior Compare Summary Report option, click <span class="UIcomponent">Create Report</span></p>
                                         <p>
-                                            <img src="../../resources/images/tutorial_1_comparison/tutsummaryreport_853x393.png" alt="charts copared side by side displaying fire behavior model outputs" style="width: 853;height: 393;" />
+                                            <img src="../../resources/images/treatment_compare/summery_report_bttn08012017_1190x506.png" alt="summery report button" style="width: 1190;height: 506;" />
                                         </p>
-                                        <p>Summary reports will show bar charts, pie charts, and tables. </p>
-                                        <p>Because only a small portion of the landscape was changed in this tutorial (within the treatment polygon), these landscape level reports will not indicate a great deal of change.</p>
+                                        <p>Because you selected an area of interest when you picked your landscape, this report reflects the changes in fire behavior within that area. Scroll through the comparative bar chart, table, pie chart, and percent difference columns. We scrolling through the report we can see the effects of the landscape treatment, which includes a decrease in flame length (depicted below) and fire spread. </p>
+                                        <p>
+                                            <img src="../../resources/images/treatment_compare/highchart_column080117_909x447.png" alt="the column chart indicates flame lengths have decreased" style="width: 909;height: 447;" />
+                                        </p>
+                                        <p>You can download the entire report using the download button in the top right, or an individual chart by using the 'hamburger' icon in the right of each chart</p>
+                                        <p>
+                                            <img src="../../resources/images/treatment_compare/report_download_08012017_874x537.png" style="width: 874;height: 537;" />
+                                        </p>
+                                        <p>Try it yourself! You may also compare the thinning treatment to your Existing Condition landscape, or even the two treated landscapes to each other.</p>
                                     </div>
                                 </div>
                             </div>
