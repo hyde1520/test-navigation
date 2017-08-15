@@ -31,8 +31,8 @@ footer {
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
-    padding-top:20px;
-    padding-bottom:20px;
+    padding-top:2px;
+    padding-bottom:2px;
 }
 /* keeps the height of each column/container the same when used within a row */
 .row-eq-height {
@@ -60,6 +60,10 @@ footer {
   color: #fff;
   background-color: #2E3E4F;
   border-color: #2E3E4F;
+}
+.btn-ift-blue:hover{
+  color:#fff;
+  background-color:#202d3a;
 }
 .btn-blorange {
   color: #fff;
