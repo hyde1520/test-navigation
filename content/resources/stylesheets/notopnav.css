@@ -2,17 +2,15 @@
 
 @namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
 
-body
+body a,
+a:link,
+a:visited	/*
 {
 	color: #404040;
 	font-family: Arial, Avenir, Myriad;
 	font-size: 1em;
 	line-height: 1.7em;
-}
-
-a,
-a:link,
-a:visited
+}*/
 {
 	color: #2d82dc;
 }

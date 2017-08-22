@@ -84,9 +84,9 @@ xmlAliasData += '    <Map Name=\"_2_CreateLCP\" Link=\"tutorials/comparefeature/
 xmlAliasData += '    <Map Name=\"_4_IdPriority\" Link=\"tutorials/comparefeature/4_idpriority.htm\" ResolvedId=\"1167\" />';
 xmlAliasData += '    <Map Name=\"_5_treatmentPoly\" Link=\"tutorials/comparefeature/5_treatmentpoly.htm\" ResolvedId=\"1168\" />';
 xmlAliasData += '    <Map Name=\"_6_Compare\" Link=\"tutorials/comparefeature/6_compare.htm\" ResolvedId=\"1169\" />';
-xmlAliasData += '    <Map Name=\"UsingMasks\" Link=\"concepts/usingmasks.htm\" ResolvedId=\"1176\" />';
 xmlAliasData += '    <Map Name=\"AccountPassword\" Link=\"getstarted/accountpassword.htm\" ResolvedId=\"1177\" />';
 xmlAliasData += '    <Map Name=\"AccountProfile\" Link=\"getstarted/accountprofile.htm\" ResolvedId=\"1178\" />';
+xmlAliasData += '    <Map Name=\"IftTopicTemplate\" Link=\"templates/templatestyles.htm\" ResolvedId=\"1181\" />';
 xmlAliasData += '    <Map Name=\"Resources\" Link=\"concepts/resources.htm\" ResolvedId=\"1182\" />';
 xmlAliasData += '    <Map Name=\"cycle_implementation_plan_hh\" Link=\"zhover/cycle_implementation_plan_hh.htm\" ResolvedId=\"1183\" />';
 xmlAliasData += '    <Map Name=\"cycle_intro_hh\" Link=\"zhover/cycle_intro_hh.htm\" ResolvedId=\"1184\" />';
@@ -96,6 +96,15 @@ xmlAliasData += '    <Map Name=\"cycle_reporting_hh\" Link=\"zhover/cycle_report
 xmlAliasData += '    <Map Name=\"cycle_strategic_plan_DTA_hh\" Link=\"zhover/cycle_strategic_plan_dta_hh.htm\" ResolvedId=\"1188\" />';
 xmlAliasData += '    <Map Name=\"cycle_strategic_plan_hh\" Link=\"zhover/cycle_strategic_plan_hh.htm\" ResolvedId=\"1189\" />';
 xmlAliasData += '    <Map Name=\"myworkspace_folders_hh\" Link=\"zhover/myworkspace_folders_hh.htm\" ResolvedId=\"1190\" />';
-xmlAliasData += '    <Map Name=\"myworkspace_intro_hh\" Link=\"zhover/myworkspace_intro_hh.htm\" ResolvedId=\"1191\" />';
+xmlAliasData += '    <Map Name=\"_3_Edit\" Link=\"tutorials/comparefeature/3_edit.htm\" ResolvedId=\"1166\" />';
+xmlAliasData += '    <Map Name=\"FireBehavior\" Link=\"modelingpg/flammap/flammapabout.htm\" ResolvedId=\"1135\" />';
+xmlAliasData += '    <Map Name=\"ModelingPlayground\" Link=\"modelingpg/modelsoverview.htm\" ResolvedId=\"1136\" />';
+xmlAliasData += '    <Map Name=\"TemplateA\" Link=\"templates/templatea.htm\" ResolvedId=\"1072\" />';
+xmlAliasData += '    <Map Name=\"TemplateB\" Link=\"templates/templateb.htm\" ResolvedId=\"1076\" />';
+xmlAliasData += '    <Map Name=\"Copy_of_cycle_implementation_plan_hh\" Link=\"zhover/copy of cycle_implementation_plan_hh.htm\" ResolvedId=\"9183\" />';
+xmlAliasData += '    <Map Name=\"Copy_of_cycle_landscape_eval_hh\" Link=\"zhover/copy of cycle_landscape_eval_hh.htm\" ResolvedId=\"9185\" />';
+xmlAliasData += '    <Map Name=\"Copy_of_cycle_monitoring_hh\" Link=\"zhover/copy of cycle_monitoring_hh.htm\" ResolvedId=\"9186\" />';
+xmlAliasData += '    <Map Name=\"Copy_of_cycle_reporting_hh\" Link=\"zhover/copy of cycle_reporting_hh.htm\" ResolvedId=\"9187\" />';
+xmlAliasData += '    <Map Name=\"Copy_of_cycle_strategic_plan_hh\" Link=\"zhover/copy of cycle_strategic_plan_hh.htm\" ResolvedId=\"9189\" />';
 xmlAliasData += '</CatapultAliasFile>';
 MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Alias', xmlAliasData);
