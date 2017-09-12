@@ -91,6 +91,15 @@ xmlAliasData += '    <Map Name=\"myworkspace_folders_hh\" Link=\"50-hover/mywork
 xmlAliasData += '    <Map Name=\"_3_Edit\" Link=\"40-tutorials/comparefeature/3_edit.htm\" ResolvedId=\"1166\" />';
 xmlAliasData += '    <Map Name=\"FireBehavior\" Link=\"20-models/flammap/flammapabout.htm\" ResolvedId=\"1135\" />';
 xmlAliasData += '    <Map Name=\"ModelingPlayground\" Link=\"20-models/modelsoverview.htm\" ResolvedId=\"1136\" />';
+xmlAliasData += '    <Map Name=\"AccountSetup1\" Link=\"10-ftem/accountsetup.htm\" ResolvedId=\"1005\" />';
+xmlAliasData += '    <Map Name=\"FTEMAbout1\" Link=\"10-ftem/ftemabout.htm\" ResolvedId=\"1006\" />';
+xmlAliasData += '    <Map Name=\"FTEMFaq\" Link=\"10-ftem/ftemfaq.htm\" ResolvedId=\"1007\" />';
+xmlAliasData += '    <Map Name=\"MonitoringGuidance\" Link=\"10-ftem/monitoringguidance.htm\" ResolvedId=\"1008\" />';
+xmlAliasData += '    <Map Name=\"Reporting\" Link=\"10-ftem/reporting.htm\" ResolvedId=\"1009\" />';
+xmlAliasData += '    <Map Name=\"Symbology\" Link=\"10-ftem/symbology.htm\" ResolvedId=\"1010\" />';
+xmlAliasData += '    <Map Name=\"TechDoc\" Link=\"10-ftem/techdoc.htm\" ResolvedId=\"1011\" />';
+xmlAliasData += '    <Map Name=\"UsingFtem\" Link=\"10-ftem/usingftem.htm\" ResolvedId=\"1012\" />';
+xmlAliasData += '    <Map Name=\"WindAdjustment\" Link=\"10-ftem/windadjustment.htm\" ResolvedId=\"1071\" />';
 xmlAliasData += '    <Map Name=\"About_Hover\" Link=\"50-hover/about hover.htm\" ResolvedId=\"1077\" />';
 xmlAliasData += '    <Map Name=\"Copy_of_cycle_implementation_plan_hh\" Link=\"50-hover/planningcycle/implementation_plan_hh.htm\" ResolvedId=\"9183\" />';
 xmlAliasData += '    <Map Name=\"Copy_of_cycle_landscape_eval_hh\" Link=\"50-hover/planningcycle/landscape_eval_hh.htm\" ResolvedId=\"9185\" />';
