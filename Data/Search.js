@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0,73],u:['../content/00-aboutiftdss/aboutiftdss.htm'],s:['+','differ','main','spring'],p:[['+',8],['active',32],['aren',20],['by',48],['create',23],['each',12],['fire',69],['ground',18],['information',20],['lf2012',5],['models',54],['once',58],['process',41],['see',24],['summarized',69],['there',12],['understory',18],['winds',21]]});
