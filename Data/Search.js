@@ -1,0 +1,1 @@
+define({r:0.5,st:'Stem',n:1,t:[0,75],u:['../content/00-aboutiftdss/aboutiftdss.htm'],s:['+','demo','lead','self'],p:[['+',8],['account',4],['are',46],['built',59],['consider',9],['displaying',29],['feature',23],['fuel',77],['iftdss',15],['know',60],['map',36],['new',36],['outputs',4],['reflect',23],['shapefile',50],['take',74],['this',8],['universal',68],['wind',77]]});
