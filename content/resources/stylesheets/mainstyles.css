@@ -265,6 +265,11 @@ h3
 	margin-top: 16px;
 }
 
+img.border
+{
+	border: 1px solid black;
+}
+
 img	/*applies to printed output only*/
 {
 	

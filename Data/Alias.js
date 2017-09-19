@@ -100,7 +100,6 @@ xmlAliasData += '    <Map Name=\"Symbology\" Link=\"10-ftem/symbology.htm\" Reso
 xmlAliasData += '    <Map Name=\"TechDoc\" Link=\"10-ftem/techdoc.htm\" ResolvedId=\"1011\" />';
 xmlAliasData += '    <Map Name=\"UsingFtem\" Link=\"10-ftem/usingftem.htm\" ResolvedId=\"1012\" />';
 xmlAliasData += '    <Map Name=\"WindAdjustment\" Link=\"10-ftem/windadjustment.htm\" ResolvedId=\"1071\" />';
-xmlAliasData += '    <Map Name=\"About_Hover\" Link=\"50-hover/about hover.htm\" ResolvedId=\"1077\" />';
 xmlAliasData += '    <Map Name=\"Copy_of_cycle_implementation_plan_hh\" Link=\"50-hover/planningcycle/implementation_plan_hh.htm\" ResolvedId=\"9183\" />';
 xmlAliasData += '    <Map Name=\"Copy_of_cycle_landscape_eval_hh\" Link=\"50-hover/planningcycle/landscape_eval_hh.htm\" ResolvedId=\"9185\" />';
 xmlAliasData += '    <Map Name=\"Copy_of_cycle_monitoring_hh\" Link=\"50-hover/planningcycle/monitoring_hh.htm\" ResolvedId=\"9186\" />';
