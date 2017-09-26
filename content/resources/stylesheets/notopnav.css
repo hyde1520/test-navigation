@@ -4,6 +4,10 @@
 
 body
 {
+	background-image: url('../images/iftdss_helpcenter_3_50p.png');
+	margin-top: 27px;
+	background-repeat: no-repeat;
+	background-color: #AEF4FB;
 	color: #404040;
 	font-family: Arial, Avenir, Myriad;
 	font-size: 12px;
