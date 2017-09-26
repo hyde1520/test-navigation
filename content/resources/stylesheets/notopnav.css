@@ -5,8 +5,8 @@
 body
 {
 	background-image: url('../images/iftdss_helpcenter_2_50p.png');
+	margin-top: 27px;
 	background-repeat: no-repeat;
-	background-size: contain;
 	color: #404040;
 	font-family: Arial, Avenir, Myriad;
 	font-size: 12px;
