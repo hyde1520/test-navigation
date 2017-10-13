@@ -268,11 +268,7 @@ h3
 img.border
 {
 	border: 1px solid black;
-}
-
-img	/*applies to printed output only*/
-{
-	
+	margin: 5px;
 }
 
 img.AbsolutePosition
@@ -314,6 +310,17 @@ MadCap|dropDown
 	mc-open-image: url('../images/droparrowdown.png');
 }
 
+/* The .MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage class below enlarges the dropdown to be H2 size once expanded for easy reading and better printing */
+
+.MCDropDown_Open .MCDropDownHotSpot_.MCHotSpotImage
+{
+	font-size: 1.3em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 20px;
+	line-height: normal;
+}
+
 MadCap|dropDown.SecondLevel
 {
 	margin-left: 10px;
@@ -333,17 +340,16 @@ MadCap|dropDownBody.Final
 
 MadCap|dropDownHead
 {
-	
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	line-height: normal;
 }
 
 MadCap|dropDownHotspot
 {
 	color: #404040;
-	font-size: 1.3em;
-	font-weight: normal;
-	margin-bottom: 4px;
-	margin-top: 20px;
-	line-height: normal;
 }
 
 MadCap|dropDownHotspot:hover
@@ -691,16 +697,33 @@ html.templateTopic div.sideContent
 
 @media print
 {
+	.no-print,
+	.no-print *
+	{
+		display: none !important;
+	}
+
+	/*The .off-canvas-content class fixes the grayed out print bug introduced from Chrome 61 */
+
+	.off-canvas-content
+	{
+		box-shadow: none;
+	}
+
 	body
 	{
 		font-size: 10pt;
 		line-height: 16px;
-		margin: 8px;
+		margin: 0.5in;
 	}
 
-	img
+	/*Keeps max width to fit on page*/
+
+	img,
+	img.border
 	{
 		max-width: 600px;
+		margin: 8px;
 	}
 
 	img.button
@@ -737,8 +760,8 @@ html.templateTopic div.sideContent
 
 	h1
 	{
-		color: #e67d27;
-		font-family: 'Century Gothic';
+		color: #2D3B4E;
+		font-family: 'Arial';
 		font-size: 22pt;
 		line-height: 24pt;
 		margin-bottom: 20px;
@@ -764,7 +787,6 @@ html.templateTopic div.sideContent
 		font-size: 12pt;
 		font-weight: normal;
 		line-height: 14pt;
-		page-break-before: always;
 	}
 
 	h3
@@ -779,6 +801,15 @@ html.templateTopic div.sideContent
 		font-weight: normal;
 		line-height: 11pt;
 		mc-heading-level: 0;
+	}
+
+	/*Gives tables borders*/
+
+	table,
+	th,
+	td
+	{
+		border: 1px solid black;
 	}
 
 	MadCap|dropDown.SecondLevel
@@ -1130,12 +1161,7 @@ html.FieldLeveltopics
 	mc-master-page: url('../masterpages/fieldleveltopics.flmsp');
 }
 
-img.button	/*will apply only to print*/
-{
-	
-}
-
-p.test
+p.no-print	/*Hides from printing in browser*/
 {
 	
 }

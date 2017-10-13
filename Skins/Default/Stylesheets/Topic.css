@@ -505,22 +505,12 @@ iframe.youtube-player_0
 .dropDownHotspot
 {
 	color: #404040;
-	font-size: 1.3em;
-	font-weight: normal;
-	margin-bottom: 4px;
-	margin-top: 20px;
-	line-height: normal;
 	text-decoration: none;
 }
 
 .dropDownHotspot:link
 {
 	color: #404040;
-	font-size: 1.3em;
-	font-weight: normal;
-	margin-bottom: 4px;
-	margin-top: 20px;
-	line-height: normal;
 	text-decoration: none;
 }
 
@@ -547,6 +537,11 @@ iframe.youtube-player_0
 
 .dropDownHead
 {
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	line-height: normal;
 	text-decoration: none;
 }
 

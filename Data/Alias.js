@@ -124,5 +124,7 @@ xmlAliasData += '    <Map Name=\"_2_selectLCP_hh\" Link=\"50-hover/lcpfirebehavi
 xmlAliasData += '    <Map Name=\"_3_wind_hh\" Link=\"50-hover/lcpfirebehavior/3_wind_hh.htm\" ResolvedId=\"9016\" />';
 xmlAliasData += '    <Map Name=\"_4_crownfire_hh\" Link=\"50-hover/lcpfirebehavior/4_crownfire_hh.htm\" ResolvedId=\"9017\" />';
 xmlAliasData += '    <Map Name=\"_5_FMs_hh\" Link=\"50-hover/lcpfirebehavior/5_fms_hh.htm\" ResolvedId=\"9018\" />';
+xmlAliasData += '    <Map Name=\"Estimating_Fuel_Moistures\" Link=\"00-concepts/estimating fuel moistures.htm\" ResolvedId=\"1191\" />';
+xmlAliasData += '    <Map Name=\"SummaryFM\" Link=\"30-tasks/summaries/summaryfm.htm\" ResolvedId=\"1192\" />';
 xmlAliasData += '</CatapultAliasFile>';
 MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Alias', xmlAliasData);
