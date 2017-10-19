@@ -126,5 +126,15 @@ xmlAliasData += '    <Map Name=\"_4_crownfire_hh\" Link=\"50-hover/lcpfirebehavi
 xmlAliasData += '    <Map Name=\"_5_FMs_hh\" Link=\"50-hover/lcpfirebehavior/5_fms_hh.htm\" ResolvedId=\"9018\" />';
 xmlAliasData += '    <Map Name=\"Estimating_Fuel_Moistures\" Link=\"00-concepts/estimating fuel moistures.htm\" ResolvedId=\"1191\" />';
 xmlAliasData += '    <Map Name=\"SummaryFM\" Link=\"30-tasks/summaries/summaryfm.htm\" ResolvedId=\"1192\" />';
+xmlAliasData += '    <Map Name=\"Adding_Treatment_Interactions\" Link=\"10-ftem/adding treatment interactions.htm\" ResolvedId=\"1026\" />';
+xmlAliasData += '    <Map Name=\"FTEM_Data_Sources\" Link=\"10-ftem/ftem data sources.htm\" ResolvedId=\"1028\" />';
+xmlAliasData += '    <Map Name=\"FTEMPolicy\" Link=\"10-ftem/ftempolicy.htm\" ResolvedId=\"1051\" />';
+xmlAliasData += '    <Map Name=\"GeoAreaOfInterest\" Link=\"10-ftem/geoareaofinterest.htm\" ResolvedId=\"1058\" />';
+xmlAliasData += '    <Map Name=\"Complete_hh\" Link=\"50-hover/ftem/complete_hh.htm\" ResolvedId=\"9022\" />';
+xmlAliasData += '    <Map Name=\"monitoring_hh\" Link=\"50-hover/ftem/monitoring_hh.htm\" ResolvedId=\"9021\" />';
+xmlAliasData += '    <Map Name=\"treatments_hh\" Link=\"50-hover/ftem/treatments_hh.htm\" ResolvedId=\"9020\" />';
+xmlAliasData += '    <Map Name=\"wildfires_hh\" Link=\"50-hover/ftem/wildfires_hh.htm\" ResolvedId=\"9019\" />';
+xmlAliasData += '    <Map Name=\"table\" Link=\"resources/tablestyles/table.html\" ResolvedId=\"1070\" />';
+xmlAliasData += '    <Map Name=\"table1\" Link=\"resources/tablestyles/table.html\" ResolvedId=\"1072\" />';
 xmlAliasData += '</CatapultAliasFile>';
 MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Alias', xmlAliasData);
