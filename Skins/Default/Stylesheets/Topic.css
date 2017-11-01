@@ -489,13 +489,6 @@ div.MCBreadcrumbsBox_0
 	margin-bottom: 10px;
 }
 
-iframe.youtube-player_0
-{
-	display: inline-block;
-	width: 560px;
-	height: 315px;
-}
-
 .dropDown
 {
 	margin-bottom: 6px;
@@ -548,6 +541,23 @@ iframe.youtube-player_0
 .dropDownBody
 {
 	border-bottom: solid 1px #e67d27;
+}
+
+.dropDownHead:link
+{
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	line-height: normal;
+	text-decoration: none;
+}
+
+iframe.youtube-player_0
+{
+	display: inline-block;
+	width: 560px;
+	height: 315px;
 }
 
 .xref

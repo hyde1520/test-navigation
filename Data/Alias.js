@@ -126,6 +126,7 @@ xmlAliasData += '    <Map Name=\"_4_crownfire_hh\" Link=\"50-hover/lcpfirebehavi
 xmlAliasData += '    <Map Name=\"_5_FMs_hh\" Link=\"50-hover/lcpfirebehavior/5_fms_hh.htm\" ResolvedId=\"9018\" />';
 xmlAliasData += '    <Map Name=\"Estimating_Fuel_Moistures\" Link=\"00-concepts/estimating fuel moistures.htm\" ResolvedId=\"1191\" />';
 xmlAliasData += '    <Map Name=\"SummaryFM\" Link=\"30-tasks/summaries/summaryfm.htm\" ResolvedId=\"1192\" />';
+xmlAliasData += '    <Map Name=\"IFTDSSFAQ\" Link=\"00-aboutiftdss/iftdssfaq.htm\" ResolvedId=\"1004\" />';
 xmlAliasData += '    <Map Name=\"Adding_Treatment_Interactions\" Link=\"10-ftem/adding treatment interactions.htm\" ResolvedId=\"1026\" />';
 xmlAliasData += '    <Map Name=\"FTEM_Data_Sources\" Link=\"10-ftem/ftem data sources.htm\" ResolvedId=\"1028\" />';
 xmlAliasData += '    <Map Name=\"FTEMPolicy\" Link=\"10-ftem/ftempolicy.htm\" ResolvedId=\"1051\" />';
