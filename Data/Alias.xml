@@ -136,4 +136,18 @@
     <Map Name="wildfires_hh" Link="50-hover/ftem/wildfires_hh.htm" ResolvedId="9019" />
     <Map Name="table" Link="resources/tablestyles/table.html" ResolvedId="1070" />
     <Map Name="table1" Link="resources/tablestyles/table.html" ResolvedId="1072" />
+    <Map Name="Helpful_topics" Link="00-aboutiftdss/helpful topics.htm" ResolvedId="1065" />
+    <Map Name="_0_Introduction" Link="40-tutorials/nwest_dta/0_introduction.htm" ResolvedId="1067" />
+    <Map Name="_1_PreviewAndCreate" Link="40-tutorials/nwest_dta/1_previewandcreate.htm" ResolvedId="1068" />
+    <Map Name="_2_SummarizeAndAssess" Link="40-tutorials/nwest_dta/2_summarizeandassess.htm" ResolvedId="1069" />
+    <Map Name="_3_CreateAOIs" Link="40-tutorials/nwest_dta/3_createaois.htm" ResolvedId="1074" />
+    <Map Name="_4_ReviewSummaryReport" Link="40-tutorials/nwest_dta/4_reviewsummaryreport.htm" ResolvedId="1075" />
+    <Map Name="_5_DevelopTreatmentAlts" Link="40-tutorials/nwest_dta/5_developtreatmentalts.htm" ResolvedId="1076" />
+    <Map Name="_6_CompareAddTreatment" Link="40-tutorials/nwest_dta/6_compareaddtreatment.htm" ResolvedId="1078" />
+    <Map Name="_7_CompareAddedConclude" Link="40-tutorials/nwest_dta/7_compareaddedconclude.htm" ResolvedId="1079" />
+    <Map Name="All" Link="40-tutorials/nwest_dta/all.htm" ResolvedId="1080" />
+    <Map Name="step_Complete_hh" Link="50-hover/ftem/step_complete_hh.htm" ResolvedId="9023" />
+    <Map Name="step_monitoring_hh" Link="50-hover/ftem/step_monitoring_hh.htm" ResolvedId="9024" />
+    <Map Name="step_treatments_hh" Link="50-hover/ftem/step_treatments_hh.htm" ResolvedId="9025" />
+    <Map Name="step_wildfires_hh" Link="50-hover/ftem/step_wildfires_hh.htm" ResolvedId="9026" />
 </CatapultAliasFile>
