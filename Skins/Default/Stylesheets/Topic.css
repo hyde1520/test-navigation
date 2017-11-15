@@ -101,7 +101,7 @@ body
 	cursor: pointer;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	z-index: 999;
+	z-index: 10001;
 }
 
 .MCPopupContainer2
@@ -267,7 +267,6 @@ a.glossaryTerm
 
 .login-dialog.pulse
 {
-	position: fixed;
 	width: 408px;
 	height: 428px;
 	margin-left: -204px;
@@ -489,6 +488,13 @@ div.MCBreadcrumbsBox_0
 	margin-bottom: 10px;
 }
 
+iframe.youtube-player_0
+{
+	display: inline-block;
+	width: 560px;
+	height: 315px;
+}
+
 .dropDown
 {
 	margin-bottom: 6px;
@@ -543,23 +549,6 @@ div.MCBreadcrumbsBox_0
 	border-bottom: solid 1px #e67d27;
 }
 
-.dropDownHead:link
-{
-	font-size: 1.1em;
-	font-weight: normal;
-	margin-bottom: 4px;
-	margin-top: 10px;
-	line-height: normal;
-	text-decoration: none;
-}
-
-iframe.youtube-player_0
-{
-	display: inline-block;
-	width: 560px;
-	height: 315px;
-}
-
 .xref
 {
 	color: #2D8DCC;
@@ -580,6 +569,16 @@ iframe.youtube-player_video_0
 	left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+.dropDownHead:link
+{
+	font-size: 1.1em;
+	font-weight: normal;
+	margin-bottom: 4px;
+	margin-top: 10px;
+	line-height: normal;
+	text-decoration: none;
 }
 
 ul.MCGlossaryProxy_0

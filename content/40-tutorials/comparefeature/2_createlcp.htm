@@ -7,16 +7,16 @@
         <meta charset="utf-8" />
         <meta name="description" content="" />
         <meta name="author" content="" /><title>Create a landscape</title>
-        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
-        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
-        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
-        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
-        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
-        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
-        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.5.5.0.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" data-mc-generated="True" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" data-mc-generated="True" />
         <style>/*&lt;meta /&gt;*/
 
 .button.expand-print-button
@@ -49,7 +49,9 @@
         </script>
         <script src="../../../Resources/Scripts/require.config.js">
         </script>
-        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        <script src="../../../Resources/Scripts/foundation.5.5.0_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.offcanvas.js">
         </script>
         <script src="../../../Resources/Scripts/plugins.min.js">
         </script>
@@ -59,70 +61,236 @@
         </script>
     </head>
     <body>
-        <div class="foundation-wrap off-canvas-wrapper">
-            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
-                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
-                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
-                    </ul>
-                </aside>
-                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
-                    <div>
-                        <nav class="title-bar tab-bar" data-mc-ignore="true">
-                            <div class="middle title-bar-section outer-row clearfix">
-                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
-                                    <div class="navigation-wrapper nocontent">
-                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
-                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="nav-search row outer-row">
-                                <form class="search" action="#">
-                                    <div class="search-bar search-bar-container needs-pie">
-                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
-                                        <div class="search-filter-wrapper">
-                                            <div class="search-filter">
-                                                <div class="search-filter-content">
-                                                    <ul>
-                                                        <li>All Files</li>
+        <div class="foundation-wrap">
+            <div class="off-canvas-wrap" data-offcanvas="">
+                <section class="inner-wrap">
+                    <nav class="tab-bar" data-mc-ignore="true">
+                        <section class="middle tab-bar-section outer-row clearfix">
+                            <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                <div class="navigation-wrapper">
+                                    <ul class="navigation clearfix">
+                                        <li class="has-children"><a href="#">Get Started</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../../00-concepts/whyiftdss.htm">Why use IFTDSS for Fuel Planning?</a>
+                                                </li>
+                                                <li class="has-children"><a href="../../00-concepts/accounts/accountsetup.htm">Get an Account</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../00-concepts/accounts/accountsetup.htm">Setting up an Account</a>
+                                                        </li>
+                                                        <li><a href="../../00-concepts/accounts/accountpassword.htm">Account Password</a>
+                                                        </li>
+                                                        <li><a href="../../00-concepts/accounts/accountprofile.htm">Profile</a>
+                                                        </li>
                                                     </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="search-submit-wrapper" dir="ltr">
-                                            <div class="search-submit" title="Search">
+                                                </li>
+                                                <li><a href="../../00-concepts/navigatingiftdss.htm">Navigate IFTDSS (An Overview)</a>
+                                                </li>
+                                                <li><a href="../../00-aboutiftdss/helpful topics.htm">Walk-throughs</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children"><a href="../../10-planningcycle/planningcycleabout.htm">Planning Cycle</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../../10-planningcycle/planningcycleabout.htm">About the Planning Cycle</a>
+                                                </li>
+                                                <li class="has-children"><a href="../../10-planningcycle/landevalabout.htm">Landscape Evaluation</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../30-tasks/summaries/landsummaryabout.htm">Landscape Summary</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Edit a Landscape</a>
+                                                        </li>
+                                                        <li><a href="../../20-models/flammap/flammapbackground.htm">Calculate Fire&#160;Behavior</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-children"><a href="../../10-planningcycle/strategicplanningabout.htm">Strategic Planning</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../30-tasks/devtrtalts/trtmtaltscomparelndscp.htm">Comparing Landscapes to Develop Treatement Alternatives</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/devtrtalts/trtmtaltseditlandscp.htm">Editing a Landscape to Develop Treatment Alternatives</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/lndscpedit/ruleordering.htm">About Edit Rules</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="../../10-planningcycle/implementationplanabout.htm">Implementation Planning</a>
+                                                </li>
+                                                <li><a href="../../10-planningcycle/monitoringabout.htm">Monitoring</a>
+                                                </li>
+                                                <li><a href="../../10-planningcycle/reportingabout.htm">Reporting</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children"><a href="../../20-models/modelsoverview.htm">Modeling</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../../20-models/modelsoverview.htm">Modeling in Modeling Playground</a>
+                                                </li>
+                                                <li class="has-children"><a href="../../20-models/flammap/flammapabout.htm">Landscape Fire Behavior</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../20-models/flammap/flammapabout.htm">Landscape Fire&#160;Behavior Overview</a>
+                                                        </li>
+                                                        <li><a href="../../20-models/flammap/flammapinput.htm">FlamMap Fire Behavior Inputs</a>
+                                                        </li>
+                                                        <li><a href="../../20-models/flammap/flammapoutput.htm">FlamMap Fire Behavior Outputs</a>
+                                                        </li>
+                                                        <li><a href="../../20-models/flammap/flammapcrowns.htm">Crown Fire Calculation Options</a>
+                                                        </li>
+                                                        <li><a href="../../20-models/flammap/flammapbackground.htm">Technical Documentation - Landscape Fire&#160;Behavior with FlamMap 5.0</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="../../10-mapstudio/files/fbfminfo.htm">Fire Behavior Fuel Models</a>
+                                                </li>
+                                                <li><a href="../../20-models/modelsmoretocome.htm">More To Come</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children"><a href="../../10-mapstudio/mapstudioabout.htm">Mapping</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="../../10-mapstudio/mapstudioabout.htm">Working in Map Studio</a>
+                                                </li>
+                                                <li class="has-children"><a href="../../10-mapstudio/functions/mapfunctions.htm">Map Functions</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../10-mapstudio/functions/mapfunctions.htm">Map Functions (overview)</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/layerlist.htm">Layer List (legends)</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/addreferencedata.htm">Add Reference Data</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/addgraphic.htm">Add Graphic</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/addshapefile.htm">Add Shapefiles</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/landscapetools.htm">Landscape Tools</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/simulationtools.htm">Simulation Output Tools</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/edittools.htm">Edit Tools</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/basemapgallery.htm">Basemap Gallery</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/measurements.htm">Measurement</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/filter.htm">Filter</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/attributetable.htm">Attribute Table</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-children"><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Using Landscapes</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Making Landscape Edits</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm">About Default Treatment/Disturbance Rules</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/lndscpedit/ruleordering.htm">Applying Edit Rules</a>
+                                                        </li>
+                                                        <li><a href="../../30-tasks/lndscpedit/landscapeedittechtopic.htm">Edit Rule Technical Documentation</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li class="has-children"><a href="../../10-mapstudio/files/shapefileinfo.htm">Using Shapefiles</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="../../10-mapstudio/files/shapefileinfo.htm">About Shapefiles</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/edittools.htm">Create or Edit Shapefiles</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/functions/addshapefile.htm">Upload a Shapefile</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/files/shapefilesaving.htm">Saving Shapefiles</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/files/shapefilerepair.htm">Repairing Shapefiles</a>
+                                                        </li>
+                                                        <li><a href="../../10-mapstudio/files/shapefileinfo.htm#AreasOfInterest">Using Shapefiles for Masks/Areas of Interest</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="../../00-concepts/usingmydata.htm">Use My Own Data</a>
+                                                </li>
+                                                <li><a href="../../10-mapstudio/mapstudiotips.htm">MapStudioTips and Tricks</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="has-children"><a href="#">Resources</a>
+                                            <ul class="sub-menu">
+                                                <li><a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ">Videos</a>
+                                                </li>
+                                                <li class="has-children"><a href="../tutorialmain.htm">Tutorials</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="0_intro.htm">Comparing Landscapes</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="../../41-references/resources.htm">Additional Resources</a>
+                                                </li>
+                                                <li class="has-children"><a href="#">Support System</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="https://iftdsshelp.freshdesk.com/support/discussions">Forums</a>
+                                                        </li>
+                                                        <li><a href="https://iftdss.firenet.gov/landing_page/support.html">Request Tech. Support</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li><a href="../../41-references/glossary.htm">Glossary</a>
+                                                </li>
+                                                <li><a href="../../41-references/referencelist.htm">References</a>
+                                                </li>
+                                                <li><a href="../../00-concepts/gettinghelp.htm">Getting Help</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="../../00-aboutiftdss/knownissues.htm">Known Issues</a>
+                                        </li>
+                                    </ul>
+                                </div><a class="menu-icon right-off-canvas-toggle" href="#"><span></span></a>
+                            </div>
+                        </section>
+                        <div class="nav-search row outer-row">
+                            <form class="search" action="#">
+                                <div class="search-bar search-bar-container needs-pie">
+                                    <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                    <div class="search-filter-wrapper">
+                                        <div class="search-filter">
+                                            <div class="search-filter-content">
+                                                <ul>
+                                                    <li>All Files</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
-                        </nav>
-                    </div>
+                                    <div class="search-submit-wrapper" dir="ltr">
+                                        <div class="search-submit" title="Search">
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </nav>
+                    <aside class="right-off-canvas-menu" data-mc-ignore="true">
+                        <ul class="off-canvas-list" data-mc-back-link="Back" data-mc-css-tree-node-expanded="has-submenu" data-mc-css-tree-node-collapsed="has-submenu" data-mc-css-sub-menu="right-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.fndtn.offcanvas" data-mc-toc="True">
+                        </ul>
+                    </aside>
                     <section class="main-section">
                         <div class="row outer-row" data-mc-content-body="True">
                             <script src="https://www.google.com/jsapi" type="text/javascript">
                             </script>
                             <script>
 			/* <![CDATA[ */
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
 
-			ga('create', 'UA-97631423-1', 'auto');
-			ga('send', 'pageview');
+			gtag('config', 'UA-109528589-1');
 			/* ]]> */
-		</script>
+			</script>
                             <div class="content">
                                 <div id="contentBody">
                                     <div class="row collapse">
                                         <div class="sideContent">
                                             <div class="clearfix">
-                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component">
                                                     <div class="button-group-container-left">
                                                         <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
                                                             <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
@@ -133,17 +301,31 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <ul class="menu _Skins_SideMenu mc-component">
+                                                <li class="has-children"><a href="0_intro.htm">Comparing Landscapes</a>
+                                                    <ul class="sub-menu">
+                                                        <li><a href="1_projectbegin.htm">Begin a Project</a>
+                                                        </li>
+                                                        <li><a href="#" class="selected">Create a Landscape</a>
+                                                        </li>
+                                                        <li><a href="3_edit.htm">Evaluate and Edit</a>
+                                                        </li>
+                                                        <li><a href="4_idpriority.htm">Summarize and Prioritize</a>
+                                                        </li>
+                                                        <li><a href="5_treatmentpoly.htm">Create Treatment Polygons</a>
+                                                        </li>
+                                                        <li><a href="6_compare.htm">Treatment Comparison</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </div>
-                                        <div class="nocontent">
-                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
-                                            </div>
+                                        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><span class="MCBreadcrumbsSelf">Resources</span><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../tutorialmain.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="0_intro.htm">Comparing Landscapes</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Create a Landscape</span>
                                         </div>
                                         <h1>Create a landscape</h1>
-                                        <p>Landscape in IFTDSS can be created in multiple ways. For example, you could go to <span class="GeneralMapStudio">Map Studio</span> and create a landscape using <span class="UIcomponent">Landscape Tools</span>. But for this tutorial we’ll create a new landscape by going into the Planning Cycle, Landscape Evaluation, and Landscape Summary. </p>
+                                        <p>Landscapes in <span class="GeneralProductName">IFTDSS</span> can be created in multiple ways. For example, you could go to <span class="GeneralMapStudio">Map Studio</span> and create a landscape using <span class="UIcomponent">Landscape Tools</span>. But for this tutorial we’ll create a new landscape by going into the Planning Cycle, Landscape Evaluation, and Landscape Summary. </p>
                                         <p>
-                                            <img src="../../resources/images/cycle/landscapeevaluationsummary_881x247.png" alt="Landscape evaluation stage of the planning cycle with the 'landscape summary' task highlighted." style="width: 881;height: 247;" class="border" />
+                                            <img src="../../resources/images/cycle/landscapeevaluationsummary_630x174.png" alt="Landscape evaluation stage of the planning cycle with the 'landscape summary' task highlighted." style="width: 630;height: 174;" class="border" />
                                         </p>
                                         <p>We can view the landscape in <span class="UIcomponent">My Workspace</span> once its created, but hold off on looking at the landscape summary, because we know we’ll want to make some edits to the landscape for this tutorial.</p>
                                         <p>We will look at a portion of the Tahoe National Forest located at:</p>
@@ -157,29 +339,21 @@
                                             <p>To help keep track of your data, we recommend including the LANDFIRE version in the name.</p>
                                         </div>
                                         <p>For this example landscape we are about to create, we will name it:&#160;'HaypressCrk LF2012 Unedited'</p>
-                                        <p>To create a landscape within the Generate Landscape Summary task, click <span class="UIcomponent">Create Here</span>.</p>
-                                        <p>
-                                            <img src="../../resources/images/lcp_gen_smmry/createininterface.png" alt="The 'create here' button lets you generate a landscape in the planning interface" title="Jump to Create a Landscape" class="border" />
-                                        </p>
-                                        <p>
-                                            <img src="../../resources/images/lcp_gen_smmry/lcp_interface_steps_759x457.png" style="width: 759;height: 457;" alt="'create landscape' interface with interactive map to the left, and drop down inputs on the right." title="Example of Creating a Landscape map page" class="border" />
-                                        </p>
+                                        <img src="../../resources/images/getting_started/landscape_create_4_630x415.png" alt="Use the provided fields to input landscape details" class="border" style="width: 630;height: 415;" />
                                         <ol style="list-style-type: upper-alpha;">
-                                            <li value="1">Use the zoom tools in the top left of the map to zoom to your desired location.</li>
-                                            <li value="2">Click the <span class="UIcomponent">Select Draw Tool</span>, mouse to your location on the map, hold down the left mouse key, and draw a rectangle around your desired area, releasing the button when you are finished.</li>
-                                            <li value="3">Alternatively, if you wish to enter exact coordinates rather than draw a box around your area, enter the coordinates, in degrees, for the west, east, south, and north bounds of your desired area. </li>
+                                            <li value="1">Use the bounding box fields and enter the coordinates, in degrees, for the west, east, south, and north bounds of your area. </li>
                                             <div class="notificationNote">
                                                 <p>The maximum area for a landscape is 12,188,160 acres (138 miles x 138 miles).</p>
                                             </div>
-                                            <li value="4">Choose the version of LANDFIRE data you would like to use from the dropdown list</li>
-                                            <li value="5">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) to include in your landscape file from the dropdown list.</li>
-                                            <li value="6">Give your landscape a descriptive name, this will be helpful as you accumulate more landscape files in <span class="GeneralProductName">IFTDSS</span>.</li>
-                                            <li value="7">Select the folder where you would like to store your landscape file, or click <span class="UIcomponent">+ Folder</span> to create and name a new folder to place your landscape file. </li>
-                                            <li value="8">Click <span class="UIcomponent">Create</span> to generate your landscape file.</li>
+                                            <li value="2">Choose the version of LANDFIRE data you would like to use from the dropdown list</li>
+                                            <li value="3">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) to include in your landscape file from the dropdown list.</li>
+                                            <li value="4">Give your landscape a descriptive name, this will be helpful as you accumulate more landscape files in <span class="GeneralProductName">IFTDSS</span>.</li>
+                                            <li value="5">Select the folder where you would like to store your landscape file, or click <span class="UIcomponent">+ Folder</span> to create and name a new folder to place your landscape file. </li>
+                                            <li value="6">Click <span class="UIcomponent">Create</span> to generate your landscape file.</li>
                                         </ol>
                                         <p>Once you click <span class="UIcomponent">Create</span>, you will be returned to the Landscape&#160;Summary task, and the field next to <span class="UIcomponent">My Landscapes</span>, displays the name of your newly created landscape, with an hourglass <img src="../../resources/images/buttons_general/hourglass.png" alt="hourglass icon" />next to it, indicating it is being created. Once created, the hourglass is replaced by a green checkmark. You may have to use the refresh button next to the landscape name to see the green checkmark</p>
                                         <p>
-                                            <img src="../../resources/images/lcp_gen_smmry/landscaperefresh_827x418.png" alt="Landscapes still being processed in IFTDSS often have a red hourglass next to their name" style="width: 827;height: 418;" class="border" />
+                                            <img src="../../resources/images/lcp_gen_smmry/landscaperefresh_630x318.png" alt="Landscapes still being processed in IFTDSS often have a red hourglass next to their name" style="width: 630;height: 318;" class="border" />
                                         </p>
                                         <p>If you prefer to create your landscape in <span class="GeneralMapStudio">Map Studio</span>, you may navigate to <span class="GeneralMapStudio">Map Studio</span>, create a landscape using the <span class="UIcomponent">Landscape Tool</span> <img src="../../resources/images/mapstudio/button_landscapetools.png" alt="landscape tool button" class="button" />, and navigating back to your desired location in <span class="GeneralProductName">IFTDSS</span>. Visit the <a href="../../10-mapstudio/files/lcpcreate.htm" target="_blank">Creating a Landscape Topic</a> for more details on this. </p>
                                         <div class="notificationTip">
@@ -187,7 +361,7 @@
                                         </div>
                                         <p>For the next step we'll go back to the Landscape Evaluation stage of the planning cycle and edit using the Landscape Edit Task</p>
                                         <p>
-                                            <img src="../../resources/images/cycle/landscapeevaluationedit_1019x287.png" alt="Landscape evaluation stage of the planning cycle with the 'landscape edit' task highlighted" style="width: 1019;height: 287;" class="border" />
+                                            <img src="../../resources/images/cycle/landscapeevaluationedit_630x175.png" alt="Landscape evaluation stage of the planning cycle with the 'landscape edit' task highlighted" style="width: 630;height: 175;" class="border" />
                                         </p>
                                         <p><a href="3_edit.htm">Proceed to Step 3:&#160;Edit Your Landscape</a>
                                         </p>
@@ -195,8 +369,8 @@
                                 </div>
                             </div>
                         </div>
-                    </section><a data-close="true"></a>
-                </div>
+                    </section><a class="exit-off-canvas"></a>
+                </section>
             </div>
             <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
         </div>
