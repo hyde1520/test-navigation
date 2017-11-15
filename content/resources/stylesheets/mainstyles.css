@@ -269,6 +269,8 @@ img.border
 {
 	border: 1px solid black;
 	margin: 5px;
+	max-width: 630px;
+	height: auto;
 }
 
 img.AbsolutePosition
@@ -719,16 +721,17 @@ html.templateTopic div.sideContent
 
 	/*Keeps max width to fit on page*/
 
-	img,
-	img.border
-	{
-		max-width: 600px;
-		margin: 8px;
-	}
-
-	img.button
+	img
 	{
 		max-height: 15px;
+		width: auto;
+	}
+
+	img.border
+	{
+		max-width: 400px;
+		margin: 8px;
+		height: auto;
 	}
 
 	div.GlossaryPageDefinition
