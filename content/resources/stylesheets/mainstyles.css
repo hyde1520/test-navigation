@@ -721,11 +721,6 @@ html.templateTopic div.sideContent
 
 	/*Keeps max width to fit on page*/
 
-	img
-	{
-		max-height: 15px;
-		width: auto;
-	}
 
 	img.border
 	{
