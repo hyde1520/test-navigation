@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Developing Treatments">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Developing Treatment Alternatives</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printercustom.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="https://use.fontawesome.com/78f39c078c.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <script src="https://www.google.com/jsapi" type="text/javascript">
+                            </script>
+                            <script>
+			/* <![CDATA[ */
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-109528589-1');
+			/* ]]> */
+			</script>
+                            <div class="content">
+                                <div id="contentBody">
+                                    <div class="row collapse">
+                                        <div class="sideContent">
+                                            <div class="clearfix">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            </ul>
+                                        </div>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                            </div>
+                                        </div>
+                                        <h1>Developing Treatment Alternatives</h1>
+                                        <h2>Starting the Develop Treatment Alternatives Task</h2>
+                                        <p>Now that you have a baseline Landscape and Fire Behavior data, and some specific areas within the landscape for which you’d like to propose treatments to meet the preliminary objectives, you’ll move on to the Develop Treatment Alternatives workflow, under the <span class="UIcomponent">Strategic Planning</span> stage of the <span class="UIcomponent">Cycle</span>. This will allow you to develop and compare fuels treatment alternatives so you can determine how changes in the fuels characteristics affect fire behavior outputs.</p>
+                                        <p>I select the <span class="UIcomponent">Develop Treatment Alternatives</span> task.</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_task_630x274.png" alt="select the 'develop treatment alternatives' task from the 'strategic planning' stage of the planning cycle" style="width: 630;height: 274;" class="border" />
+                                        </p>
+                                        <p>The next screen brings up the 5 steps in the Develop Treatment Alternatives task.</p>
+                                        <h3>Pick a landscape and area of interest</h3>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_pick_landscape_630x256.png" style="width: 630;height: 256;" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">First, select the "Originating Landscape" (Granite Creek LF2012 unedited) and the </li>
+                                            <li value="2">Area of Interest created earlier in <span class="GeneralMapStudio">Map Studio</span> (Granite Creek Proposed Treatment Areas).</li>
+                                        </ol>
+                                        <p>Notice the Right Hand Panel has some good information regarding how to use the landscapes correctly in this task. Make it a point to read through these panels for each page, they contain really helpful information.</p>
+                                        <h3>Edit the landscape to simulate treatment scenarios</h3>
+                                        <p>Next, move to the <span class="UIcomponent">Edit Landscape</span> tab, where you'll select a Default Fuels Treatment rule, and apply it to the landscape to simulate a thin and pile burn. Then you can see what effect the proposed treatment has on your Area of Interest. To do this:</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_edit_0_lcp_606x376.png" alt="using the default edit rules is a quick way to simulate treatments on the landscape" style="width: 606;height: 376;" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Double check that "Granite Creek LF2012 unedited" landscape is selected</li>
+                                            <li value="2">Select the "Thin: Slash Removed default" rule under the “Add Default Fuels Treatment/Disturbance Edit Rule”. </li>
+                                            <div><span class="notificationTip">If you hover your mouse over the “Light Thinning; Pile Burning” it will give you the details on what the rule represents.</span>
+                                            </div>
+                                            <li value="3">Choose the "Light Thinning:&#160;Pile Burning" option</li>
+                                            <li value="4">Select 1 year since disturbance</li>
+                                            <li value="5">Select the "Granite&#160;Creek Proposed Treatment Areas" mask to apply the rule to</li>
+                                            <li value="6">Click the <span class="UIcomponent">Add to Rules</span> button</li>
+                                        </ol>
+                                        <p>This rule will mimic thinning the Area of Interest to about 80% present density by removing understory up to 8” DBH, with subsequent pile burning of thinned material. This information appears if you&#160;hover over the "Light Thinning: Pile Burning" option described in step C above. Alternatively, the description of each default rule can be read in the <a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm" target="_blank">Landscape Editing - Default Fuel Treatment and Disturbance Topic</a> of Help Center.</p>
+                                        <p>You'll also like to mimic a broadcast burn after these first entries, but apply that edit in a subsequent edit session. While you&#160;could create a second rule that would be applied after the first ( See the <a href="../../30-tasks/lndscpedit/ruleordering.htm" target="_blank">Rule Ordering Consideration help topic</a> for more details on these), you'll apply one at a time so its easier to track the results of the rule on the landscape.  It’s always a good idea to assess your landscape after editing to ensure it’s been applied correctly and makes sense.</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_edit_rule_save_630x263.png" alt="you will recieve a message confirming your edit rule has been saved" style="width: 630;height: 263;" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">After clicking the <span class="UIcomponent">Add to Rules</span> button, a notification appears to confirm the rule had been added. </li>
+                                            <li value="2">Since you're just implementing this one rule for now, scroll to the bottom of the screen, name the landscape so its easy to see what treatment it represents (GC12_Lt_Thn_PileRx_1yr), and click <span class="UIcomponent">Save New Landscape</span>. </li>
+                                            <div class="notificationTip">It is recommended to keep the landscape names around 30 characters in length for later reporting steps to run smoothly in the <span class="GeneralProductName">IFTDSS</span> system.</div>
+                                            <li value="3">Once the new landscape is saved, a notification will appear at the top of the screen that lets me know it has been successfully submitted. </li>
+                                        </ol>
+                                        <h3>Enter parameters for a fire behavior modeling scenario</h3>
+                                        <p>In the <span class="UIcomponent">Modeling Input</span> tab you'll use 97th percentile weather and fuel moisture inputs when running the fire behavior model. Open the pdf copy of the Auto97th report you saved earlier. You could also obtain this information again anytime by accessing my Auto97th report in <span class="UIcomponent">My Workspace</span>, but with a pdf, you don't have to navigate back and forth through <span class="GeneralProductName">IFTDSS</span>.</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_model_inputs_587x401.png" alt="enter the modeling parameters under the Model Input tab" style="width: 587;height: 401;" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Enter the inputs for wind, crown fire inputs, and initial fuel moisture</li>
+                                            <li value="2">By not clicking <span class="UIcomponent">+ add row</span> under the "Initial Fuel Moisture" section, the fuel moistures will remain the same for all fuel models across the landscape. If you had  clicked <span class="UIcomponent">+ add row</span>, you could enter specific fuel models and assign unique moisture conditions for each one. </li>
+                                            <li value="3">Click <span class="UIcomponent">Save Inputs</span> at the bottom of the screen and move to the <span class="UIcomponent">Run Model</span> tab.</li>
+                                        </ol>
+                                        <h3>Running Fire Behavior</h3>
+                                        <p>You'll want to run the fire behavior model on both of these landscapes here so you can compare the results:</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_run_model_608x167.png" alt="click 'run model' next to each landscape you wish to model" class="border" style="width: 608;height: 167;" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1"> Examine the names next to each of the landscapes, if you&#160;wanted, you&#160;could rename them here</li>
+                                            <li value="2">Click <span class="UIcomponent">Run Model</span> next to each landscape.</li>
+                                        </ol>
+                                        <p>Next, move to the <span class="UIcomponent">Compare Alternatives</span> tab.</p>
+                                        <h3>Compare Alternatives</h3>
+                                        <p>Once on the <span class="UIcomponent">Compare Alternatives</span> tab, you'll select each landscape you want to compare. They will be numbered in the order you select them, and from reading the right hand panel information, you'll see that this order is very important:</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_630x231.png" alt="use the 'compare on map' and 'compare in summary report button' to compare results" style="width: 630;height: 231;" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">First, select the edited landscape so it has a "1" next to it. Then, select the original landscape, so it has a “2” next to it. This order tells <span class="GeneralProductName">IFTDSS</span> to calculate the difference created by our treated landscape (1) on our original landscape (2). For example, if our new landscape has flame lengths of 3 feet, and the original has flame lengths of 7 feet, the difference will be: 3 - 7 = -4. Or in other words, a 4 foot <i>reduction</i> in flame length from the treatment.</li>
+                                            <li value="2">Now you'll want to view comparison outputs on the map and as a report.  First, click the <span class="UIcomponent">Compare in Summary Report</span> button so that can begin processing.</li>
+                                            <li value="3">Click both <span class="UIcomponent">Create Report</span> buttons so they can begin processing.</li>
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_2_630x183.png" alt="click compare on map button" style="width: 630;height: 183;" class="border" />
+                                            <li value="4">Next click the <span class="UIcomponent">Compare on Map</span> button to view results on the map. Wait for the map to appear in splitscreen mode, then&#160;click <span class="UIcomponent">Compare on Map</span> once more, and give the caparison layers a few seconds to download.</li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
