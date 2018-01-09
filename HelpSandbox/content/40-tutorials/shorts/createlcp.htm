@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path=" Tutorials">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -133,7 +134,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/TopNavShort.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                             </ul>
                                         </div>
                                         <div class="nocontent">
@@ -148,7 +149,7 @@
                                         <p> For this example, we’ll create a new landscape using that <span class="UIcomponent">Create Here</span> button from the Landscape Summary Task in <span class="GeneralProductName">IFTDSS</span>. This serves two purposes, to create a landscape, and to do so in the interface that allows you to easily create a landscape summary if you so choose (covered in the next tutorial).</p>
                                         <p>To get to the Landscape Summary interface:</p>
                                         <p>
-                                            <img src="../../resources/images/getting_started/landscape_create_2_630x326.png" alt="Landscape summary is accessed through 'landscape evaluation' from the cycle" class="border" style="width: 630;height: 326;" />
+                                            <img src="../../resources/images/getting_started/landscape_create_2.png" alt="Landscape summary is accessed through 'landscape evaluation' from the cycle" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Navigate to the <span class="UIcomponent">Planning Cycle</span> using the top navigation menu.</li>
@@ -170,23 +171,23 @@
                                         <div class="notificationTip">
                                             <p>To help keep track of your data, we recommend including the LANDFIRE version in the name.</p>
                                         </div>
-                                        <img src="../../resources/images/getting_started/landscape_create_4_630x415.png" alt="Use the provided fields to input landscape details" class="border" style="width: 630;height: 415;" />
+                                        <img src="../../resources/images/getting_started/landscape_create_4.png" alt="Use the provided fields to input landscape details" class="border" />
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Use the bounding box fields and enter the coordinates, in degrees, for the west, east, south, and north bounds of your area. </li>
                                             <div class="notificationNote">
                                                 <p>The maximum area for a landscape is 12,188,160 acres (138 miles x 138 miles).</p>
                                             </div>
-                                            <li value="2">Choose the version of LANDFIRE data you would like to use from the dropdown list</li>
-                                            <li value="3">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) to include in your landscape file from the dropdown list.</li>
+                                            <li value="2">Choose the version of LANDFIRE data you would like to use from the drop-down list</li>
+                                            <li value="3">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) to include in your landscape file from the drop-down list.</li>
                                             <li value="4">Give your landscape a descriptive name, this will be helpful as you accumulate more landscape files in <span class="GeneralProductName">IFTDSS</span>.</li>
                                             <li value="5">Select the folder where you would like to store your landscape file, or click <span class="UIcomponent">+ Folder</span> to create and name a new folder to place your landscape file. </li>
                                             <li value="6">Click <span class="UIcomponent">Create</span> to generate your landscape file.</li>
                                         </ol>
                                         <p>Once you click <span class="UIcomponent">Create</span>, you will be returned to the Landscape&#160;Summary task, and the field next to <span class="UIcomponent">My Landscapes</span>, displays the name of your newly created landscape, with an hourglass <img src="../../resources/images/buttons_general/hourglass.png" alt="hourglass icon" class="button" />next to it, indicating it is being created. Once created, the hourglass is replaced by a green checkmark. Use the <span class="UIcomponent">Refresh </span>button <img src="../../resources/images/buttons_general/button_refresh.png" alt="refresh" /> next to the landscape name to see the green checkmark.</p>
                                         <p>
-                                            <img src="../../resources/images/lcp_gen_smmry/landscaperefresh_630x318.png" alt="Landscapes still being processed in IFTDSS often have a red hourglass next to their name" style="width: 630;height: 318;" class="border" />
+                                            <img src="../../resources/images/lcp_gen_smmry/landscaperefresh_827x418.png" alt="Landscapes still being processed in IFTDSS often have a red hourglass next to their name" style="width: 827;height: 418;" class="border" />
                                         </p>
-                                        <p>For the rest of your activities in <span class="GeneralProductName">IFTDSS</span> this landscape will be available in the folder you specified in <span class="UIcomponent">My Workspace</span>, and access it in dropdown menus throughout <span class="GeneralProductName">IFTDSS</span>. </p>
+                                        <p>For the rest of your activities in <span class="GeneralProductName">IFTDSS</span> this landscape will be available in the folder you specified in <span class="UIcomponent">My Workspace</span>, and access it in drop-down menus throughout <span class="GeneralProductName">IFTDSS</span>. </p>
                                     </div>
                                 </div>
                             </div>

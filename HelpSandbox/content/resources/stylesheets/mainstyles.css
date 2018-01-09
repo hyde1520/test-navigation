@@ -269,7 +269,7 @@ img.border
 {
 	border: 1px solid black;
 	margin: 5px;
-	max-width: 630px;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -723,7 +723,7 @@ html.templateTopic div.sideContent
 
 	img.border
 	{
-		max-width: 400px;
+		max-width: 600px;
 		margin: 8px;
 		height: auto;
 	}

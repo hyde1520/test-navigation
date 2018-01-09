@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -133,52 +134,58 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/TopNavShort.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            </ul>
                                         </div>
-                                        <h1><a name="kanchor6"></a>Known <a name="kanchor7"></a>Issues <a name="kanchor8"></a><a name="kanchor9"></a><a name="kanchor10"></a></h1>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                            </div>
+                                        </div>
+                                        <h1><a name="kanchor152"></a>Known <a name="kanchor153"></a>Issues <a name="kanchor154"></a><a name="kanchor155"></a><a name="kanchor156"></a></h1>
                                         <p>The following are known issues for <span class="GeneralProductName">IFTDSS</span>:</p>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor11"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Data from IFTDSS 2.0</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor157"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Data from IFTDSS 2.0</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>Data and runs from IFTDSS 2.0 will not be available in this version of <span class="GeneralProductName">IFTDSS</span>. This is because <span class="GeneralProductName">IFTDSS</span>is built on an entirely new system relative to previous versions.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor12"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Gaps or holes in uploaded shapefiles</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor158"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Gaps or holes in uploaded shapefiles</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>When uploading shapefiles with multiple adjoining polygons, <span class="GeneralProductName">IFTDSS</span> will automatically join the polygons into a single dataset; this process may create erroneous gaps or vertices where these polygons once touched. Visit the <a href="../10-mapstudio/files/shapefilerepair.htm">Shapefile Repair Topic</a> for details on how to repair and edit shapefiles.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor14"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />My Location sometimes does not zoom to my location</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor160"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />My Location sometimes does not zoom to my location</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>In some cases the location may be mapped incorrectly due to Internet Service Provider differences. Sometimes you may be mapped to the physical location of your ISP's servers, sometimes close to your actual location but off by a bit, sometimes nowhere near where you actually are! In short, when GPS is not present and the browser has to rely on your internet connection to determine your location, you are more likely to see the wrong location on the map. This is a known issue that the IFTDSS team is working on, we appreciate your patience while we work through this bug! We are working on eliminating many known bugs, but in the end we are not likely to be able to guarantee that it will work every time on every device and browser.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Map view may appear different on small laptop or tablet screen</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Map Studio may appear different on small laptop or tablet screen</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>On some small screens and tablets <span class="GeneralMapStudio">Map Studio</span> may appear slightly different compared to normal sized monitors, with the buttons along the bottom spanning the entire page, and the buttons in the top left and right in different locations. As a temporary work-around while we address this issue, you may reduce the size of the page via the <span class="UIcomponent">zoom</span> option in Chrome. From the top ribbon, click the <span class="UIcomponent">Customize</span> icon in the top right of your browser, and reduce the <span class="UIcomponent">zoom</span> until <span class="GeneralMapStudio">Map Studio</span> displays correctly, typically o 90% or 80%. </p>
                                                 <img src="../resources/images/getting_started/zoom_498x402.png" alt="zoom in chrome can be adjusted by selecting the menu option in the top right of the browser" class="border" style="width: 498;height: 402;" />
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor15"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Navigating back and forth in the <span class="GeneralProductName">IFTDSS</span> interface</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor161"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Navigating back and forth in the <span class="GeneralProductName">IFTDSS</span> interface</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>When navigating back and forth within <span class="GeneralProductName">IFTDSS</span>, use the application's navigation bar, buttons, and breadcrumbs do so. Avoid using your browsers 'back' and 'forward' buttons.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor16"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Operational Layer Access</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor162"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Operational Layer Access</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>For security purposes, access to Operational Layers is limited to federal government employees. In the future, we will be working to streamline access to non-federal partners.</p>
                                                 <p>Currently we have received feedback that the MTBS&#160;Burn Severity Reference layer is not displaying, and work is underway resolve the issue (as of 6/7/17). </p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor17"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Saving  an Uploaded Shapefile in <span class="GeneralMapStudio">Map Studio</span>'s <span class="UIcomponent">Add Shapefile</span></a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor163"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Saving  an Uploaded Shapefile in <span class="GeneralMapStudio">Map Studio</span>'s <span class="UIcomponent">Add Shapefile</span></a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>To permanently save an uploaded shape file so it can be saved for later use in <span class="GeneralProductName">IFTDSS</span>, it must be saved using the <span class="UIcomponent">Edit Tools</span> button. Detailed instructions for this process are located in the <a href="../10-mapstudio/files/shapefilesaving.htm">Saving Shapefiles for Future Use Topic</a>. Shape files created within <span class="GeneralProductName">IFTDSS</span></p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor19"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Timezone</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor165"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Timezone</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>Currently, the timezone used when <span class="GeneralProductName">IFTDSS</span> timestamps an output is eastern time.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor22"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Working between LANDFIRE and <span class="GeneralProductName">IFTDSS</span></a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor168"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Working between LANDFIRE and <span class="GeneralProductName">IFTDSS</span></a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>If your using IFTDSS landscape extents to download additional data from the LANDFIRE&#160;Data Distribution site, you'll have to re-clip the landfire files to match the <span class="GeneralProductName">IFTDSS</span> if you need them to match exactly to the same extent. See the <a href="../10-mapstudio/files/spatialextent.htm">Spatial Extent of <span class="GeneralProductName">IFTDSS</span> and LANDFIRE&#160;Data Topic</a> for more information.</p>
                                             </div>
@@ -193,7 +200,7 @@
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>The error message you encountered appears within Developing Treatment Alternatives Run Model tab, when you attempt to assign a run name that is already used elsewhere within your <span class="GeneralProductName">IFTDSS</span> account. To alleviate this error, use a new name for your run. </p>
                                                 <p>
-                                                    <img src="../resources/images/issues_errors/error_dta_behaviormodel07122017_630x211.png" alt="Error message as described in text" style="width: 630;height: 211;" class="border" />
+                                                    <img src="../resources/images/issues_errors/error_dta_behaviormodel07122017_749x251.png" alt="Error message as described in text" style="width: 749;height: 251;" class="border" />
                                                 </p>
                                                 <p>(7/12/17)</p>
                                             </div>

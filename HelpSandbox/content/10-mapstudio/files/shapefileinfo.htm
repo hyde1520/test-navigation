@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Mapping|Using Shapefiles">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Home|Mapping|Using Shapefiles">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -109,13 +109,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -134,17 +135,17 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/TopNavShort.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                             </ul>
                                         </div>
                                         <div class="nocontent">
                                             <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
                                             </div>
                                         </div>
-                                        <h1> <a name="kanchor156"></a><a name="kanchor157"></a><a name="kanchor158"></a><a name="kanchor159"></a><a name="kanchor160"></a><a name="kanchor161"></a><a name="kanchor162"></a><a name="kanchor163"></a> About Shapefiles</h1>
+                                        <h1> <a name="kanchor32"></a><a name="kanchor33"></a><a name="kanchor34"></a><a name="kanchor35"></a><a name="kanchor36"></a><a name="kanchor37"></a><a name="kanchor38"></a><a name="kanchor39"></a> About Shapefiles</h1>
                                         <p>A shapefile is a simple non-topographical way to store geometric location and attribute information for landscape features; they are often used to represent treatment areas, burn units, and disturbances. In <span class="GeneralProductName">IFTDSS</span> you will encounter several terms that refer to shapefiles. Different terms are used in different tasks to reflect the terminology common in the wildland fire community. Here is a brief overview of how these terms are used in IFTDSS.</p>
                                         <ul>
-                                            <li value="1"><b><a name="kanchor164"></a>Area of Interest</b>: This term is used in the Landscape Summary task and Determining Treatment Alternatives task to constrain the area of your analysis.</li>
+                                            <li value="1"><b><a name="kanchor40"></a>Area of Interest</b>: This term is used in the Landscape Summary task and Determining Treatment Alternatives task to constrain the area of your analysis.</li>
                                             <li value="2"><b>Landscape Mask</b>: This term is used in Landscape Editing to constrain the area your edits apply to.</li>
                                             <li value="3"><b>Polygon, Shape, Shapefile</b>: These terms are used interchangeably throughout <span class="GeneralMapStudio">Map Studio</span>.</li>
                                         </ul>
@@ -181,26 +182,26 @@
                                                 <div class="notificationImportant">
                                                     <p>Follow the steps below to permanently save an uploaded shapefile in <span class="UIcomponent">My Workspace</span> for later use in <span class="GeneralProductName">IFTDSS</span>. Without this step, navigating away from <span class="GeneralMapStudio">Map Studio</span> results in an uploaded shapefile not being saved. This is a known issue that will be corrected in a later <span class="GeneralProductName">IFTDSS</span> release. </p>
                                                 </div>
-                                                <p>To retain your uploaded shapefiles in <span class="GeneralProductName">IFTDSS</span> if you follow the steps below:</p>
-                                                <p>A) Upload a zipped shapefile, ensure you select which attributes you would like to include (you may choose up to 10). A zipped shapefile must contain .shp, .shx, .dbf, and .prj files.</p>
+                                                <p>To retain your uploaded shapefiles in <span class="GeneralProductName">IFTDSS</span>:</p>
                                                 <p>
                                                     <img src="../../resources/images/mapstudio/shapefile_save1_210x288.png" alt="The 'Add Shapefile' box with specific features checked to be imported" style="width: 210;height: 288;" class="border" />
                                                 </p>
-                                                <p>B) When completed, a confirmation message will appear to verify the shapefile has been uploaded.</p>
+                                                <p>A) Upload a zipped shapefile, ensure you select which attributes you would like to include (you may choose up to 10). A zipped shapefile must contain .shp, .shx, .dbf, and .prj files.</p>
                                                 <p>
                                                     <img src="../../resources/images/mapstudio/saved_shp_confirmation.png" class="border" />
                                                 </p>
+                                                <p>B) When completed, a confirmation message will appear to verify the shapefile has been uploaded.</p>
+                                                <img src="../../resources/images/mapstudio/shapefile_save1_2_315x432.png" alt="use the 'zoom to' option to find your shapefile on the map" style="width: 315;height: 432;" class="border" />
                                                 <p>C) To select the new shapefile, exit <span class="UIcomponent">Add Shapefile</span> and open <span class="UIcomponent"> Layer List</span><img src="../../resources/images/mapstudio/button_layerlist.png" alt="layer list button" /> to zoom to your new shapefile:</p>
                                                 <ol style="list-style-type: lower-alpha;">
                                                     <li value="1"> Click the icon to the right of your shapefile and </li>
                                                     <li value="2">Click the <span class="UIcomponent">Zoom to</span> option</li>
-                                                    <img src="../../resources/images/mapstudio/shapefile_save1_2_315x432.png" alt="use the 'zoom to' option to find your shapefile on the map" style="width: 315;height: 432;" class="border" />
                                                 </ol>
-                                                <p>D) Proceed to the next dropdown step, either 'Save a Single Uploaded Shapefile' or 'Save Multiple Shapefiles'</p>
+                                                <p>D) Proceed to the next drop-down step, either "Save a Single Uploaded Shapefile" or "Save Multiple Shapefiles"</p>
                                                 <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Save a single uploaded shapefile:</a></span>
                                                     <div class="MCDropDownBody dropDownBody">
                                                         <p>
-                                                            <img src="../../resources/images/mapstudio/save_uploaded_snglshape_630x339.png" alt="save a single uploaded shapefile using the steps outlined in text" style="width: 630;height: 339;" class="border" />
+                                                            <img src="../../resources/images/mapstudio/save_uploaded_snglshape_1011x543.png" alt="save a single uploaded shapefile using the steps outlined in text" style="width: 1011;height: 543;" class="border" />
                                                         </p>
                                                         <ol style="list-style-type: lower-alpha;">
                                                             <li value="1">Click the <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_29x29.png" style="width: 29;height: 29;" alt="Copy from Existing Features button" class="button" />, </li>
@@ -215,7 +216,7 @@
                                                 <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Save multiple polygons:</a></span>
                                                     <div class="MCDropDownBody dropDownBody">
                                                         <p>
-                                                            <img src="../../resources/images/mapstudio/save_multipart_upl_shape_630x312.png" alt="to save a multipart shapefile, follow the steps outlined in text" style="width: 630;height: 312;" class="border" />
+                                                            <img src="../../resources/images/mapstudio/save_multipart_upl_shape_975x483.png" alt="to save a multipart shapefile, follow the steps outlined in text" style="width: 975;height: 483;" class="border" />
                                                         </p>
                                                         <ol style="list-style-type: lower-alpha;">
                                                             <li value="1">Click the <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_29x29.png" style="width: 29;height: 29;" alt="Copy from Existing Features button" class="button" />, </li>
@@ -242,7 +243,7 @@
                                                 </ul>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor165"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Deleting Shapefiles</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" name="kanchor41"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Deleting Shapefiles</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>A shapefile may be deleted if it is not used by any model, or editing rule in <span class="GeneralProductName">IFTDSS</span>. To delete a shapefile in <span class="UIcomponent">My Workspace</span>, select the file and click the Delete button. A pop up box will ask you to confirm your deletion, click 'OK'. </p>
                                                 <div class="notificationImportant">
@@ -253,13 +254,13 @@
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" /></a><a name="AreasOfInterest"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Using Shapefiles in <span class="GeneralProductName">IFTDSS</span> for Areas of Interest and Landscape Masks</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>In <span class="GeneralProductName">IFTDSS</span> you will encounter several terms that are applicable to <a href="#" target="_blank">shapefiles</a> (areas of interest). These terms all describe shapefiles, but are worded differently in different tasks to reflect the terminology common to those tasks in the wildland fire community. Here is a brief overview of how these terms are used in <span class="GeneralProductName">IFTDSS</span>.</p>
-                                                <h2><a name="kanchor166"></a>Area of Interest and Landscape Mask</h2>
+                                                <h2><a name="kanchor42"></a>Area of Interest and Landscape Mask</h2>
                                                 <p>In <span class="GeneralProductName">IFTDSS</span> you will encounter several terms that are applicable to <a href="#" target="_blank" class="selected">shapefiles</a> (areas of interest, landscape masks, polygons). These terms all describe shapefiles, but are worded differently in different tasks to reflect the terminology common to those tasks in the wildland fire community. Here is a brief overview of how these terms are used in <span class="GeneralProductName">IFTDSS</span>.</p>
                                                 <img src="../../resources/images/mapstudio/masks_341x280.png" alt="A valley with three polygons in which treatments are indicated with differing colors" style="float: right;width: 341;height: 280;" class="border" />
                                                 <h2>Area of Interest and Landscape Mask</h2>
                                                 <p><span class="Emphasis">Area of Interest</span> indicates that you can select a shapefile to constrain your modeling or analysis to a specific area, such as a treatment unit. This term is used in the Landscape Summary task and Determining Treatment Alternatives task.</p>
                                                 <p>In the Editing Landscape task, you will also see the term <span class="Emphasis">Landscape Mask</span> used. Landscape Mask will constrain your edits to a specific area.</p>
-                                                <p>While we use different terms, <span class="Emphasis">Area of Interest</span> and <span class="Emphasis">Landscape Mask</span> function in the same way. Consider for example a scenario with a landscape called ‘Shady Basin’ and a treatment unit designated by a shapefile ‘Unit A’. In Editing, you would select Shady Basin as your landscape, and use Landscape Mask dropdown menu to constrain your edits to ‘Unit A’. In modeling fire behavior, you would select your edited landscape, and use the Area of Interest dropdown menu to constrain your modeling to Unit A.</p>
+                                                <p>While we use different terms, <span class="Emphasis">Area of Interest</span> and <span class="Emphasis">Landscape Mask</span> function in the same way. Consider for example a scenario with a landscape called ‘Shady Basin’ and a treatment unit designated by a shapefile ‘Unit A’. In Editing, you would select Shady Basin as your landscape, and use Landscape Mask drop-down menu to constrain your edits to ‘Unit A’. In modeling fire behavior, you would select your edited landscape, and use the Area of Interest drop-down menu to constrain your modeling to Unit A.</p>
                                                 <h2>Shapefile, Polygon, and Mask</h2>
                                                 <p><span class="Emphasis">Shapefile</span>, <span class="Emphasis">Shape</span>, <span class="Emphasis">Polygon</span>, and <span class="Emphasis">Mask</span> are used in Map Studio to refer to shapefiles.</p>
                                                 <ul>

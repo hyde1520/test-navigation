@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="FTEM">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Home|FTEM">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -133,7 +134,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/TopNavShort.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                             </ul>
                                         </div>
                                         <div class="nocontent">
@@ -179,16 +180,20 @@
                                         </div>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Where is the Wildfire data coming from?</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <p>Wildfire point data is imported into FTEM via IRWIN (Integrated Reporting of Wildland-Fire Information), a service that acts as a real time conduit for fire data between the various wildland fire applications. Wildfire perimeter data are pulled from GeoMAC (Geospatial Multi Agency Coordination), an application that is updated daily based upon input from incident intelligence sources.  </p>
+                                                <p>Wildfire point data are imported into FTEM via IRWIN (Integrated Reporting of Wildland-Fire Information), a service that acts as a real time conduit for fire data between the various wildland fire applications. Wildfire perimeter data are pulled from GeoMAC (Geospatial Multi Agency Coordination), an application that is updated daily based upon input from incident intelligence sources. The FTEM&#160;Application is updated daily to incorporate fires reaching controlled status from Integrated Reporting of Wildland-Fire Information (IRWIN)&#160;and GeoMAC.</p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />How did you determine the what treatments potentially interacted with a fire?</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Why do I&#160;only see a point to represent my Wildfire?</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <p>Within FTEM, there exist both point and perimeter wildfires.  A point wildfire contains a the latitude and longitude of the point of origin as well as a size in acres, but contains no other information to define where the fire burned.  A perimeter wildfire contains a shape of the perimeter in addition to the point of origin.  The same is true for treatments.  That is, some treatments only contain a point of origin and size while other treatments include a shape as well to define their extent.</p>
-                                                <p>For wildfires represented by a point, an algorithm takes the reported acreage and converts that acreage to an ellipse whose length is 1.5 times its width and whose area is equal to the size of the fire.  An ellipse was used as it is a better approximation of a fire perimeter, compared to a circle. A circle with a radius that is 1.2 times longer than the length is placed on top of this ellipse.  All treatments that fall within this circular area are added to the Treatments tab and highlighted in the map as interactions when you select a fire.  At minimum, a fire point buffer is 10 acres. A user can increase the radius of the buffer to 25,000 meters (X acres) by using the “Add Treatments” button within the Treatments tab</p>
-                                                <p>For wildfires with an associated perimeter, a buffer is used to determine the treatment interactions.  Each fire perimeter is initially buffered by 500 meters. For treatments represented by a point, the treatment is included in the Treatments tab and highlighted in the map when a fire is selected, if the point falls within the buffered perimeter.  For treatments represented by a polygon, the treatment is included if the polygon intersects the buffered perimeter. A user can increase the buffer size to 1,500 meters to locate more distant treatments by using the “Add Treatments” button within the Treatments tab.</p>
-                                                <p>For a wildfire that is represented by both a point and a perimeter, FTEM will use the perimeter to generate the treatments interacting with the fire if a fire.</p>
-                                                <p>Regardless of how a treatment interaction is generated, it is up to the user to determine what treatments to move to the monitor tab within the FTEM application.</p>
+                                                <p>(This is the Drop-down text)</p>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />How did you determine what treatments potentially interacted with a fire?</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>Within the FTEM application, there exist both point and perimeter wildfires.  A point wildfire contains a the latitude and longitude of the point of origin as well as a size in acres, but contains no other information to define where the fire burned.  A perimeter wildfire contains a shape of the perimeter in addition to the point of origin.</p>
+                                                <p>For wildfires with an associated perimeter, a 500-meter buffer is applied to define the area within which treatments are added to the Treatments tab and highlighted in the map as interactions when a fire is selected.</p>
+                                                <p>For wildfires represented by a point, an algorithm takes the reported acreage and converts that acreage to an ellipse whose length is 1.5 times its width and whose area is equal to the reported size of the fire.  An ellipse was used as it is a better approximation of a fire perimeter, compared to a circle. A circle with a radius of 1.2 times the length of the ellipse is used to define the area within which treatments are added to the Treatments tab and highlighted in the map as interactions when you select a fire.</p>
+                                                <p>If a wildfire is represented by both a point and a perimeter, the FTEM application will use the perimeter buffer regardless of the buffer type,  it is up to the user to determine which treatments to move to the monitor tab within the FTEM application.</p>
                                             </div>
                                         </div>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Where does my data go once entered into FTEM?</a></span>
@@ -202,7 +207,7 @@
                                                 <ul>
                                                     <li value="1">The treatment has not been entered into the official system of record for your agency; NFPORS for all Department of Interior agencies and FACTS for the U.S. Forest Service</li>
                                                     <li value="2">FTEM treatment data has not yet been updated.  FTEM treatment data will be automatically updated from FACTS and NFPORS on a weekly* basis.<div>*After weekly automatic treatment data updates are monitored for success, updates may occur on a daily basis to better integrate with any changes users perform in the systems of record.</div></li>
-                                                    <li value="3">Filtering on FACTS data according to the FTEM business rules for U.S. Forest Service.  FACTS data has been filtered using the following logic:<ul><li value="1">If a point or poly has the same SUID, only display those points or polys with the most recent Actual Completion date.</li><li value="2">If a point or poly has the same SUID and same Actual Completion Date, filter by Treatment Category. The order of priority for treatment categories is 1) Fire, 2) Mechanical, 3) Other, and 4) Preparation for Treatment.</li><li value="3">If a point or poly has the same SUID, same Actual Completion date, and same Treatment Category, filter by Activity Code. The point or poly with the smallest numerical Activity Code will be given priority.</li><li value="4">If a point or poly has the same SUID, same Actual Completion Date, same Treatment Category, and same Activity Code, the data will not be filtered.</li></ul></li>
+                                                    <li value="3">Filtering on FACTS polygon data according to the FTEM business rules for U.S. Forest Service.  FACTS data has been filtered using the following logic:<ul><li value="1">If a point or poly has the same SUID, only display those points or polys with the most recent Actual Completion date.</li><li value="2">If a point or poly has the same SUID and same Actual Completion Date, filter by Treatment Category. The order of priority for treatment categories is 1) Fire, 2) Mechanical, 3) Other, and 4) Preparation for Treatment.</li><li value="3">If a point or poly has the same SUID, same Actual Completion date, and same Treatment Category, filter by Activity Code. The point or poly with the smallest numerical Activity Code will be given priority.</li><li value="4">If a point or poly has the same SUID, same Actual Completion Date, same Treatment Category, and same Activity Code, the data will not be filtered.</li></ul></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -241,6 +246,11 @@
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />My treatment data is represented by both a point and a polygon. Should I monitor both the point and the polygon or just pick one?</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>(Content TBD)</p>
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />What file types can I upload into FTEM as attachments?</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <p>Using the Add Attachments button, users can upload MS Word documents, PDFs, JPGs,GIFs, and PNGs.</p>
                                             </div>
                                         </div>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Many of the fires that show fire and treatment interactions for my unit are campfires escapes where less than &lt;0.25 acres burned and the treatment really didn’t contribute to success.  How do I dismiss these types of fires in the application?</a></span>

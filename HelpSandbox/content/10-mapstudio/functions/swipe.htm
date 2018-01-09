@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -137,32 +138,20 @@
                                         <h1>Swipe</h1>
                                         <p class="no-print"><iframe class="youtube-player_0" src="https://www.youtube.com/embed/A28UEsmlTXQ?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
                                         </p>
-                                        <p>During various analyses you may want to visually compare two landscapes, or compare model run outputs such as fire behavior with various landscape attributes.. This is where the <span class="UIcomponent">Swipe</span> <img src="../../resources/images/mapstudio/button_slider.png" alt="swipe button" /> tool comes in handy. The <span class="UIcomponent">Swipe</span> tool allows you to click and drag a bar across the <span class="GeneralMapStudio">Map Studio</span> screen to view layer interactions.</p>
-                                        <p>To use the tool, click <span class="UIcomponent">Swipe</span> <img src="../../resources/images/mapstudio/button_slider.png" alt="swipe button" /> in the top right of <span class="GeneralMapStudio">Map Studio</span>.</p>
+                                        <p>The <span class="UIcomponent">Swipe</span><img src="../../resources/images/mapstudio/button_slider.png" alt="swipe button" /> tool allows you to visually compare two layers by click and dragging the swipe bar across your map. This can helpful when comparing landscapes, model outputs, or combinations of these layers when analyzing layer interactions. </p>
+                                        <p>To use the Swipe tool:</p>
                                         <p>
-                                            <img src="../../resources/images/mapstudio/swipe_image04_520x236.png" style="width: 520;height: 236;" alt="the swipe button is located in the top right of the map" class="border" />
+                                            <img src="../../resources/images/mapstudio/swipe_steps.png" alt="use 'swipe' to visually compare layers" class="border" />
                                         </p>
-                                        <p>The Swipe tool box will appear in the upper right of the map, listing the visible layers in your <span class="UIcomponent">Layer List</span>, in the order they appear (Note that you can change the order of the layers in the <span class="UIcomponent">Layer List</span> by selecting the <span class="UIcomponent">More Options</span> button <img src="../../resources/images/buttons_general/button_moreoptions.png" alt="more options" /> to the right of the layer and clicking the 'Move Up' or 'Move Down' options. </p>
-                                        <p>Select the layer want to swipe, this will be the layer that is hidden on the bottom half of the swipe bar as you move it across the map. </p>
-                                        <p>You may swipe between masks/polygons, landscapes, or model runs outputs.</p>
-                                        <p>
-                                            <img src="../../resources/images/mapstudio/swipe_image02.png" alt="Select the layer you want from the swipe dropdown menu" class="border" />
-                                        </p>
-                                        <p> In the tool dropdown the layer you select will be visible on the top part of the slider, the other layer will be visible on the bottom part of the sliders. </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Click the <span class="UIcomponent">Swipe</span> button</li>
+                                            <li value="2">In the Swipe drop-down menu that appears in the top right, select the landscape you would like to hide in the bottom half of the swipe tool. In this example "Landscape: FlumeCrk2_LF2012_UnED" is selected, so it will appear in the top half, and disappear in the bottom half, revealing the layer below it, in this case, "Landscape:FlumeCrk2_This_Rx_1Yr".</li>
+                                            <li value="3">Hold your left mouse button over the swipe bar and drag the bar up and down to evaluate these layers on your landscape.</li>
+                                        </ol>
+                                        <p>To turn off <span class="UIcomponent">Swipe</span>, click the swipe button located in the top right of the map (shown above in step A).</p>
                                         <div class="notificationNote">
-                                            <p>Layers and features must already be turned on <span class="GeneralMapStudio">Map Studio</span> either via the <span class="UIcomponent"><a href="layerlist.htm">Layer List</a></span> or <span class="UIcomponent"><a href="simulationtools.htm">Simulation Output Tools</a></span> buttons before they are visible in the <span class="UIcomponent">Swipe </span>dropdown menu.</p>
+                                            <p>Layers and features must already be turned on <span class="GeneralMapStudio">Map Studio</span> either via the <span class="UIcomponent"><a href="layerlist.htm">Layer List</a></span> or <span class="UIcomponent"><a href="simulationtools.htm">Simulation Output Tools</a></span> buttons before they are visible in the <span class="UIcomponent">Swipe </span>drop-down menu.</p>
                                         </div>
-                                        <h2>Example of Comparing Two Different Landscapes</h2>
-                                        <p>In the below example, "Landscape:&#160;pete-mainenance" is the top layer in the <span class="UIcomponent">Layer List</span>, and "Landscape: Pete Example" is the bottom layer. "Landscape: pete-maintenance" is selected in the swipe tool, so as the bar is moved across the map, "Landscape: pete maintenance" is visible in the top, but hidden from view along the bottom, revealing "Landscape: Pete Example". </p>
-                                        <p>This is an example of <span class="UIcomponent">Swipe</span> used to compare a base landscape to an edited landscape. The upper portion of the image shows the edited landscape where rules were created to change the current fuel model to one with lower flame lengths to account for a previous fire/burn through the area.</p>
-                                        <p>
-                                            <img src="../../resources/images/mapstudio/swipe_image03_630x267.png" alt="a map comparing two landscapes that contain a different set of fire behavior fuel models" style="width: 630;height: 267;" class="border" />
-                                        </p>
-                                        <h2>Example of Comparing a Landscape to Model Run Output</h2>
-                                        <p>This is an example of <span class="UIcomponent">Swipe</span> used to compare a edited landscape to an associated model run. The upper portion of the image shows the edited landscape and the lower portion of the image shows the associated model run. This tool can be helpful to use when doing landscape critiquing or model run calibrating.</p>
-                                        <p>
-                                            <img src="../../resources/images/mapstudio/swipe_image00_630x289.png" alt="a map comparing a landscape with modeled fire behavior" style="width: 630;height: 289;" class="border" />
-                                        </p>
                                     </div>
                                 </div>
                             </div>

@@ -340,6 +340,127 @@ a.activityText:visited
 	border-top: solid 1px #e2e2e6;
 }
 
+.search-bar._Skins_HomeSearchBar.mc-component
+{
+	display: block;
+	width: 735px;
+	height: 40px;
+	margin-top: 10px;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-field
+{
+	height: 40px;
+	border-top: solid 1px #2e3e4f;
+	border-right: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
+	border-left: solid 1px #2e3e4f;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
+	color: #5F5F5F;
+	font-size: 1em;
+	padding-left: 10px;
+	background-color: #ffffff;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-filter
+{
+	height: 40px;
+	border-top: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
+	border-right: solid 1px #000000;
+	border-left: solid 1px #000000;
+	width: 45px;
+	background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
+	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-submit
+{
+	height: 40px;
+	border-top: solid 1px #2e3e4f;
+	border-right: solid 1px #2e3e4f;
+	border-bottom: solid 1px #2e3e4f;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-filter-content
+{
+	top: 40px;
+	color: #888888;
+	background-color: #ffffff;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-filter.open
+{
+	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
+	color: #888888;
+	background-color: #ffffff;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-filter:hover
+{
+	background-color: #ffffff;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-filter.selected
+{
+	background: transparent url('Images/Filter.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/Filter.png') no-repeat center center;
+}
+
+._Skins_HomeSearchBar.mc-component .search-filter-content ul li:hover
+{
+	color: #000000;
+	background-color: #ffffff;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-field::-webkit-input-placeholder
+{
+	color: #5F5F5F;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-field::-moz-placeholder
+{
+	color: #5F5F5F;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-field:-moz-placeholder
+{
+	color: #5F5F5F;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-field:-ms-input-placeholder
+{
+	color: #5F5F5F;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-submit-wrapper
+{
+	font-size: 1em;
+}
+
+.search-bar._Skins_HomeSearchBar.mc-component .search-filter-wrapper
+{
+	font-size: 1em;
+	right: 56px;
+}
+
+.search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit
+{
+	width: 56px;
+	background: #f5f5f5 url('Images/SearchIcon.png') no-repeat center center;
+	-pie-background: #f5f5f5 url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
+}
+
+.search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit:hover
+{
+	background-color: #f5f5f5;
+}
+
 .buttons._Skins_TopicToolBar.mc-component
 {
 	float: right;
@@ -685,126 +806,5 @@ ul.menu._Skins_SideMenu.mc-component li > a.selected:hover
 	color: #000000;
 	font-weight: bold;
 	background-color: #AFBFD0;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component
-{
-	display: block;
-	width: 735px;
-	height: 40px;
-	margin-top: 10px;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-field
-{
-	height: 40px;
-	border-top: solid 1px #2e3e4f;
-	border-right: solid 1px #2e3e4f;
-	border-bottom: solid 1px #2e3e4f;
-	border-left: solid 1px #2e3e4f;
-	border-top-left-radius: 0px;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-	border-bottom-left-radius: 0px;
-	color: #5F5F5F;
-	font-size: 1em;
-	padding-left: 10px;
-	background-color: #ffffff;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-filter
-{
-	height: 40px;
-	border-top: solid 1px #2e3e4f;
-	border-bottom: solid 1px #2e3e4f;
-	border-right: solid 1px #000000;
-	border-left: solid 1px #000000;
-	width: 45px;
-	background: #ffffff url('Images/FilterOutline.png') no-repeat center center;
-	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-submit
-{
-	height: 40px;
-	border-top: solid 1px #2e3e4f;
-	border-right: solid 1px #2e3e4f;
-	border-bottom: solid 1px #2e3e4f;
-	border-top-right-radius: 0px;
-	border-bottom-right-radius: 0px;
-}
-
-._Skins_HomeSearchBar.mc-component .search-filter-content
-{
-	top: 40px;
-	color: #888888;
-	background-color: #ffffff;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-filter.open
-{
-	-pie-background: #ffffff url('Skins/Default/Stylesheets/Components/Images/FilterOutline.png') no-repeat center center;
-	color: #888888;
-	background-color: #ffffff;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-filter:hover
-{
-	background-color: #ffffff;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-filter.selected
-{
-	background: transparent url('Images/Filter.png') no-repeat center center;
-	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/Filter.png') no-repeat center center;
-}
-
-._Skins_HomeSearchBar.mc-component .search-filter-content ul li:hover
-{
-	color: #000000;
-	background-color: #ffffff;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-field::-webkit-input-placeholder
-{
-	color: #5F5F5F;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-field::-moz-placeholder
-{
-	color: #5F5F5F;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-field:-moz-placeholder
-{
-	color: #5F5F5F;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-field:-ms-input-placeholder
-{
-	color: #5F5F5F;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-submit-wrapper
-{
-	font-size: 1em;
-}
-
-.search-bar._Skins_HomeSearchBar.mc-component .search-filter-wrapper
-{
-	font-size: 1em;
-	right: 56px;
-}
-
-.search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit
-{
-	width: 56px;
-	background: #f5f5f5 url('Images/SearchIcon.png') no-repeat center center;
-	-pie-background: #f5f5f5 url('Skins/Default/Stylesheets/Components/Images/SearchIcon.png') no-repeat center center;
-}
-
-.search-bar.search-bar-container._Skins_HomeSearchBar.mc-component .search-submit:hover
-{
-	background-color: #f5f5f5;
 }
 

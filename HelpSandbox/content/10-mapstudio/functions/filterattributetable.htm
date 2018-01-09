@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -142,35 +143,35 @@
                                         <p>Follow the steps below to filter by attribute.</p>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Steps 1 - 4 :&#160;Selecting and viewing layers in the attribute table</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <p><b>Step 1:</b> Open the Attribute Table using the <span class="UIcomponent">Attribute Table</span> button <img src="../../resources/images/attributes_filter_polys/att_table_bttn2_02282017.png" alt="attribute table" />located in the bottom right of <span class="GeneralMapStudio">Map Studio</span>. </p>
+                                                <p>
+                                                    <img src="../../resources/images/attributes_filter_polys/table_step6_02282017_858x554.png" style="width: 858;height: 554;" alt="map studio map with attribute table visible under the map" class="border" />
+                                                </p>
+                                                <p><b>Step 1:</b> Open the Attribute Table using the <span class="UIcomponent">Attribute Table</span> button <img src="../../resources/images/attributes_filter_polys/att_table_bttn2_02282017.png" alt="attribute table" /> located in the bottom right of <span class="GeneralMapStudio">Map Studio</span>. </p>
                                                 <p>Open <span class="UIcomponent">Layer List</span> <img src="../../resources/images/mapstudio/button_layerlist.png" alt="layer list button" /> and ensure the only the layers you wish to have included in your filter are selected, in this example only the Shapes layer is selected. This will automatically bring up all attributes from those layers, by default they are filtered by map extent.</p>
                                                 <p>
-                                                    <img src="../../resources/images/attributes_filter_polys/table_step6_02282017_630x407.png" style="width: 630;height: 407;" alt="map studio map with attribute table visible under the map" class="border" />
+                                                    <img src="../../resources/images/attributes_filter_polys/table_step5_02282017_796x254.png" alt="attribute table with filter by map extent turned off" style="width: 796;height: 254;" class="border" />
                                                 </p>
                                                 <p><b>Step 2:</b> Click on Filter by Map Extent along the top of the Attribute Table to disable this option (the text for this option will appear grayed out when it is disabled).</p>
                                                 <p>
-                                                    <img src="../../resources/images/attributes_filter_polys/table_step5_02282017_630x197.png" alt="attribute table with filter by map extent turned off" style="width: 630;height: 197;" class="border" />
+                                                    <img src="../../resources/images/attributes_filter_polys/table_step1_02282017_624x289.png" alt="attribute table with a blue highlighted row indicating it is selected" style="width: 624;height: 289;" class="border" />
                                                 </p>
                                                 <p><b>Step 3</b>:&#160;You can select the your desired polygon by left clicking once anywhere in the gray space to the left of each row. Selected rows will be highlighted in blue.</p>
                                                 <p>
-                                                    <img src="../../resources/images/attributes_filter_polys/table_step1_02282017_624x289.png" alt="attribute table with a blue highlighted row indicating it is selected" style="width: 624;height: 289;" class="border" />
-                                                </p>
-                                                <p><b>Step 4</b>:&#160;Use the <span class="UIcomponent">Zoom To</span> option to zoom to selected polygons in <span class="GeneralMapStudio">Map Studio</span>. Note selected polygons also show up in the same blue color as their selected rows in the Attribute Table.</p>
-                                                <p>
                                                     <img src="../../resources/images/attributes_filter_polys/table_step2_02282017_552x558.png" alt="selected polygon shows up as blue when zoomed to in the map" style="width: 552;height: 558;" class="border" />
                                                 </p>
+                                                <p><b>Step 4</b>:&#160;Use the <span class="UIcomponent">Zoom To</span> option to zoom to selected polygons in <span class="GeneralMapStudio">Map Studio</span>. Note selected polygons also show up in the same blue color as their selected rows in the Attribute Table.</p>
                                             </div>
                                         </div>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Steps 5 and 6: Filtering using Queries</a></span>
                                             <div class="MCDropDownBody dropDownBody">
+                                                <p>
+                                                    <img src="../../resources/images/attributes_filter_polys/table_step4_02282017.png" alt="the filter option with choices to add a filter expression or add a filter expression set" class="border" />
+                                                </p>
                                                 <p><b>Step 5</b>:&#160;To only show specific polygons based on specific filter criteria, select <span class="UIcomponent">Filter</span> under <span class="UIcomponent">Options</span> <img src="../../resources/images/attributes_filter_polys/options_20282017.png" alt="options button" />. This allows you to filter by using one criteria by <span class="UIcomponent">Adding a Filter Expression</span>, or by using a set of criteria by <span class="UIcomponent">Adding an Expression Set</span>.</p>
                                                 <p>
-                                                    <img src="../../resources/images/attributes_filter_polys/table_step4_02282017_630x231.png" alt="the filter option with choices to add a filter expression or add a filter expression set" class="border" style="width: 630;height: 231;" />
+                                                    <img src="../../resources/images/attributes_filter_polys/table_step3_02282017.png" alt="specifying the name and filter criteria in the provided text fields" class="border" />
                                                 </p>
                                                 <p>Once you choose whether to use a single filter expression or an expression set, use the drop down fields to select your attribute, such as name, and your conditional statement, in this case, 'contains'. Next, type the specific value or term to filter, and select <span class="UIcomponent">OK</span>. For example, in the image below, we have created a filter expression that will only show polygons in which the attribute name contains 'Pete'. </p>
-                                                <p>
-                                                    <img src="../../resources/images/attributes_filter_polys/table_step3_02282017_630x318.png" alt="specifying the name and filter criteria in the provided text fields" class="border" style="width: 630;height: 318;" />
-                                                </p>
                                             </div>
                                         </div>
                                     </div>

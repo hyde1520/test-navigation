@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -154,7 +155,7 @@
                                         <h2>Previewing the Landscape</h2>
                                         <p>The first step will take place in <span class="GeneralMapStudio">Map Studio</span> to get a good look at the area and create a landscape to start working from. To do this:&#160;</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/map_studio_explore_630x399.png" alt="use map studio to explore your area" style="width: 630;height: 399;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/map_studio_explore_833x527.png" alt="use map studio to explore your area" style="width: 833;height: 527;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Access <span class="GeneralMapStudio">Map Studio</span> from the top navigation panel, visible on any page in <span class="GeneralProductName">IFTDSS</span>.</li>
@@ -165,7 +166,7 @@
                                         <h2>Create the Landscape</h2>
                                         <p>Next, you'll create your landscape, which will serve as a starting point for the rest of the analysis. To do this:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/obtain_landscape_630x509.png" alt="use the 'Landscape Tools' to add a new landscape" class="border" style="width: 630;height: 509;" />
+                                            <img src="../../resources/images/granite_crk_dta/obtain_landscape.png" alt="use the 'Landscape Tools' to add a new landscape" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1"> Click on the <span class="UIcomponent">Landscape Tools</span> button at the bottom of the screen.</li>
@@ -195,17 +196,17 @@
                                                 <img src="../../resources/images/granite_crk_dta/layer_list_and_identify_602x361.png" alt="use the identify tool for more information" style="width: 602;height: 361;" class="border" />
                                             </div>
                                             <li value="2">After opening the <span class="UIcomponent">Layer List</span> button <img src="../../resources/images/mapstudio/button_layerlist.png" alt="layer list button" />, I ensure your landscape is checked, then you can check and uncheck the landscape layers you’d like to view. You'll want to look at the fuel models to make sure they correspond to what your seeing on the ground in this area, so ensure that box is checked.</li>
-                                            <li value="3">Access more information for the landscape and subsequent layers via the small arrows next to the check boxes. In this case, check the box next to "Fuel Models", then click on the arrow to the left of the checkbox to dropdown to the Fuel Model layer legend.</li>
+                                            <li value="3">Access more information for the landscape and subsequent layers via the small arrows next to the check boxes. In this case, check the box next to "Fuel Models", then click on the arrow to the left of the checkbox to drop-down to the Fuel Model layer legend.</li>
                                             <li value="4">Click the <span class="UIcomponent">Identify</span> button <img src="../../resources/images/mapstudio/button_identify.png" alt="indentiry" /> in the upper right corner of the page to view more information for each pixel. Select the layer I’d like to view (Granite Creek LF2012 Unedited), then click on the landscape in an area you'd like to know more about. The "Identify information box" populates with the landscape information for this pixel. For example, by clicking you can see that the green-blue pixels on the map correspond to areas of Fuel Model 188 (TL8). Continue examining various areas of interest on the landscape to learn more about what fuel models are present and where. Notice that all of the landscape characteristics come up in the Identify box when you click on the landscape with the <img src="../../resources/images/mapstudio/button_identify.png" alt="indentiry" /> button, not just the characteristic you specified in your <span class="UIcomponent">Layer List</span>.</li>
                                         </ol>
                                         <p>
                                             <img src="../../resources/images/granite_crk_dta/transparency_332x428.png" alt="transparency can be set using the more options icon to the right of each layer" style="width: 332;height: 428;" class="border" />
                                         </p>
-                                        <p>It may be helpful to adjust the transparency of the layer to better see roads, landscape characteristics, and other map features. To do this,&#160;click <span class="UIcomponent">More Options</span> <img src="../../resources/images/buttons_general/button_moreoptions.png" alt="more options" /> to the right of the Landscape name in <span class="UIcomponent">Layer List</span>. A dropdown box of options opens. Choose <span class="UIcomponent">Transparency</span>, which opens a slider bar allowing you to adjust the of transparency level for that layer.</p>
+                                        <p>It may be helpful to adjust the transparency of the layer to better see roads, landscape characteristics, and other map features. To do this,&#160;click <span class="UIcomponent">More Options</span> <img src="../../resources/images/buttons_general/button_moreoptions.png" alt="more options" /> to the right of the Landscape name in <span class="UIcomponent">Layer List</span>. A drop-down box of options opens. Choose <span class="UIcomponent">Transparency</span>, which opens a slider bar allowing you to adjust the of transparency level for that layer.</p>
                                         <h3>Add reference data</h3>
                                         <p> Before doing a full assessment of the landscape characteristics, I’ll want to view previous fires that may have occurred in this area. Fortunately, this is easy to do:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/add_reference_data_630x366.png" alt="use 'add reference data' to add historic disturbance information" style="width: 630;height: 366;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/add_reference_data_712x413.png" alt="use 'add reference data' to add historic disturbance information" style="width: 712;height: 413;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Using <span class="UIcomponent">Add Reference Data</span> button <img src="../../resources/images/mapstudio/button_adref.png" alt="add reference data" /> at the bottom of the screen, you'll see there are many options for additional data layers, including "Ownership" and "Critical Habitat Areas". </li>
@@ -218,18 +219,18 @@
                                         <h2>Summarizing the Landscape</h2>
                                         <p>Creating a Landscape Summary report will run fire behavior under 97th percentile weather conditions, make the outputs available in <span class="GeneralMapStudio">Map Studio</span>, and summarize behavior and landscape features in a downloadable report with tables and charts. To create the report:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/summary_630x363.png" alt="landscape summary will summarize features and auto97th fire behavior" style="width: 630;height: 363;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/summary_782x450.png" alt="landscape summary will summarize features and auto97th fire behavior" style="width: 782;height: 450;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1"> Click on <span class="UIcomponent">Planning Cycle</span> in the top navigation.</li>
                                             <li value="2">The cycle opens on the <span class="UIcomponent">Landscape Evaluation</span> stage by default, from there click the <span class="UIcomponent">Landscape Summary</span> task.</li>
-                                            <li value="3">In <span class="UIcomponent">Landscape Summary</span>, click the dropdown box next to <span class="UIcomponent">Select Landscapes</span>. If the newly created landscape didn’t appear in the drop down, use the <span class="UIcomponent">Refresh</span> button <img src="../../resources/images/buttons_general/button_refresh.png" alt="refresh button" /> after giving the landscape a short time to process. The landscape appears with a green check next to it (the check indicates it has downloaded completely to my <span class="GeneralProductName">IFTDSS</span> account). From this same screen, create an automated report to summarize not only the landscape characteristics, but also the modeled fire behavior outputs specific to this landscape based on approximated worst case (97th percentile fuel moisture and wind) conditions.</li>
-                                            <li value="4">Click on <span class="UIcomponent">Request a Report</span> so the report can begin processing, it will take a few moments for the report to process. To make sure the report is complete click the<span class="UIcomponent"> Refresh</span> button. When complete, a green checkmark will appear next to the report name, and the name will become a hyperlink.<div><img src="../../resources/images/granite_crk_dta/summary_report_refresh_375x189.png" alt="refresh summary report status" style="width: 375;height: 189;" class="border" /></div>For this example we are going to view the fire behavior aspect of the report in <span class="GeneralMapStudio">Map Studio</span> so it can be viewed with the landscape features, so close the report box and click the <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span> button.<div><img src="../../resources/images/granite_crk_dta/view_report_on_map_630x175.png" alt="view report on map" class="border" style="width: 630;height: 175;" /></div></li>
+                                            <li value="3">In <span class="UIcomponent">Landscape Summary</span>, click the drop-down box next to <span class="UIcomponent">Select Landscapes</span>. If the newly created landscape didn’t appear in the drop down, use the <span class="UIcomponent">Refresh</span> button <img src="../../resources/images/buttons_general/button_refresh.png" alt="refresh button" /> after giving the landscape a short time to process. The landscape appears with a green check next to it (the check indicates it has downloaded completely to my <span class="GeneralProductName">IFTDSS</span> account). From this same screen, create an automated report to summarize not only the landscape characteristics, but also the modeled fire behavior outputs specific to this landscape based on approximated worst case (97th percentile fuel moisture and wind) conditions.</li>
+                                            <li value="4">Click on <span class="UIcomponent">Request a Report</span> so the report can begin processing, it will take a few moments for the report to process. To make sure the report is complete click the<span class="UIcomponent"> Refresh</span> button. When complete, a green checkmark will appear next to the report name, and the name will become a hyperlink.<div><img src="../../resources/images/granite_crk_dta/summary_report_refresh_375x189.png" alt="refresh summary report status" style="width: 375;height: 189;" class="border" /></div>For this example we are going to view the fire behavior aspect of the report in <span class="GeneralMapStudio">Map Studio</span> so it can be viewed with the landscape features, so close the report box and click the <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span> button.<div><img src="../../resources/images/granite_crk_dta/view_report_on_map_893x247.png" alt="view report on map" class="border" style="width: 893;height: 247;" /></div></li>
                                         </ol>
                                         <h3>Comparing Landscape Features and Model Outputs with the Swipe Tool</h3>
                                         <p>After clicking <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span>, the fire model layer will automatically open. For future use, you can remove that modeling layer, or add other modeling layers later, by clicking the <span class="UIcomponent">Simulation Output Tools</span> button <img src="../../resources/images/mapstudio/button_simoutput.png" alt="simulation output tools" /> on the bottom of the screen.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/auto97_flame_length_630x375.png" alt="use 'simulation output tools' to add the auto97th model outputs" style="width: 630;height: 375;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/auto97_flame_length_742x452.png" alt="use 'simulation output tools' to add the auto97th model outputs" style="width: 742;height: 452;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click the <span class="UIcomponent">Simulation Output Tools</span> button <img src="../../resources/images/mapstudio/button_simoutput.png" alt="simulation output tools" /> on the bottom of the screen.</li>
@@ -238,7 +239,7 @@
                                         <p>Zoom into an orange/red area where you can see concentrated areas high Flame Lengths projected by the summary model. Next you'll look at the fuel models and topography for that area of more intense fire behavior.</p>
                                         <p>Set up the <span class="UIcomponent">Layer List</span> to have the Fuel Model checked for the Granite Creek Landscape layer, as well as Flame Lengths for the Auto97th modeled fire behavior output. You can quickly switch between layers to view changes by checking/unchecking the layers, or by using the <span class="UIcomponent">Swipe Tool</span><img src="../../resources/images/mapstudio/button_slider.png" alt="swipe tool" />.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/swipe_pretreatment_630x329.png" alt="using the swipe tool in the top right can help evaluate our landscape" style="width: 630;height: 329;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/swipe_pretreatment_765x400.png" alt="using the swipe tool in the top right can help evaluate our landscape" style="width: 765;height: 400;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click the <span class="UIcomponent">Swipe Tool</span><img src="../../resources/images/mapstudio/button_slider.png" alt="swipe tool" />.</li>
@@ -261,7 +262,7 @@
                                             <div>
                                                 <img src="../../resources/images/granite_crk_dta/create_treatment_polys_updated_681x287.png" alt="create shapefiles using the 'Create/Edit Shapes' option in Map Studio" style="width: 681;height: 287;" />
                                             </div>
-                                            <li value="3">Select the <span class="UIcomponent">Create/Edit Shapes</span> button <img src="../../resources/images/mapstudio/button_edittools.png" alt="create or edit shapes" /> at the bottom of the screen and ensure <span class="UIcomponent">Polygons</span> is selected in the dropdown box in <span class="UIcomponent">Create/Edit Shapes</span>. </li>
+                                            <li value="3">Select the <span class="UIcomponent">Create/Edit Shapes</span> button <img src="../../resources/images/mapstudio/button_edittools.png" alt="create or edit shapes" /> at the bottom of the screen and ensure <span class="UIcomponent">Polygons</span> is selected in the drop-down box in <span class="UIcomponent">Create/Edit Shapes</span>. </li>
                                             <li value="4">Select <span class="UIcomponent">Freehand Polygon</span><img src="../../resources/images/mapstudio/button_edittools_freehand.png" alt="freehand draw button" /> option, and draw a shape around one of the areas of significant fire behavior. Next, select the button again and draw a shape around the second area that exhibited significant fire behavior. You'll concentrate on these areas for developing and comparing treatments to meet the objectives of reducing the fire hazard in this area, and returning low intensity fire to this landscape.</li>
                                             <li value="5">Name this “Granite Creek Proposed Treatment Areas”.</li>
                                             <li value="6"> Select the "Granite Creek Treatments" folder. This will ensure the Area of Interest is filed in the same location in <span class="UIcomponent">My Workspace</span> as all the other Granite Creek project files.</li>
@@ -289,7 +290,7 @@
                                         </p>
                                         <p>These graphs indicate that, given 97th percentile weather and fuel moisture conditions, a little over half of this landscape will experience Flame Lengths of &gt;0 - .3 meters, while another 1/3rd will experience Flame Lengths &gt;.3 - 1.2 meters. The specific areas on this landscape where more intense, “problem” fire behavior is seen, is where our treatments are focused.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/report_flamelength_map_630x668.png" alt="details are displayed on the bottom right of the report maps" style="width: 630;height: 668;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/report_flamelength_map_704x746.png" alt="details are displayed on the bottom right of the report maps" style="width: 704;height: 746;" class="border" />
                                         </p>
                                         <p>Notice the Auto97th Fire Behavior section of the report has recorded the 97th percentile weather and fuel moisture inputs used to run the fire behavior model. You'll want to use these values when you re-run the fire behavior model a little later, so scroll up to the top of the report, look to the top right, and click the <span class="UIcomponent">Download</span> <img src="../../resources/images/buttons_general/download_25x18.png" alt="download" style="width: 25;height: 18;" /> button to save this report as a pdf on your local machine.</p>
                                         <p>
@@ -300,12 +301,12 @@
                                         <p>Now that you have a baseline Landscape and Fire Behavior data, and some specific areas within the landscape for which you’d like to propose treatments to meet the preliminary objectives, you’ll move on to the Develop Treatment Alternatives workflow, under the <span class="UIcomponent">Strategic Planning</span> stage of the <span class="UIcomponent">Cycle</span>. This will allow you to develop and compare fuels treatment alternatives so you can determine how changes in the fuels characteristics affect fire behavior outputs.</p>
                                         <p>I select the <span class="UIcomponent">Develop Treatment Alternatives</span> task.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_task_630x274.png" alt="select the 'develop treatment alternatives' task from the 'strategic planning' stage of the planning cycle" style="width: 630;height: 274;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_task_759x329.png" alt="select the 'develop treatment alternatives' task from the 'strategic planning' stage of the planning cycle" style="width: 759;height: 329;" class="border" />
                                         </p>
                                         <p>The next screen brings up the 5 steps in the Develop Treatment Alternatives task.</p>
                                         <h3>Pick a landscape and area of interest</h3>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_pick_landscape_630x256.png" style="width: 630;height: 256;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_pick_landscape_700x284.png" style="width: 700;height: 284;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">First, select the "Originating Landscape" (Granite Creek LF2012 unedited) and the </li>
@@ -330,7 +331,7 @@
                                         <p>This rule will mimic thinning the Area of Interest to about 80% present density by removing understory up to 8” DBH, with subsequent pile burning of thinned material. This information appears if you&#160;hover over the "Light Thinning: Pile Burning" option described in step C above. Alternatively, the description of each default rule can be read in the <a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm" target="_blank">Landscape Editing - Default Fuel Treatment and Disturbance Topic</a> of Help Center.</p>
                                         <p>You'll also like to mimic a broadcast burn after these first entries, but apply that edit in a subsequent edit session. While you&#160;could create a second rule that would be applied after the first ( See the <a href="../../30-tasks/lndscpedit/ruleordering.htm" target="_blank">Rule Ordering Consideration help topic</a> for more details on these), you'll apply one at a time so its easier to track the results of the rule on the landscape.  It’s always a good idea to assess your landscape after editing to ensure it’s been applied correctly and makes sense.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_edit_rule_save_630x263.png" alt="you will recieve a message confirming your edit rule has been saved" style="width: 630;height: 263;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_edit_rule_save_654x275.png" alt="you will recieve a message confirming your edit rule has been saved" style="width: 654;height: 275;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">After clicking the <span class="UIcomponent">Add to Rules</span> button, a notification appears to confirm the rule had been added. </li>
@@ -361,38 +362,38 @@
                                         <h3>Compare Alternatives</h3>
                                         <p>Once on the <span class="UIcomponent">Compare Alternatives</span> tab, you'll select each landscape you want to compare. They will be numbered in the order you select them, and from reading the right hand panel information, you'll see that this order is very important:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_630x231.png" alt="use the 'compare on map' and 'compare in summary report button' to compare results" style="width: 630;height: 231;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_705x205.png" alt="use the 'compare on map' and 'compare in summary report button' to compare results" style="width: 705;height: 205;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">First, select the edited landscape so it has a "1" next to it. Then, select the original landscape, so it has a “2” next to it. This order tells <span class="GeneralProductName">IFTDSS</span> to calculate the difference created by our treated landscape (1) on our original landscape (2). For example, if our new landscape has flame lengths of 3 feet, and the original has flame lengths of 7 feet, the difference will be: 3 - 7 = -4. Or in other words, a 4 foot <i>reduction</i> in flame length from the treatment.</li>
                                             <li value="2">Now you'll want to view comparison outputs on the map and as a report.  First, click the <span class="UIcomponent">Compare in Summary Report</span> button so that can begin processing.</li>
                                             <li value="3">Click both <span class="UIcomponent">Create Report</span> buttons so they can begin processing.</li>
-                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_2_630x183.png" alt="click compare on map button" style="width: 630;height: 183;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_1_2_799x232.png" alt="click compare on map button" style="width: 799;height: 232;" class="border" />
                                             <li value="4">Next click the <span class="UIcomponent">Compare on Map</span> button to view results on the map. Wait for the map to appear in splitscreen mode, then&#160;click <span class="UIcomponent">Compare on Map</span> once more, and give the caparison layers a few seconds to download.</li>
                                         </ol>
                                         <h2>Comparing the Alternatives </h2>
                                         <p>After clicking <span class="UIcomponent">Compare on Map</span>, the map appears in split screen mode. This feature allows you to view information from each tab on the right side of the screen, while allowing you to view my map on the left. You can open or close this feature anytime by selecting the opposing arrows icon at the top of the screen.</p>
                                         <p>Initially you'll see a simple landscape change map, indicating which pixels experienced a Fuel Model change post-treatment.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_compare_lcpchange_630x359.png" alt="the landscape change layer indicates pixels with a new fire behavior fuel model" class="border" style="width: 630;height: 359;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_lcpchange_855x486.png" alt="the landscape change layer indicates pixels with a new fire behavior fuel model" class="border" style="width: 855;height: 486;" />
                                         </p>
                                         <p>To view the change in Flame Length after my treatment, open <span class="UIcomponent">Layer List</span> and check the box next to: "Model Output Change: GC12_Lt_Thn_PileRx_1yr/Granite Creek LF2012 unedited". This layer shows the difference between post-treatment and pre-treatment Flame Lengths. With a glance you can see that all the dark blue showing on those West/Northwest facing slopes that had initially shown very high flame lengths, are now indicating significantly decreased flame lengths and fire intensity. </p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_compare_flamelengths_630x305.png" alt="model change layer depicts changes in model results between the two landscapes" class="border" style="width: 630;height: 305;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_compare_flamelengths_999x482.png" alt="model change layer depicts changes in model results between the two landscapes" class="border" style="width: 999;height: 482;" />
                                         </p>
                                         <p>To get back to these maps later, you can either access them in your project folder in <span class="UIcomponent">My Workspace</span>, or select this landscape in the<span class="UIcomponent"> Develop Treatment Alternatives</span> task, and click through each tab to get back to this point. </p>
                                         <p>To access the summary reports, you can either find them in our project folder in <span class="UIcomponent">My Workspace</span>, or click the button again and click on the links displayed in the pop-up box. In this case,&#160;go to <span class="UIcomponent">My Workspace</span> and select "GC12_Lt_Thn_PileRx_1yr/Granite Creek LF2012 unedited - compareLCP...", you may have to hover over the shortened name to display the full name. Once this is selected, click <span class="UIcomponent">View Summary</span>. </p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/workspace report_630x305.png" alt="reports are stored in our project folder in My Workspace" class="border" style="width: 630;height: 305;" />
+                                            <img src="../../resources/images/granite_crk_dta/workspace report_1109x536.png" alt="reports are stored in our project folder in My Workspace" class="border" style="width: 1109;height: 536;" />
                                         </p>
                                         <p>After opening the project folder, navigate to the "Landscape Compare Report" and click the <span class="UIcomponent">View Summary</span> button.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_comparereport1_fuelmodel_630x320.png" alt="fuel models are compared via bar chart and table" style="width: 630;height: 320;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_comparereport1_fuelmodel_985x560.png" alt="fuel models are compared via bar chart and table" style="width: 985;height: 560;" class="border" />
                                         </p>
                                         <p>Review the pre- and post-treatment results for each landscape characteristic. These reports have the same quantitative components as the reports you viewed earlier, but they compare the change in acreages in the specified treatment area, or mask, before and after the selected treatment was applied.</p>
                                         <p>In the bar graph, we can see that green corresponds to pre-treatment fuel models in the treatment area, while blue corresponds to post-treatment. It appears that most of the TL8 acres were changed to TL6 post-treatment. Looking at the tabular data below, we can see that in fact, 54% of the treatment area has changed to Fuel Model TL6 with this treatment.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta_comparereport1_fuelmodelcharts_630x262.png" alt="fuel models are compared via change chart and pie chart" class="border" style="width: 630;height: 262;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta_comparereport1_fuelmodelcharts_1271x528.png" alt="fuel models are compared via change chart and pie chart" class="border" style="width: 1271;height: 528;" />
                                         </p>
                                         <p>The Fuel Model Percent Difference graph and pie charts tell the same story.</p>
                                         <p>Next, go to <span class="UIcomponent">My Workspace</span> and navigate to the Fire Behavior (Model) Compare Report, "GC12_Lt_Thn_PileRx_1yr/Granite Creek LF2012 unedited - compare model...", and click <span class="UIcomponent">View Report</span>.</p>
@@ -413,7 +414,7 @@
                                         </p>
                                         <p>Navigate to the Develop Treatment Alternatives workflow again and select the Originating Landscape and Area of Interest. Next I&#160;move to the <span class="UIcomponent">Edit Landscape </span>tab.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_edit_lcp_630x311.png" style="width: 630;height: 311;" class="border" alt="edit the first treatment landscape with a new low severity wildfire rule" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_edit_lcp_860x424.png" style="width: 860;height: 424;" class="border" alt="edit the first treatment landscape with a new low severity wildfire rule" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">This time,  choose the landscape with our earlier edits as the Starting Landscape: "GC12_Lt_Thn_PileRx_1yr".</li>
@@ -425,13 +426,13 @@
                                         </ol>
                                         <p>As before, give the landscape a detailed name:&#160;"GC12_Lt_Thn_PileRx_1yr_Rx_1Yr" and click <span class="UIcomponent">Save New Landscape</span>.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_runmodel_630x147.png" alt="use the 'run model' button to model the new landscape" style="width: 630;height: 147;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_runmodel_831x194.png" alt="use the 'run model' button to model the new landscape" style="width: 831;height: 194;" class="border" />
                                         </p>
                                         <p>Skip the Model Input tab this time, that input was saved from our last run, and we need to keep our weather parameters constant in order to compare the results of the landscape changes.</p>
                                         <p>Go to the <span class="UIcomponent">Run Model</span> tab and click the <span class="UIcomponent">Run Model</span> button.</p>
                                         <p>Next, move to the <span class="UIcomponent">Compare Alternatives </span>tab.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_comparebuttons_630x173.png" alt="first select the new edited landscape, then the original landscape" style="width: 630;height: 173;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_comparebuttons_829x227.png" alt="first select the new edited landscape, then the original landscape" style="width: 829;height: 227;" class="border" />
                                         </p>
                                         <p>Compare the original landscape with this new one by selecting:</p>
                                         <ol style="list-style-type: upper-alpha;">
@@ -442,13 +443,13 @@
                                         </ol>
                                         <h2>Comparing Added Treatments</h2>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_mapcompareflamelength_630x340.png" alt="flame length reduction from new treatment" class="border" style="width: 630;height: 340;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_mapcompareflamelength_762x410.png" alt="flame length reduction from new treatment" class="border" style="width: 762;height: 410;" />
                                         </p>
                                         <p>When the map opens click the <span class="UIcomponent">Compare on Map</span> button once more and open the <span class="UIcomponent">Layer List</span> to&#160;toggle between the comparison layers. </p>
                                         <p>Like before, select the model change layer to evaluate flame length reduction. Though we're curious about these changes to fire behavior and fuel models, this is only a comparison of the original untreated landscape with this new treated landscape. What you'll really want to know is how much of an effect this added treatment of low severity wildfire, or a broadcast burn, will have compared to just the light thinning and pile burn we applied earlier. You'll need to compare the first treatment to the second one to answer this.</p>
                                         <p>To best compare these “treatments” (default disturbance edits) on the landscape, first use the <span class="UIcomponent">Swipe Tool</span>:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_newandoldbehavior_630x299.png" alt="add the two edited landscape files" class="border" style="width: 630;height: 299;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_newandoldbehavior_766x362.png" alt="add the two edited landscape files" class="border" style="width: 766;height: 362;" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click on <span class="UIcomponent">Simulation Output Tools</span> and check the boxes next to:</li>
@@ -459,11 +460,11 @@
                                             <li value="6">You can control the layers that appear in the <span class="UIcomponent">Swipe Tool</span> using the box in the top right of the map that appears once the <span class="UIcomponent">Swipe Tool</span> is clicked. The layer selected in this box will be the layer that appears in the top half of the slider, and hidden on the bottom half.</li>
                                         </ol>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_newoldbehavior_swipe_630x299.png" alt="swiping between fire behavior layers" class="border" style="width: 630;height: 299;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_newoldbehavior_swipe_821x388.png" alt="swiping between fire behavior layers" class="border" style="width: 821;height: 388;" />
                                         </p>
                                         <p>The light thin and pile burn, followed by low Severity wildfire (Broadcast burn) is shown on top, and light thin and pile burn only on the bottom.  Sliding back and forth and looking at the legend indicates that Flame Lengths were in fact reduced by up to a meter in some areas with just the addition of the Low Severity Wildfire! Next you'll want to see how the Fuel Models have changed with the addition of the Low Severity Wildfire. </p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_other_layers_630x311.png" alt="Selecting fuel models to compare" style="width: 630;height: 311;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_other_layers_783x386.png" alt="Selecting fuel models to compare" style="width: 783;height: 386;" class="border" />
                                         </p>
                                         <p>Set the <span class="UIcomponent">Layer List</span> up again, this time opening </p>
                                         <ol style="list-style-type: upper-alpha;">
@@ -474,13 +475,13 @@
                                             <li value="5">Set the layers to swipe.</li>
                                         </ol>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_otherlayers_swipe_630x311.png" alt="swiping between landscape fuel models" class="border" style="width: 630;height: 311;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_otherlayers_swipe_774x382.png" alt="swiping between landscape fuel models" class="border" style="width: 774;height: 382;" />
                                         </p>
                                         <p>We can see from comparing these two edited landscapes, as well as the Landscape Change Map earlier,  that there was a significant shift in Fuel Model between the thinning/pile burn treatment, and the addition of the low severity wildfire. </p>
                                         <p>Next, open the <span class="UIcomponent">Compare Summary Reports</span> to get the full picture and make a more informed decision about what treatments should be applied to achieve the preliminary objectives.</p>
                                         <p>Navigate to <span class="UIcomponent">My Workspace</span> and open the Fire Behavior Summary Compare Report.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength1_630x386.png" alt="table and bar chart of flame length comparison" style="width: 630;height: 386;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength1_681x416.png" alt="table and bar chart of flame length comparison" style="width: 681;height: 416;" class="border" />
                                         </p>
                                         <p>The Fire Behavior Compare Reports for a modeled Light Thin/Pile Burn/Low Severity Broadcast Burn treatment show even more of a difference in pre and post-treatment fire behavior.</p>
                                         <p>The Flame Length Bar Chart shows a large increase in the post-treatment acreage for lower Flame Length bins and no post-treatment acres in the higher Flame Length bins.</p>
@@ -493,18 +494,18 @@
                                         <p>Scroll through the rest of the fire behavior model outputs in the report. Their story is the same, significantly reduced Rates of Spread, as well as almost no Crown Fire Activity post-treatment.</p>
                                         <p>Next, navigate back to <span class="UIcomponent">My Workspace</span> and open the Landscape Compare Summary Report.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare1_630x463.png" alt="fuel model bar chart and table comparison" style="width: 630;height: 463;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare1_761x558.png" alt="fuel model bar chart and table comparison" style="width: 761;height: 558;" class="border" />
                                         </p>
                                         <p>The Landscape Compare Reports for a modeled Light Thin/Pile Burn/Low Severity Broadcast Burn treatment show quite a change in Fuel Model pre- vs. post-treatment.</p>
                                         <p>From the compare bar graph, we can tell that a significant portion of the TL8 Fuel Model (Long-Needle Litter) has shifted to the GR2 (Low Load, Dry Climate Grass) and GS1 (Low Load, Dry Climate Grass-Shrub) Fuel Models, 1 year post-treatment. The table to the right confirms this quantitatively, indicating that 52% of the treatment area was comprised of a TL8 Fuel Model pre-treatment, while just 1% of the treatment area was a TL8 Fuel Model post-treatment. Conversely, none of the treatment area contained the GS1 Fuel Model pre-treatment, while post-treatment over 50% of the treatment area was comprised of Fuel Model GS1.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare2_630x448.png" alt="fuel model change chart and pie chart comparison" style="width: 630;height: 448;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare2_756x537.png" alt="fuel model change chart and pie chart comparison" style="width: 756;height: 537;" class="border" />
                                         </p>
                                         <p>The Percent Difference chart reflects the shift in Fuel Model displayed by the Bar Graph and table above, clearly showing the drop in the TL8 Fuel Model, as well as the increase in the GS1 Fuel Model post-treatment.</p>
                                         <p>The Pie Charts visually display these changes in Fuel Model as well.</p>
                                         <p>Review the rest of the Landscape Compare Summary Report and note the changes in the various landscape characteristics. Pay particular attention to the increase in Canopy Base Height, as well as the decrease in Canopy Cover, post-treatment. This coincides with the information we see in the rest of the report, and reiterates the fact that this series of treatments will help achieve the stated objectives, which were to: reduce surface fuel loading and the overall horizontal and vertical fuelbed continuity in order to reduce the fire hazard to adjacent private land and the community of Idaho City; and return low intensity fire to fire adapted vegetation communities.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_firebehaviorcomparison_end_630x358.png" alt="comparison of fire behavior bar charts" style="width: 630;height: 358;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_firebehaviorcomparison_end_911x518.png" alt="comparison of fire behavior bar charts" style="width: 911;height: 518;" class="border" />
                                         </p>
                                         <h2>Conclusion</h2>
                                         <p>We could continue this process and model a more invasive treatment, such as heavier thinning or increased mortality from a more severe broadcast (prescribed) burn, but  these results will achieve our initial preliminary objectives, and are a good place to start with a project proposal for the District ID Team.</p>

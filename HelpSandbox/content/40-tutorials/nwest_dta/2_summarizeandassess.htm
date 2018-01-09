@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Developing Treatments">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation_Alternative" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path=" Tutorials|Developing Treatments">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -133,7 +134,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/TopNavShort.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                             </ul>
                                         </div>
                                         <div class="nocontent">
@@ -153,17 +154,17 @@
                                                 <img src="../../resources/images/granite_crk_dta/layer_list_and_identify_602x361.png" alt="use the identify tool for more information" style="width: 602;height: 361;" class="border" />
                                             </div>
                                             <li value="2">After opening the <span class="UIcomponent">Layer List</span> button <img src="../../resources/images/mapstudio/button_layerlist.png" alt="layer list button" />, I ensure your landscape is checked, then you can check and uncheck the landscape layers you’d like to view. You'll want to look at the fuel models to make sure they correspond to what your seeing on the ground in this area, so ensure that box is checked.</li>
-                                            <li value="3">Access more information for the landscape and subsequent layers via the small arrows next to the check boxes. In this case, check the box next to "Fuel Models", then click on the arrow to the left of the checkbox to dropdown to the Fuel Model layer legend.</li>
+                                            <li value="3">Access more information for the landscape and subsequent layers via the small arrows next to the check boxes. In this case, check the box next to "Fuel Models", then click on the arrow to the left of the checkbox to drop-down to the Fuel Model layer legend.</li>
                                             <li value="4">Click the <span class="UIcomponent">Identify</span> button <img src="../../resources/images/mapstudio/button_identify.png" alt="indentiry" /> in the upper right corner of the page to view more information for each pixel. Select the layer I’d like to view (Granite Creek LF2012 Unedited), then click on the landscape in an area you'd like to know more about. The "Identify information box" populates with the landscape information for this pixel. For example, by clicking you can see that the green-blue pixels on the map correspond to areas of Fuel Model 188 (TL8). Continue examining various areas of interest on the landscape to learn more about what fuel models are present and where. Notice that all of the landscape characteristics come up in the Identify box when you click on the landscape with the <img src="../../resources/images/mapstudio/button_identify.png" alt="indentiry" /> button, not just the characteristic you specified in your <span class="UIcomponent">Layer List</span>.</li>
                                         </ol>
                                         <p>
                                             <img src="../../resources/images/granite_crk_dta/transparency_332x428.png" alt="transparency can be set using the more options icon to the right of each layer" style="width: 332;height: 428;" class="border" />
                                         </p>
-                                        <p>It may be helpful to adjust the transparency of the layer to better see roads, landscape characteristics, and other map features. To do this,&#160;click <span class="UIcomponent">More Options</span> <img src="../../resources/images/buttons_general/button_moreoptions.png" alt="more options" /> to the right of the Landscape name in <span class="UIcomponent">Layer List</span>. A dropdown box of options opens. Choose <span class="UIcomponent">Transparency</span>, which opens a slider bar allowing you to adjust the of transparency level for that layer.</p>
+                                        <p>It may be helpful to adjust the transparency of the layer to better see roads, landscape characteristics, and other map features. To do this,&#160;click <span class="UIcomponent">More Options</span> <img src="../../resources/images/buttons_general/button_moreoptions.png" alt="more options" /> to the right of the Landscape name in <span class="UIcomponent">Layer List</span>. A drop-down box of options opens. Choose <span class="UIcomponent">Transparency</span>, which opens a slider bar allowing you to adjust the of transparency level for that layer.</p>
                                         <h3>Add reference data</h3>
                                         <p> Before doing a full assessment of the landscape characteristics, I’ll want to view previous fires that may have occurred in this area. Fortunately, this is easy to do:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/add_reference_data_630x366.png" alt="use 'add reference data' to add historic disturbance information" style="width: 630;height: 366;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/add_reference_data_712x413.png" alt="use 'add reference data' to add historic disturbance information" style="width: 712;height: 413;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Using <span class="UIcomponent">Add Reference Data</span> button <img src="../../resources/images/mapstudio/button_adref.png" alt="add reference data" /> at the bottom of the screen, you'll see there are many options for additional data layers, including "Ownership" and "Critical Habitat Areas". </li>
@@ -176,18 +177,18 @@
                                         <h2>Summarizing the Landscape</h2>
                                         <p>Creating a Landscape Summary report will run fire behavior under 97th percentile weather conditions, make the outputs available in <span class="GeneralMapStudio">Map Studio</span>, and summarize behavior and landscape features in a downloadable report with tables and charts. To create the report:</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/summary_630x363.png" alt="landscape summary will summarize features and auto97th fire behavior" style="width: 630;height: 363;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/summary_782x450.png" alt="landscape summary will summarize features and auto97th fire behavior" style="width: 782;height: 450;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1"> Click on <span class="UIcomponent">Planning Cycle</span> in the top navigation.</li>
                                             <li value="2">The cycle opens on the <span class="UIcomponent">Landscape Evaluation</span> stage by default, from there click the <span class="UIcomponent">Landscape Summary</span> task.</li>
-                                            <li value="3">In <span class="UIcomponent">Landscape Summary</span>, click the dropdown box next to <span class="UIcomponent">Select Landscapes</span>. If the newly created landscape didn’t appear in the drop down, use the <span class="UIcomponent">Refresh</span> button <img src="../../resources/images/buttons_general/button_refresh.png" alt="refresh button" /> after giving the landscape a short time to process. The landscape appears with a green check next to it (the check indicates it has downloaded completely to my <span class="GeneralProductName">IFTDSS</span> account). From this same screen, create an automated report to summarize not only the landscape characteristics, but also the modeled fire behavior outputs specific to this landscape based on approximated worst case (97th percentile fuel moisture and wind) conditions.</li>
-                                            <li value="4">Click on <span class="UIcomponent">Request a Report</span> so the report can begin processing, it will take a few moments for the report to process. To make sure the report is complete click the<span class="UIcomponent"> Refresh</span> button. When complete, a green checkmark will appear next to the report name, and the name will become a hyperlink.<div><img src="../../resources/images/granite_crk_dta/summary_report_refresh_375x189.png" alt="refresh summary report status" style="width: 375;height: 189;" class="border" /></div>For this example we are going to view the fire behavior aspect of the report in <span class="GeneralMapStudio">Map Studio</span> so it can be viewed with the landscape features, so close the report box and click the <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span> button.<div><img src="../../resources/images/granite_crk_dta/view_report_on_map_630x175.png" alt="view report on map" class="border" style="width: 630;height: 175;" /></div></li>
+                                            <li value="3">In <span class="UIcomponent">Landscape Summary</span>, click the drop-down box next to <span class="UIcomponent">Select Landscapes</span>. If the newly created landscape didn’t appear in the drop down, use the <span class="UIcomponent">Refresh</span> button <img src="../../resources/images/buttons_general/button_refresh.png" alt="refresh button" /> after giving the landscape a short time to process. The landscape appears with a green check next to it (the check indicates it has downloaded completely to my <span class="GeneralProductName">IFTDSS</span> account). From this same screen, create an automated report to summarize not only the landscape characteristics, but also the modeled fire behavior outputs specific to this landscape based on approximated worst case (97th percentile fuel moisture and wind) conditions.</li>
+                                            <li value="4">Click on <span class="UIcomponent">Request a Report</span> so the report can begin processing, it will take a few moments for the report to process. To make sure the report is complete click the<span class="UIcomponent"> Refresh</span> button. When complete, a green checkmark will appear next to the report name, and the name will become a hyperlink.<div><img src="../../resources/images/granite_crk_dta/summary_report_refresh_375x189.png" alt="refresh summary report status" style="width: 375;height: 189;" class="border" /></div>For this example we are going to view the fire behavior aspect of the report in <span class="GeneralMapStudio">Map Studio</span> so it can be viewed with the landscape features, so close the report box and click the <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span> button.<div><img src="../../resources/images/granite_crk_dta/view_report_on_map_893x247.png" alt="view report on map" class="border" style="width: 893;height: 247;" /></div></li>
                                         </ol>
                                         <h3>Comparing Landscape Features and Model Outputs with the Swipe Tool</h3>
                                         <p>After clicking <span class="UIcomponent">View in <span class="GeneralMapStudio">Map Studio</span></span>, the fire model layer will automatically open. For future use, you can remove that modeling layer, or add other modeling layers later, by clicking the <span class="UIcomponent">Simulation Output Tools</span> button <img src="../../resources/images/mapstudio/button_simoutput.png" alt="simulation output tools" /> on the bottom of the screen.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/auto97_flame_length_630x375.png" alt="use 'simulation output tools' to add the auto97th model outputs" style="width: 630;height: 375;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/auto97_flame_length_742x452.png" alt="use 'simulation output tools' to add the auto97th model outputs" style="width: 742;height: 452;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click the <span class="UIcomponent">Simulation Output Tools</span> button <img src="../../resources/images/mapstudio/button_simoutput.png" alt="simulation output tools" /> on the bottom of the screen.</li>
@@ -196,7 +197,7 @@
                                         <p>Zoom into an orange/red area where you can see concentrated areas high Flame Lengths projected by the summary model. Next you'll look at the fuel models and topography for that area of more intense fire behavior.</p>
                                         <p>Set up the <span class="UIcomponent">Layer List</span> to have the Fuel Model checked for the Granite Creek Landscape layer, as well as Flame Lengths for the Auto97th modeled fire behavior output. You can quickly switch between layers to view changes by checking/unchecking the layers, or by using the <span class="UIcomponent">Swipe Tool</span><img src="../../resources/images/mapstudio/button_slider.png" alt="swipe tool" />.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/swipe_pretreatment_630x329.png" alt="using the swipe tool in the top right can help evaluate our landscape" style="width: 630;height: 329;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/swipe_pretreatment_765x400.png" alt="using the swipe tool in the top right can help evaluate our landscape" style="width: 765;height: 400;" class="border" />
                                         </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click the <span class="UIcomponent">Swipe Tool</span><img src="../../resources/images/mapstudio/button_slider.png" alt="swipe tool" />.</li>
