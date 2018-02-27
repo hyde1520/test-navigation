@@ -269,7 +269,15 @@ img.border
 {
 	border: 1px solid black;
 	margin: 5px;
-	max-width: 630px;
+	max-width: 100%;
+	height: auto;
+}
+
+img.borderlist
+{
+	border: 1px solid black;
+	margin: -10px 5px 5px 5px;
+	max-width: 100%;
 	height: auto;
 }
 
@@ -278,9 +286,10 @@ img.AbsolutePosition
 	padding: 5px;
 }
 
-img.ReduceButtonSize
+img.iftbutton
 {
-	max-height: 25px;
+	max-height: 1em;
+	width: auto;
 }
 
 img.Thumbnail
@@ -721,12 +730,28 @@ html.templateTopic div.sideContent
 
 	/*Keeps max width to fit on page*/
 
-
 	img.border
 	{
-		max-width: 400px;
-		margin: 8px;
+		page-break-before: auto;
+		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+		page-break-after: auto;
+		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+		page-break-inside: avoid;
+		/* or 'auto' */
+	}
+
+	img.borderlist
+	{
+		border: 1px solid black;
+		margin: 0px 5px 5px 5px;
+		max-width: 100%;
 		height: auto;
+		page-break-before: auto;
+		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+		page-break-after: auto;
+		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
+		page-break-inside: avoid;
+		/* or 'auto' */
 	}
 
 	div.GlossaryPageDefinition

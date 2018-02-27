@@ -1,22 +1,22 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Mapping|Using Shapefiles">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Mapping|Using Shapes &amp; Shapefiles">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <meta charset="utf-8" />
         <meta name="description" content="" />
-        <meta name="author" content="" /><title>Add a Shapefile</title>
-        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Fluid/stylesheets/foundation.5.5.0.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" data-mc-generated="True" />
-        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" data-mc-generated="True" />
+        <meta name="author" content="" /><title>Add and Save a Shapefile</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
         <style>/*&lt;meta /&gt;*/
 
 .button.expand-print-button
@@ -49,9 +49,7 @@
         </script>
         <script src="../../../Resources/Scripts/require.config.js">
         </script>
-        <script src="../../../Resources/Scripts/foundation.5.5.0_custom.js">
-        </script>
-        <script src="../../../Resources/Scripts/foundation.offcanvas.js">
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
         </script>
         <script src="../../../Resources/Scripts/plugins.min.js">
         </script>
@@ -61,228 +59,63 @@
         </script>
     </head>
     <body>
-        <div class="foundation-wrap">
-            <div class="off-canvas-wrap" data-offcanvas="">
-                <section class="inner-wrap">
-                    <nav class="tab-bar" data-mc-ignore="true">
-                        <section class="middle tab-bar-section outer-row clearfix">
-                            <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
-                                <div class="navigation-wrapper">
-                                    <ul class="navigation clearfix">
-                                        <li class="has-children"><a href="#">Get Started</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="../../00-concepts/whyiftdss.htm">Why use IFTDSS for Fuel Planning?</a>
-                                                </li>
-                                                <li class="has-children"><a href="../../00-concepts/accounts/accountsetup.htm">Get an Account</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../00-concepts/accounts/accountsetup.htm">Setting up an Account</a>
-                                                        </li>
-                                                        <li><a href="../../00-concepts/accounts/accountpassword.htm">Account Password</a>
-                                                        </li>
-                                                        <li><a href="../../00-concepts/accounts/accountprofile.htm">Profile</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../../00-concepts/navigatingiftdss.htm">Navigate IFTDSS (An Overview)</a>
-                                                </li>
-                                                <li><a href="../../00-aboutiftdss/helpful topics.htm">Walk-throughs</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children"><a href="../../10-planningcycle/planningcycleabout.htm">Planning Cycle</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="../../10-planningcycle/planningcycleabout.htm">About the Planning Cycle</a>
-                                                </li>
-                                                <li class="has-children"><a href="../../10-planningcycle/landevalabout.htm">Landscape Evaluation</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../30-tasks/summaries/landsummaryabout.htm">Landscape Summary</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Edit a Landscape</a>
-                                                        </li>
-                                                        <li><a href="../../20-models/flammap/flammapbackground.htm">Calculate Fire&#160;Behavior</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-children"><a href="../../10-planningcycle/strategicplanningabout.htm">Strategic Planning</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../30-tasks/devtrtalts/trtmtaltscomparelndscp.htm">Comparing Landscapes to Develop Treatement Alternatives</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/devtrtalts/trtmtaltseditlandscp.htm">Editing a Landscape to Develop Treatment Alternatives</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/lndscpedit/ruleordering.htm">About Edit Rules</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../../10-planningcycle/implementationplanabout.htm">Implementation Planning</a>
-                                                </li>
-                                                <li><a href="../../10-planningcycle/monitoringabout.htm">Monitoring</a>
-                                                </li>
-                                                <li><a href="../../10-planningcycle/reportingabout.htm">Reporting</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children"><a href="../../20-models/modelsoverview.htm">Modeling</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="../../20-models/modelsoverview.htm">Modeling in Modeling Playground</a>
-                                                </li>
-                                                <li class="has-children"><a href="../../20-models/flammap/flammapabout.htm">Landscape Fire Behavior</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../20-models/flammap/flammapabout.htm">Landscape Fire&#160;Behavior Overview</a>
-                                                        </li>
-                                                        <li><a href="../../20-models/flammap/flammapinput.htm">FlamMap Fire Behavior Inputs</a>
-                                                        </li>
-                                                        <li><a href="../../20-models/flammap/flammapoutput.htm">FlamMap Fire Behavior Outputs</a>
-                                                        </li>
-                                                        <li><a href="../../20-models/flammap/flammapcrowns.htm">Crown Fire Calculation Options</a>
-                                                        </li>
-                                                        <li><a href="../../20-models/flammap/flammapbackground.htm">Technical Documentation - Landscape Fire&#160;Behavior with FlamMap 5.0</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../files/fbfminfo.htm">Fire Behavior Fuel Models</a>
-                                                </li>
-                                                <li><a href="../../20-models/modelsmoretocome.htm">More To Come</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children"><a href="../mapstudioabout.htm">Mapping</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="../mapstudioabout.htm">Working in Map Studio</a>
-                                                </li>
-                                                <li class="has-children"><a href="mapfunctions.htm">Map Functions</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="mapfunctions.htm">Map Functions (overview)</a>
-                                                        </li>
-                                                        <li><a href="layerlist.htm">Layer List (legends)</a>
-                                                        </li>
-                                                        <li><a href="addreferencedata.htm">Add Reference Data</a>
-                                                        </li>
-                                                        <li><a href="addgraphic.htm">Add Graphic</a>
-                                                        </li>
-                                                        <li><a href="#" class="selected">Add Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="landscapetools.htm">Landscape Tools</a>
-                                                        </li>
-                                                        <li><a href="simulationtools.htm">Simulation Output Tools</a>
-                                                        </li>
-                                                        <li><a href="edittools.htm">Edit Tools</a>
-                                                        </li>
-                                                        <li><a href="basemapgallery.htm">Basemap Gallery</a>
-                                                        </li>
-                                                        <li><a href="measurements.htm">Measurement</a>
-                                                        </li>
-                                                        <li><a href="filter.htm">Filter</a>
-                                                        </li>
-                                                        <li><a href="attributetable.htm">Attribute Table</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-children"><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Using Landscapes</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../30-tasks/lndscpedit/landscapeeditabout.htm">Making Landscape Edits</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm">About Default Treatment/Disturbance Rules</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/lndscpedit/ruleordering.htm">Applying Edit Rules</a>
-                                                        </li>
-                                                        <li><a href="../../30-tasks/lndscpedit/landscapeedittechtopic.htm">Edit Rule Technical Documentation</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li class="has-children"><a href="../files/shapefileinfo.htm">Using Shapefiles</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../files/shapefileinfo.htm">About Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="edittools.htm">Create or Edit Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="#" class="selected">Upload a Shapefile</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefilesaving.htm">Saving Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefilerepair.htm">Repairing Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefileinfo.htm#AreasOfInterest">Using Shapefiles for Masks/Areas of Interest</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../../00-concepts/usingmydata.htm">Use My Own Data</a>
-                                                </li>
-                                                <li><a href="../mapstudiotips.htm">MapStudioTips and Tricks</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="has-children"><a href="#">Resources</a>
-                                            <ul class="sub-menu">
-                                                <li><a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ">Videos</a>
-                                                </li>
-                                                <li class="has-children"><a href="../../40-tutorials/tutorialmain.htm">Tutorials</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../../40-tutorials/comparefeature/0_intro.htm">Comparing Landscapes</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../../41-references/resources.htm">Additional Resources</a>
-                                                </li>
-                                                <li class="has-children"><a href="#">Support System</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="https://iftdsshelp.freshdesk.com/support/discussions">Forums</a>
-                                                        </li>
-                                                        <li><a href="https://iftdss.firenet.gov/landing_page/support.html">Request Tech. Support</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                                <li><a href="../../41-references/glossary.htm">Glossary</a>
-                                                </li>
-                                                <li><a href="../../41-references/referencelist.htm">References</a>
-                                                </li>
-                                                <li><a href="../../00-concepts/gettinghelp.htm">Getting Help</a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="../../00-aboutiftdss/knownissues.htm">Known Issues</a>
-                                        </li>
-                                    </ul>
-                                </div><a class="menu-icon right-off-canvas-toggle" href="#"><span></span></a>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
                             </div>
-                        </section>
-                        <div class="nav-search row outer-row">
-                            <form class="search" action="#">
-                                <div class="search-bar search-bar-container needs-pie">
-                                    <input class="search-field needs-pie" type="search" placeholder="Search" />
-                                    <div class="search-filter-wrapper">
-                                        <div class="search-filter">
-                                            <div class="search-filter-content">
-                                                <ul>
-                                                    <li>All Files</li>
-                                                </ul>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="search-submit-wrapper" dir="ltr">
-                                        <div class="search-submit" title="Search">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </nav>
-                    <aside class="right-off-canvas-menu" data-mc-ignore="true">
-                        <ul class="off-canvas-list" data-mc-back-link="Back" data-mc-css-tree-node-expanded="has-submenu" data-mc-css-tree-node-collapsed="has-submenu" data-mc-css-sub-menu="right-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.fndtn.offcanvas" data-mc-toc="True">
-                        </ul>
-                    </aside>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
                     <section class="main-section">
                         <div class="row outer-row" data-mc-content-body="True">
                             <script src="https://www.google.com/jsapi" type="text/javascript">
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -290,7 +123,7 @@
                                     <div class="row collapse">
                                         <div class="sideContent">
                                             <div class="clearfix">
-                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
                                                     <div class="button-group-container-left">
                                                         <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
                                                             <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
@@ -301,108 +134,85 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <ul class="menu _Skins_SideMenu mc-component">
-                                                <li class="has-children"><a href="../files/shapefileinfo.htm">Using Shapefiles</a>
-                                                    <ul class="sub-menu">
-                                                        <li><a href="../files/shapefileinfo.htm">About Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="edittools.htm">Create or Edit Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="#" class="selected">Upload a Shapefile</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefilesaving.htm">Saving Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefilerepair.htm">Repairing Shapefiles</a>
-                                                        </li>
-                                                        <li><a href="../files/shapefileinfo.htm#AreasOfInterest">Using Shapefiles for Masks/Areas of Interest</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
+                                            <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
                                             </ul>
                                         </div>
-                                        <div class="MCBreadcrumbsBox_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../mapstudioabout.htm">Mapping</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../files/shapefileinfo.htm">Using Shapefiles</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Add Shapefiles</span>
-                                        </div>
-                                        <h1><a name="kanchor57"></a><a name="kanchor58"></a>Add a <a name="kanchor59"></a>Shapefile</h1>
-                                        <p class="no-print"><iframe class="youtube-player_0" src="https://www.youtube.com/embed/tYCe59yISJI?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
-                                        </p>
-                                        <p>Use the <span class="UIcomponent">Add Shapefile</span> <img src="../../resources/images/mapstudio/button_addshapefile.png" alt="orange add shapefile button" /> to upload a shapefile to the <span class="GeneralProductName">IFTDSS</span> <span class="GeneralMapStudio">Map Studio</span>. </p>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Upload a shapefile</a></span>
-                                            <div class="MCDropDownBody dropDownBody">
-                                                <p>Click <span class="UIcomponent">Upload File</span>.</p>
-                                                <p>
-                                                    <img src="../../resources/images/mapstudio/box_addshapefile_291x398.png" style="width: 291;height: 398;" alt="use the 'upload shapefile' button in the 'add shapefile' box to upload your zipped shapefiles" class="border" />
-                                                </p>
-                                                <p>Choose your zipped shapefile from your local drive.</p>
-                                                <div class="notificationNote">
-                                                    <p>The .zip file must contain the .shp, .shx, .dbf, and .prj files that comprise the shapefile.</p>
-                                                </div>
-                                                <p>Select the desired fields from your shapefile using the checkbox next to each field name (Up to 10).</p>
-                                                <p>Click <span class="UIcomponent">Upload File</span>.</p>
-                                                <p>Click <span class="UIcomponent">Add to Map</span>.</p>
-                                                <p>Next you will save your shapefile.</p>
+                                        <div class="nocontent">
+                                            <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" /></a><a name="Saving"></a><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_">Saving Shapefiles for Future Use</a></span>
+                                        <h1><a name="kanchor173"></a><a name="kanchor174"></a>Add and Save a <a name="kanchor175"></a>Shapefile</h1>
+                                        <p>Use the <span class="UIcomponent">Add Shapefile</span> <img src="../../resources/images/mapstudio/overview/button_addshapefile_12x12.png" alt="orange add shapefile button" class="iftbutton" style="width: 12;height: 12;" /> to upload a shapefile to the <span class="GeneralProductName">IFTDSS</span> <span class="GeneralMapStudio">Map Studio</span> and save it to <span class="GeneralProductName">IFTDSS</span>.</p>
+                                        <div class="notificationNote">
+                                            <p><a name="zipshapefiles"></a>Shapefiles are added to <span class="GeneralMapStudio">Map Studio</span> as .zip files. The .zip file must contain the .shp, .shx, .dbf, and .prj files that comprise the shapefile.</p>
+                                        </div>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Click the <span class="UIcomponent">Add Shapefile</span> button <img src="../../resources/images/mapstudio/overview/button_addshapefile_12x12.png" alt="add shapefile" class="iftbutton" style="width: 12;height: 12;" /> along the bottom of <span class="GeneralMapStudio">Map Studio</span> to open Add Shapefile.</li>
+                                            <li value="2">
+                                                <p>Click Upload File. A browser box will open allowing you to search your local files. Select the desired shapefile. Shapefiles must be zipped to be uploaded and contain .shp, .shx, .dbf., and .prj files.</p>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/shapefile_upload/local_shapefiles.png" alt="you may upload your own shapefiles." class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="3">
+                                                <p>Use the checkbox to select the attributes you wish to import. You may choose up to 10.</p>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/shapefile_upload/shapefile_save1.png" alt="The 'Add Shapefile' box with specific features checked to be imported" class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="4">Make sure the "Save" option is checked in order to save your shapefile.</li>
+                                            <li value="5">Give the shapefile a descriptive name.</li>
+                                            <li value="6">Specify the folder in which to store the shapefile.</li>
+                                            <li value="7">
+                                                <p>Click <span class="UIcomponent">Save and Add to Map</span></p>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/shapefile_upload/save_shapefile.png" alt="make sure the 'save' box is checed to save your shapefile" class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="8">
+                                                <p>When completed, a confirmation message will appear to verify the shapefile has been uploaded.</p>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/shapefile_upload/saved_shp_confirmation.png" class="borderlist" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Tips for adding shapefiles</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <div class="notificationImportant">
-                                                    <p>Follow the steps below to permanently save an uploaded shapefile in <span class="UIcomponent">My Workspace</span> for later use in <span class="GeneralProductName">IFTDSS</span>. Without this step, navigating away from <span class="GeneralMapStudio">Map Studio</span> results in an uploaded shapefile not being saved. This is a known issue that will be corrected in a later <span class="GeneralProductName">IFTDSS</span> release. </p>
-                                                </div>
-                                                <p>To retain your uploaded shapefiles in <span class="GeneralProductName">IFTDSS</span> if you follow the steps below:</p>
-                                                <p>A) Upload a zipped shapefile, ensure you select which attributes you would like to include (you may choose up to 10). A zipped shapefile must contain .shp, .shx, .dbf, and .prj files.</p>
-                                                <p>
-                                                    <img src="../../resources/images/mapstudio/shapefile_save1_210x288.png" alt="The 'Add Shapefile' box with specific features checked to be imported" style="width: 210;height: 288;" class="border" />
-                                                </p>
-                                                <p>B) When completed, a confirmation message will appear to verify the shapefile has been uploaded.</p>
-                                                <p>
-                                                    <img src="../../resources/images/mapstudio/saved_shp_confirmation.png" class="border" />
-                                                </p>
-                                                <p>C) To select the new shapefile, exit <span class="UIcomponent">Add Shapefile</span> and open <span class="UIcomponent"> Layer List</span><img src="../../resources/images/mapstudio/button_layerlist.png" alt="layer list button" /> to zoom to your new shapefile:</p>
-                                                <ol style="list-style-type: lower-alpha;">
-                                                    <li value="1"> Click the icon to the right of your shapefile and </li>
-                                                    <li value="2">Click the <span class="UIcomponent">Zoom to</span> option</li>
-                                                    <img src="../../resources/images/mapstudio/shapefile_save1_2_315x432.png" alt="use the 'zoom to' option to find your shapefile on the map" style="width: 315;height: 432;" class="border" />
-                                                </ol>
-                                                <p>D) Proceed to the next dropdown step, either 'Save a Single Uploaded Shapefile' or 'Save Multiple Shapefiles'</p>
-                                                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Save a single uploaded shapefile:</a></span>
-                                                    <div class="MCDropDownBody dropDownBody">
-                                                        <p>
-                                                            <img src="../../resources/images/mapstudio/save_uploaded_snglshape_630x339.png" alt="save a single uploaded shapefile using the steps outlined in text" style="width: 630;height: 339;" class="border" />
-                                                        </p>
-                                                        <ol style="list-style-type: lower-alpha;">
-                                                            <li value="1">Click the <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_29x29.png" style="width: 29;height: 29;" alt="Copy from Existing Features button" class="button" />, </li>
-                                                            <li value="2">Make sure the <span class="UIcomponent">Select Single Part</span> option is selected</li>
-                                                            <li value="3">Select the polygon you wish to save (selected polygons will turn yellow). This can be done by either left clicking the individual polygon.</li>
-                                                            <li value="4">Give your polygon a descriptive name.</li>
-                                                            <li value="5">Choose a folder in which to save your polygon.</li>
-                                                            <li value="6">Click <span class="UIcomponent">Create</span>.</li>
-                                                        </ol>
-                                                    </div>
-                                                </div>
-                                                <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Save multiple polygons:</a></span>
-                                                    <div class="MCDropDownBody dropDownBody">
-                                                        <p>
-                                                            <img src="../../resources/images/mapstudio/save_multipart_upl_shape_630x312.png" alt="to save a multipart shapefile, follow the steps outlined in text" style="width: 630;height: 312;" class="border" />
-                                                        </p>
-                                                        <ol style="list-style-type: lower-alpha;">
-                                                            <li value="1">Click the <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_29x29.png" style="width: 29;height: 29;" alt="Copy from Existing Features button" class="button" />, </li>
-                                                            <li value="2">Make sure the <span class="UIcomponent">Select multipart</span> option is selected, then</li>
-                                                            <li value="3">Left mouse click your first polygon, you will notice its color turns to yellow.</li>
-                                                            <li value="4">Next click <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_29x29.png" style="width: 29;height: 29;" alt="Copy from Existing Features button" class="button" /> again and left click on polygon two, repeat these steps for each polygon until they are all outlined in yellow.</li>
-                                                            <li value="5">Next, type a name for your polygons in the edit box.</li>
-                                                            <li value="6">Specify the folder to save the set in. </li>
-                                                            <li value="7">Click <span class="UIcomponent">Create</span>.</li>
-                                                        </ol>
-                                                    </div>
-                                                </div>
+                                                <p>Shapefiles may be added to <span class="GeneralProductName">IFTDSS</span> by uploading a  .zip file containing the .shp, .shx, .dbf, and .prj files to <span class="GeneralMapStudio">Map Studio</span>. When you add a shapefile, <span class="GeneralMapStudio">Map Studio</span> converts it to a format that web clients can quickly read and display. To help further improve the performance of the display, you can choose to generalize the features in your shapefile. Generalizing reduces the size of the shapefile by simplifying the features and is often appropriate for data at small scales.</p>
+                                                <h3>Generalized display</h3>
+                                                <p>Shapefiles often contain large features with a lot of associated data. Smaller features with less data are often necessary for the shapefile to display properly over the web. Generalizing the features is one way to reduce the size of the shapefile and therefore improve web display. You can generalize the features using a desktop application such as ArcMap or you can have <span class="GeneralMapStudio">Map Studio</span> do the generalization when you add the file to your map. Generalizing reduces the precision of the shapefile layer to approximately 1 meter in Web Mercator and will remove vertices within 10 meters in Web Mercator. This should maintain an informative and accurate display of your features while reducing the overall size of your data and allowing your layer to quickly display in the map.
+				</p>
+                                                <p>Generalizing doesn't work well on coincident polygon features intended for large-scale display because it will create some slivers in the polygons. For coincident polygons at large scales, you can choose to maintain the features if you have a relatively small amount of data, or if you have a large amount of data, you can publish a feature service to a GIS Server site. If you have publishing privileges in your organization, you can also create feature layers by publishing features.</p>
+                                                <h3>Best practices for adding shapefiles</h3>
+                                                <p>Shapefiles were originally created to perform geoprocessing on desktop apps. They are now supported in a number of web browser clients including <span class="GeneralMapStudio">Map Studio</span>. There are some limits to what web browser clients can support.</p>
+                                                <p>Below are best practices for using shapefiles in  <span class="GeneralMapStudio">Map Studio</span>:</p>
+                                                <ul>
+                                                    <li value="1">Choose to generalize features for web display if you have a large amount of features intended to be displayed at small scales and you have not already generalized your vertices in ArcGIS Desktop.</li>
+                                                    <li value="2">Create a .zip file that contains the .shp, .shx, .dbf, and .prj files that comprise the shapefile.</li>
+                                                    <li value="3">Store your shapefile directly in the root (the central directory) of the .zip archive and not in directories within the archive. If your .zip file viewer shows path information, the path should be blank.</li>
+                                                    <li value="4">The name of the new layer is the same as the name of the .zip file you added. You can rename the file before adding to the map, or rename the layer once it is part of the map.</li>
+                                                    <li value="5">Add standard compressed archive .zip files.</li>
+                                                    <li value="6">Include no more than 1,000 shapefile features in your file.</li>
+                                                    <li value="7">In some cases, when you attempt to add a file with fewer than 1,000 features, you see an error message that the shapefile is too big to add to the map. This occurs when the extracted data is too big to display in a web browser or the file is larger than 10 MB. Often, generalizing the features will reduce the overall size and allow the shapefile to be added to the map. If that doesn't work, you may need to create a feature service with ArcGIS Server. If you have publishing privileges in your organization, you can create feature layers by publishing features. You can try breaking up your features into multiple shapefiles, but this may result in a map that takes a long time to display.</li>
+                                                    <li value="8">The shapefile should contain valid geometries. If you have ArcMap, you can use the Repair Geometry geoprocessing tool to correct invalid geometries in shapefiles.</li>
+                                                    <li value="9">Include in the shapefile the accompanying .prj file in which the coordinate system of the data is defined. If you have ArcMap, you can define the coordinate system of a shapefile, which creates an appropriate .prj file for the shapefile.</li>
+                                                </ul>
+                                                <h3>Limitations</h3>
+                                                <p>The following limitations apply to using shapefiles in <span class="GeneralMapStudio">Map Studio</span>:</p>
+                                                <ul>
+                                                    <li value="1">Compression formats other than a .zip archive are not supported.</li>
+                                                    <li value="2">The shapefile must be less than 10 MB in size.</li>
+                                                    <li value="3">The following features are not supported: multipatch or multipoint geometries, geometries that cross the dateline, or self-intersections in polygons. Shapefiles with these features cannot be added to a map.</li>
+                                                    <li value="4">Shapefiles cannot be dragged directly onto <span class="GeneralMapStudio">Map Studio</span>; you must use the <span class="UIcomponent">Add Shapefile</span> widget in the <span class="GeneralMapStudio">Map Studio</span>.</li>
+                                                </ul>
                                             </div>
                                         </div>
-                                        <p>&#160;</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </section><a class="exit-off-canvas"></a>
-                </section>
+                    </section><a data-close="true"></a>
+                </div>
             </div>
             <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
         </div>

@@ -10,7 +10,6 @@ xmlAliasData += '    <Map Name=\"UnitsofMeasure\" Link=\"00-concepts/unitsofmeas
 xmlAliasData += '    <Map Name=\"EstLiveFuelMoisture\" Link=\"00-concepts/estlivefuelmoisture.htm\" ResolvedId=\"1013\" />';
 xmlAliasData += '    <Map Name=\"IFTDSSInputs\" Link=\"00-concepts/iftdssinputs.htm\" ResolvedId=\"1016\" />';
 xmlAliasData += '    <Map Name=\"AccountSetup\" Link=\"00-concepts/accounts/accountsetup.htm\" ResolvedId=\"1022\" />';
-xmlAliasData += '    <Map Name=\"Alerts\" Link=\"00-concepts/alerts.htm\" ResolvedId=\"1023\" />';
 xmlAliasData += '    <Map Name=\"GettingHelp\" Link=\"00-concepts/gettinghelp.htm\" ResolvedId=\"1024\" />';
 xmlAliasData += '    <Map Name=\"NavigatingIFTDSS\" Link=\"00-concepts/navigatingiftdss.htm\" ResolvedId=\"1025\" />';
 xmlAliasData += '    <Map Name=\"WhyIFTDSS\" Link=\"00-concepts/whyiftdss.htm\" ResolvedId=\"1029\" />';
@@ -20,7 +19,6 @@ xmlAliasData += '    <Map Name=\"FBFMSummaries\" Link=\"10-mapstudio/files/fbfms
 xmlAliasData += '    <Map Name=\"LCPCreate\" Link=\"10-mapstudio/files/lcpcreate.htm\" ResolvedId=\"1033\" />';
 xmlAliasData += '    <Map Name=\"LCPInfo\" Link=\"10-mapstudio/files/lcpinfo.htm\" ResolvedId=\"1034\" />';
 xmlAliasData += '    <Map Name=\"ShapefileInfo\" Link=\"10-mapstudio/files/shapefileinfo.htm\" ResolvedId=\"1035\" />';
-xmlAliasData += '    <Map Name=\"ShapefileSaving\" Link=\"10-mapstudio/files/shapefilesaving.htm\" ResolvedId=\"1036\" />';
 xmlAliasData += '    <Map Name=\"AddReferenceData\" Link=\"10-mapstudio/functions/addreferencedata.htm\" ResolvedId=\"1037\" />';
 xmlAliasData += '    <Map Name=\"FlamMapBackground\" Link=\"20-models/flammap/flammapbackground.htm\" ResolvedId=\"1060\" />';
 xmlAliasData += '    <Map Name=\"FlamMapCrowns\" Link=\"20-models/flammap/flammapcrowns.htm\" ResolvedId=\"1061\" />';
@@ -126,7 +124,6 @@ xmlAliasData += '    <Map Name=\"_4_crownfire_hh\" Link=\"50-hover/lcpfirebehavi
 xmlAliasData += '    <Map Name=\"_5_FMs_hh\" Link=\"50-hover/lcpfirebehavior/5_fms_hh.htm\" ResolvedId=\"9018\" />';
 xmlAliasData += '    <Map Name=\"Estimating_Fuel_Moistures\" Link=\"00-concepts/estimating fuel moistures.htm\" ResolvedId=\"1191\" />';
 xmlAliasData += '    <Map Name=\"SummaryFM\" Link=\"30-tasks/summaries/summaryfm.htm\" ResolvedId=\"1192\" />';
-xmlAliasData += '    <Map Name=\"IFTDSSFAQ\" Link=\"00-aboutiftdss/iftdssfaq.htm\" ResolvedId=\"1004\" />';
 xmlAliasData += '    <Map Name=\"Adding_Treatment_Interactions\" Link=\"10-ftem/adding treatment interactions.htm\" ResolvedId=\"1026\" />';
 xmlAliasData += '    <Map Name=\"FTEM_Data_Sources\" Link=\"10-ftem/ftem data sources.htm\" ResolvedId=\"1028\" />';
 xmlAliasData += '    <Map Name=\"FTEMPolicy\" Link=\"10-ftem/ftempolicy.htm\" ResolvedId=\"1051\" />';
@@ -142,5 +139,14 @@ xmlAliasData += '    <Map Name=\"step_Complete_hh\" Link=\"50-hover/ftem/step_co
 xmlAliasData += '    <Map Name=\"step_monitoring_hh\" Link=\"50-hover/ftem/step_monitoring_hh.htm\" ResolvedId=\"9024\" />';
 xmlAliasData += '    <Map Name=\"step_treatments_hh\" Link=\"50-hover/ftem/step_treatments_hh.htm\" ResolvedId=\"9025\" />';
 xmlAliasData += '    <Map Name=\"step_wildfires_hh\" Link=\"50-hover/ftem/step_wildfires_hh.htm\" ResolvedId=\"9026\" />';
+xmlAliasData += '    <Map Name=\"FTEMAdmin\" Link=\"10-ftem/ftemadmin.htm\" ResolvedId=\"1082\" />';
+xmlAliasData += '    <Map Name=\"Roles\" Link=\"10-ftem/roles.htm\" ResolvedId=\"1085\" />';
+xmlAliasData += '    <Map Name=\"AOIsMasks\" Link=\"10-mapstudio/files/aoismasks.htm\" ResolvedId=\"1087\" />';
+xmlAliasData += '    <Map Name=\"DeleteShape\" Link=\"10-mapstudio/files/deleteshape.htm\" ResolvedId=\"1088\" />';
+xmlAliasData += '    <Map Name=\"LCP_export\" Link=\"10-mapstudio/files/lcp_export.htm\" ResolvedId=\"1089\" />';
+xmlAliasData += '    <Map Name=\"OpenGeoTif\" Link=\"10-mapstudio/files/opengeotif.htm\" ResolvedId=\"1090\" />';
+xmlAliasData += '    <Map Name=\"ShapeCopyfromRef\" Link=\"10-mapstudio/files/shapecopyfromref.htm\" ResolvedId=\"1091\" />';
+xmlAliasData += '    <Map Name=\"ShapefileGroup\" Link=\"10-mapstudio/files/shapefilegroup.htm\" ResolvedId=\"1092\" />';
+xmlAliasData += '    <Map Name=\"ShapeGroup\" Link=\"10-mapstudio/files/shapegroup.htm\" ResolvedId=\"1094\" />';
 xmlAliasData += '</CatapultAliasFile>';
 MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Alias', xmlAliasData);

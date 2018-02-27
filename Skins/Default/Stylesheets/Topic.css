@@ -101,7 +101,7 @@ body
 	cursor: pointer;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
-	z-index: 10001;
+	z-index: 999;
 }
 
 .MCPopupContainer2
@@ -267,6 +267,7 @@ a.glossaryTerm
 
 .login-dialog.pulse
 {
+	position: fixed;
 	width: 408px;
 	height: 428px;
 	margin-left: -204px;
@@ -569,16 +570,6 @@ iframe.youtube-player_video_0
 	left: 0;
 	width: 100%;
 	height: 100%;
-}
-
-.dropDownHead:link
-{
-	font-size: 1.1em;
-	font-weight: normal;
-	margin-bottom: 4px;
-	margin-top: 10px;
-	line-height: normal;
-	text-decoration: none;
 }
 
 ul.MCGlossaryProxy_0
