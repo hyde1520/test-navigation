@@ -141,34 +141,78 @@
                                             <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
                                             </div>
                                         </div>
-                                        <h1><a name="kanchor24"></a>Layer List</h1>
-                                        <p><iframe class="youtube-player_0" src="https://www.youtube.com/embed/9ogScAHnmxo?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
+                                        <h1><a name="kanchor172"></a>Layer List</h1>
+                                        <p><iframe class="youtube-player_0" src="https://www.youtube.com/embed/5dX66IX9Gh4?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
                                         </p>
                                         <p>The <span class="UIcomponent">Layer List</span> <img src="../../resources/images/mapstudio/overview/button_layerlist_12x12.png" alt="blue layer list button" class="iftbutton" style="width: 12;height: 12;" /> widget shows all the layers currently displayed on the map. </p>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Menu</a></span>
                                             <div class="MCDropDownBody dropDownBody">
                                                 <p>The Layer List menu is located in the top right, it allows you to turn all layers on or off, and expand or collapse all layers.</p>
                                                 <p>
-                                                    <img src="../../resources/images/mapstudio/layer_list/layer_list_menu.png" alt="the layer list menu icon is a gray checkmark set against three horizontal lines, it is located in the top right of the layer list box" />
+                                                    <img src="../../resources/images/mapstudio/layer_list/layer_list_menu.png" alt="the layer list menu icon is a gray checkmark set against three horizontal lines, it is located in the top right of the layer list box" class="border" />
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Turn layer visibility on or off</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <p>Use the check boxes to make different layers visible</p>
+                                                <p>Use the check boxes to make different layers visible.</p>
                                                 <p>
-                                                    <img src="../../resources/images/mapstudio/layer_list/layerlist_checkbox.png" alt="check boxes allow turn layers on and off" />
+                                                    <img src="../../resources/images/mapstudio/layer_list/layerlist_checkbox.png" alt="check boxes allow turn layers on and off" class="border" />
                                                 </p>
                                             </div>
                                         </div>
-                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Look at individual attributes for each layer</a></span>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Controls for viewing Rasters</a></span>
                                             <div class="MCDropDownBody dropDownBody">
-                                                <p>Clicking to drop-down arrow to the left of each layer checkbox will display a list of the attributes within that layer.</p>
-                                                <p>Expand the legend for an attribute by clicking the drop-down arrow next to it.</p>
-                                                <p>Show or hide individual attributes by clicking the checkbox next to each one.</p>
-                                                <p>Zoom, move an attribute up or down, or adjust its transparency using the <span class="UIcomponent">More Options</span> <img src="../../resources/images/buttons_general/button_moreoptions_12x12.png" alt="more option" class="iftbutton" style="width: 12;height: 12;" /> button to the right of an attribute. Click the More Options button a second time to hide these options.</p>
+                                                <div class="notificationNote">
+                                                    <p>Some raster layers in <span class="GeneralProductName">IFTDSS</span>, LANDFIRE layers and model output layers are grouped. These groups layers contain individual attributes such as canopy cover, elevation, fire spread rate, etc.</p>
+                                                </div>
                                                 <p>
-                                                    <img src="../../resources/images/mapstudio/layer_list/attribute options.png" alt="a gray dropdown arrow to the left of the checkbox" />
+                                                    <img src="../../resources/images/buttons_general/dropdown_12x12.png" alt="dropdown" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">drop-down</span> to the left of a layer allows you to see the individual attributes for that layer.</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/layer_on_off_12x12.png" alt="checkbox" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">checkbox</span> to the left of a layer allows you to turn the layer on or off (visible or hidden).</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/button_moreoptions_12x12.png" alt="more options" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">More Options</span> button to the right of the layer allows you to:</p>
+                                                <ul>
+                                                    <li value="1">Zoom to the layer on the map.</li>
+                                                    <li value="2">Adjust the transparency of the layer.</li>
+                                                    <li value="3">Move the layer up or down in Layer List, and on the map. However, there are two limitations to this capability:<ul><li value="1">Shapes and shapefiles will always appear over raster data such as landscapes and fire behavior outputs.</li><li value="2">Grouped layers can be moved up or down, but their attributes cannot.</li></ul></li>
+                                                </ul>
+                                                <p>Individual attributes have very similar controls to layers:</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/dropdown_12x12.png" alt="dropdown" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">drop-down</span> to the left of an attribute allows you to see the legend for that attribute.</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/layer_on_off_12x12.png" alt="checkbox" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">checkbox</span> to the left of an attribute allows you to turn the attribute on or off (visible or hidden).</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/button_moreoptions_12x12.png" alt="more options" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">More Options</span> button to the right of the attribute allows you to adjust the transparency.</p>
+                                                <img src="../../resources/images/mapstudio/layer_list/attribute options.png" alt="a gray dropdown arrow to the left of the checkbox" class="border" />
+                                            </div>
+                                        </div>
+                                        <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Controls for viewing Shapes and Shapefiles</a></span>
+                                            <div class="MCDropDownBody dropDownBody">
+                                                <div class="notificationNote">
+                                                    <p><b>Shapefile vs. Shape?</b>
+                                                    </p>
+                                                    <p>"Shapefiles" include both the geometric area, as well as accompanying data, these can be uploaded to <span class="GeneralProductName">IFTDSS</span> from your local machine, and are usually created in ArcMap and similar tools.</p>
+                                                    <p>"Shapes" include only the geometric area, no associated data. These are created in <span class="GeneralMapStudio">Map Studio</span> either by drawing or copying with <span class="UIcomponent">Create / Edit Shapes</span>. </p>
+                                                    <p>Both shapes and shapefiles may be used as masks and areas of interest throughout <span class="GeneralProductName">IFTDSS</span></p>
+                                                </div>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/dropdown_12x12.png" alt="dropdown" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">drop-down</span> to the left allows you to see the legend for that attribute.</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/layer_on_off_12x12.png" alt="checkbox" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">checkbox</span> to the left allows you to turn it on or off (visible or hidden).</p>
+                                                <p>
+                                                    <img src="../../resources/images/buttons_general/button_moreoptions_12x12.png" alt="more options" class="iftbutton" style="width: 12;height: 12;" /> The <span class="UIcomponent">More Options</span> button to the right of shows several options. These are the same for shapes and shapefiles, with the exception of <a href="../files/shapefilegroup.htm" target="_blank">Create Shapefile Subset</a>, which is only available for shapefiles.</p>
+                                                <ul>
+                                                    <li value="1">Zoom to: zoom to the extent of the shape.</li>
+                                                    <li value="2">Transparency: Adjust the transparency.</li>
+                                                    <li value="3">Filtering: Opens the <a href="filter.htm" target="_blank">filter widget.</a></li>
+                                                    <li value="4">Disable/Enable Pop-up:&#160;Pop-ups are enabled by default, allowing you to double click on the shape and see a pop-up box containing metadata. This option lets you turn that feature on or off.</li>
+                                                    <li value="5">Move up/Move down: Move the shape up or down in Layer List and on the map.</li>
+                                                    <li value="6">Open Attribute Table: Opens the <a href="attributetable.htm" target="_blank">attribute table</a> for a shape.</li>
+                                                    <li value="7">Create Shapefile Subset (for shapefiles only). Allows you to create a new shapefile by selecting a subset of data. See the <a href="../files/shapefilegroup.htm" target="_blank">Create Shapefile Subset Topic</a> for full details.</li>
+                                                </ul>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/layer_list/shape_options.png" alt="shapefile options as described in text." class="border" />
                                                 </p>
                                             </div>
                                         </div>

@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Running Fire Behavior Models</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printercustom.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="https://use.fontawesome.com/78f39c078c.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <script src="https://www.google.com/jsapi" type="text/javascript">
+                            </script>
+                            <script>
+			/* <![CDATA[ */
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
+			/* ]]> */
+			</script>
+                            <div class="content">
+                                <div id="contentBody">
+                                    <div class="row collapse">
+                                        <div class="sideContent">
+                                            <div class="clearfix">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1 class="Heading1">Running Fire Behavior Models</h1>
+                                        <h2 class="Heading2">About Fire Behavior Models</h2>
+                                        <p>Currently <span class="GeneralProductName">IFTDSS</span> only runs one model called “Landscape Fire Behavior” (based on FLAMMAP Basic). It is a raster-based model that shows fire behavior on each given cell of the landscape based on user specified model inputs. Fire behavior in each cell is calculated independently.&#160; Vector based models showing growth from ignitions will be incorporated in the future. </p>
+                                        <p>The Auto-97th report you ran earlier is intended as a starting point to familiarize yourself with the landscape and the way fuels and weather conditions interact under worst case scenarios. Running Landscape Fire Behavior models in <span class="UIcomponent">Modeling Playground</span> is a good way to test and refine model inputs to reflect the specific conditions you’re interested in.</p>
+                                        <p>To familiarize yourself with this part of&#160;<span class="GeneralProductName">IFTDSS</span>, run a fire behavior scenario for your landscape.</p>
+                                        <p style="background-color: #add8e6;"><b>Tutorial Information:</b> This tutorial is written so you may follow along with a landscape of your choosing. If you prefer to replicate our exact steps you may continue by using the “HaypressCrkLf2012unedited landscape” and use the details highlighted within this tutorial.</p>
+                                        <h2 class="Heading2">Running a Landscape Fire Behavior Model</h2>
+                                        <p>To Navigate to the fire behavior model interface:</p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Click the&#160;<span class="UIcomponent">Playground</span>&#160;link in the top navigation</li>
+                                            <li value="2">Select <span class="UIcomponent">Landscape Fire Behavior</span> from the drop-down menu</li>
+                                            <li value="3">
+                                                <p>Click&#160;<span class="UIcomponent">Run Landscape Fire Behavior</span>. Note that the model runs from the landscape summary are also available in this interface, just like in&#160;<span class="UIcomponent">My Workspace</span>.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_4_lfb_modeling/running fire behavior models.png" class="borderlist" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <div class="notificationTip">
+                                            <p>All saved runs are stored in the same folder as your selected landscape, or in the ‘Playground folder’ if a new landscape is created but no folder specified.</p>
+                                        </div>
+                                        <p>To populate the input fields and run the model:</p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Give your run a descriptive name based on your inputs, such as 'Haypress_cool_wet'</li>
+                                            <li value="2">
+                                                <p>Select your landscape from the drop-down menu.<span style="background-color: #add8e6;"> We selected “HaypressCrklf2012unedited”</span>. Notice that your landscape details are displayed below this area once you select your landscape.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_4_lfb_modeling/running fire behavior models_1.png" alt="give your model a name" class="borderlist" />
+                                                </p>
+                                                <p>Next, select the input type, starting with "Wind", and fill in the required fields and run the model:</p>
+                                            </li>
+                                            <li value="3">Specify windspeed, in miles per hour, at 20 feet above the ground or above the vegetation (allowed values 0-100 mph). <span style="background-color: #add8e6;">We entered 3 mph</span>.</li>
+                                            <li value="4">Enter wind direction as the direction the wind is blowing from (in degrees clockwise from north, with north being 0 or 360 degrees). <span style="background-color: #add8e6;">We entered 156</span>.</li>
+                                            <li value="5">Specify a&#160;<a href="about:blank">crown fire calculation method</a>. <span style="background-color: #add8e6;">We left this on Scott/Reinhardt</span></li>
+                                            <li value="6">Enter a foliar moisture value. <span style="background-color: #add8e6;">We left this at the default value of 100%</span></li>
+                                            <li value="7">
+                                                <p>Specify fuel moisture, in percent, for:</p>
+                                                <li style="list-style-type: circle;" value="2">1 hour fuels (1hr FM) - allowed values 2-100</li>
+                                                <li style="list-style-type: circle;" value="3">10 hour fuels (10hr FM) - allowed values 2-100</li>
+                                                <li style="list-style-type: circle;" value="4">100 hour fuels (100hr FM) - allowed values 2-100</li>
+                                                <li style="list-style-type: circle;" value="5">Herbaceous fuels (Herb) - allowed values 30-250</li>
+                                                <li style="list-style-type: circle;" value="6">Live Woody fuels (WoodyFM) - allowed values 60-200</li>
+                                            </li>
+                                            <div>
+                                                <p><span style="background-color: #add8e6;">For this example we used 10% for 1 hr fuel moisture, 14% for 10 hr fuels, 16% for 100 hr fuels, 130% for herb fuels, and 90% for shrub fuels.</span><![CDATA[  ]]></p>
+                                                <p>Note the <span class="UIcomponent">Add Row</span> button under fuel moistures. By leaving this blank you apply your fuel moistures to the entire landscape. If you added rows, you would enter a different set of fuel moistures for each fuel model.</p>
+                                            </div>
+                                            <li value="8">
+                                                <p>Upon completing the inputs, click the&#160;Save and Run&#160;button. You will notice a&#160;Save&#160;button is also available for the times when you need to close a run before completing the inputs, but want return to it later.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_4_lfb_modeling/running fire behavior models_2.png" class="borderlist" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>Upon the running the model, you will be taken back to the <span class="UIcomponent">Modeling Playground</span> page. </p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_4_lfb_modeling/running fire behavior models_3.png" style="visibility: visible;mso-wrap-style: square;border-top-style: solid;border-top-width: 1pt;border-bottom-style: solid;border-bottom-width: 1pt;border-left-style: solid;border-left-width: 1pt;border-right-style: solid;border-right-width: 1pt;" />
+                                        </p>
+                                        <p>It may take a couple minutes for your behavior model to run, you can check its status using the Refresh button in the top right.</p>
+                                        <p>When complete, you may click on your model output file and choose the <span class="UIcomponent">View on Map</span> button to view your results in <span class="GeneralMapStudio">Map Studio</span>, or <span class="UIcomponent">Request a Report</span> to generate a fire behavior summary report in the same layout as the landscape summary reports. </p>
+                                        <p>Take a few minutes to generate a summary report and view the results. You can also access your modeling output from <span class="UIcomponent">My Workspace</span>. These results may also be viewed in <span class="GeneralMapStudio">Map Studio</span>, but we will cover viewing results in <span class="GeneralMapStudio">Map Studio</span> after this tutorial.</p>
+                                        <h2 class="Heading2">
+                                            <img src="../../resources/images/tutorial_4_lfb_modeling/running fire behavior models_4.png" class="border" />
+                                        </h2>
+                                        <h2 class="Heading2">Modeling Considerations</h2>
+                                        <p>Running various scenarios in the modeling playground can be an educational process to determine model sensitivity to various inputs and to evaluate how well Landfire has represented your local fuels.&#160; The <span class="UIcomponent">Modeling Playground</span> can be used in conjunction with <span class="UIcomponent">Landscape Editing</span> to assist users in making landscape modifications to best reflect anticipated fire behavior based on local expertise.&#160; </p>
+                                        <p>Additionally, for any treatment alternatives analysis in <span class="GeneralProductName">IFTDSS</span> (a process we will walk through later), you will have to pick one weather scenario to compare against multiple landscapes. Running multiple scenarios in <span class="UIcomponent">Modeling Playground</span> can help choose the inputs that best facilitate comparison of the alternatives.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

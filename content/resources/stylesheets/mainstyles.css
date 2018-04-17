@@ -732,7 +732,7 @@ html.templateTopic div.sideContent
 
 	img.border
 	{
-		page-break-before: auto;
+		page-break-before: avoid;
 		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
 		page-break-after: auto;
 		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
@@ -746,7 +746,7 @@ html.templateTopic div.sideContent
 		margin: 0px 5px 5px 5px;
 		max-width: 100%;
 		height: auto;
-		page-break-before: auto;
+		page-break-before: avoid;
 		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */
 		page-break-after: auto;
 		/* 'always,' 'avoid,' 'left,' 'inherit,' or 'right' */

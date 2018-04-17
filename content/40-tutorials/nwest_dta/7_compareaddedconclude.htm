@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Developing Treatments">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Tutorial:&#160;Developing Treatments">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -141,70 +142,69 @@
                                             </div>
                                         </div>
                                         <h1>Comparing Added Treatments and Concluding</h1>
+                                        <p>Like before, select the model change layer to evaluate flame length reduction. Though you're curious about these changes to fire behavior and fuel models, this is only a comparison of the original untreated landscape with this new treated landscape. What you'll really want to know is how much of an affect this added treatment of low severity wildfire, or a broadcast burn, will have compared to just the light thinning and pile burn applied earlier. You'll need to compare the first treatment to the second one to answer this.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_mapcompareflamelength_630x340.png" alt="flame length reduction from new treatment" class="border" style="width: 630;height: 340;" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_mapcompareflamelength.png" alt="flame length reduction from new treatment" class="border" />
                                         </p>
-                                        <p>When the map opens click the <span class="UIcomponent">Compare on Map</span> button once more and open the <span class="UIcomponent">Layer List</span> to&#160;toggle between the comparison layers. </p>
-                                        <p>Like before, select the model change layer to evaluate flame length reduction. Though we're curious about these changes to fire behavior and fuel models, this is only a comparison of the original untreated landscape with this new treated landscape. What you'll really want to know is how much of an effect this added treatment of low severity wildfire, or a broadcast burn, will have compared to just the light thinning and pile burn we applied earlier. You'll need to compare the first treatment to the second one to answer this.</p>
-                                        <p>To best compare these “treatments” (default disturbance edits) on the landscape, first use the <span class="UIcomponent">Swipe Tool</span>:</p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_newandoldbehavior_630x299.png" alt="add the two edited landscape files" class="border" style="width: 630;height: 299;" />
-                                        </p>
+                                        <h2>Swipe between layers</h2>
+                                        <p>To best compare these “treatments” (default disturbance edits) on the landscape, first use the <span class="UIcomponent">Swipe widget</span>:</p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Click on <span class="UIcomponent">Simulation Output Tools</span> and check the boxes next to:</li>
-                                            <li value="2">"GC12_Lt_Thn_PileRx_1yr" the first treatment of thinning and pile burning</li>
+                                            <li value="2">"GC12_Lt_Thn_PileRx_1yr" the first treatment of thinning and pile burning.</li>
                                             <li value="3">"GC12_Lt_Thn_PileRx_1yr_Rx_1Yr" the second treatment which follows the thin with a low severity burn.</li>
-                                            <li value="4">Make sure these layers are displayed at the top of the <span class="UIcomponent">Layer List</span> in this image the first treatment (thin and pile burn only) is the top layer, followed by the second treatment (thin and pile burn followed by a prescribed burn).</li>
-                                            <li value="5">Click the <span class="UIcomponent">Swipe Tool</span>. </li>
-                                            <li value="6">You can control the layers that appear in the <span class="UIcomponent">Swipe Tool</span> using the box in the top right of the map that appears once the <span class="UIcomponent">Swipe Tool</span> is clicked. The layer selected in this box will be the layer that appears in the top half of the slider, and hidden on the bottom half.</li>
+                                            <li value="4">Make sure these layers are displayed just under "shapes" toward the top of the <span class="UIcomponent">Layer List</span>. In this example the first three layers in Layer List are "Shapes", "Model Output: GC14_Lt_Thnpilebrn_1yr_Rx_1y", followed by "Model Output: GC14_Lt_Thnpilebrn_1yr".</li>
+                                            <li value="5">Click the <span class="UIcomponent">Swipe <img src="../../resources/images/mapstudio/overview/button_slider_13x12.png" alt="swipe" class="iftbutton" style="width: 13;height: 12;" /> widget</span>. </li>
+                                            <li value="6">
+                                                <p>You can control the layers that appear in the <span class="UIcomponent">Swipe widget</span> using the box in the top right of the map that appears once the <span class="UIcomponent">Swipe widget</span> is clicked. The layer selected in this box will be the layer that appears in the top half of the slider, and hidden on the bottom half. In this example "Model Ouptut: GC14_Lt_Thn_Pilebrn_1yr_Rx_1yr" is selected in the Swipe box.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/dta2_newandoldbehavior.png" alt="add the two edited landscape files" class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="7">Swipe between the layers and compare:&#160;In this example the light thin and pile burn is shown as the top swipe layer, followed by light thin, pile burn, and low severity wildfire (broadcast burn). Sliding back and forth and looking at the legend indicates that Flame Lengths were in fact reduced by several feet in some areas with just the addition of the Low Severity Wildfire! Next you'll want to see how the Fuel Models have changed with the addition of the Low Severity Wildfire. </li>
                                         </ol>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_newoldbehavior_swipe_630x299.png" alt="swiping between fire behavior layers" class="border" style="width: 630;height: 299;" />
-                                        </p>
-                                        <p>The light thin and pile burn, followed by low Severity wildfire (Broadcast burn) is shown on top, and light thin and pile burn only on the bottom.  Sliding back and forth and looking at the legend indicates that Flame Lengths were in fact reduced by up to a meter in some areas with just the addition of the Low Severity Wildfire! Next you'll want to see how the Fuel Models have changed with the addition of the Low Severity Wildfire. </p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_other_layers_630x311.png" alt="Selecting fuel models to compare" style="width: 630;height: 311;" class="border" />
-                                        </p>
                                         <p>Set the <span class="UIcomponent">Layer List</span> up again, this time opening </p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1"><span class="UIcomponent">Landscape Tools</span> <![CDATA[ ]]></li>
                                             <li value="2">Select the two treatment layers</li>
                                             <li value="3">Make sure these layers appear on the <span class="UIcomponent">Layer List</span></li>
-                                            <li value="4">Click the <span class="UIcomponent">Swipe</span> Tool</li>
-                                            <li value="5">Set the layers to swipe.</li>
+                                            <li value="4">Click the <span class="UIcomponent">Swipe</span> widget</li>
+                                            <li value="5">
+                                                <p>Set the layers to swipe.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/dta2_other_layers.png" alt="Selecting fuel models to compare" class="borderlist" />
+                                                </p>
+                                            </li>
                                         </ol>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_otherlayers_swipe_630x311.png" alt="swiping between landscape fuel models" class="border" style="width: 630;height: 311;" />
-                                        </p>
                                         <p>We can see from comparing these two edited landscapes, as well as the Landscape Change Map earlier,  that there was a significant shift in Fuel Model between the thinning/pile burn treatment, and the addition of the low severity wildfire. </p>
+                                        <h2>Review summary reports</h2>
                                         <p>Next, open the <span class="UIcomponent">Compare Summary Reports</span> to get the full picture and make a more informed decision about what treatments should be applied to achieve the preliminary objectives.</p>
                                         <p>Navigate to <span class="UIcomponent">My Workspace</span> and open the Fire Behavior Summary Compare Report.</p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength1_630x386.png" alt="table and bar chart of flame length comparison" style="width: 630;height: 386;" class="border" />
-                                        </p>
                                         <p>The Fire Behavior Compare Reports for a modeled Light Thin/Pile Burn/Low Severity Broadcast Burn treatment show even more of a difference in pre and post-treatment fire behavior.</p>
                                         <p>The Flame Length Bar Chart shows a large increase in the post-treatment acreage for lower Flame Length bins and no post-treatment acres in the higher Flame Length bins.</p>
-                                        <p>The table indicates the pre-treatment percentage of pixels in the &gt;0-.3m Flame Length bin is 1%, while post-treatment the percentage went up to 17%. Conversely, the percentage of post-treatment pixels in the 3 highest Flame Length bins is 0, indicating a significant decrease in Flame Lengths post-treatment, across the treatment area.</p>
+                                        <p>The table indicates the pre-treatment percentage of pixels in the &gt;0-1 foot Flame Length bin is 1%, while post-treatment the percentage went up to 13%. Conversely, the percentage of post-treatment pixels in the 3 highest Flame Length bins is 0, indicating a significant decrease in Flame Lengths post-treatment, across the treatment area.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength2_567x318.png" alt="difference chart and pie chart of flame length comparisons" style="width: 567;height: 318;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength1.png" alt="table and bar chart of flame length comparison" class="border" />
                                         </p>
-                                        <p>The Percent Difference Graph for Flame Lengths demonstrates the shift toward lower Flame Lengths post-treatment. You can see the significant positive percent difference in the &gt;0 meter bin, while the bins correlating to higher Flame Lengths indicate a drop in the percent difference.</p>
+                                        <p>The Percent Difference Graph for Flame Lengths demonstrates the shift toward lower Flame Lengths post-treatment. You can see the significant positive percent difference in the &gt;0-1 and &gt;1-4 foot bins, while the bins correlating to higher Flame Lengths indicate a drop in the percent difference.</p>
                                         <p>The Pie Charts tell the same story, plainly showing the shift to significantly lower flame lengths in the post-treatment chart.</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_flamelength2.png" alt="difference chart and pie chart of flame length comparisons" class="border" />
+                                        </p>
                                         <p>Scroll through the rest of the fire behavior model outputs in the report. Their story is the same, significantly reduced Rates of Spread, as well as almost no Crown Fire Activity post-treatment.</p>
                                         <p>Next, navigate back to <span class="UIcomponent">My Workspace</span> and open the Landscape Compare Summary Report.</p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare1_630x463.png" alt="fuel model bar chart and table comparison" style="width: 630;height: 463;" class="border" />
-                                        </p>
                                         <p>The Landscape Compare Reports for a modeled Light Thin/Pile Burn/Low Severity Broadcast Burn treatment show quite a change in Fuel Model pre- vs. post-treatment.</p>
-                                        <p>From the compare bar graph, we can tell that a significant portion of the TL8 Fuel Model (Long-Needle Litter) has shifted to the GR2 (Low Load, Dry Climate Grass) and GS1 (Low Load, Dry Climate Grass-Shrub) Fuel Models, 1 year post-treatment. The table to the right confirms this quantitatively, indicating that 52% of the treatment area was comprised of a TL8 Fuel Model pre-treatment, while just 1% of the treatment area was a TL8 Fuel Model post-treatment. Conversely, none of the treatment area contained the GS1 Fuel Model pre-treatment, while post-treatment over 50% of the treatment area was comprised of Fuel Model GS1.</p>
+                                        <p>From the compare bar graph, we can tell that a significant portion of the TL8 Fuel Model (Long-Needle Litter) has shifted to the GR2 (Low Load, Dry Climate Grass) and GS1 (Low Load, Dry Climate Grass-Shrub) Fuel Models, 1 year post-treatment. The table to the right confirms this quantitatively, indicating that 55% of the treatment area was comprised of a TL8 Fuel Model pre-treatment, while just 2% of the treatment area was a TL8 Fuel Model post-treatment. Conversely, none of the treatment area contained the GS1 Fuel Model pre-treatment, while post-treatment over 60% of the treatment area was comprised of Fuel Model GS1.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare2_630x448.png" alt="fuel model change chart and pie chart comparison" style="width: 630;height: 448;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare1.png" alt="fuel model bar chart and table comparison" class="border" />
                                         </p>
                                         <p>The Percent Difference chart reflects the shift in Fuel Model displayed by the Bar Graph and table above, clearly showing the drop in the TL8 Fuel Model, as well as the increase in the GS1 Fuel Model post-treatment.</p>
                                         <p>The Pie Charts visually display these changes in Fuel Model as well.</p>
+                                        <p>
+                                            <img src="../../resources/images/granite_crk_dta/dta2_report_fuelmodelcompare2.png" alt="fuel model change chart and pie chart comparison" class="border" />
+                                        </p>
                                         <p>Review the rest of the Landscape Compare Summary Report and note the changes in the various landscape characteristics. Pay particular attention to the increase in Canopy Base Height, as well as the decrease in Canopy Cover, post-treatment. This coincides with the information we see in the rest of the report, and reiterates the fact that this series of treatments will help achieve the stated objectives, which were to: reduce surface fuel loading and the overall horizontal and vertical fuelbed continuity in order to reduce the fire hazard to adjacent private land and the community of Idaho City; and return low intensity fire to fire adapted vegetation communities.</p>
                                         <p>
-                                            <img src="../../resources/images/granite_crk_dta/dta2_firebehaviorcomparison_end_630x358.png" alt="comparison of fire behavior bar charts" style="width: 630;height: 358;" class="border" />
+                                            <img src="../../resources/images/granite_crk_dta/dta2_firebehaviorcomparison_end.png" alt="comparison of fire behavior bar charts" class="border" />
                                         </p>
                                         <h2>Conclusion</h2>
                                         <p>We could continue this process and model a more invasive treatment, such as heavier thinning or increased mortality from a more severe broadcast (prescribed) burn, but  these results will achieve our initial preliminary objectives, and are a good place to start with a project proposal for the District ID Team.</p>

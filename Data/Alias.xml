@@ -88,15 +88,15 @@
     <Map Name="_3_Edit" Link="40-tutorials/comparefeature/3_edit.htm" ResolvedId="1166" />
     <Map Name="FireBehavior" Link="20-models/flammap/flammapabout.htm" ResolvedId="1135" />
     <Map Name="ModelingPlayground" Link="20-models/modelsoverview.htm" ResolvedId="1136" />
-    <Map Name="AccountSetup1" Link="10-ftem/accountsetup.htm" ResolvedId="1005" />
+    <Map Name="AccountSetup1" Link="10-ftem/accountsroles/accountsetup.htm" ResolvedId="1005" />
     <Map Name="FTEMAbout1" Link="10-ftem/ftemabout.htm" ResolvedId="1006" />
-    <Map Name="FTEMFaq" Link="10-ftem/ftemfaq.htm" ResolvedId="1007" />
-    <Map Name="MonitoringGuidance" Link="10-ftem/monitoringguidance.htm" ResolvedId="1008" />
-    <Map Name="Reporting" Link="10-ftem/reporting.htm" ResolvedId="1009" />
-    <Map Name="Symbology" Link="10-ftem/symbology.htm" ResolvedId="1010" />
-    <Map Name="TechDoc" Link="10-ftem/techdoc.htm" ResolvedId="1011" />
-    <Map Name="UsingFtem" Link="10-ftem/usingftem.htm" ResolvedId="1012" />
-    <Map Name="WindAdjustment" Link="10-ftem/windadjustment.htm" ResolvedId="1071" />
+    <Map Name="FTEMFaq" Link="10-ftem/faqs.htm" ResolvedId="1007" />
+    <Map Name="MonitoringGuidance" Link="10-ftem/guidance/monitoringguidance.htm" ResolvedId="1008" />
+    <Map Name="Reporting" Link="10-ftem/reports/ftemreporting.htm" ResolvedId="1009" />
+    <Map Name="Symbology" Link="10-ftem/general/symbology.htm" ResolvedId="1010" />
+    <Map Name="TechDoc" Link="10-ftem/datatechnical/techdoc.htm" ResolvedId="1011" />
+    <Map Name="UsingFtem" Link="10-ftem/general/usingftem.htm" ResolvedId="1012" />
+    <Map Name="WindAdjustment" Link="10-ftem/general/windadjustment.htm" ResolvedId="1071" />
     <Map Name="Copy_of_cycle_implementation_plan_hh" Link="50-hover/planningcycle/implementation_plan_hh.htm" ResolvedId="9183" />
     <Map Name="Copy_of_cycle_landscape_eval_hh" Link="50-hover/planningcycle/landscape_eval_hh.htm" ResolvedId="9185" />
     <Map Name="Copy_of_cycle_monitoring_hh" Link="50-hover/planningcycle/monitoring_hh.htm" ResolvedId="9186" />
@@ -123,10 +123,10 @@
     <Map Name="_5_FMs_hh" Link="50-hover/lcpfirebehavior/5_fms_hh.htm" ResolvedId="9018" />
     <Map Name="Estimating_Fuel_Moistures" Link="00-concepts/estimating fuel moistures.htm" ResolvedId="1191" />
     <Map Name="SummaryFM" Link="30-tasks/summaries/summaryfm.htm" ResolvedId="1192" />
-    <Map Name="Adding_Treatment_Interactions" Link="10-ftem/adding treatment interactions.htm" ResolvedId="1026" />
-    <Map Name="FTEM_Data_Sources" Link="10-ftem/ftem data sources.htm" ResolvedId="1028" />
-    <Map Name="FTEMPolicy" Link="10-ftem/ftempolicy.htm" ResolvedId="1051" />
-    <Map Name="GeoAreaOfInterest" Link="10-ftem/geoareaofinterest.htm" ResolvedId="1058" />
+    <Map Name="Adding_Treatment_Interactions" Link="10-ftem/datatechnical/buffering.htm" ResolvedId="1026" />
+    <Map Name="FTEM_Data_Sources" Link="10-ftem/datatechnical/treatments.htm" ResolvedId="1028" />
+    <Map Name="FTEMPolicy" Link="10-ftem/guidance/policy.htm" ResolvedId="1051" />
+    <Map Name="GeoAreaOfInterest" Link="10-ftem/general/geoareaofinterest.htm" ResolvedId="1058" />
     <Map Name="Complete_hh" Link="50-hover/ftem/complete_hh.htm" ResolvedId="9022" />
     <Map Name="monitoring_hh" Link="50-hover/ftem/monitoring_hh.htm" ResolvedId="9021" />
     <Map Name="treatments_hh" Link="50-hover/ftem/treatments_hh.htm" ResolvedId="9020" />
@@ -134,17 +134,34 @@
     <Map Name="table" Link="resources/tablestyles/table.html" ResolvedId="1070" />
     <Map Name="table1" Link="resources/tablestyles/table.html" ResolvedId="1072" />
     <Map Name="Helpful_topics" Link="00-aboutiftdss/helpful topics.htm" ResolvedId="1065" />
+    <Map Name="_0_Introduction" Link="40-tutorials/nwest_dta/0_introduction.htm" ResolvedId="1067" />
+    <Map Name="_1_PreviewAndCreate" Link="40-tutorials/nwest_dta/1_previewandcreate.htm" ResolvedId="1068" />
+    <Map Name="_2_SummarizeAndAssess" Link="40-tutorials/nwest_dta/2_summarizeandassess.htm" ResolvedId="1069" />
+    <Map Name="_3_CreateAOIs" Link="40-tutorials/nwest_dta/3_createaois.htm" ResolvedId="1074" />
+    <Map Name="_4_ReviewSummaryReport" Link="40-tutorials/nwest_dta/4_reviewsummaryreport.htm" ResolvedId="1075" />
+    <Map Name="_5_DevelopTreatmentAlts" Link="40-tutorials/nwest_dta/5_developtreatmentalts.htm" ResolvedId="1076" />
+    <Map Name="_6_CompareAddTreatment" Link="40-tutorials/nwest_dta/6_compareaddtreatment.htm" ResolvedId="1078" />
+    <Map Name="_7_CompareAddedConclude" Link="40-tutorials/nwest_dta/7_compareaddedconclude.htm" ResolvedId="1079" />
+    <Map Name="All" Link="40-tutorials/nwest_dta/all.htm" ResolvedId="1080" />
     <Map Name="step_Complete_hh" Link="50-hover/ftem/step_complete_hh.htm" ResolvedId="9023" />
     <Map Name="step_monitoring_hh" Link="50-hover/ftem/step_monitoring_hh.htm" ResolvedId="9024" />
     <Map Name="step_treatments_hh" Link="50-hover/ftem/step_treatments_hh.htm" ResolvedId="9025" />
     <Map Name="step_wildfires_hh" Link="50-hover/ftem/step_wildfires_hh.htm" ResolvedId="9026" />
-    <Map Name="FTEMAdmin" Link="10-ftem/ftemadmin.htm" ResolvedId="1082" />
-    <Map Name="Roles" Link="10-ftem/roles.htm" ResolvedId="1085" />
+    <Map Name="FTEMAdmin" Link="10-ftem/administrators.htm" ResolvedId="1082" />
+    <Map Name="Roles" Link="10-ftem/accountsroles/roles.htm" ResolvedId="1085" />
     <Map Name="AOIsMasks" Link="10-mapstudio/files/aoismasks.htm" ResolvedId="1087" />
     <Map Name="DeleteShape" Link="10-mapstudio/files/deleteshape.htm" ResolvedId="1088" />
-    <Map Name="LCP_export" Link="10-mapstudio/files/lcp_export.htm" ResolvedId="1089" />
-    <Map Name="OpenGeoTif" Link="10-mapstudio/files/opengeotif.htm" ResolvedId="1090" />
+    <Map Name="LCP_export" Link="10-myworkspace/lcp_export.htm" ResolvedId="1089" />
+    <Map Name="OpenGeoTif" Link="10-myworkspace/opengeotif.htm" ResolvedId="1090" />
     <Map Name="ShapeCopyfromRef" Link="10-mapstudio/files/shapecopyfromref.htm" ResolvedId="1091" />
     <Map Name="ShapefileGroup" Link="10-mapstudio/files/shapefilegroup.htm" ResolvedId="1092" />
     <Map Name="ShapeGroup" Link="10-mapstudio/files/shapegroup.htm" ResolvedId="1094" />
+    <Map Name="a_StartandCreateLCP" Link="40-tutorials/shorts/startandcreatelcp.htm" ResolvedId="1096" />
+    <Map Name="Chrome" Link="00-concepts/chrome.htm" ResolvedId="1103" />
+    <Map Name="AgencyLeads" Link="10-ftem/agencyleads.htm" ResolvedId="1104" />
+    <Map Name="DataTreatments" Link="10-ftem/datatechnical/treatments.htm" ResolvedId="1105" />
+    <Map Name="DataUtilities" Link="10-ftem/datatechnical/utilities.htm" ResolvedId="1106" />
+    <Map Name="DataWildfires" Link="10-ftem/datatechnical/wildfires.htm" ResolvedId="1107" />
+    <Map Name="AddShapefile1" Link="10-ftem/general/addshapefile.htm" ResolvedId="1109" />
+    <Map Name="geotiff_reclass" Link="10-myworkspace/geotiff_reclass.htm" ResolvedId="1110" />
 </CatapultAliasFile>

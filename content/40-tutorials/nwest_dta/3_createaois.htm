@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Developing Treatments">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Tutorial:&#160;Developing Treatments">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -141,19 +142,31 @@
                                             </div>
                                         </div>
                                         <h1>Creating Areas of Interest</h1>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/create_aoi_1_578x378.png" alt="set the layer list to view flame length" style="width: 578;height: 378;" class="border" />
-                                        </p>
+                                        <p>To create an Area of Interest, or polygon, you'll first adjust the layer visibility to make it easier to identify the areas on which you'd like to focus:</p>
                                         <ol style="list-style-type: upper-alpha;">
-                                            <li value="1">To create an Area of Interest, or polygon, change the <span class="UIcomponent">Basemap Gallery</span> layer to “Imagery with Labels” so you can see landscape imagery.</li>
-                                            <li value="2"> Then set up the <span class="UIcomponent">Layer List</span> to show my 97th percentile fire behavior output layer for Flame Lengths, and set the transparency so you can see roads and topography as you create your Area of Interest, or treatment area.</li>
-                                            <div>
-                                                <img src="../../resources/images/granite_crk_dta/create_treatment_polys2_630x294.png" alt="use 'create/edit' shapes to create treatment polygons" style="width: 630;height: 294;" class="border" />
-                                            </div>
-                                            <li value="3">Select the <span class="UIcomponent">Create/Edit Shapes</span> button <img src="../../resources/images/mapstudio/button_edittools.png" alt="create or edit shapes" /> at the bottom of the screen and ensure <span class="UIcomponent">Polygons</span> is selected in the dropdown box in <span class="UIcomponent">Create/Edit Shapes</span>. </li>
-                                            <li value="4">Select <span class="UIcomponent">Freehand Polygon</span><img src="../../resources/images/mapstudio/button_edittools_freehand.png" alt="freehand draw button" /> option, and draw a shape around one of the areas of significant fire behavior. Next, select the button again and draw a shape around the second area that exhibited significant fire behavior. You'll concentrate on these areas for developing and comparing treatments to meet the objectives of reducing the fire hazard in this area, and returning low intensity fire to this landscape.</li>
-                                            <li value="5">To save these two treatments as one shapefile, click the <span class="UIcomponent">Copy from Existing Features</span> button <img src="../../resources/images/mapstudio/button_copy_exstng_ftrs_23x23.png" alt="copy from exisitng features button" style="width: 23;height: 23;" />, check the <span class="UIcomponent">Select multipart</span> button option, single left-click one shape, then single left click the other shape, then proceed to naming.</li>
-                                            <li value="6">Name this “Granite Creek Proposed Treatment Areas”, then save this new shape to the existing "Granite Creek Treatments" folder. This will ensure the Area of Interest is filed in the same location in <span class="UIcomponent">My Workspace</span> as all the other Granite Creek project files.</li>
+                                            <li value="1">If you have not done so already, change the <span class="UIcomponent">Basemap Gallery</span> layer to “Imagery with Labels” so you can see landscape imagery.</li>
+                                            <li value="2">
+                                                <p> Then set up the <span class="UIcomponent">Layer List</span> to show the 97th percentile fire behavior output layer for Flame Lengths, and set the transparency so you can see roads and topography as you create your Area of Interest, or treatment area.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/create_aoi_1.png" alt="set the layer list to view flame length" class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="3">Select the <span class="UIcomponent">Create/Edit Shapes</span> <img src="../../resources/images/mapstudio/create_edit_shp/button_edittools_12x12.png" alt="create or edit shapes" class="iftbutton" style="width: 12;height: 12;" /> widget  at the bottom of the screen and ensure <span class="UIcomponent">Polygons</span> is selected in the drop-down box in <span class="UIcomponent">Create/Edit Shapes</span>. </li>
+                                            <li value="4">
+                                                <p>Next you will create two shapes similar to those shown below (they need not match exactly). Select <span class="UIcomponent">Freehand Polygon</span> <img src="../../resources/images/mapstudio/create_edit_shp/button_edittools_freehand_12x12.png" alt="freehand draw button" class="iftbutton" style="width: 12;height: 12;" /> option, and draw a shape around one of the areas of significant fire behavior.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/treatmentareas.png" alt="treatment areas are now visible in map studio" class="borderlist" />
+                                                </p>
+                                                <p>Next, select <span class="UIcomponent">Freehand Polygon</span> <img src="../../resources/images/mapstudio/create_edit_shp/button_edittools_freehand_12x12.png" alt="freehand draw button" class="iftbutton" style="width: 12;height: 12;" /> option again and draw a second a shape around the second area that exhibited significant fire behavior. You'll concentrate on these areas for developing and comparing treatments to meet the objectives of reducing the fire hazard in this area, and returning low intensity fire to this landscape.</p>
+                                            </li>
+                                            <li value="5">Name this “Granite Creek Proposed Treatment Areas”.</li>
+                                            <li value="6"> Select the "Granite Creek Treatments" folder. This will ensure the Area of Interest is filed in the same location in <span class="UIcomponent">My Workspace</span> as all the other Granite Creek project files.</li>
+                                            <li value="7">
+                                                <p>Click <span class="UIcomponent">Create</span>. These two areas will now be saved as a single shape and available in the <span class="UIcomponent">Layer List</span> in Map Studio, as well as in your "Granite Creek Treatments" folder in <span class="UIcomponent">My Workspace</span>.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/create_treatment_polys_updated.png" alt="create shapefiles using the 'Create/Edit Shapes' option in Map Studio" class="borderlist" />
+                                                </p>
+                                            </li>
                                         </ol>
                                     </div>
                                 </div>

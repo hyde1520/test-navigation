@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Developing Treatments">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Resources|Tutorials|Tutorial:&#160;Developing Treatments">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -108,13 +108,14 @@
                             </script>
                             <script>
 			/* <![CDATA[ */
-			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109528589-1"></script>
-			<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-			gtag('config', 'UA-109528589-1');
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
 			/* ]]> */
 			</script>
                             <div class="content">
@@ -142,36 +143,46 @@
                                         </div>
                                         <h1>Previewing and Creating a Landscape Using  <span class="GeneralMapStudio">Map Studio</span></h1>
                                         <h2>Previewing the Landscape</h2>
-                                        <p>The first step will take place in <span class="GeneralMapStudio">Map Studio</span> to get a good look at the area and create a landscape to start working from. To do this:&#160;</p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/map_studio_explore_630x399.png" alt="use map studio to explore your area" style="width: 630;height: 399;" class="border" />
-                                        </p>
+                                        <p>The first step will take place in <span class="GeneralMapStudio">Map Studio</span> to get a good look at the area and create a landscape to start working from. To do this:</p>
                                         <ol style="list-style-type: upper-alpha;">
                                             <li value="1">Access <span class="GeneralMapStudio">Map Studio</span> from the top navigation panel, visible on any page in <span class="GeneralProductName">IFTDSS</span>.</li>
-                                            <li value="2">Use the <span class="UIcomponent">Zoom</span> buttons, and mouse, to the area. The location search box at the top of <span class="GeneralMapStudio">Map Studio</span> can also be helpful. </li>
-                                            <li value="3">Open the  <span class="UIcomponent">Basemap Gallery</span> to get a more detailed baselayer.</li>
-                                            <li value="4">Select "Imagery with Labels".</li>
+                                            <li value="2">Use the <span class="UIcomponent">Zoom</span> widgets, and mouse, to locate your area. The location search box at the top of <span class="GeneralMapStudio">Map Studio</span> can also be helpful. </li>
+                                            <li value="3">Open the  <span class="UIcomponent">Basemap Gallery</span> to choose a more detailed baselayer.</li>
+                                            <li value="4">
+                                                <p>Select "Imagery with Labels".</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/map_studio_explore.png" alt="use map studio to explore your area" class="borderlist" />
+                                                </p>
+                                            </li>
                                         </ol>
                                         <h2>Create the Landscape</h2>
                                         <p>Next, you'll create your landscape, which will serve as a starting point for the rest of the analysis. To do this:</p>
-                                        <p>
-                                            <img src="../../resources/images/granite_crk_dta/obtain_landscape_630x509.png" alt="use the 'Landscape Tools' to add a new landscape" class="border" style="width: 630;height: 509;" />
-                                        </p>
                                         <ol style="list-style-type: upper-alpha;">
-                                            <li value="1"> Click on the <span class="UIcomponent">Landscape Tools</span> button at the bottom of the screen.</li>
+                                            <li value="1"> Click on the <span class="UIcomponent">Landscape Tools</span> <img src="../../resources/images/mapstudio/overview/button_landscapetools_12x12.png" alt="landscape tools" class="iftbutton" style="width: 12;height: 12;" /> widget at the bottom of the screen.</li>
                                             <li value="2">Select the <span class="UIcomponent">Create New</span> tab to create a new landscape.</li>
-                                            <li value="3"> Select <span class="UIcomponent">Draw Mode</span>, then drag across the area you’d like to analyze.  For this example you can follow along by inputting the coordinates below directly:</li>
+                                            <li value="3"> Select <span class="UIcomponent">Draw Mode</span>, then drag across the area you’d like to analyze.  For this example you can follow along by inputting the coordinates below directly into the fields:</li>
                                             <ul>
                                                 <li value="1">East: -115.5848</li>
                                                 <li value="2">West: -115.8096</li>
                                                 <li value="3">North: 43.8854</li>
                                                 <li value="4">South: 43.7675</li>
                                             </ul>
-                                            <li value="4">Select the version of LANDFIRE&#160;data, in this case 2012.</li>
+                                            <li value="4">Select the version of LANDFIRE&#160;data your using , in this case 2014.</li>
                                             <li value="5">Select the fire behavior fuel model type (13 or 40), here Fuel Model 40 was chosen.</li>
-                                            <li value="6">Name the new landscape "Granite Creek LF2012 unedited". Included the name, Landfire version, and its editing/treatment status to make it easy to discern this landscape from others once I start editing. Try to keep the entire name around 30 characters long to ensure it runs smoothly in future <span class="GeneralProductName">IFTDSS</span> operations.</li>
+                                            <li value="6">
+                                                <p>Name the new landscape "Granite Creek LF2014 unedited". Included the name, Landfire version, and its editing/treatment status to make it easy to discern this landscape from others once you start editing. </p>
+                                                <div>
+                                                    <p><span class="notificationImportant">Try to keep the entire name around 30 characters long to ensure it runs smoothly in future <span class="GeneralProductName">IFTDSS</span> operations.</span>
+                                                    </p>
+                                                </div>
+                                            </li>
                                             <li value="7">Choose or create a new folder for this landscape, this is where the landscape will be stored in <span class="UIcomponent">My Workspace</span>. For this example, use the <b>+</b> button next to the folder name to add a new folder, name it "Granite Creek Treatments".</li>
-                                            <li value="8">Once everything looks good, click the <span class="UIcomponent">Create</span> button and wait a minute for the landscape to process.</li>
+                                            <li value="8">
+                                                <p>Once everything looks good, click the <span class="UIcomponent">Create</span> button and wait a minute for the landscape to process.</p>
+                                                <p>
+                                                    <img src="../../resources/images/granite_crk_dta/obtain_landscape.png" alt="use the 'Landscape Tools' to add a new landscape" class="borderlist" />
+                                                </p>
+                                            </li>
                                         </ol>
                                     </div>
                                 </div>

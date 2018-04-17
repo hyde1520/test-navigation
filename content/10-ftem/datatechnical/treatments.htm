@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Fuel Treatment Data Sources Used by FTEM (An Overview)</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printercustom.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="https://use.fontawesome.com/78f39c078c.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <script src="https://www.google.com/jsapi" type="text/javascript">
+                            </script>
+                            <script>
+			/* <![CDATA[ */
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
+			/* ]]> */
+			</script>
+                            <div class="content">
+                                <div id="contentBody">
+                                    <div class="row collapse">
+                                        <div class="sideContent">
+                                            <div class="clearfix">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1>Fuel Treatment Data Sources Used by FTEM (An Overview)</h1>
+                                        <p class="comment" style="font-weight: bold;">UNDER&#160;DEVELOPMENT</p>
+                                        <h2>Introduction</h2>
+                                        <p>The Fuels Treatment Effectiveness Monitoring (FTEM) process relies on Integrated Interagency Fuels Treatment geospatial datasets  that depict completed fuels treatments from four land management Agencies within the Department of Interior (National Park Service, Bureau of Land Management, US Fish and Wildlife Service, and Bureau of Indian Affairs) and Department of Agriculture (USDA Forest Service). These spatial datasets consist of  point and polygon features.</p>
+                                        <p>The FTEM Integrated Point and Polygon Fuels Treatment Layers are derived from data stored in:</p>
+                                        <ul>
+                                            <li value="1">The Hazardous Fuels Reduction (HFR) Module of the National Fire Plan Operations and Reporting System (NFPORS). NFPORS is the national system for tracking combined fuels accomplishments for all agencies in the Department of Interior.</li>
+                                            <li value="2">The Forest Service Activity Tracking System (FACTS). FACTS is the official system for tracking U.S. Forest Service fuels accomplishments. FACTS data is shared with NFPORS to facilitate interagency reporting needs.</li>
+                                        </ul>
+                                        <h2>Combining Data Sources</h2>
+                                        <p>If FACTS data is shared with NFPORS, why not just use NFPORS data in FTEM? Because the history and data structures of the two applications, which originated with different end goals, it isn’t that simple.</p>
+                                        <p>NFPORS contains both point and polygon fuels treatment data from the previously mentioned agencies within the Department of Interior and point data only for fuels treatments from the USDA Forest Service. Polygon data from the USDA&#160;Forest Service  is stored in FACTS, but not shared to NFPORS.</p>
+                                        <p>Point features represent all treatment records, from both FACTS and NFPORS; However, not all treatment records have an associated polygon due to variability in agency-specific reporting rules and system capabilities. This is especially true for older treatments. Another complicating factor is that NFPORS and FACTS use different attribute names, or fields, to describe similar information related to fuels treatments.</p>
+                                        <p>To overcome these challenges, the FTEM team created two fuels treatment layers, one point layer and one polygon layer. Together, these layers represent an integrated depiction of completed fuels treatments across five federal agencies. The FTEM Integrated  Point and Polygon Fuels Treatment Layers:</p>
+                                        <ul>
+                                            <li value="1">draw spatial and tabular information from both FACTS and NFPORS</li>
+                                            <li value="2">contain attributes that are crosswalked to the NWCG Fuel Treatment Polygon standard (see below for more detail on this process)</li>
+                                            <li value="3">are automatically updated nightly to reflect newly entered and revised data</li>
+                                            <li value="4">are filtered to remove duplicate records, where possible</li>
+                                        </ul>
+                                        <p>
+                                            <img src="../../resources/images/ftem/integrated_pointpoly.png" alt="data as described in text" class="border" />
+                                        </p>
+                                        <h2>Creating a Common Standard</h2>
+                                        <p>Combining NFPORS and FACTS polygon data into the FTEM Integrated Point and Polygon Fuels Treatment Layers was accomplished by using the National Wildfire Coordinating Group (NWCG) data standard for fuels treatments to identify the minimum attributes required the use of fuel treatment data. NWCG standards provide specifications for data that enable common usage across wildland fire information systems (<a href="https://www.nwcg.gov/data-standards" target="_blank">https://www.nwcg.gov/data-standards <a href="https://www.treesearch.fs.fed.us/pubs/6447" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></a>.).  After thoroughly reviewing FACTS and NFPORS polygon data, the FTEM team crosswalked treatment data from both sources to the standard, and combined the resulting data from the respective systems to create a single service for all fuel treatment perimeters from both departments.  This methodology includes a process to remove duplicate polygon records.</p>
+                                        <p>The points within the FTEM Integrated Point and Polygon Fuels Treatment Layers are derived directly from NFPORS and maintain attribution as it exists in that system. No NWCG data standard for fuels treatment points currently exists, although the development of such a standard has been requested. This layer is filtered to remove those points that are already represented by polygons in the FTEM Integrated Fuels Treatment Layers.</p>
+                                        <p>Inevitably, some duplication remains due to inconsistencies in how records are populated. Duplicate polygons occur most often when fuels treatment work has been done on the same piece of ground multiple times, usually as part of a series of activities considered part of the same treatment.  For example, a thinning, followed by a piling activity, followed by a burning activity, might each be represented by separate, identical polygons.  While steps have been taken to display only the most recent activity in these scenarios in order to reduce duplication, some of the source data are organized in such a way that this is prohibitively difficult. Thus, some duplicates remain in the integrated data. However, this integration is first of its kind. No other cross-agency, integrated polygon and point coverage of completed fuels treatments currently exists.</p>
+                                        <div class="notificationImportant">
+                                            <p>If you do not see a wildfire or fuel treatment in FTEM, it is because it has not been included in one of the above systems. Please follow up with your <a href="../agencyleads.htm" target="_blank">Agency Lead</a> to have the information added to the system.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>

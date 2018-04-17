@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta charset="utf-8" />
+        <meta name="description" content="" />
+        <meta name="author" content="" /><title>Creating Summary Reports:</title>
+        <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/foundation.6.2.3.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
+        <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <style>/*&lt;meta /&gt;*/
+
+.button.expand-print-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/printercustom.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.expand-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/expand.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.button.collapse-all-button
+{
+	-pie-background: url('../../../Skins/Default/Stylesheets/Images/collapse.png') no-repeat center center, linear-gradient(#ffffff, #ececec);
+}
+
+.needs-pie
+{
+	behavior: url('../../../Resources/Scripts/PIE-no-motw.htc');
+}
+
+</style>
+        <link href="../../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <script src="../../../Resources/Scripts/custom.modernizr.js">
+        </script>
+        <script src="../../../Resources/Scripts/jquery.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/require.config.js">
+        </script>
+        <script src="../../../Resources/Scripts/foundation.6.2.3_custom.js">
+        </script>
+        <script src="../../../Resources/Scripts/plugins.min.js">
+        </script>
+        <script src="../../../Resources/Scripts/MadCapAll.js">
+        </script>
+        <script src="https://use.fontawesome.com/78f39c078c.js">
+        </script>
+    </head>
+    <body>
+        <div class="foundation-wrap off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
+                <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
+                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    </ul>
+                </aside>
+                <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
+                    <div>
+                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                            <div class="middle title-bar-section outer-row clearfix">
+                                <div class="relative clearfix"><a class="logo" href="../../home.htm" alt="Logo"></a>
+                                    <div class="navigation-wrapper nocontent">
+                                        <ul class="navigation clearfix" data-mc-css-tree-node-has-children="has-children" data-mc-css-sub-menu="sub-menu" data-mc-expand-event="mouseenter" data-mc-top-nav-menu="True" data-mc-max-depth="3" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
+                                            <li class="placeholder" style="visibility:hidden"><a>placeholder</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <button class="menu-icon" data-toggle="offCanvas"><span></span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="nav-search row outer-row">
+                                <form class="search" action="#">
+                                    <div class="search-bar search-bar-container needs-pie">
+                                        <input class="search-field needs-pie" type="search" placeholder="Search" />
+                                        <div class="search-filter-wrapper">
+                                            <div class="search-filter">
+                                                <div class="search-filter-content">
+                                                    <ul>
+                                                        <li>All Files</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="search-submit-wrapper" dir="ltr">
+                                            <div class="search-submit" title="Search">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </nav>
+                    </div>
+                    <section class="main-section">
+                        <div class="row outer-row" data-mc-content-body="True">
+                            <script src="https://www.google.com/jsapi" type="text/javascript">
+                            </script>
+                            <script>
+			/* <![CDATA[ */
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-109528589-1', 'auto');
+			ga('send', 'pageview');
+
+			/* ]]> */
+			</script>
+                            <div class="content">
+                                <div id="contentBody">
+                                    <div class="row collapse">
+                                        <div class="sideContent">
+                                            <div class="clearfix">
+                                                <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                                    <div class="button-group-container-left">
+                                                        <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
+                                                        </button>
+                                                        <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                            <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <h1 class="Heading1">Creating Summary Reports:</h1>
+                                        <h2>About Summary Reports</h2>
+                                        <p><span class="GeneralProductName">IFTDSS</span> generates 4 types of summary reports which can be requested from various places throughout the application.&#160; All reports can be retrieved and viewed from <span class="UIcomponent">My Workspace</span>.</p>
+                                        <ul style="margin-left: 36pt;">
+                                            <li value="1"><b>Auto 97th Summary Report:</b> Summarizes both landscape attributes and a default landscape fire behavior run conducted under 97th percentile weather conditions.&#160; This report can only be created from the Landscape Summary task in Landscape Evaluation portion of the Cycle.</li>
+                                            <li value="2"><b>Landscape (LCP) Summary Report:</b> (Landscape Input File Attribute Summary) This report contains only landscape attributes and&#160; can be created from the landscape file in <span class="UIcomponent">My Workspace</span>.</li>
+                                            <li value="3"><b>Model Run Output&#160; Report:</b> (Fire Behavior Outputs Summary, discussed in a later tutorial).&#160; This report can be created from the list of&#160; Model Output files in <span class="UIcomponent">My Workspace</span>.</li>
+                                            <li value="4"><b>Comparison Reports:</b>&#160; Fire behavior and landscape attribute report comparing two landscapes and two model output files.&#160; These reports can only be created from the Develop Treatment Alternatives task within Strategic Planning of the Cycle. (We will look at these in a later tutorial)</li>
+                                        </ul>
+                                        <p>Reports are symbolized in <span class="UIcomponent">My Workspace</span> with a Bar Chart icon <img src="../../resources/images/tutorial_3_summaries/creating summary reports_1_13x12.png" style="width: 13;height: 12;" class="iftbutton" />. Click "Report" under the <span class="UIcomponent">Display</span> heading of the left hand panel to filter and display only reports within a given folder. Hovering over the Report name in the workspace tells more about the report. </p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports.png" class="border" />
+                                        </p>
+                                        <p>Any type of report can be viewed from <span class="UIcomponent">My Workspace</span> by clicking on the report name, then clicking the <span class="UIcomponent">View Summary</span> button. Clicking on a landscape or Model Output in <span class="UIcomponent">My Workspace</span> and using the <span class="UIcomponent">Request a Report</span> button, will generate a LCP report or Model Run Output report.</p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_2.png" class="border" />
+                                        </p>
+                                        <p>In this tutorial you will generate an Auto97th Summary report, and an LCP report. We will follow up by showing where you may generate a Model Run Output report, and Comparison report, but will not outline those steps here because they are addressed in a later tutorial.</p>
+                                        <p style="background-color: #add8e6;">Tutorial Information: This tutorial is written so you may follow along with a landscape of your choosing. If you prefer to replicate our exact steps you may continue by using the “HaypressCrkLf2012unedited” landscape.</p>
+                                        <h2>Creating an Auto97th Summary Report</h2>
+                                        <p>An Auto-97th summary report provides a quick fire behavior model run summary under severe weather conditions for a given location. Fuel moistures are automatically populated using the 97th percentile weather conditions recorded at the nearest vetted Remote Automated Weather Station (RAWS) to the center point of your landscape extent. </p>
+                                        <p>If you have navigated away from the Landscape Summary interface, it can be accessed from the Cycle, using the Landscape Evaluation stage of the planning cycle.</p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_3.png" alt="Landscape summary is accessed through 'landscape evaluation' from the cycle" class="border" />
+                                        </p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Specify an existing landscape to summarize using the drop-down menu. If your following along with the Haypress landscape example you may use that one, or choose one of your own landscapes.</li>
+                                            <li value="2">If you wanted to constrain the summary to a specific area of interest, you could choose a shapefile from the Area of Interest drop-down. Leave this option blank for this example, this will result in a summary report that covers the entire landscape. </li>
+                                            <li value="3">
+                                                <p>Click the <span class="UIcomponent">Request a Report</span> button.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_3_summaries/creating summary reports_4.png" class="borderlist" />
+                                                </p>
+                                            </li>
+                                            <li value="4">
+                                                <p>A prompt appears with the name of your landscape across the top. Click <span class="UIcomponent">Create Report</span> to generate the Summary Report.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_3_summaries/creating summary reports_5.png" class="borderlist" />
+                                                </p>
+                                                <p>The&#160;<img src="../../resources/images/tutorial_3_summaries/creating summary reports_7_13x12.png" style="width: 13;height: 12;" alt="hourglass" class="iftbutton" />&#160;icon indicates the Summary Report is being generated. You can use the&#160;<span class="UIcomponent">Refresh&#160;<img src="../../resources/images/tutorial_3_summaries/creating summary reports_8_18x12.png" style="width: 18;height: 12;" alt="refresh" class="iftbutton" />&#160;button</span> to check the status of the report. It may take a couple minutes to generate.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_3_summaries/creating summary reports_6.png" alt="green confirmation text box appears to let you know your summary is being generated" class="border" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>When complete, your Summary Report will become an active hyperlink, and a green checkmark will appear next to it. Clicking it from this confirmation dialogue box will open the report. Later, as you navigate through&#160;<span class="GeneralProductName">IFTDSS</span>, you will be able to view this report again from&#160;<span class="UIcomponent">My Workspace</span>, in the same folder as your landscape.</p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_9.png" alt="the report name will become a hyperlink when the report is complete" class="border" />
+                                        </p>
+                                        <p>Click the Report link. The report will open in a separate browser tab. Give it a brief overview to become familiar with its layout. </p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_10.png" alt="click the report link to open it" class="border" />
+                                        </p>
+                                        <p>Note the landscape data and model run parameters outlined along the top, the map, table, bar, and pie charts available for the landscape and behavior outputs, and the ability to jump to a specific output using the left-hand menu. When finished, click the download icon in the top-right, and download a pdf to your computer’s hard-drive. The download button will download the entire report. </p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_11.png" alt="landscape information and model parameters are displayed along the top." class="border" />
+                                        </p>
+                                        <p>You will also notice download options next to individual report pieces that allow you to copy or save just that part of the report. These are found in the top right for charts, and along the left for tables.</p>
+                                        <p>
+                                            <img src="../../resources/images/tutorial_3_summaries/creating summary reports_12.png" class="border" />
+                                        </p>
+                                        <p>When finished, close the report tab and go back to <span class="GeneralProductName">IFTDSS</span>.</p>
+                                        <h2>Creating a Landscape (LCP) Summary Report</h2>
+                                        <p>You just looked at a report combining Auto97th fire behavior and landscape attributes, but there may be times when you are just interested in a summary of landscape attributes. This is when the Landscape (LCP) Summary Report is useful. To generate one:</p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Navigate to <span class="UIcomponent">My Workspace</span>.</li>
+                                            <li value="2">Open your project folder.</li>
+                                            <li value="3">Select your landscape by clicking on it.</li>
+                                            <li value="4">
+                                                <p>Click the <span class="UIcomponent">Request a Report</span> button.</p>
+                                                <p>
+                                                    <img src="../../resources/images/tutorial_3_summaries/creating summary reports_13.png" class="borderlist" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>Take a few minutes to familiarize yourself with the landscape report before continuing to the next tutorial.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section><a data-close="true"></a>
+                </div>
+            </div>
+            <script>/* <![CDATA[ */$(document).foundation();/* ]]> */</script>
+        </div>
+    </body>
+</html>
