@@ -76,17 +76,10 @@ xmlAliasData += '    <Map Name=\"LocationButton\" Link=\"10-mapstudio/functions/
 xmlAliasData += '    <Map Name=\"LandscapeEditTechTopic\" Link=\"30-tasks/lndscpedit/landscapeedittechtopic.htm\" ResolvedId=\"1160\" />';
 xmlAliasData += '    <Map Name=\"Glossary1\" Link=\"41-references/glossary.htm\" ResolvedId=\"1161\" />';
 xmlAliasData += '    <Map Name=\"RuleOrdering\" Link=\"30-tasks/lndscpedit/ruleordering.htm\" ResolvedId=\"1162\" />';
-xmlAliasData += '    <Map Name=\"_0_Intro\" Link=\"40-tutorials/comparefeature/0_intro.htm\" ResolvedId=\"1163\" />';
-xmlAliasData += '    <Map Name=\"_1_ProjectBegin\" Link=\"40-tutorials/comparefeature/1_projectbegin.htm\" ResolvedId=\"1164\" />';
-xmlAliasData += '    <Map Name=\"_2_CreateLCP\" Link=\"40-tutorials/comparefeature/2_createlcp.htm\" ResolvedId=\"1165\" />';
-xmlAliasData += '    <Map Name=\"_4_IdPriority\" Link=\"40-tutorials/comparefeature/4_idpriority.htm\" ResolvedId=\"1167\" />';
-xmlAliasData += '    <Map Name=\"_5_treatmentPoly\" Link=\"40-tutorials/comparefeature/5_treatmentpoly.htm\" ResolvedId=\"1168\" />';
-xmlAliasData += '    <Map Name=\"_6_Compare\" Link=\"40-tutorials/comparefeature/6_compare.htm\" ResolvedId=\"1169\" />';
 xmlAliasData += '    <Map Name=\"AccountPassword\" Link=\"00-concepts/accounts/accountpassword.htm\" ResolvedId=\"1177\" />';
 xmlAliasData += '    <Map Name=\"AccountProfile\" Link=\"00-concepts/accounts/accountprofile.htm\" ResolvedId=\"1178\" />';
 xmlAliasData += '    <Map Name=\"Resources\" Link=\"41-references/resources.htm\" ResolvedId=\"1182\" />';
 xmlAliasData += '    <Map Name=\"myworkspace_folders_hh\" Link=\"50-hover/myworkspace/myworkspace_folders_hh.htm\" ResolvedId=\"1190\" />';
-xmlAliasData += '    <Map Name=\"_3_Edit\" Link=\"40-tutorials/comparefeature/3_edit.htm\" ResolvedId=\"1166\" />';
 xmlAliasData += '    <Map Name=\"FireBehavior\" Link=\"20-models/flammap/flammapabout.htm\" ResolvedId=\"1135\" />';
 xmlAliasData += '    <Map Name=\"ModelingPlayground\" Link=\"20-models/modelsoverview.htm\" ResolvedId=\"1136\" />';
 xmlAliasData += '    <Map Name=\"AccountSetup1\" Link=\"10-ftem/accountsroles/accountsetup.htm\" ResolvedId=\"1005\" />';
