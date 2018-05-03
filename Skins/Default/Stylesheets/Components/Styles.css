@@ -291,6 +291,16 @@ ul.menu._Skins_SideMenu.mc-component ul ul ul ul > li > a:hover
 	padding: 0px;
 }
 
+.phrase-suggest
+{
+	display: block;
+}
+
+.search-result-highlight
+{
+	font-weight: bold;
+}
+
 .activityInfo
 {
 	color: #666;
@@ -614,7 +624,7 @@ ul.menu._Skins_SideMenu.mc-component
 	padding-top: 10px;
 	padding-bottom: 10px;
 	width: 100%;
-	height: 100%;
+	height: auto;
 	max-height: 100%;
 	background-color: #2d3d4f;
 }
@@ -685,6 +695,173 @@ ul.menu._Skins_SideMenu.mc-component li > a.selected:hover
 	color: #000000;
 	font-weight: bold;
 	background-color: #AFBFD0;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete ul
+{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	border-top: solid 1px #808080;
+	border-right: solid 1px #808080;
+	border-bottom: solid 1px #808080;
+	border-left: solid 1px #808080;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #ffffff;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li a
+{
+	color: #000000;
+	font-weight: normal;
+	padding-left: 7px;
+	padding-right: 27px;
+	padding-top: 7px;
+	padding-bottom: 7px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item a
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item
+{
+	margin-left: 2px;
+	margin-right: 2px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content a
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history a
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected a
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item.auto-result-selected
+{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #ececec;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content.auto-result-selected
+{
+	background-color: #ececec;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history.auto-result-selected
+{
+	background-color: #ececec;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-description
+{
+	color: #888888;
+	font-size: 13px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-description
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-description
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-icon
+{
+	margin-right: 5px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-icon
+{
+	background: transparent url('Images/icon-topic.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-topic.png') no-repeat center center;
+	background-size: contain;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-icon
+{
+	background: transparent url('Images/icon-search.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-search.png') no-repeat center center;
+	background-size: contain;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase
+{
+	font-size: 16px;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-phrase .search-result-highlight
+{
+	font-weight: bold;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-content .auto-result-phrase .search-result-highlight
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-history .auto-result-phrase .search-result-highlight
+{
+	
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li .auto-result-remove
+{
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 2px;
+	margin-bottom: 2px;
+	width: 17px;
+	height: 27px;
+	background: transparent url('Images/icon-remove.png') no-repeat center center;
+	-pie-background: transparent url('Skins/Default/Stylesheets/Components/Images/icon-remove.png') no-repeat center center;
+	background-size: contain;
+}
+
+._Skins_HomeSearchBar.mc-component .search-auto-complete li.auto-result-item .auto-result-separator
+{
+	
 }
 
 .search-bar._Skins_HomeSearchBar.mc-component
