@@ -163,7 +163,18 @@
                                             </ul>
                                             <p>The same is true for treatments.  That is, some treatments only contain a point location and size while other treatments also include a multi-polygon shape to define their extent.  The purpose of this topic is two-fold.  That is, it discusses how wildfire treatment interactions are initially determined by a utility program as well as how they can be updated by FTEM users within the application.</p>
                                             <h2>Wildfire Points</h2>
-                                            <p>In all cases, a circle with its center at the wildfire’s point of origin is used to determine the potential treatment interactions for a wildfire point.  For the utility program, the radius of the circle is based upon calculating the length of an ellipse whose length is 1.5 times its width and whose area is equal to the size of the wildfire.  The radius of the circle equals the length of the ellipse. Within the FTEM application, users may choose to specify the radius of the circle.  The maximum permitted value is 25000 meters. (This value is specified in the database and can be changed.)</p>
+                                            <p>In all cases, a circle with its center at the wildfire’s point of origin is used to determine the potential treatment interactions for a wildfire point.  For the utility program, the radius of the circle is based upon calculating the length of an ellipse whose length is 1.5 times its width and whose area is equal to the size of the wildfire.  The radius of the circle equals the length of the ellipse. While the exact length of the ellipse varies by acreage, the distances below provide an indication of typical buffering distances given fire size:</p>
+                                            <ul>
+                                                <li value="1">0.1 acre fire = 27 meter buffer</li>
+                                                <li value="2">1 acre fire = 97 meter buffer</li>
+                                                <li value="3">3 acre fire = 50 meter buffer</li>
+                                                <li value="4">10 acre fire = 275 meter (0.17 mile) buffer </li>
+                                                <li value="5">100 acre fire = 864 meter (0.53 mile) buffer </li>
+                                                <li value="6">640 acre fire = 2187 meter (1.4 mile) buffer </li>
+                                                <li value="7">5000 acre fire = 6116  meter (3.8 mile) buffer </li>
+                                                <li value="8">10,000 acre fire = 8650 meter (5.4 mile) buffer </li>
+                                            </ul>
+                                            <p>Within the FTEM application, users may choose to specify the radius of the circle.  The maximum permitted value is 25000 meters. (This value is specified in the database and can be changed).</p>
                                             <p>Regardless of how the treatment interaction is added the area of intersection is not set since no perimeter exists for the fire.  Consequently, the area of intersection must be set manually by a user entering information from the monitoring tab of the FTEM application.</p>
                                             <p>
                                                 <img src="../../resources/images/ftem/buffering.png" alt="buffering as described in text" class="border" />
