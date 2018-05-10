@@ -184,6 +184,26 @@
                                             <div class="notificationImportant">
                                                 <p>If you do not see a wildfire or fuel treatment in FTEM, it is because it has not been included in one of the above systems. Please follow up with your <a href="../agencyleads.htm" target="_blank">Agency Lead</a> to have the information added to the system.</p>
                                             </div>
+                                            <h2>How Treatment Polygons are Loaded into FTEM</h2>
+                                            <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that were added or updated since the last pull.</p>
+                                            <p><b>URL:</b> <a href="">https://services.arcgis.com/4OV0eRKiLAYkbH2J/arcgis/rest/services/Integrated_Interagency_Fuels_Treatments_View/FeatureServer/0</a></p>
+                                            <p style="font-weight: bold;">Where Clause:</p>
+                                            <p><span class="code">ETL_Update &gt;= '" + modifiedAfter + "' and actualcompletiondate &gt;= '2005-01-01' and keypoint in (3,6)";</span>
+                                            </p>
+                                            <p><b>Fields:</b>
+                                            </p>
+                                            <p><span class="code">UniqueTreatmentID,ui_treatmentid,treatmentid,mapmethod,DateCurrent,comments,treatmentidentifierdatabase,treatmentname,treatmentcategory,treatmenttype,actualcompletiondate,treatmentacres,treatmentstatus,F_suid,subunit,agency,region,F_admin_fore,F_org,F_activity_code,F_activity,state,F_ownership,keypoint,F_fund_code,F_nepa_doc_name,F_implement_proj,f_treatment_name,unitname,N_FY,N_ACT_INIT_D,geometryid,N_prj_name,ETL_Action,ETL_Update</span>
+                                            </p>
+                                            <h2>How Treatment Polygons are Loaded into FTEM</h2>
+                                            <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that were added or updated since the last pull.</p>
+                                            <p><b>URLs</b>: ftem.gis.nfpors.service.currentFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/0</p>
+                                            <p>ftem.gis.nfpors.service.previousFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/1</p>
+                                            <p style="font-weight: bold;">Where Clause:</p>
+                                            <p><span class="code">actualcompletiondate &gt;= DATE '2005-01-01' and keypointname in ('Hazardous Fuels Reduction','Non-NFP')</span>
+                                            </p>
+                                            <p style="font-weight: bold;">Fields:</p>
+                                            <p><span class="code">treatmentid,treatmentmodified,source,treatmentname,categoryname,typename,actualcompletiondate,totalaccomplishment,unitofmeas,agencyname,regionname,statename,unitname,completedfy,actualinitiationdate,projectname,longitude,latitude,keypointname</span>
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
