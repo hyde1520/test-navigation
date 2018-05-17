@@ -160,7 +160,7 @@
                                             <ol style="list-style-type: upper-alpha;">
                                                 <li value="1">Select the "Originating Landscape" (Granite Creek LF2012 unedited). The Originating landscape sets the landscape extent for the rest of the workflow. Originating landscapes displayed in the drop-down menu will always be un-edited LANDFIRE&#160;layers. Any edited layers you've created that match that extent will become available in subsequent tabs.</li>
                                                 <li value="2">
-                                                    <p>Select the Area of Interest created earlier in <span class="GeneralMapStudio">Map Studio</span> (Granite Creek Proposed Treatment Areas). This will constrain the analysis to the treatment areas. If Area of Interest was left blank, the analysis would be applied to the entire landscape.</p>
+                                                    <p>Select the AOI created earlier in <span class="GeneralMapStudio">Map Studio</span> (Granite Creek Proposed Treatment Areas). This will constrain the analysis to the treatment areas. If Area of Interest was left blank, the analysis would be applied to the entire landscape.</p>
                                                     <p>
                                                         <img src="../../resources/images/granite_crk_dta/dta_pick_landscape.png" class="borderlist" />
                                                     </p>
@@ -168,13 +168,16 @@
                                                 </li>
                                             </ol>
                                             <h3>Edit the landscape to simulate treatment scenarios</h3>
-                                            <p>Next, move to the <span class="UIcomponent">Edit Landscape</span> tab, where you'll select a Default Fuels Treatment rule, and apply it to the Area of Interest to simulate a thin and pile burn. This will create a version of your landscape with edits applied to your areas of interest. Later, you'll see how this proposed treatment affects fire behavior. To create the edited landscape: </p>
+                                            <p>Next, move to the <span class="UIcomponent">Edit Landscape</span> tab, where you'll select a Default Fuels Treatment rule, and apply it to the&#160;AOI to simulate a thin and pile burn. This will create a version of your landscape with edits applied to your areas of interest. Later, you'll see how this proposed treatment affects fire behavior. To create the edited landscape: </p>
                                             <ol style="list-style-type: upper-alpha;">
                                                 <li value="1">Select the "Granite Creek LF2014 unedited" landscape as your starting landscape. If you'd like to see your selected landscape while editing, click the <span class="UIcomponent">Split Screen</span> <img src="../../resources/images/buttons_general/button_showsplitmap_20x12.png" alt="split" class="iftbutton" style="width: 20;height: 12;" /> button in the top left.</li>
                                                 <li value="2">Click <span class="UIcomponent">Add Default Fuels Treatment/Disturbance Edit Rule</span> to display editing options.</li>
-                                                <li value="3">Click <span class="UIcomponent">Thin: Slash Removed</span>, then select the "Light Thinning; Pile Burning" option.</li>
-                                                <div><span class="notificationTip">If you hover your mouse over the “Light Thinning; Pile Burning” it will give you the details on what the rule represents.</span>
-                                                </div>
+                                                <li value="3">
+                                                    <p>Click <span class="UIcomponent">Thin: Slash Removed</span>, then select the "Light Thinning; Pile Burning" option.</p>
+                                                    <div class="notificationTip">
+                                                        <p>If you hover your mouse over the “Light Thinning; Pile Burning” it will give you the details on what the rule represents.</p>
+                                                    </div>
+                                                </li>
                                                 <li value="4">Choose the "Light Thinning:&#160;Pile Burning" option.</li>
                                                 <li value="5">Select 1 year since disturbance.</li>
                                                 <li value="6">Select the "Granite&#160;Creek Proposed Treatment Areas" mask to apply the rule to that area.</li>
@@ -183,14 +186,14 @@
                                                     <p>
                                                         <img src="../../resources/images/granite_crk_dta/dta_edit_0_lcp.png" alt="using the default edit rules is a quick way to simulate treatments on the landscape" class="borderlist" />
                                                     </p>
-                                                    <p>This rule will mimic thinning the Area of Interest to about 80% present density by removing understory up to 8” DBH, with subsequent pile burning of thinned material. This information appears if you&#160;hover over the "Light Thinning: Pile Burning" option described in step C above. Alternatively, the description of each default rule can be read in the <a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm" target="_blank">Landscape Editing - Default Fuel Treatment and Disturbance Topic</a> of the Help Center.</p>
+                                                    <p>This rule will mimic thinning the AOI to about 80% present density by removing understory up to 8” DBH, with subsequent pile burning of thinned material. This information appears if you&#160;hover over the "Light Thinning: Pile Burning" option described in step C above. Alternatively, the description of each default rule can be read in the <a href="../../30-tasks/lndscpedit/treatmentrulebackground.htm" target="_blank">Landscape Editing - Default Fuel Treatment and Disturbance Topic</a> of the Help Center.</p>
                                                 </li>
                                                 <li value="8">
                                                     <p>Your rule will be displayed at the top of the screen along with a green confirmation box. Leave this rule as-is, but know that if you had made a mistake and needed to discard the rule, it could be deleted using the <span class="UIcomponent">delete</span> <img src="../../resources/images/buttons_general/button_delete_16x12.png" alt="delete" class="iftbutton" style="width: 16;height: 12;" /> button shown to the right of the rule.</p>
                                                     <p>
                                                         <img src="../../resources/images/granite_crk_dta/edit_confirmation.png" alt="a green edit confirmation box appears when a rule is added. " class="borderlist" />
                                                     </p>
-                                                    <p>Later, you'll also mimic a broadcast burn after the thin and pile. While you&#160;could create a second rule that would be applied after the first ( See the <a href="../../30-tasks/lndscpedit/ruleordering.htm" target="_blank">Rule Ordering Consideration help topic</a> for more details on these), you'll apply one at a time so its easier to track the results of the rule on the landscape.  It’s always a good idea to assess your landscape after editing to ensure the rule been applied correctly and the result makes sense.</p>
+                                                    <p>Later, you'll also mimic a broadcast burn after the thin and pile. While you&#160;could create a second rule that would be applied after the first (See the <a href="../../30-tasks/lndscpedit/ruleordering.htm" target="_blank">Rule Ordering Consideration help topic</a> for more details on these), you'll apply one at a time so its easier to track the results of the rule on the landscape.  It’s always a good idea to assess your landscape after editing to ensure the rule been applied correctly and the result makes sense.</p>
                                                 </li>
                                                 <li value="9">
                                                     <p>To finalize and create your edited landscape, scroll to the bottom of the editing page, input a landscape name that is representative of the edits (GC14_Lt_Thn_Pilebrn_1yr), and click <span class="UIcomponent">Save New Landscape</span>.</p>
@@ -226,7 +229,7 @@
                                                     </p>
                                                 </li>
                                                 <li value="3">
-                                                    <p>Give the models a couple minutes to run. Hit the refresh button to the right of "Run Status"&#160;to see the model status, until both are Completed.</p>
+                                                    <p>Give the models a couple minutes to run. Hit the refresh button to the right of "Run Status"&#160;to see the model status, until both are completed.</p>
                                                     <p>
                                                         <img src="../../resources/images/granite_crk_dta/model_run_refresh.png" alt="model runs may take a couple minutes to process" class="borderlist" />
                                                     </p>
@@ -238,7 +241,7 @@
                                             <ol style="list-style-type: upper-alpha;">
                                                 <li value="1">
                                                     <p>First, select the edited landscape so it has a "1" next to it. Then, select the original landscape, so it has a “2” next to it.</p>
-                                                    <p>This order tells <span class="GeneralProductName">IFTDSS</span> to calculate the difference created by our treated landscape (1) on our original landscape (2). For example, if our new landscape has flame lengths of 3 feet, and the original has flame lengths of 7 feet, the difference will be: 3 - 7 = - 4. Or in other words, a 4 foot <i>reduction</i> in flame length resulting from the treatment.</p>
+                                                    <p>This order tells <span class="GeneralProductName">IFTDSS</span> to calculate the difference created by your treated landscape (1) on your original landscape (2). For example, if your new landscape has flame lengths of 3 feet, and the original has flame lengths of 7 feet, the difference will be: 3 - 7 = - 4. Or in other words, a 4 foot <i>reduction</i> in flame length resulting from the treatment.</p>
                                                 </li>
                                                 <li value="2">Now you'll want to view comparison outputs on the map and as a report.  First, click the <span class="UIcomponent">Compare in Summary Report</span> button so the reports can begin processing.</li>
                                                 <li value="3">
