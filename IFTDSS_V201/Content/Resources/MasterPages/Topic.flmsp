@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd">
+    <head><title></title>
+        <link href="../Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [IFTDSS Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <MadCap:breadcrumbsProxy class="BorderUnder" />
+        </div>
+        <MadCap:bodyProxy />
+    </body>
+</html>

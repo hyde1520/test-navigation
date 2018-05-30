@@ -1,0 +1,108 @@
+/*<meta sourceDocument="J:\910907 IFT-DSS Task 7 Documentation and Training\Online_help\Misc Resources\Working Files\Parameters - General\Units.docx" />*/
+
+p
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+p.p_1
+{
+	margin-bottom: 0pt;
+}
+
+td.td_1
+{
+	background-color: #auto;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+}
+
+td.td_2
+{
+	background-color: #auto;
+	border-top-style: solid;
+	border-top-width: 1pt;
+	border-top-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+}
+
+td.td_3
+{
+	background-color: #auto;
+	border-left-style: solid;
+	border-left-width: 1pt;
+	border-left-color: black;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+}
+
+td.td_4
+{
+	background-color: #auto;
+	border-right-style: solid;
+	border-right-width: 1pt;
+	border-right-color: black;
+	border-bottom-style: solid;
+	border-bottom-width: 1pt;
+	border-bottom-color: black;
+}
+
+table.table_1
+{
+	border-collapse: collapse;
+}
+

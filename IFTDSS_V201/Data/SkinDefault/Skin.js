@@ -1,0 +1,12 @@
+var xmlSkinData = "";
+xmlSkinData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlSkinData += '<CatapultSkin Version=\"1\" Comment=\"This is the default skin\" Anchors=\"Width\" Width=\"800px\" Height=\"600px\" Top=\"0px\" Left=\"0px\" Bottom=\"0px\" Right=\"0px\" Tabs=\"TOC,Index,Search,Glossary,Favorites\" DefaultTab=\"BrowseSequences\" UseBrowserDefaultSize=\"true\" UseDefaultBrowserSetup=\"True\" EnableAboutBox=\"true\" Title=\"IFTDSS Help\" AutoSyncTOC=\"true\">';
+xmlSkinData += '    <Index BinaryStorage=\"True\" />';
+xmlSkinData += '    <HtmlHelpOptions ShowMenuBar=\"False\" TopmostWindowStyle=\"False\" Buttons=\"Hide,Locate,Back,Forward,Stop,Refresh,Home,Font,Print\" EnableButtonCaptions=\"True\" />';
+xmlSkinData += '    <Stylesheet Link=\"Stylesheet.xml\">';
+xmlSkinData += '    </Stylesheet>';
+xmlSkinData += '    <Toolbar EnableCustomLayout=\"true\" Buttons=\"Home|Separator|TopicRatings|Separator|EditUserProfile|AddTopicToFavorites|ToggleNavigationPane|Print|Separator|RemoveHighlight|Separator|Back|Forward|Separator|SelectTOC|SelectIndex|SelectSearch|SelectGlossary|SelectFavorites|SelectBrowseSequence|Separator|CurrentTopicIndex|NextTopic|PreviousTopic\" ExcludeAccordionTitle=\"false\" />';
+xmlSkinData += '    <WebHelpOptions HideNavigationOnStartup=\"false\" NavigationPaneWidth=\"250\" AboutBox=\"About.png\" AboutBoxWidth=\"160\" AboutBoxHeight=\"48\">';
+xmlSkinData += '    </WebHelpOptions>';
+xmlSkinData += '</CatapultSkin>';
+CMCXmlParser._FilePathToXmlStringMap.Add('Skin', xmlSkinData);

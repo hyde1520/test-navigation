@@ -1,0 +1,814 @@
+@namespace MadCap url(http://www.madcapsoftware.com/Schemas/MadCap.xsd);
+/*<meta />*/
+
+p
+{
+	font-family: arial, ' sans-serif';
+	color: #49572a;
+	font-size: 1em;
+	margin-bottom: 1.5em;
+	margin-top: 1.5em;
+}
+
+ol
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+ul
+{
+	margin-top: 0pt;
+	margin-bottom: 0pt;
+	font-family: sans-serif;
+	font-size: 1em;
+}
+
+li
+{
+	font-family: sans-serif;
+	font-size: 1em;
+	color: #49572a;
+	margin-bottom: 0.5em;
+	margin-top: 0.5em;
+}
+
+td
+{
+	vertical-align: top;
+	font-family: sans-serif;
+	font-size: 1em;
+	border: solid 1px #000000;
+}
+
+p.Rotate-90
+{
+	display: block;
+	position: absolute;
+	right: -5px;
+	top: 15px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+}
+
+p.css-vertical-text
+{
+	writing-mode: tb-rl;
+	white-space: nowrap;
+	display: block;
+	bottom: 0;
+	width: 20px;
+	height: 20px;
+	font-weight: normal;
+	font-family: sans-serif;
+	font-size: 0.8em;
+	color: #ffffff;
+	-moz-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+}
+
+p.TOCHead
+{
+	margin-bottom: 6pt;
+	text-align: center;
+	font-family: Arial;
+	font-weight: bold;
+	color: #1166A5;
+	font-size: 16pt;
+}
+
+p.TOC1
+{
+	font-size: 11pt;
+	margin-top: 12pt;
+	margin-left: 0pt;
+	margin-right: 27pt;
+	font-family: Arial;
+}
+
+/*
+  BEGIN FIELDSET / NOTES STYLES
+*/
+
+span.Hyperlink
+{
+	color: #0000FF;
+	text-decoration: underline;
+}
+
+p.TOC2
+{
+	font-size: 11pt;
+	margin-left: 59pt;
+	margin-right: 27pt;
+	font-family: Arial;
+}
+
+img.img_1
+{
+	left: 0;
+	text-align: left;
+	z-index: 1;
+	margin-left: 125.15pt;
+}
+
+span.CommentReference
+{
+	font-size: 8pt;
+}
+
+ul.ul_1
+{
+	list-style-type: disc;
+	margin-left: 36pt;
+}
+
+img.img_2
+{
+	visibility: visible;
+}
+
+ul.ul_2
+{
+	list-style-type: square;
+	margin-left: 54pt;
+}
+
+MadCap|breadcrumbsProxy
+{
+	color: #49572a;
+	mc-breadcrumbs-divider: ' > ';
+	mc-breadcrumbs-count: 4;
+	font-family: arial, ' sans-serif';
+	font-size: 0.8em;
+}
+
+MadCap|relatedTopics
+{
+	color: #49572a;
+}
+
+MadCap|relatedTopics:focus
+{
+	color: #cccc99;
+}
+
+MadCap|relatedTopics:hover
+{
+	color: #788a51;
+}
+
+MadCap|breadcrumbsProxy.BorderUnder
+{
+	
+}
+
+MadCap|breadcrumbsProxy.BorderOver
+{
+	border-bottom: solid;
+	border-bottom-width: 0px;
+	border-top: solid 1px;
+	border-top-color: #000000;
+}
+
+/*
+  END FIELDSET / NOTES STYLES
+*/
+
+h1
+{
+	color: #49572a;
+	text-decoration: none;
+	font-family: arial, ' sans-serif';
+}
+
+/* Safari and Chrome */
+
+h5
+{
+	font-family: arial, ' sans-serif';
+}
+
+/* Most major browsers other than IE supports transparent shadow. Newer release of IE should be able to support that. */
+
+hr
+{
+	border-color: #49572a;
+}
+
+/* IE won't do well without this */
+
+/* Make the shadow's position relative to its image */
+
+/* This creates a border around the image */
+
+/* Background color of the border created by the padding */
+
+/* A 1 pixel greyish border is applied to the white border created by the padding */
+
+/* Offset the image by certain pixels to reveal the shadow, as the shadows are 6 pixels wide, offset it by that amount to get a perfect shadow */
+
+img
+{
+	
+}
+
+img.footer
+{
+	margin-top: 12px;
+}
+
+/* for IE/Mac */
+
+html
+{
+	mc-master-page: url('../MasterPages/Topic.flmsp');
+}
+
+html.nobreadcrumbs
+{
+	mc-master-page: url('../MasterPages/TitlePage.flmsp');
+}
+
+h2
+{
+	font-family: arial, ' sans-serif';
+	border-bottom: solid 1px;
+}
+
+h3
+{
+	font-family: arial, ' sans-serif';
+	overline: ;
+}
+
+a
+{
+	text-decoration: underline;
+	color: #ff7f00;
+}
+
+MadCap|toggler:focus
+{
+	color: #788a51;
+}
+
+MadCap|toggler:hover
+{
+	color: #cccc99;
+}
+
+MadCap|xref
+{
+	color: #49572a;
+	mc-format: '{b}{h1}{/b}';
+}
+
+MadCap|xref:hover
+{
+	color: #c7912b;
+}
+
+th
+{
+	font-family: arial, ' sans-serif';
+}
+
+p.Related
+{
+	
+}
+
+MadCap|helpControlMenu
+{
+	background-color: #cccc99;
+	border-bottom-color: #49572a;
+	border-left-color: #49572a;
+	border-right-color: #49572a;
+	border-top-color: #49572a;
+}
+
+MadCap|helpControlMenuItem.Highlighted
+{
+	font-size: 0.9em;
+	background-color: #788a51;
+}
+
+div.GlossaryPageTerm
+{
+	font-size: 1em;
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+div.GlossaryPageDefinition
+{
+	padding-left: 0px;
+	margin-left: 4px;
+	font-size: 0.8em;
+}
+
+div.GlossaryPageHeading
+{
+	color: #49572a;
+	padding-left: 0px;
+	margin-left: 0px;
+	mc-heading-format: '{A}';
+	border-bottom-color: #ffa500;
+}
+
+div.GlossaryPageEntry
+{
+	padding-left: 0px;
+	margin-left: 0px;
+	background-color: #fafad2;
+	font-family: arial, ' sans-serif';
+	color: #49572a;
+	font-size: 1em;
+	border-color: #ffa500;
+	border: dashed 1px;
+}
+
+MadCap|popupBody
+{
+	background-color: #f5f5dc;
+	padding: 3px;
+	font-weight: normal;
+	text-transform: none;
+}
+
+img.screencap
+{
+	left: 0;
+	text-align: left;
+	z-index: 1;
+	margin-left: 35pt;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	mc-thumbnail-max-height: 120px;
+	mc-thumbnail: none;
+	max-width: 800px;
+}
+
+MadCap|glossaryProxy
+{
+	padding-left: 5px;
+	mc-glossary-headings: true;
+}
+
+legend
+{
+	color: #788A51;
+	font-size: 100%;
+	font-weight: bold;
+	margin: 0 2px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.note
+{
+	font-size: 100%;
+	border: 1px solid #C7912B;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	margin: 10px 0 10px 0;
+}
+
+.note .noteBody
+{
+	margin: 0 8px 8px 10px;
+}
+
+dd fieldset.note
+{
+	font-size: 100%;
+}
+
+div.p fieldset.note
+{
+	font-size: 100%;
+}
+
+.noteBody p
+{
+	font-size: 100%;
+	margin-top: 6px;
+}
+
+.noteBody li
+{
+	font-size: 110%;
+}
+
+.noteBody li li
+{
+	font-size: 110%;
+}
+
+.noteBody div.p
+{
+	font-size: 100%;
+}
+
+.noteBody pre
+{
+	margin-left: 40px;
+}
+
+li .note,
+li .note .noteBody
+{
+	font-size: 100%;
+}
+
+.note .noteBody ol
+{
+	margin-left: 57px;
+}
+
+.noteBody ul
+{
+	padding-left: 50px;
+}
+
+div.dropshadowCSS3
+{
+	-webkit-box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #888888;
+}
+
+.imgshadow
+{
+	float: right;
+	background: url(../Images/trans-shadow.png) no-repeat bottom right;
+}
+
+.imgshadow img
+{
+	display: block;
+	position: relative;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #cecece;
+	margin: -6px 6px 6px -6px;
+}
+
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.clearfix
+{
+	display: inline-block;
+}
+
+h4
+{
+	font-family: arial, ' sans-serif';
+	font-style: italic;
+}
+
+h6
+{
+	font-family: arial, ' sans-serif';
+}
+
+h2.noLine
+{
+	border-bottom: none 0px;
+	text-align: center;
+}
+
+li.inline
+{
+	color: #000000;
+	display: inline;
+	padding-left: 3px;
+	padding-right: 7px;
+	color: #000;
+}
+
+li.last
+{
+	color: #000000;
+	display: inline;
+	padding-left: 3px;
+	padding-right: 3px;
+}
+
+fieldset.note
+{
+	background-color: #f5f5dc;
+	border: 1px 0px #C7912B;
+	border-bottom-width: 2px;
+	border-left-width: 2px;
+	border-right-width: 2px;
+	border-top-width: 2px;
+	box-shadow: 10px 10px 5px #CCCC99;
+	width: 90%;
+	-webkit-box-shadow: 10px 10px 5px #CCCC99;
+}
+
+MadCap|glossaryTerm.Popup
+{
+	color: #808000;
+}
+
+td.centeredUC
+{
+	vertical-align: middle;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #788a51;
+	color: #ffffff;
+}
+
+td.coloredbackground
+{
+	vertical-align: middle;
+	background-color: #cccc99;
+	text-align: center;
+}
+
+td.plainbackground
+{
+	vertical-align: middle;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+p.centeredUC
+{
+	vertical-align: middle;
+	text-transform: uppercase;
+	text-align: center;
+	color: #49572a;
+	font-weight: normal;
+	margin-bottom: 0.8em;
+	margin-top: 0.8em;
+	margin: 0.8em;
+}
+
+p.coloredbackground
+{
+	vertical-align: middle;
+	background-color: #cccc99;
+	text-align: center;
+}
+
+p.plainbackground
+{
+	vertical-align: middle;
+	text-align: center;
+	background-color: #ffffff;
+}
+
+p.centeredmiddle
+{
+	text-align: center;
+	vertical-align: middle;
+}
+
+MadCap|dropDownHotspot
+{
+	font-family: sans-serif;
+	font-size: 1em;
+	color: #49572a;
+}
+
+tr.colorbkg
+{
+	background-color: #cccc99;
+	font-size: 0.8em;
+	font-family: sans-serif;
+	line-height: 1.5em;
+	border: solid 1px #000000;
+}
+
+td.colorleft
+{
+	font-size: 0.8em;
+	background-color: #cccc99;
+	border: solid 1px #000000;
+}
+
+tr.borders
+{
+	border: solid 1px #000000;
+}
+
+p.colorleft
+{
+	border: solid 1px #000000;
+	background-color: #cccc99;
+	font-size: 0.8em;
+	text-align: left;
+}
+
+tr.whitebkg
+{
+	font-family: sans-serif;
+	font-size: 0.8em;
+	border: solid 1px #000000;
+	line-height: 1.5em;
+}
+
+p.highlight
+{
+	background-color: #ffff99;
+	padding: 2px;
+}
+
+span.highlight
+{
+	background-color: #ffff99;
+	color: #49572a;
+	padding: 2px;
+}
+
+td.centered
+{
+	vertical-align: middle;
+	text-align: center;
+}
+
+p.nolines:first-letter
+{
+	
+}
+
+html.miniTOCpage
+{
+	mc-master-page: url('../MasterPages/TopicWithMiniTOC.flmsp');
+}
+
+MadCap|conceptLink:focus
+{
+	color: #49572a;
+}
+
+MadCap|conceptLink:hover
+{
+	color: #c7912b;
+}
+
+p.clearfloats
+{
+	clear: both;
+}
+
+MadCap|miniTocProxy
+{
+	mc-toc-depth: 1;
+}
+
+MadCap|glossaryTerm:focus
+{
+	border: dotted 1px;
+	border-color: #ff7f00;
+	font-weight: inherit;
+	color: #ffa500;
+}
+
+MadCap|glossaryTerm:hover
+{
+	color: #c7912b;
+}
+
+MadCap|glossaryTerm.Popup:focus
+{
+	color: #ffa500;
+}
+
+MadCap|glossaryTerm.Popup:hover
+{
+	color: #c7912b;
+}
+
+MadCap|glossaryTerm.Hyperlink:focus
+{
+	color: #ffa500;
+}
+
+MadCap|glossaryTerm.Expanding:focus
+{
+	color: #ffa500;
+}
+
+MadCap|glossaryTerm
+{
+	color: #ffa500;
+	font-weight: normal;
+}
+
+MadCap|glossaryTerm.Expanding:hover
+{
+	color: #ffa500;
+}
+
+MadCap|glossaryTerm.Hyperlink:hover
+{
+	color: #ffa500;
+}
+
+MadCap|keywordLink:focus
+{
+	color: #00bfff;
+}
+
+MadCap|glossaryTerm.Hyperlink
+{
+	
+}
+
+a.MCBreadcrumbsLink:link
+{
+	color: #49572a;
+}
+
+a.MCBreadcrumbsLink:visited
+{
+	color: #c7912b;
+}
+
+a.MCBreadcrumbsLink:focus
+{
+	color: #ffa500;
+}
+
+a.MCBreadcrumbsLink:hover
+{
+	color: #ff7f00;
+}
+
+a:link
+{
+	color: #ff7f00;
+}
+
+a:visited
+{
+	color: #c7912b;
+}
+
+a:focus
+{
+	color: #ffa500;
+}
+
+a:hover
+{
+	color: #c7912b;
+}
+
+a.Popup:link
+{
+	color: #ff7f00;
+}
+
+a.Popup:visited
+{
+	color: #c7912b;
+}
+
+a.Popup:hover
+{
+	
+}
+
+a.nolines:link
+{
+	text-decoration: none;
+}
+
+a.nolines:visited
+{
+	text-decoration: none;
+	background: #FFCC00;
+}
+
+a.nolines:focus
+{
+	text-decoration: none;
+}
+
+a.nolines:hover
+{
+	text-decoration: none;
+	text-transform: none;
+}
+
+a.GlossaryPageTerm:hover
+{
+	color: #ffa500;
+}
+

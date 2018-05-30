@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Fire and Fuels Application (FFA) Tools|FEPS|Calculations" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Heat Rise</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AltRowsCentered.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="FERAOver.htm">Fire and Fuels Application (FFA) Tools</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="FERA-FEPS.htm">FEPS</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Calculations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Heat Rise</span>
+                </div>
+            </div>
+        </div>
+        <h1>Heat Rise</h1>
+        <p><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FEPS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Fire Emission Production Simulator. A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FERA<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Fire and Environmental Research Applications Team. A USDA Forest Service research team focusing on fuels and fire and landscape ecology.</span></span> tool for modeling consumption, emissions, and heat release characteristics of prescribed burns and wildland fires.</span></span> calculates heat rise using three methods. These methods are</p>
+        <ol>
+            <li value="1">The maximum heat rise based on the work Briggs (<a href="../10-Reference/Bibliography.htm#Briggs1975">1975</a>).</li>
+            <li value="2">Empirical minimum heat rise values based on equations developed by David V. Sandberg (personal communication).</li>
+            <li value="3">Empirical maximum heat rise values based on equations developed by David V. Sandberg (personal communication).</li>
+        </ol>
+        <p>Each of these sets of equations calculate the minimum and maximum heat rise for each hour of the event; the subscript i refers to a time step, or hour, of the fire burning period.&#160;&#160; </p>
+        <h2>Briggs Maximum Heat Rise</h2>
+        <p>If the Briggs stability factor, s, is greater than 0, Briggs maximum heat rise is calculated as follows:</p>
+        <p />
+        <p>If the Briggs stability factor is less than 0, then the following equation is used:</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 136px;" class="Column-Column1" />
+            <col style="width: 172px;" class="Column-Column1" />
+            <col style="width: 465px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>ΔH<sub>max,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Briggs maximum heat rise at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>F<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>m<sup>4</sup>/sec<sup>3</sup></p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Briggs buoyancy factor</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>W’<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m/sec</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Modified transport wind speed at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>S<sub>i</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>m/sec</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Briggs stability parameter, at hour i</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Briggs Buoyancy Factor</h3>
+        <p>Briggs buoyancy factor is calculated as</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 153px;" class="Column-Column1" />
+            <col style="width: 223px;" class="Column-Column1" />
+            <col style="width: 433px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>F<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>M<sup>4</sup>/sec<sup>3</sup></p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Briggs buoyancy factor</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>Q<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>BTU/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Heat release at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>2.58 x 10<sup>-6</sup></p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>Buoyancy constant</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Briggs Stability Parameter</h3>
+        <p>The Briggs stability parameter is calculated as</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>S</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m/sec</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Briggs stability parameter at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>ΔT<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>K/m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Differential temperature gradient at hour i, expressed as degrees Kelvins per meter.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>T<sub>i</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>K</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>Temperature at hour i.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Differential Temperature Gradient</h3>
+        <p>The differential temperature gradient (lapse rate) is a function of the Pasquill stability class. Users enter the Pasquill stability class for each hour. FEPS uses the following values to calculate the Briggs stability parameter for each hour.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AltRowsCentered.css');" class="TableStyle-AltRowsCentered" cellspacing="0">
+            <col class="Column-Column1" style="width: 295px;" />
+            <col class="Column-Column1" style="width: 500px;" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Pasquill Stability Class</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Differential Temperature Gradient (k/m)</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>A</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>-0.009</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>B</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>-0.008</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>C</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>-0.006</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>D</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>0</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>E</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>0.015</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>F</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>0.025</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Modified Transport Wind Speed</h3>
+        <p>The transport wind speed at hour i used in further heat release calculations is modified slightly from the values entered by the user. It is the maximum of the current transport wind entered in the hourly data grid, or twice the value entered for the previous hour. It is further limited to a minimum value of windspeed (W<sub>min</sub>).</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 118px;" class="Column-Column1" />
+            <col style="width: 170px;" class="Column-Column1" />
+            <col style="width: 541px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>W’<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m/sec</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Modified wind speed at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>W<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>mph</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>User-entered transport wind speed at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>W<sub>i-1</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>mph</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>User-entered transport wind speed at hour i-1.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>K<sub>w</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>m/sec/mph</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Unit conversion from mph to m/sec (0.447)</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>W<sub>min</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>m/sec</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>Minimum transport wind speed (5)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>FEPS Minimum Heat Rise</h2>
+        <p>FEPS calculates an empirical minimum plume rise, i.e., elevation at the bottom of the plume, as</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 144px;" class="Column-Column1" />
+            <col style="width: 116px;" class="Column-Column1" />
+            <col style="width: 636px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>ΔH<sub>F-min,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Empirical minimum heat rise at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>AR<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>acres/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Rate of increase in burn area between hour i-1 and hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>P<sub>Bot</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Maximum efficient plume bottom elevation (4,000 default)</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>AR<sub>Bot</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>acres/hr</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Benchmark rate of increase (400)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>FEPS Maximum Heat Rise</h2>
+        <p>FEPS calculates an empirical maximum plume rise, i.e., elevation at the top of the plume, as</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 135px;" class="Column-Column1" />
+            <col style="width: 127px;" class="Column-Column1" />
+            <col style="width: 620px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>ΔH<sub>F-max,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Empirical maximum heat rise at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>AR<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>acres/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Rate of increase in burn area between hour i-1 and hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>P<sub>Top</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>m</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Maximum efficient plume rise (8,000 default)</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>AR<sub>Top</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>acres/hr</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Benchmark rate of increase (400)</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

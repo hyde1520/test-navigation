@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Risk Assessment Concepts|Relative Net Value Change" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Understanding the Net Value Change Parameter</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessConcepts.htm">Risk Assessment Concepts</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessNetValueChange.htm">Relative Net Value Change</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Understanding the Net Value Change Parameter</span>
+                </div>
+            </div>
+        </div>
+        <h1><a name="Understa"></a><a name="kanchor413"></a>Understanding the Net Value Change Parameter</h1>
+        <p>The <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">relative net value change<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Relative <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">net value change<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Relative net value change is the main output of the risk assessment pathways in <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span>. The relative net value change in land value due to fire is assumed to be a function of fire behavior, and includes both positive and negative effects for fire. For more information, see Calkin et al 2010a.</span></span> is the main output of the risk assessment pathways in IFTDSS. The relative net value change in land value due to fire is assumed to be a function of fire behavior, and includes both positive and negative effects for fire. For more information, see Calkin et al 2010a.</span></span> parameter is classified into five data subsets or categories, with loss and benefit inversely related (i.e., the lower the loss, the greater the benefit, and vice versa). </p>
+        <ul>
+            <li value="1">Greatest Loss/Least Benefit</li>
+            <li value="2">High Loss/Low Benefit</li>
+            <li value="3">Average Loss/Benefit</li>
+            <li value="4">Low Loss/High Benefit</li>
+            <li value="5">Least Loss/Greatest Benefit</li>
+        </ul>
+        <p>For the default relative net value change parameter, the output value range is binned by 20% for all categories.</p>
+        <p>For example, if your data ranges from a numerical value of -5 to +5, the data subsets will be binned into the following data ranges: </p>
+        <table style="width: 100%;mc-table-style: url('../../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Net Value Change</th>
+                    <th class="HeadD-Column1-Header1">Data Subset</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">-5 to -3</td>
+                    <td class="BodyD-Column1-Body1">Greatest Loss/Least Benefit</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">-3 to -1</td>
+                    <td class="BodyD-Column1-Body2">High Loss/Low Benefit</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">-1 to 1</td>
+                    <td class="BodyD-Column1-Body1">Average Loss/Benefit</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">1 to 3</td>
+                    <td class="BodyD-Column1-Body2">Low Loss/High Benefit</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">3 to 5</td>
+                    <td class="BodyA-Column1-Body1">Least Loss/Greatest Benefit</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In the risk assessment pathways, you can also bin relative net value change by user-defined percentages for each of the five categories. With this functionality, you can narrow your search of high <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fire hazard<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">For IFTDSS, a fire hazard is an act or phenomenon with the potential to do harm.  It can be expressed as potential fire behavior (e.g., fire line intensity, crown scorch height), or a property of the fuels, such as fuel loading or vegetation biomass, or both. A fire hazard is independent of weather and describes the fuels at one point in time.</span></span> and risk areas to areas with the greatest potential loss.</p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

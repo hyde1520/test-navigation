@@ -1,0 +1,55 @@
+/*<meta />*/
+
+p
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ol
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+ul
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+li
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	margin-top: 0pt;
+}
+
+td
+{
+	margin-bottom: 10pt;
+	font-family: Calibri;
+	font-size: 11pt;
+	vertical-align: top;
+}
+
+li.ListParagraph
+{
+	margin-bottom: 10pt;
+	font-size: 11pt;
+	margin-left: 36pt;
+	font-family: Calibri;
+}
+
+span.CommentReference
+{
+	font-size: 8pt;
+}
+

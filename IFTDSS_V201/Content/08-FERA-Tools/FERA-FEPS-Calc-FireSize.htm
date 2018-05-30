@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Fire and Fuels Application (FFA) Tools|FEPS|Calculations" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Fire Size Calculations</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="FERAOver.htm">Fire and Fuels Application (FFA) Tools</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="FERA-FEPS.htm">FEPS</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Calculations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Fire Size</span>
+                </div>
+            </div>
+        </div>
+        <h1>Fire Size Calculations</h1>
+        <p>The fire size represents the cumulative fire size at a given hour. <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FEPS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Fire Emission Production Simulator. A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FERA<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Fire and Environmental Research Applications Team. A USDA Forest Service research team focusing on fuels and fire and landscape ecology.</span></span> tool for modeling consumption, emissions, and heat release characteristics of prescribed burns and wildland fires.</span></span> interpolates between the user-specified fire sizes using one of two equations, depending on the fire type. For a fire with a fire shape of “linear progression” (generally prescription burns), intermediate areas for each hour are calculated using the following equation.</p>
+        <p />
+        <p>For a freely spreading oval fire shape (generally wildland fires), intermediate areas for each hour are calculated as follows:</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" style="width: 168px;" />
+            <col class="Column-Column1" style="width: 107px;" />
+            <col class="Column-Column1" style="width: 513px;" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Area<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>acres</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Total cumulative area at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>Area<sub>j</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>acres</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>User-specified cumulative area at hour j</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>Area<sub>k</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>acres</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>User-specified cumulative area at hour k</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>H<sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>H<sub>j</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Hour j</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>H<sub>k</sub></p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Hour k</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">H<sub>j</sub> ≤ H<sub>i</sub> ≤ H<sub>k</sub></p>
+                </fieldset>
+            </form>
+        </div>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

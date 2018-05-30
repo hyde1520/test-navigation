@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Tutorials" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Tutorial H – Creating a Values-at-Risk Map for use in the IFTDSS Risk Assessment Workflows</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessTutorialIntro.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Tutorial H – Creating a Values-at-Risk Map for use in the IFTDSS Risk Assessment Workflows</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="Title"><a name="kanchor48"></a>Tutorial H – Creating a Values-at-Risk Map for use in the IFTDSS Risk Assessment Workflows</h1>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_10_349x259.png" style="float: right;width: 349;height: 259;" alt="Polygon editing menu with the polygon colorwheel prominently displayed." /><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> provides two approaches for assessing <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fire hazard<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">For IFTDSS, a fire hazard is an act or phenomenon with the potential to do harm.  It can be expressed as potential fire behavior (e.g., fire line intensity, crown scorch height), or a property of the fuels, such as fuel loading or vegetation biomass, or both. A fire hazard is independent of weather and describes the fuels at one point in time.</span></span> and risk across the landscape. These include the Worst-Case Flame Length Approach and Flame Length Probabilities Approaches. Both of these approaches require the user to define values-at-risk, and map these out as a series of polygons. This tutorial will walk you through the process of defining and creating a values-at-risk map.&#160; Steps covered in this tutorial include: </p>
+        <ul class="ul_1">
+            <li value="1"><a href="Tutorial_H_1_Background.htm">Background on Values-at-Risk</a>
+            </li>
+            <li value="2"><a href="Tutorial_H_2_response_functions.htm">Response Functions (Definitions)</a>
+            </li>
+            <li value="3"><a href="Tutorial_H_3_VAR_methods.htm">Defining Values-at-Risk: Methods</a>
+            </li>
+            <li value="4"><a href="Tutorial_H_4_VAR_freeformpoly.htm">Defining Values-at-Risk: Using the Free-form Drawing Method to Create Values-at-Risk Polygons</a>
+            </li>
+            <li value="5"><a href="Tutorial_H_5_VAR_point_click.htm">Defining Values-at-Risk: Using the Point-and-Click Method to Create Values-at-Risk Polygons</a>
+            </li>
+            <li value="6"><a href="Tutorial_H_6_VAR_larger.htm">Defining Larger Values-at-Risk</a>
+            </li>
+            <li value="7"><a href="Tutorial_H_7_VAR_smaller.htm">Defining Smaller Values-at-Risk</a>
+            </li>
+            <li value="8"><a href="Tutorial_H_8_VAR_editing.htm">Editing Values-at-Risk</a>
+            </li>
+            <li value="9"><a href="Tutorial_H_9_VAR_background.htm">Defining Values-at-Risk: Assigning a Background</a>
+            </li>
+            <li value="10"><a href="Tutorial_H_10_VAR_reviewandsave.htm">Reviewing and Saving a Values-at-Risk Map</a>
+            </li>
+            <li value="11"><a href="Tutorial_H_11_VAR_wrapup.htm">Review and Additional Help</a>
+            </li>
+        </ul>
+        <p class="centeredmiddle" MadCap:conditions="Default.ScreenOnly"><b><a href="Tutorial_H_10_29_15.pdf">A PDF version of this tutorial is available here.</a></b>
+        </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">For this tutorial we will use the example area at the following coordinates:</p>
+                    <ul>
+                        <li value="1"><b>North:</b> 38.155672364916</li>
+                        <li value="2"><b>East:</b> -122.5502871142</li>
+                        <li value="3"><b>South:</b> 38.120028050516</li>
+                        <li value="4"><b>West:</b> -122.5986956225</li>
+                    </ul>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">This tutorial focuses on the creation of a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">values at risk<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Features on the landscape that are influenced positively and/or negatively by fire. These features are called values at risk or highly valued <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">resources<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">1. The tools, equipment, services, supplies, and personnel available for assignment to incidents. 2. The natural resources of an area. 3. Within IFTDSS, tools, workflows, and other elements.</span></span> (<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">HVR<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Features on the landscape that are influenced positively and/or negatively by fire. These features are called values at risk or highly valued resources (HVR). Examples of values at risk include archaeological sites, historic buildings, wildland urban interface, airports, highway buffers, and conifer forests.</span></span>). Examples of values at risk include archaeological sites, historic buildings, wildland urban interface, airports, highway buffers, and conifer forests.</span></span> map and assumes your <a href="../../03-Concepts/ProjCreate.htm">project is set up</a> and a Risk Assessment <a href="../../03-Concepts/ProjRun.htm">run has been started</a>. </p>
+                </fieldset>
+            </form>
+        </div>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">All references cited in this tutorial are in the IFTDSS online help bibliography; access it by navigating to <strong class="Strong">Reference Material &gt; Bibliography.</strong></p>
+                </fieldset>
+                <p MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_H_1_Background.htm">Next:&#160;Values-at-risk background &gt;&gt;</a>
+                </p>
+            </form>
+        </div>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

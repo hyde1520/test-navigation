@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Fire Effects|Using IFT-FOFEM for Smoke Management Planning" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Populating and running IFT-FOFEM</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../FireEffects.htm">Fire Effects</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_fofem_0_intro.htm">Using IFT-FOFEM for Smoke Management Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Populating and running IFT-FOFEM</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="Heading1">Populating and running IFT-FOFEM</h1>
+        <p>For each scenario, environmental conditions, moisture, and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel loading<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Dry weight in tons/<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">acre<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A measure of land used in the Imperial and US systems; 43,560 square feet or 4,840 square yards. There are 640 acres in one square mile. One acre is 0.405 hectares.</span></span> of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span>.</span></span> inputs are needed to run <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFT-FOFEM<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FOFEM<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">FOFEM stands for First Order Fire Effects Model. This <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">model<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A fuel model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span> is used to predict fuel consumption, emissions, and smoke production; and tree mortality.</span></span> stands for First Order Fire Effects Model. This model is used to predict fuel consumption, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">emissions<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Pollutants produced within a specific combustion stage for a fuel category within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.  A fuelbed contains one or more fuelbed strata (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span>, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span>, etc).</span></span> stratum. For example, emissions can be carbon monoxide and particular matter that are released to the atmosphere from the combustion of biomass.</span></span>, and smoke production; and tree mortality.</span></span>. In the example below we will begin with the default fuel data acquired previously for simulation one, and reduce the fuel loadings in scenario two as per our post-prescribed fire loadings <a href="Tutorial_fofem_2_configuring.htm">outlined earlier</a>. Inputs needed to run FOFEM for emissions are summarized in the table below. </p>
+        <div>
+            <form>
+                <table style="mc-table-style: url('../../Resources/TableStyles/AlternatingRows.css');width: 831px;" class="TableStyle-AlternatingRows" cellspacing="0">
+                    <col class="Column-Column1" style="width: 370px;" />
+                    <col class="Column-Column1" style="width: 459px;" />
+                    <thead>
+                        <tr class="Head-Header1">
+                            <th class="HeadE-Column1-Header1">Input</th>
+                            <th class="HeadD-Column1-Header1">Purpose</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="Body-Body1">
+                            <td class="BodyD-Column1-Body1" colspan="2" style="text-align: center;"><b>Environmental Inputs</b>
+                    &#160;
+                </td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Region </td>
+                            <td class="BodyD-Column1-Body2">Algorithm selection for shrub and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">consumption<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The amount of fuels by weight (tons/acre) consumed within a specific combustion stage for a fuel category within a fuelbed stratum.</span></span></td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Season</td>
+                            <td class="BodyD-Column1-Body1">Predictive variable for herb and shrub consumption</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Fuel category</td>
+                            <td class="BodyD-Column1-Body2">Algorithm selection for duff calculation</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Cover group</td>
+                            <td class="BodyD-Column1-Body1">Algorithm selection for herb, shrub, and duff consumption</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Percent of crown burn</td>
+                            <td class="BodyD-Column1-Body2">Determines quantity of foliage consumed</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyD-Column1-Body1" colspan="2" style="text-align: center;"><b>Fuel Moisture</b>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Duff moisture method</td>
+                            <td class="BodyD-Column1-Body2" rowspan="4">Input to specify the degree of consumption</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">10 hr woody <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel moisture<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Moisture content in fuels determines whether and to what extent fuels will burn. Fuel moisture is a percentage calculated by the weight of contained water in the fuel divided by the ovendry weight of the fuel.</span></span></td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1000 hr <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">woody fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Woody fuels have a true woody stem. Woody fuels include sound wood, rotten wood, and stumps.</span></span> moisture</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Duff moisture</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyD-Column1-Body2" colspan="2" style="text-align: center;"><b>Above Ground Fuels</b>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Crown foliage fuel loading</td>
+                            <td class="BodyD-Column1-Body1" style="text-align: left;" rowspan="4">Input for calculating above ground fuel consumption </td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Crown branch fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Shrub fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">Herbaceous fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyD-Column1-Body1" colspan="2" style="text-align: center;font-weight: bold;">Woody Fuel Loading</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1 hr woody fuel loading</td>
+                            <td class="BodyD-Column1-Body2" style="text-align: left;" rowspan="11">Input for calculating woody fuel consumption </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">10 hr woody fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">100 hr woody fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">1000 hr sound woody fuel loading 3-6 in.</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1000 hr sound woody fuel loading 6-9 in.</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">1000 hr sound woody fuel loading 9-20 in.</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1000 hr sound woody fuel loading 20+ in. </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">1000 hr rotten woody fuel loading 3-6 in. </td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1000 hr rotten woody fuel loading 6-9 in.</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">1000 hr rotten woody fuel loading 9-20 in.</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2">1000 hr rotten woody fuel loading 20+ in.</td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyD-Column1-Body1" colspan="2" style="text-align: center;"><b>Ground Fuels</b>
+                            </td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyE-Column1-Body2"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> loading</td>
+                            <td class="BodyD-Column1-Body2" style="text-align: left;" rowspan="3">Input for calculating ground fuel consumption </td>
+                        </tr>
+                        <tr class="Body-Body1">
+                            <td class="BodyE-Column1-Body1">Duff fuel loading</td>
+                        </tr>
+                        <tr class="Body-Body2">
+                            <td class="BodyB-Column1-Body2">Duff depth</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h2>Environmental inputs</h2>
+            </form>
+        </div>
+        <p>To ensure the correct consumption equations are used, information on environmental inputs must be provided. For both simulations in this example, set the <b>region</b> to <b>Pacific West</b> and the <b>Season</b> to <b>summer</b>, to evaluate the results of a fire ignited over the summer. Because the area in question is natural, rather than <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">activity fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Activity fuels have arisen out of forestry practices, either as a by-product of those practices or through deliberate modification (such as mastication).</span></span>, set the <b>Fuel category</b> to <b>Natural</b>. </p>
+        <p>The <span class="MCTextPopup"><span class="MCTextPopupBody_0" style="display: none; ">When you select a cover group in the consumption and emissions module (IFT-FOFEM), that determines the equations the module uses to calculate fire effects. These equations are based on cover types; for example, Pocosin (PC) or Ponderosa (PN). IFTDSS uses FOFEM desktop's batch mode functionality; IFTDSS does not have the direct links to the SAF/SFM, NVCS, or FCC cover classifications that are present in FOFEM desktop. In IFTDSS, you select a cover group directly based on the broad general cover groups. In FOFEM desktop, you select a SAF/SFM, NVCS, or FCC cover type, which is then mapped to a cover group. If your desired cover type does not fit into one of the cover groups provided, select “none” to use the general consumption algorithms.</span><a class="MCTextPopupSpot_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Cover Group</a></span> determines the equations used by the run to calculate fire effects. ‘<strong class="Strong">None</strong>’ was chosen for this example as none of the choices adequately described the example area.</p>
+        <p>The percent of crown burn expected from a fire will likely need to come from experience, or local expertise. For this hypothetical example, we will assume a fire burning through the untreated simulation will result in <b>50% crown burn</b>, while the percent crown burn resulting from the post-treatment simulation 2 is set to <b>1%</b>. </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">The value for Percent of Crown Burn must be between 1 and 100</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_13_654x471.png" class="img_2" style="width: 654;height: 471;" alt="Environmental input fields as described in the text." />
+        </p>
+        <h2>Fuel moisture inputs</h2>
+        <p>For this example we will set the moisture parameters equal for both simulations, since we are primarily concerned with the emission differences resulting from the fuels. Duff moisture method, in part, determines the  equations used by FOFEM. Choices for duff moisture methods include <b>Entire</b>, <b>Lower</b>, <b>NFDR</b>, <b>Adj_NFDR</b>. For this example we'll assume duff moisture was calculated using the National Fire Danger Rating method, so we will select <b>NFDR</b> for  <b>Duff Moisture Method</b>.</p>
+        <p>To represent extremely dry conditions we will set the <b>10-hr Woody Fuel Moisture</b> to <b>3%</b> and the <b>1000-hr Woody Fuel Moisture</b> and <b>Duff Fuel Moisture</b> to <b>11%</b>, for both simulations.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_14_586x251.png" class="img_2" style="width: 586;height: 251;" alt="Fuel moisturel input fields as described in the text." />
+        </p>
+        <fieldset class="note">
+            <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+            <p class="noteBody">Duff moisture method, in part, determines the  equations used by FOFEM. For more information on duff moisture methods and FOFEM consult <a href="../../10-Reference/Bibliography.htm">Reinhardt et al. 1997</a>.</p>
+        </fieldset>
+        <h2>Above Ground Inputs</h2>
+        <p>For above ground fuel loading, simulation 1 has been automatically filled by <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and fuels software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> based upon the selection of Digital Photo Series Site <b>SONH 6</b>. We will assume the same crown foliage, branch, and herbaceous loading for both simulations, and half the shrub loading on the post-treatment simulation 2.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_15_583x250.png" class="img_2" style="width: 583;height: 250;" alt="Above ground fuel  input fields as described in the text." />
+        </p>
+        <h2>Woody Fuel Inputs</h2>
+        <p>Woody fuel loadings for simulation 1 have been automatically filled by IFTDSS based upon the selection of Digital Photo Series Site <b>SONH 6</b>. For simulation 2, we’ll assume 75% reduction of simulation 1 loading for 1 and 10-hr fuels, and 50% reduction for all other fuels loadings; this will represent post prescribed burn conditions in Simulation 2.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_16_559x531.png" class="img_2" style="width: 559;height: 531;" alt="Woody fuel input fields as described in the text." />
+        </p>
+        <h2>Ground Fuel Inputs</h2>
+        <p>Ground fuel loadings for simulation 1 have been automatically filled by IFTDSS based upon the selection of Digital Photo Series Site  SONH 6. For simulation 2, we'll assume 75% reduction of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> loadings and a 50% reduction of duff loading and depth to represent post prescribed burn conditions. When these selections are made, click <strong class="Strong">Next</strong>.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_17_429x251.png" class="img_2" style="width: 429;height: 251;" alt="Ground fuel input fields as described in the text." />
+        </p>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_fofem_3_Acquiredata.htm">&lt;&lt;&#160;Back:&#160;Acquiring data</a> | <a href="Tutorial_fofem_5_outputs.htm">Next:&#160;Evaluating outputs &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Fire Effects|Using IFT-FOFEM for Smoke Management Planning" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Comparing Runs</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../FireEffects.htm">Fire Effects</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_fofem_0_intro.htm">Using IFT-FOFEM for Smoke Management Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Comparing Runs</span>
+                </div>
+            </div>
+        </div>
+        <h1>Comparing Runs</h1>
+        <p>One of the strengths of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> is the ability to save run inputs and results to be compared against different fuel treatment outcomes, weather conditions, moisture conditions, etc. Here we will outline the steps needed to re-run different parameters in a run while not losing data.</p>
+        <p>
+            <img src="../../Resources/Images/Concepts_2015/JH_Caution_39x39.jpg" style="width: 39;height: 39;" />When re-running parameters it is critical that you save copies of your run inputs and outputs before re-running, as they will be automatically be overridden when the new outputs are generated.</p>
+        <h2>Saving Run Inputs and Outputs</h2>
+        <p>Once you have completed an initial run, record and export all the data you wish to compare from the <b>Outputs</b> page.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_23_5_steps_668x88.png" alt="The 'output' section of the run." class="img_2" style="width: 668;height: 88;" />
+        </p>
+        <p>&#160;</p>
+        <p>Next, proceed to the <b>Run Summary</b> page and save all the inputs and outputs for that run in case they are needed for future use.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_24_steps_638x78.png" alt="The 'run summary' section of the run." style="width: 638;height: 78;" class="img_2" />
+        </p>
+        <p>From the run summary page, ensure to save both the Inputs and the Outputs from the Run Data set section.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_25_658x200.png" alt="Options to save data within the 'Data sets' section of the Run Summary." class="img_2" style="width: 658;height: 200;" />
+        </p>
+        <p>Be sure to save each set of inputs and outputs with a name that will be easy to recognize later.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_26_663x210.png" alt="Dialogue box to name the run data." style="width: 663;height: 210;" />
+        </p>
+        <p>When the first data set is saved you will automatically be taken the Data Sets page. Use your browser back button to navigate back to the Run Summary page and continue saving each data set.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_27_658x225.png" alt="Notice that a copy of the data has been successfully saved." class="img_2" style="width: 658;height: 225;" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Concepts_2015/JH_Caution_39x39.jpg" style="width: 39;height: 39;" alt="caution sign" />Ensure that all data sets from the run are saved.</p>
+        <h2>Re-run and Save</h2>
+        <p>Once all the inputs and data are saved from the initial run, you may use the top progress bar to navigate back to the desired stage in the run that requires alteration. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_28_653x149.png" alt="Moving to previous points in the run workflow." class="img_2" style="width: 653;height: 149;" />
+        </p>
+        <p>&#160;</p>
+        <p>To start editing data click the <b>Edit</b> button at the bottom of the page. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_29.png" alt="The edit button." class="img_2" />
+        </p>
+        <p>Once the alterations are made, click <b>Next</b> and proceed through the remainder of the Run until you are again at the <b>Outputs</b> page.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_23_5_steps_642x85.png" alt="The 'outputs' section of the run." class="img_2" style="width: 642;height: 85;" />
+        </p>
+        <p>Like before, you can record or export all the outputs of interest and make your comparisons.</p>
+        <p>To save these inputs and outputs for future use, proceed to the <b>Run Summary</b> page and</p>
+        <p> save your altered inputs and outputs using a name that will be easily recognized.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_FOFEM_cons_2015/2_0_Tutorial_fofem_cap_30_667x197.png" alt="Dialogue box to name saved data." style="width: 667;height: 197;" class="img_2" />
+        </p>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_fofem_5_outputs.htm">&lt;&lt;&#160;Back:&#160;Outputs</a> | <a href="Tutorial_fofem_7_review_wrapup.htm">Next:&#160;Review and wrap-up &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

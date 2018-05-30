@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Tutorials|Worst-Case Flame Length" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Defining Values-at-Risk</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessTutorialIntro.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_D_1_Creating_Risk_Asmt_WCFL.htm">Worst-Case Flame Length</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Defining Values at Risk</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="Heading1">Defining Values-at-Risk</h1>
+        <p>You are now at the <strong class="Strong">Define Values at Risk</strong> step.&#160; In this step, you will define your <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">values at risk<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Features on the landscape that are influenced positively and/or negatively by fire. These features are called values at risk or highly valued <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">resources<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">1. The tools, equipment, services, supplies, and personnel available for assignment to incidents. 2. The natural resources of an area. 3. Within <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span>, tools, workflows, and other elements.</span></span> (<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">HVR<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Features on the landscape that are influenced positively and/or negatively by fire. These features are called values at risk or highly valued resources (HVR). Examples of values at risk include archaeological sites, historic buildings, wildland urban interface, airports, highway buffers, and conifer forests.</span></span>). Examples of values at risk include archaeological sites, historic buildings, wildland urban interface, airports, highway buffers, and conifer forests.</span></span> (using the <strong class="Strong">Draw Polygon</strong> tool) across your entire <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">area of interest<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">For IFTDSS, an area of interest (<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">AOI<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">For IFTDSS, an area of interest (AOI) is a scale-independent unit of area defined by a user. When working with spatial models, you will need to define an AOI. Within an AOI, project areas and vegetation units can be defined for analysis. There is no minimum size unit, but the maximum size for a unit is one million acres (approximately 400,000 hectares).</span></span>) is a scale-independent <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span> of area defined by a user. When working with spatial models, you will need to define an AOI. Within an AOI, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">project<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A project consists of one or more units that are organized and managed as a single endeavor.</span></span> areas and vegetation units can be defined for analysis. There is no minimum size unit, but the maximum size for a unit is one million acres (approximately 400,000 <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">hectares<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A metric measure of area, usually applied to land, defined as 10,000 square meters. A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">hectare<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A metric measure of area, usually applied to land, defined as 10,000 square meters. A hectare of land is about 2.47 acres.</span></span> of land is about 2.47 acres.</span></span>).</span></span>. In this step you will cover:</p>
+        <ul>
+            <li value="1"><a href="#Values-at-risk">Values at Risk Introduction</a><![CDATA[  ]]></li>
+            <li value="2"><a href="#Response-functions_definitions_snippet">Response Functions (Definitions)</a>
+            </li>
+            <li value="3"><a href="#Introduction-to-the-map-toolbar-snippet">Introduction the Map Toolbar</a>
+            </li>
+            <li value="4"><a href="#Defining-Values-at-Risk-Methods">Defining Values at Risk: Methods</a>
+            </li>
+            <li value="5"><a href="#Defining-Values-at-Risk-Using-the-Freeform">Defining Values at Risk: Using the Free-form Drawing Method to create polygons</a>
+            </li>
+            <li value="6"><a href="#Defining-Values-at-Risk-Using-Edit-Feature-Panel">Defining Values at Risk: Using the Edit Feature Panel to Specify Values at Risk Response function</a>
+            </li>
+            <li value="7"><a href="#Defining-Values-at-Risk-Using-the-Point-and-Click">Defining Values at Risk: Using the Point and Click Method to create polygons</a>
+            </li>
+            <li value="8"><a href="#Defining-Larger-Values-at-Risk">Defining Larger Values at Risk</a>
+            </li>
+            <li value="9"><a href="#Defining-Smaller-Values-at-Risk">Defining Smaller Values at Risk</a>
+            </li>
+            <li value="10"><a href="#Editing-Values-at-Risk">Editing Values at Risk</a>
+            </li>
+            <li value="11"><a href="#Defining-Values-at-Risk-Assigning-Background">Defining Values at Risk: Assigning a Background</a>
+            </li>
+            <li value="12"><a href="#Reviewing-and-Saving-Your-VAR">Reviewing and Saving Your Values-at-Risk Map</a>
+            </li>
+        </ul>
+        <p>&#160;</p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">In the following pages we will cover how to create a values-at-risk map from scratch. If you already have a values-at-risk map from a previous run, it can be used by selecting it at the bottom of the <b>Configure</b> page. Another option is to upload a shapefile before your run, and assign risk functions to the polygons within that shapefile.</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>&#160;</p>
+        <h2><a name="Values-at-risk"></a>Values-at-risk</h2>
+        <p>Values at risk, also known as <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">highly valued resources<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Features on the landscape that are influenced positively and/or negatively by fire. These features are called values at risk or highly valued resources (HVR). Examples of values at risk include archaeological sites, historic buildings, wildland urban interface, airports, highway buffers, and conifer forests.</span></span>, (HVR) are features on the landscape that are influenced positively and/or negatively by fire. A value at risk can have ecological, economic, or social importance.</p>
+        <p>Some examples of values at risk include:</p>
+        <ul>
+            <li value="1">Airports</li>
+            <li value="2">Archeological sites</li>
+            <li value="3">Conifer forests</li>
+            <li value="4">Highway buffers</li>
+            <li value="5">Historic buildings</li>
+            <li value="6">Wildland-urban interface</li>
+        </ul>
+        <h2><a name="Response-functions_definitions_snippet"></a>Response Functions (Definitions) </h2>
+        <p>Response functions describe the effect of fire on the values at risk.</p>
+        <p>Response functions are mathematical relationships between fire characteristic (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flame length<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In IFTDSS risk assessment, you can define the lengths you want assigned for each class.</span></span>) and fire outcome. There are 14 pre-defined response functions.<a name="response-function-table"></a></p>
+        <table style="width: 100%;">
+            <col style="width: 70px;" />
+            <col style="width: 402px;" />
+            <col style="width: 50px;" />
+            <col style="width: 72px;" />
+            <col style="width: 48px;" />
+            <col style="width: 54px;" />
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="centeredUC" style="font-size: 9pt;">Response Function</td>
+                    <td rowspan="2" class="centeredUC" style="font-size: 9pt;">&#160; Description</td>
+                    <td colspan="4" class="centeredUC" style="text-align: left;font-size: 9pt;">Net Value Change Multiplier Based on User-Defined Flame Length Classes</td>
+                </tr>
+                <tr>
+                    <td class="centeredUC" style="font-size: 9pt;">Low</td>
+                    <td class="centeredUC" style="font-size: 9pt;">Moderate</td>
+                    <td class="centeredUC" style="font-size: 9pt;">High</td>
+                    <td class="centeredUC" style="font-size: 9pt;">Very High</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>All fire is beneficial; strong benefit at low and moderate fire intensities and moderate benefit at high and very high intensity.</td>
+                    <td>+80</td>
+                    <td>+80</td>
+                    <td>+40</td>
+                    <td>+40</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">2</td>
+                    <td class="coloredbackground" style="text-align: left;">All fire is beneficial; moderate benefit at low fire intensity and mild benefit at higher intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">+50</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Strong benefit at low fire intensity, decreasing to a strong loss at very high intensity.</td>
+                    <td>+60</td>
+                    <td>+20</td>
+                    <td>-20</td>
+                    <td>-60</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">4</td>
+                    <td class="coloredbackground" style="text-align: left;">Moderate benefit at low fire intensity, decreasing to a moderate loss at very high fire intensity</td>
+                    <td class="coloredbackground" style="text-align: left;">+30</td>
+                    <td class="coloredbackground" style="text-align: left;">+10</td>
+                    <td class="coloredbackground" style="text-align: left;">-10</td>
+                    <td class="coloredbackground" style="text-align: left;">-30</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Slight benefit or loss at all fire intensities</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">6</td>
+                    <td class="coloredbackground" style="text-align: left;">Mild increasing loss from slight benefit or loss at low intensity to a moderate loss at very high intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-10</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-30</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Moderate increasing loss from mild loss at low intensity to a strong loss at very high intensity.</td>
+                    <td>-10</td>
+                    <td>-30</td>
+                    <td>-50</td>
+                    <td>-80</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">8</td>
+                    <td class="coloredbackground" style="text-align: left;">Slight benefit or loss at all fire intensities, except a moderate loss at very high intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-50</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Slight benefit or loss at low and moderate fire intensities and a mild loss at high and very high intensities.</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-20</td>
+                    <td>-20</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">10</td>
+                    <td class="coloredbackground" style="text-align: left;">Mild loss at all fire intensities</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Moderate loss from fire at all fire intensities</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">12</td>
+                    <td class="coloredbackground" style="text-align: left;">Strong loss from fire at all fire intensities.</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Loss increases from slight loss at low intensity to strong loss at very high intensity.</td>
+                    <td>-10</td>
+                    <td>-60</td>
+                    <td>-70</td>
+                    <td>-80</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">14</td>
+                    <td class="coloredbackground" style="text-align: left;">Slight benefit or loss from fire at low and moderate intensities and a strong loss from fire at high and very high intensities.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>(Table modified from Calkin et al., 2010a)</p>
+        <h1 class="Heading1"><a name="Introduction-to-the-map-toolbar-snippet"></a>Introduction to the Map Toolbar</h1>
+        <p>To create the values at risk polygons, we’ll use the map toolbar located at the top of the map; the toolbar provides tools for drawing your values at risk.</p>
+        <p>Hover your cursor over each tool for a brief description of that tool.</p>
+        <p>Tools that are disabled are faded out (for example, the <strong class="Strong">Polygon&#160; Edit</strong> and <strong class="Strong">Advanced Edit</strong> tools, circled here in red).</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_2.png" class="img_2" alt="The mapping toolbar." />
+        </p>
+        <h2><a name="Defining-Values-at-Risk-Methods"></a>Defining Values at Risk: Methods</h2>
+        <p>To create a values-at-risk map, you will draw polygons across the landscape and assign each one a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">response function<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The mathematical relationship between fire characteristic and fire outcome.</span></span>. </p>
+        <p><b>There are two methods for using the map tools to draw polygons:</b>
+        </p>
+        <ol start="1" class="ol_2">
+            <li value="1">The <strong class="Strong">free-form drawing method</strong> is useful when</li>
+        </ol>
+        <ul class="ul_4">
+            <ul>
+                <li value="1">You want to quickly and easily draw polygons.</li>
+                <li value="2">You have a small area of interest.</li>
+                <li value="3">You can see the entire area your polygon will encompass without moving the map.</li>
+            </ul>
+        </ul>
+        <ol start="2" class="ol_2">
+            <li value="2">The <strong class="Strong">point and click method</strong> is useful when</li>
+        </ol>
+        <ul class="ul_4">
+            <ul>
+                <li value="1">You want to zoom in to make a detailed polygon.</li>
+                <li value="2">You need to move the map (using the <b>pan tool</b>) while you are drawing a polygon.</li>
+            </ul>
+        </ul>
+        <p>These polygon drawing methods are discussed in the next four sections.</p>
+        <h2><a name="Defining-Values-at-Risk-Using-the-Freeform"></a>Defining Values at Risk: Using the Free-form Drawing Method to create polygons</h2>
+        <p>In this step, you use the free-form drawing method to <strong class="Strong">define values at risk</strong> and assign each value at risk a response function.</p>
+        <p>In this example, you draw a polygon over the wildland-urban interface.&#160; </p>
+        <ol start="1" class="ol_2">
+            <ol>
+                <li value="1">Select the <strong class="Strong">Draw Polygon</strong> tool.</li>
+                <li value="2">Hold down the <strong class="Strong">shift</strong> key and the <strong class="Strong">left mouse button</strong> at the map location where you want to start drawing your first polygon. &#160; </li>
+                <li value="3">Continue to hold down the <strong class="Strong">shift</strong> key and <strong class="Strong">left mouse button</strong>. Moving the mouse as if it were a pencil, draw your polygon (outlining the wildland-urban interface).</li>
+            </ol>
+        </ol>
+        <p><strong class="Strong">Let go of the left mouse button </strong><strong class="Strong">and shift key </strong><strong class="Strong">when you are done drawing the polygon</strong>.&#160; This creates the polygon and opens the <strong class="Strong">Edit Feature</strong> panel (shown in the next step). </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Tip&#160;&#160;&#160;</legend>
+                    <p class="noteBody">Define your largest values at risk first (e.g., wildland-urban interface, oak woodlands).</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/capture_subset_3/2_0_Tutorial_H_cap_3_669x622.png" class="img_2" alt="A polygon drawn using the free-form method as described in the text." style="width: 669;height: 622;" />
+        </p>
+        <h2><a name="Defining-Values-at-Risk-Using-Edit-Feature-Panel"></a>Defining Values at Risk: Using the Edit Feature Panel to Specify Values at Risk Response function</h2>
+        <p>After you create the polygon, the <strong class="Strong">Edit Feature</strong> panel appears. To edit the polygon, </p>
+        <ol start="1" class="ol_2">
+            <li value="1">Name the polygon.</li>
+            <li value="2">Give the polygon a color using the color wheel and the inner box to choose the shade of the color selected.</li>
+        </ol>
+        <ol start="3" class="ol_2">
+            <li value="3">Assign a response function to the polygon.</li>
+            <li value="4">Choose <b>Submit</b> to save the polygon data.</li>
+        </ol>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_4.png" class="img_2" alt="The 'edit feature' panel open within the map display." />
+        </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Tip&#160;&#160;&#160;</legend>
+                    <p class="noteBody">Click on <strong class="Strong">Response Functions</strong> under the <strong class="Strong">Help</strong> dropdown menu to read a description of each response function and to find additional resources.</p>
+                </fieldset>
+            </form>
+        </div>
+        <h2><a name="Defining-Values-at-Risk-Using-the-Point-and-Click"></a>Defining Values at Risk: Using the Point and Click Method to create polygons</h2>
+        <p>Next, define another value at risk.</p>
+        <p>In this example, use the <strong class="Strong">point and click method </strong>to draw a polygon over the oak woodlands north of the wildland-urban interface.</p>
+        <ol start="1" class="ol_2">
+            <li value="1">Select the <strong class="Strong">Draw Polygon </strong>tool.</li>
+            <li value="2">Click on the map and release to start drawing your first polygon.&#160; </li>
+            <li value="3">Move the mouse to a new point and click to add another point.&#160; Before moving on, make sure the point is established (by moving the mouse away from the point).&#160; Continue this process until you are done drawing your polygon.</li>
+        </ol>
+        <p><b>Double-click when you are done drawing the polygon</b> to create the polygon and to open the <strong class="Strong">Edit Feature</strong> panel.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/capture_subset_5/2_0_Tutorial_H_cap_5a_668x614.png" class="img_2" alt="A polygon drawn using the point and click method as described in the text." style="width: 668;height: 614;" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/capture_subset_5/2_0_Tutorial_H_cap_5b.png" class="img_2" alt="Overlap polygon edges. This ensures all pixels in the project area will be assigned a response function." />
+        </p>
+        <p>After double-clicking to create the polygon, the <strong class="Strong">Edit Feature</strong> panel appears.&#160; To edit the polygon:</p>
+        <ol start="1" class="ol_2">
+            <li value="1">Name the polygon.</li>
+            <li value="2">Give the polygon a color using the color wheel and the inner box to choose the shade of the color selected.</li>
+        </ol>
+        <ol start="3" class="ol_2">
+            <li value="3">Assign a response function to the polygon (see the <a href="#response-function-table">response function table</a> for explanations). Here we have assigned to the oak woodland the response function RF 4: Moderate benefit at low fire intensities to moderate loss at high fire intensities. As before, IFTDSS automatically fills in the response function values.</li>
+        </ol>
+        <p>Choose <strong class="Strong">Submit </strong>to save the polygon data. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_6_655x676.png" class="img_2" style="width: 655;height: 676;" alt="The 'edit feature' panel where polygons may be assinged response functions." />
+        </p>
+        <h2><a name="Defining-Larger-Values-at-Risk"></a>Defining Larger Values at Risk</h2>
+        <p>Continue to fill your entire area of interest with polygons representing the larger values at risk.&#160; <strong class="Strong">Define your largest values at risk</strong> first (e.g., wildland-urban interface, oak woodlands). </p>
+        <p><strong class="Strong">Try it out:</strong>  Define your own large values at risk, using both of the polygon drawing methods, and assign those values at risk a variety of response functions.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_7_663x419.png" class="img_2" alt="Area of interst with a polygons for values at risk such as wetlands, private land, wildland urban interface, and the highway." style="width: 663;height: 419;" />
+        </p>
+        <h2><a name="Defining-Smaller-Values-at-Risk"></a>Defining Smaller Values at Risk</h2>
+        <p>After defining your larger values at risk, draw smaller values of risk (e.g., archeological sites, endangered species habitat, structures) on top of the larger values at risk.</p>
+        <p>The smaller polygons replace the larger polygons beneath. </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Tip&#160;&#160;&#160;</legend>
+                    <p class="noteBody">Creating a detailed values-at-risk map (with multiple response functions) produces better outputs.</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_8_658x414.png" class="img_2" alt="A border where two polygons meet. An enlarged screen shot of this border shows the drawn border and the pixels along that border." style="width: 658;height: 414;" />
+        </p>
+        <p>Once you create a polygon, the data area is rasterized.&#160; If your polygon line encompasses less than half of a pixel, that pixel will not be included in your polygon.&#160; If your polygon line encompasses more than half of a pixel, that pixel will be included in your polygon.</p>
+        <h2><a name="Editing-Values-at-Risk"></a>Editing Values at Risk</h2>
+        <p>You can also edit your polygons using the <strong class="Strong">Modify Polygon</strong> tool.</p>
+        <ol start="1" class="ol_2">
+            <ol>
+                <li value="1">Select the <strong class="Strong">Modify Polygon</strong> tool.</li>
+                <li value="2">Select the polygon you would like to edit by clicking on it</li>
+                <li value="3">Select the feature (value at risk) you would like to edit using the <strong class="Strong">Edit Feature</strong> drop-down list.</li>
+            </ol>
+        </ol>
+        <p>In the <strong class="Strong">Edit Feature</strong> panel, you can edit the polygon’s name, color, or response function.</p>
+        <p>You can also delete a polygon using the <strong class="Strong">Delete</strong> button at the bottom of the panel.</p>
+        <p>If you delete a polygon, the assigned background will replace the deleted polygon.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_9_663x376.png" class="img_2" alt="The 'edit polygon' window open while a polgyon is edited." style="width: 663;height: 376;" />
+        </p>
+        <h2><a name="Defining-Values-at-Risk-Assigning-Background"></a>Defining Values at Risk: Assigning a Background</h2>
+        <p>In order for IFTDSS to calculate an output in the risk pathways, <b>every grid cell within the area of interest needs a response function</b>. To fill this requirement without having to define values at risk for every pixel, you can assign a background to your values-at-risk map. To ensure every grid cell is assigned a response function, assign a response function to the background using the following steps:</p>
+        <ol start="1" class="ol_2">
+            <ol>
+                <li value="1">Select the <strong class="Strong">Edit Background</strong> tool.</li>
+                <li value="2">The <strong class="Strong">Edit Feature</strong> panel will appear. If you prefer, you can change the background’s name from background).</li>
+                <li value="3">Assign the background a color.</li>
+                <li value="4">Assign the background a response function.</li>
+            </ol>
+        </ol>
+        <p>Assigning the background a response function of 4 tells IFTDSS to assume that the areas without a polygon will burn with a moderate benefit under low flame lengths to a moderate loss under very high flame lengths.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_10_662x490.png" class="img_2" alt="The 'edit polygon' window open while a background is created following the steps in the text." style="width: 662;height: 490;" />
+        </p>
+        <h2><a name="Reviewing-and-Saving-Your-VAR"></a>Reviewing and Saving Your Values-at-Risk Map</h2>
+        <p> You can use the <strong class="Strong">Layers</strong> panel to view your values at risk or the response functions that you assigned to your values at risk.</p>
+        <p>To save your values-at-risk map for use in future runs, type a descriptive name into the “<b>Save Polygons As</b>” text box.</p>
+        <p>To continue the risk assessment pathway, when your values-at-risk map is complete, choose <strong class="Strong">Next.</strong></p>
+        <p class="p_4">
+            <img src="../../Resources/Images/Tutorial_creating_VARs_2015/2_0_Tutorial_H_cap_11_659x659.png" class="img_2" alt="Name field for the set of polygons as described in the text." style="width: 659;height: 659;" />
+        </p>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_D_6_caveats.htm">&lt;&lt; Back:&#160;Caveats</a> | <a href="Tutorial_D_8_input_parameters.htm">Next:&#160;Input parameters &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Prescribed Burn Planning|Tutorials|Tutorial C: Prescribed Burn Planning" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Running the Probability of Ignition Module</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../RxBurnsIntro.htm">Prescribed Burn Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../RxBurnsCaseStudiesOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_C_0_PrescribedBurnPlanningPrep.htm">Tutorial C: Prescribed Burn Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Running the Probability of Ignition Module</span>
+                </div>
+            </div>
+        </div>
+        <h2>Running the Probability of Ignition Module</h2>
+        <h3>Setting up the run</h3>
+        <p>First, give the run a descriptive name and click <b>Next</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_poi_naming_512x107.png" style="width: 512;height: 107;" />
+        </p>
+        <p>Specify the number of simulations to calculate. For this example, specify 4 simulations in order to generate the probability of ignition from low, high, optimal, and maximum prescription conditions. When finished, click <b>Next</b>. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_poi_simulations_400x246.png" style="width: 400;height: 246;" />
+        </p>
+        <h3>Populating Environmental Parameters for the Run</h3>
+        <p>To run <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFT-ignite<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">model<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span> that calculates the probability of ignition from either a firebrand or a lightning strike. See also "probability of ignition."</span></span> you will need to populate the inputs on the Inputs page.  Insert data from your <a href="../2016RedBullEnv_paramters.pdf">Element 7 Environmental parameters handout</a> into the inputs as shown below.</p>
+        <table style="width: 670px;">
+            <col style="width: 234px;" />
+            <col />
+            <col />
+            <col style="width: 103px;" />
+            <col />
+            <tbody>
+                <tr>
+                    <td style="text-align: center;font-weight: bold;">Weather</td>
+                    <td style="text-align: center;font-weight: bold;">Low</td>
+                    <td style="text-align: center;font-weight: bold;">High</td>
+                    <td style="text-align: center;font-weight: bold;">Optimal</td>
+                    <td style="text-align: center;font-weight: bold;">Maximum</td>
+                </tr>
+                <tr>
+                    <td>Temperature</td>
+                    <td style="text-align: center;">50</td>
+                    <td style="text-align: center;">80</td>
+                    <td style="text-align: center;">70</td>
+                    <td style="text-align: center;">80</td>
+                </tr>
+                <tr>
+                    <td>Fuel shading from sun (%)</td>
+                    <td style="text-align: center;">100</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                    <td style="text-align: center;">0</td>
+                </tr>
+                <tr>
+                    <td>1 hour <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel moisture<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Moisture content in <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> determines whether and to what extent fuels will burn. Fuel moisture is a percentage calculated by the weight of contained water in the fuel divided by the ovendry weight of the fuel.</span></span> (%)</td>
+                    <td style="text-align: center;">14</td>
+                    <td style="text-align: center;">6</td>
+                    <td style="text-align: center;">8</td>
+                    <td style="text-align: center;">4</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>In this scenario you are populating Simulation 1 to represent the low end of the prescription, Simulation 2 to represent the highest acceptable fire behavior allowed, Simulation 3 to represent optimal fire behavior required to meet objectives, and Simulation 4 to represent maximum fire behavior, or fire behavior expected if fire leaves the burn <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_poi_inputs_649x368.png" style="width: 649;height: 368;" />
+        </p>
+        <p>Once finished, click <b>Next</b>.</p>
+        <h3>Run Outputs</h3>
+        <p>On the outputs page you can evaluate your outputs in tabular and graphical form by toggling the <b>Views</b> option on the left of the screen. The example below depicts the graphical view.</p>
+        <p>Take some time to evaluate outputs by reviewing both the tabular and graphical displays to determine if probability of ignition outputs are at an acceptable limit for each of the 4 fire behavior levels.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_poi_outputs_480x373.png" style="width: 480;height: 373;" />
+        </p>
+        <p>Once you have determined which, if any of the outputs you would like to use in your burn plan, toggle to the table view, and go to the <b>Mark Simulations</b> box to label each simulation for import into Element 7. If you recall from your inputs, Simulation 1 represents the Low, Simulation 2 represents High, Simulation 3 represents Optimal, and Simulation 4 represents Maximum.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_poi_outputs4import_585x366.png" style="width: 585;height: 366;" />
+        </p>
+        <p>Once this is complete, select <b>Finish</b> to proceed to the <b>Run Summary</b> page, which contains downloadable files from the run. Return to the <b>Project Summary</b> page by scrolling to the bottom of the screen and clicking <b>Back to Project.</b></p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_backtoproject.png" />
+        </p>
+        <p>&#160;</p>
+        <p><a href="Tutorial_C_25_C_poi.htm">&lt;&lt;&#160;Back Probability of Ignition Workflow:</a>&#160;|&#160;<a href="Tutorial_C_26_envPrescipt2.htm">Next: Return to Burn Plan Element 7 &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

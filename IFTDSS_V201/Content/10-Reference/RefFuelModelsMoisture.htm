@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Reference Material|Fire Behavior Fuel Models" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Moisture Inputs for Fire Behavior Fuel&#160;Models</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="RefIntro.htm">Reference Material</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RefFuelModelsOverview.htm">Fire Behavior Fuel Models</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Moisture Inputs</span>
+                </div>
+            </div>
+        </div>
+        <h1><a name="kanchor92"></a>Moisture Inputs for Fire Behavior Fuel&#160;Models</h1>
+        <p>Each <a href="RefFuelModels.htm">fire behavior fuel model</a> requires different moisture inputs.  In this table, an “x” represents the required moisture input(s) for a particular <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel model<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">model<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A fuel model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span> is a set of information on the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.  A fuelbed contains one or more fuelbed strata (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span>, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span>, etc).</span></span> inputs to be used in specific fire behavior or fire effects models. Anderson (1982) proposed 13 fuel models; Scott and Burgan (2005) proposed an additional 40.</span></span>.  For example, GR8 (high load, very coarse, humid climate <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">grass<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Graminoids: herbaceous plants with narrow leaves growing from the base. The term "grasses" includes both the true grasses (cereals, bamboo, and grasses) as well as sedges and rushes (marsh and grassland plants).</span></span>) uses 1-hour, 10-hour, and live herbaceous moisture parameters in the calculation of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">surface fire<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fire that burns only the surface <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">litter<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">duff<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Duff<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> layer.</span></span> is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> and growth of a forest.</span></span> behavior.</p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Important&#160;&#160;&#160;</legend>
+                    <p class="noteBody">For moisture parameters that are not required for a particular fire behavior fuel model (as indicated by blank cells in the table), leave the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> default values in place. This is because IFTDSS requires an input value for each parameter, even if the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">module<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A fuel model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span> is not using these values in the calculations.</p>
+                </fieldset>
+            </form>
+        </div>
+        <table class="TableStyle-AlternatingRows" style="caption-side: top;mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" cellspacing="0">
+            <col style="width: 13%;" class="Column-Column1" />
+            <col style="width: 52%;" class="Column-Column1" />
+            <col style="width: 10%;" class="Column-Column1" />
+            <col style="width: 10%;" class="Column-Column1" />
+            <col style="width: 10%;" class="Column-Column1" />
+            <col style="width: 10%;" class="Column-Column1" />
+            <col style="width: 10%;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1" rowspan="2">Fuel Model #</th>
+                    <th class="HeadE-Column1-Header1" rowspan="2">Fuel Model Description</th>
+                    <th class="HeadD-Column1-Header1" colspan="5">Moisture (%)
+                    </th>
+                </tr>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">1-hour</th>
+                    <th class="HeadE-Column1-Header1">10-hour</th>
+                    <th class="HeadE-Column1-Header1">100-hour</th>
+                    <th class="HeadE-Column1-Header1">Live Herbaceous</th>
+                    <th class="HeadD-Column1-Header1">Live Woody</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM1">FM 1</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Short grass (1 ft)
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM2">FM 2</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Timber (grass and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">understory<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The area of the forest in which plants are growing  at the lowest height level under the forest canopy. Typical plants include small trees, shrubs, herbs, vines, and small canopy trees that haven't yet made it to the top.</span></span>)
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM3">FM 3</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Tall grass (2.5 ft)
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM4">FM 4</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Chaparral (6 ft)
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM5">FM 5</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Brush (2 ft)
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM6">FM 6</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Dormant brush, hardwood <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">slash<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The coarse and fine woody debris generated by natural processes (such as wind) or by logging operations.</span></span></td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM7">FM 7</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Southern rough
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM8">FM 8</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Closed <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">timber<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Trees; also, the wood from trees. Typically, a tree is a perennial woody plant with a single main trunk and and many secondary branches. A group of trees is called a stand, wood, timber, or forest, with number of trees determining which term is preferred.</span></span> litter
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM9">FM 9</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Hardwood litter
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM10">FM 10</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Timber (litter and understory)
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM11">FM 11</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Light logging slash
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#FM12">FM 12</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Medium logging slash
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#FM13">FM 13</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Heavy logging slash
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GR1">GR1 (101)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Short, sparse dry climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GR2">GR2&#160; (102)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Low load, dry climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GR3">GR3 (103)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, very coarse, humid climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GS4">GR4 (104)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, dry climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GR5">GR5 (105)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, humid climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GR6">GR6 (106)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, humid climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GR7">GR7 (107)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">High load, dry climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GR8">GR8 (108)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">High load, very coarse, humid climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GR9">GR9 (109)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Very high load, humid climate grass
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GS1">GS1 (121)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, dry climate grass-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GS2">GS2 (122)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, dry climate grass-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#GS3">GS3 (123)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Moderate load, humid climate grass shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#GS4">GS4 (124)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">High load, humid climate grass-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SH1">SH1 (141)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Low load, dry climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SH2">SH2 (142)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Moderate load, dry climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SH3">SH3 (143)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, humid climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SH4">SH4 (144)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, humid climate timber-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SH5">SH5 (145)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">High load, dry climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SH6">SH6 (146)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, humid climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SH7">SH7 (147)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Very high load, dry climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SH8">SH8 (148)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">High load, humid climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SH9">SH9 (149)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Very high load, humid climate shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TU1">TU1 (161)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Low load, dry climate timber-grass-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TU2">TU2 (162)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Moderate load, humid climate timber-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TU3">TU3 (163)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, humid climate timber-grass-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TU4">TU4 (164)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Dwarf conifer with understory
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TU5">TU5 (165)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Very high load, dry climate timber-shrub
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TL1">TL1 (181)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Low load, compact conifer litter
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TL2">TL2 (182)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Low load, broadleaf litter
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TL3">TL3 (183)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Moderate load, conifer litter
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TL4">TL4 (184)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Small downed logs
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TL5">TL5 (185)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">High load, conifer litter
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TL6">TL6 (186)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Moderate load, broadleaf litter
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TL7">TL7 (187)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Large downed logs
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#TL8">TL8 (188)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Long-needle litter
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#TL9">TL9 (189)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Very high load, broadleaf litter
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SB1">SB1 (201)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">Low load, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">activity fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Activity fuels have arisen out of forestry practices, either as a by-product of those practices or through deliberate modification (such as mastication).</span></span></td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SB2">SB2 (202)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body1">Moderate load, activity fuel or low load, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">blowdown<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Trees that have been blown down by the wind.</span></span></td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: center;"><a href="RefFuelModels.htm#SB3">SB3 (203)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyE-Column1-Body2">High load, activity fuel or moderate load, blowdown
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x
+                    </td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+                <tr style="height: 12pt;" class="Body-Body1">
+                    <td class="BodyB-Column1-Body1" style="text-align: center;"><a href="RefFuelModels.htm#SB4">SB4 (204)</a> <![CDATA[
+                    ]]></td>
+                    <td class="BodyB-Column1-Body1">High load blowdown
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">x
+                    </td>
+                    <td class="BodyB-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                    <td class="BodyA-Column1-Body1" style="text-align: center;">&#160;
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

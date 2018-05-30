@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Risk Assessment Concepts|Relative Net Value Change" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Example Using the Flame Length Probabilities Approach</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/AltRowsCentered.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessConcepts.htm">Risk Assessment Concepts</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RiskAssessNetValueChange.htm">Relative Net Value Change</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Example Using the Flame Length Probabilities Approach</span>
+                </div>
+            </div>
+        </div>
+        <h1><a name="Example"></a><a name="kanchor1193"></a>Example Using the Flame Length Probabilities Approach</h1>
+        <p>This topic provides an example of how <a href="RiskAssessNetValueChange.htm">net value change</a> is calculated using the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flame length<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> risk assessment, you can define the lengths you want assigned for each class.</span></span> probabilities approach.</p>
+        <p>The pixel in the following image has been assigned a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">response function<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The mathematical relationship between fire characteristic and fire outcome.</span></span> of 14. Burn probabilities at low, medium, high, and very high flame lengths have been calculated for each grid cell (sometimes that probability will be zero).</p>
+        <p>
+            <img src="../../Resources/Images/NVC_flame_length_example_600x334.png" style="width: 600;height: 334;" class="screencap" />
+        </p>
+        <p><a name="kanchor1194"></a>The <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NVC<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Relative net value change is the main output of the risk assessment pathways in IFTDSS. The relative net value change in land value due to fire is assumed to be a function of fire behavior, and includes both positive and negative effects for fire. For more information, see Calkin et al 2010a.</span></span> multiplier for each <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flame length class<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">surface fire<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fire that burns only the surface <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; "><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> layer.</span></span> is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> and growth of a forest.</span></span> within the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flaming front<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The zone of a moving fire where the combustion is primarily flaming. Behind this flaming zone, combustion is primarily smoldering. (Adapted from http://www.pbs.org/wgbh/nova/fire/glossary.html.)</span></span> is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In IFTDSS risk assessment, you can define the lengths you want assigned for each class.</span></span> is multiplied by the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">burn probability<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The likelihood that an area will burn. In IFTDSS, this is more specifically defined as the likelihood that an area represented by a pixel will burn under specific conditions.</span></span> for each flame length class, and these values are summed to calculate the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">relative net value change<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Relative <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">net value change<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Relative net value change is the main output of the risk assessment pathways in IFTDSS. The relative net value change in land value due to fire is assumed to be a function of fire behavior, and includes both positive and negative effects for fire. For more information, see Calkin et al 2010a.</span></span> is the main output of the risk assessment pathways in IFTDSS. The relative net value change in land value due to fire is assumed to be a function of fire behavior, and includes both positive and negative effects for fire. For more information, see Calkin et al 2010a.</span></span>.</p>
+        <p><em>Net Value Change = ∑[(Burn Probability at</em> x <em>flame length class) x (NVC Multiplier at</em> x <em>flame length class)]</em></p>
+        <p>where <em>x</em> is the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">user-defined flame length<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In IFTDSS risk assessment, you can define the lengths you want assigned for each class.</span></span> class.</p>
+        <p><em>Net Value Change = 0 + 0 + (-1.6) + 0</em>
+        </p>
+        <p><em>Net Value Change = -1.6</em>
+        </p>
+        <p> The equation takes into account all flame lengths; in this example, the calculation has been made for response function 14, as shown in the following table.</p>
+        <table class="TableStyle-AltRowsCentered" style="mc-table-style: url('../../Resources/TableStyles/AltRowsCentered.css');" cellspacing="0">
+            <col style="width: 73pt;" class="Column-Column1" />
+            <col style="width: 126pt;" class="Column-Column1" />
+            <col style="width: 27pt;" class="Column-Column1" />
+            <col style="width: 122pt;" class="Column-Column1" />
+            <col style="width: 18pt;" class="Column-Column1" />
+            <col style="width: 117pt;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Flame Length Class</th>
+                    <th class="HeadE-Column1-Header1">
+                        Response Function #14 (NVC Multipliers)</th>
+                    <th class="HeadE-Column1-Header1">Operator</th>
+                    <th class="HeadE-Column1-Header1">Burn Probability for Each Flame Length Class
+</th>
+                    <th class="HeadE-Column1-Header1">Operator</th>
+                    <th class="HeadD-Column1-Header1">Sum the Values in this Column to Calculate Relative NVC.</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="height: 18pt;" class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        Low
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        0
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        x
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        0
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        =
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        0
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        Medium
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        0
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        x
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        0.01
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        =
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        0
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                     High
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        -80
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        x
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        0.02
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        =
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        -1.6
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                      Very High
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        -80
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        x
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        0
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        =
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        0
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1" colspan="5" align="right">Net value change =</td>
+                    <td class="BodyA-Column1-Body1">-1.6</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

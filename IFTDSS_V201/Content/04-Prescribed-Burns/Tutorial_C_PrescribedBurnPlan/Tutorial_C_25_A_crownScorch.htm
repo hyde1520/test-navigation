@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Prescribed Burn Planning|Tutorials|Tutorial C: Prescribed Burn Planning" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Modeling Crown Scorch Height with IFT-Scorch</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../RxBurnsIntro.htm">Prescribed Burn Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../RxBurnsCaseStudiesOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_C_0_PrescribedBurnPlanningPrep.htm">Tutorial C: Prescribed Burn Planning</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Modeling Crown Scorch Height</span>
+                </div>
+            </div>
+        </div>
+        <h2>Modeling Crown Scorch Height with IFT-Scorch</h2>
+        <h3>Setting up simulations in IFT-Scorch</h3>
+        <p>Give your run a descriptive name, in this case we include the four prescription conditions from Element 7 in the name. When this is done, click <b>Next</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_scorch_run_name.png" />
+        </p>
+        <p>Next, specify the number of simulations to calculate. For example, if you wanted to simulate crown scorch under low, high, optimum, and maximum prescription condition, and for heading, backing, and flanking fires under each of those conditions, you would specify 12 simulations. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_scorch_sim_expl.png" />
+        </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_scorch_sim_setup.png" />
+        </p>
+        <p>When you are finished, click <b>Next</b>.</p>
+        <h3>Populating Input Parameters</h3>
+        <p>Now you are on the Inputs step.  Use the midflame windspeed and air temperature from <a href="../2016RedBullEnv_paramters.pdf">your prescription parameters</a> to populate those inputs.</p>
+        <table style="width: 800px;">
+            <col style="width: 244px;" />
+            <col style="width: 150px;" />
+            <col style="width: 51px;" />
+            <col style="width: 78px;" />
+            <col style="width: 98px;" />
+            <tbody>
+                <tr>
+                    <td style="text-align: center;font-weight: bold;background-color: #6b8e23;color: #ffffff;">Weather</td>
+                    <td style="text-align: center;font-weight: bold;background-color: #6b8e23;color: #ffffff;">Low Fire Behavior</td>
+                    <td style="text-align: center;font-weight: bold;background-color: #6b8e23;color: #ffffff;">High</td>
+                    <td style="text-align: center;font-weight: bold;background-color: #6b8e23;color: #ffffff;">Optimal</td>
+                    <td style="text-align: center;font-weight: bold;background-color: #6b8e23;color: #ffffff;">Maximum</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Temperature</td>
+                    <td style="text-align: center;">50</td>
+                    <td style="text-align: center;">80</td>
+                    <td style="text-align: center;">70</td>
+                    <td style="text-align: center;">80</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">Mid-flame wind speed (mi/h)</td>
+                    <td style="text-align: center;">3</td>
+                    <td style="text-align: center;">11</td>
+                    <td style="text-align: center;">5</td>
+                    <td style="text-align: center;">15</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>To populate <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flame length<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> risk assessment, you can define the lengths you want assigned for each class.</span></span>, use the outputs from the Surface fire Behavior Run</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_modSurfaceFire_FL_outputs.png" />
+        </p>
+        <p> In this run, organize the simulations such that :</p>
+        <p>Simulation #1: Low fire behavior (head)<br />Simulation #2: Low fire behavior (backing)<br />Simulation #3: Low fire behavior (flanking)<br />Simulation #4: High fire behavior (head)<br />Simulation #5: High fire behavior (backing)<br />…<br />Simulation #12: Maximum fire behavior (flanking)</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_crownScorch2_749x379.png" style="width: 749;height: 379;" />
+        </p>
+        <div>
+            <form>
+                <p>When finished, select <b>Next</b>.</p>
+            </form>
+        </div>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Tip&#160;&#160;&#160;</legend>
+                    <p class="noteBody">It is important that you remember how you classified each simulation in your <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFT-surface<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">This <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">model<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A fuel model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span> calculates surface fire spread and intensity.</span></span> run (low, optimal, high, and maximum) and how those simulation outputs translate into inputs for simulations in successive runs.</p>
+                </fieldset>
+            </form>
+        </div>
+        <h3>Viewing Outputs</h3>
+        <p>On the outputs page you can evaluate your outputs in tabular and graphical form.  It is in the tabular display that you can select which, if any, of the Simulations (out of the 12 you created on the Configure page) you might want to include in your burn plan. When finished, toggle the <b>Views</b> setting back to <b>Table</b>.</p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">IFTDSS allows the user to populate up to three fire behavior prescriptions.  Multiple prescriptions may be desired if the prescribed burn <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span> is comprised of multiple <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel models<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel model<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuel model is a set of information on the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a unit.  A fuelbed contains one or more fuelbed strata (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span>, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span>, etc).</span></span> inputs to be used in specific fire behavior or fire effects models. Anderson (1982) proposed 13 fuel models; Scott and Burgan (2005) proposed an additional 40.</span></span> is a set of information on the fuelbed inputs to be used in specific fire behavior or fire effects models. Anderson (1982) proposed 13 fuel models; Scott and Burgan (2005) proposed an additional 40.</span></span>. In this example we are only using one prescription.</p>
+                </fieldset>
+            </form>
+        </div>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_scorch_output_463x286.png" style="width: 463;height: 286;" />
+        </p>
+        <h3>Preparing Outputs for import</h3>
+        <p>To prepare the outputs for import into Element 7, make the following specifications within the <b>Mark Simulations</b> box. This box is used to label outputs so they can by easily located and imported into Element 7 of the burn plan.</p>
+        <p>The outputs for each of the 12 simulations in this run represent a different combination of environmental parameters and fire behavior outputs (Temperature, Mid-Flame wind speed, and flame length) that in this case, represent the low, high, optimal, and maximum prescription levels for each of the three fire types of head, flanking, and backing fire.  For <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFT-scorch<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">This model is used to estimate crown scorch height from surface fire flame lengths. See also "crown scorch height."</span></span>, the 12 combinations are organized horizontally and are named by simulation number as described in the input step.</p>
+        <p>If you recall from your inputs, Simulation 1 represents the Low/Head, Simulation 2 represents low/flanking, Simulation 3 represents low/backing, Simulation 4 represents optimal/head, Simulation 5 represents optimal/flanking, and so on. Ensure each simulation is correctly labeled for this example.</p>
+        <ul>
+            <li value="1">Simulation 1: Prescription 1, Low Fire Behavior, Head</li>
+            <li value="2">Simulation 2: Prescription 1, Low Fire Behavior, Backing</li>
+            <li value="3">Simulation 3: Prescription 1, Low Fire Behavior, Flanking</li>
+            <li value="4">Simulation 4: Prescription 1, High Fire Behavior, Head</li>
+            <li value="5">Simulation 5: Prescription 1, High Fire Behavior, Backing</li>
+            <li value="6">Simulation 6: Prescription 1, High Fire Behavior, Flanking</li>
+            <li value="7">Simulation 7: Prescription 1, Optimal Fire Behavior, Head</li>
+            <li value="8">Simulation 8: Prescription 1, Optimal Fire Behavior, Backing</li>
+            <li value="9">Simulation 9: Prescription 1, Optimal Fire Behavior, Flanking</li>
+            <li value="10">Simulation 10: Prescription 1, Maximum Fire Behavior, Head</li>
+            <li value="11">Simulation 11: Prescription 1, Maximum Fire Behavior, Backing</li>
+            <li value="12">Simulation 12: Prescription 1, Maximum Fire Behavior, Flanking</li>
+        </ul>
+        <p>Take some time to evaluate outputs by reviewing both the tabular and graphical displays to determine if scorch heights are at an acceptable limit for each of the 4 fire behavior levels.</p>
+        <p>When finished, click <b>Finish</b>. </p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_crownScorc3_2_795x543.png" style="width: 795;height: 543;" />
+        </p>
+        <p>After clicking Finish you will be taken to the Run summary page, which contains downloadable files from the run.</p>
+        <p>Next, return to the Project Summary page by scrolling down and clicking the <b>Back to Project Button</b>.</p>
+        <p>
+            <img src="../../Resources/Images/Tutorial_C_PrescribedBurnPlan/tutorial_c_backtoproject.png" />
+        </p>
+        <p MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_C_24_RxBurnWorkflowScorch.htm">&lt;&lt; Back:&#160;Selecting the Scorch Height Run</a> | <a href="Tutorial_C_25_B_poi.htm">Next: Probability of Ignition &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

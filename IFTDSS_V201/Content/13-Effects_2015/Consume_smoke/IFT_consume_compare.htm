@@ -1,0 +1,598 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Consume Runs</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+        </div>
+        <h1>Consume Runs</h1>
+        <p>Within the <b>Prescribed Burn</b> <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">workflow<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A set of modeling pathways that provide access to <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> treatment analysis and planning tools in a stepwise and intuitive manner. Each workflow addresses a particular business need.</span></span> under <b>fire effects</b>, there are several run options using the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Consume<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fire effects prediction <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">model<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A model is a set of mathematical relationships that describe an aspect of wildland fire (Andrews and Queen, 2001); generally, models are equations that are published in scientific literature. A module is a collection of models. A modeling system or software application is a set of modules presented through a software interface. A fuel model is not an equation but is instead a description of fuels accompanied by a list of values for use as input into fire behavior models.</span></span>. It uses fuel loadings, fuel moisture, and weather variables to predict fuel consumption, particulate emissions, and heat energy released under prescribed fire and wildfire conditions. In <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and fuels software applications to make fuels treatment planning and analysis more efficient and effective.</span></span>, see "consumption, emissions, and heat release (Consume)."</span></span> fire effects model, depending on the inputs, outputs, and  output format desired. These are compared in the table below.</p>
+        <table style="mc-table-style: url('../../Resources/TableStyles/AlternatingRows.css');width: 831px;" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" style="width: 364px;" />
+            <col class="Column-Column1" style="width: 68px;" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <col class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Input</th>
+                    <th class="HeadE-Column1-Header1">Consume Manual Loadings, Activity Fuels</th>
+                    <th class="HeadE-Column1-Header1">Consume Manual Loadings, Natural Fuels </th>
+                    <th class="HeadE-Column1-Header1">Consume Activity Fuels</th>
+                    <th class="HeadE-Column1-Header1">Consume Natural Fuels</th>
+                    <th class="HeadD-Column1-Header1">IFT-Consume Landscape</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyD-Column1-Body1" colspan="6" style="text-align: center;"><b>Data Inputs</b>
+                    &#160;
+                </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">FCCS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Fuel Characteristic Classification System surface fire behavior model. This model is used to calculate surface fire behavior for selected fuelbeds under various environmental conditions. In IFTDSS, see "surface fire behavior (FCCS)."</span></span> Fuelbed layer</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyD-Column1-Body1" colspan="6" style="text-align: center;"><b>Model parameters</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Consumption equation</td>
+                    <td class="BodyE-Column1-Body2">&#160;</td>
+                    <td class="BodyE-Column1-Body2">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Emissions factor group</td>
+                    <td class="BodyE-Column1-Body1">x</td>
+                    <td class="BodyE-Column1-Body1">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" colspan="6" style="text-align: center;"><b>Fuel Moistures</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> moisture</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">10 hr <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel moisture<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Moisture content in fuels determines whether and to what extent fuels will burn. Fuel moisture is a percentage calculated by the weight of contained water in the fuel divided by the ovendry weight of the fuel.</span></span></td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">1000 hr fuel moisture</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">1000 fuel moisture measurement method</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyD-Column1-Body1" colspan="6" style="text-align: center;font-weight: bold;">Fuel Characteristics</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Duff, upper and lower percent cover</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Duff, upper and lower depth</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">duff<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> layer.</span></span> cover</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Litter depth</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Lichen<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A forest floor layer comprising ground lichens occurring on rocks, bare ground, or low vegetation.</span></span> depth and percent cover</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Moss<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A forest floor layer comprising low-growing bryophytes. Bryophytes are usually found in moist habitats.</span></span> depth and percent cover</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Squirrel midden loading</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Basal accumulation loading</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">1 hr woody <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel loading<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Dry weight in tons/<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">acre<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A measure of land used in the Imperial and US systems; 43,560 square feet or 4,840 square yards. There are 640 acres in one square mile. One acre is 0.405 hectares.</span></span> of fuels.</span></span></td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">10 hr <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">woody fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Woody fuels have a true woody stem. Woody fuels include sound wood, rotten wood, and stumps.</span></span> loading</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">100 hr woody fuel loading</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">CWD loading, 3-9" dia., sound and rotten</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">CWD loading, 9-20" dia., sound and rotten</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">CWD loading, 20+" dia., sound and rotten</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Stump loading, sound and rotten</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Herbaceous percent live (primary &amp; secondary)</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Herbaceous loading (primary &amp; secondary)</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Shrub percent live (primary &amp; secondary)</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Shrub loading (primary &amp; secondary)</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Under, mid, and overstory tree loading</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Ladder fuel loading</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Snag fuel loading (classes 1-3)</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" style="text-align: center;" colspan="6"><b>Burn Characteristics &amp; Weather</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Percent <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> blackened by fire</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Percent <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> modified by heat/flames</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Length of ignition</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Mid-flame windspeed</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Days since rain</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" colspan="6" style="text-align: center;"><b>Site Characteristics</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Ecoregion</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Cover type</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Slope</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" colspan="6">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">Outputs</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">Consume Manual Loadings, Activity Fuels</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">Consume Manual Loadings, Natural Fuels </td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">Consume Activity Fuels</td>
+                    <td class="BodyE-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">Consume Natural Fuels</td>
+                    <td class="BodyD-Column1-Body1" style="background-color: #556b2f;font-weight: bold;color: #ffffff;">IFT-Consume Landscape</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" style="font-weight: bold;text-align: center;" colspan="6">Output format</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">Tabular</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;font-weight: normal;">Spreadsheet</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1" style="text-align: left;font-weight: normal;">Word document report</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">&#160;</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2" style="text-align: left;font-weight: normal;">Mapping, raster, shapefile, or <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">LCP<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A FARSITE Landscape data file.</span></span></td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyD-Column1-Body1" style="font-weight: bold;text-align: center;" colspan="6">Fuels</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Preburn loadings</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">&#160;</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"> Total
+<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">consumption<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The amount of fuels by weight (tons/acre) consumed within a specific combustion stage for a fuel category within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.  A fuelbed contains one or more fuelbed strata (e.g., canopy, shrubs, etc).</span></span> stratum.</span></span></td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Ground fuel consumption
+</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Litter, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">lichen<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A forest floor layer comprising ground lichens occurring on rocks, bare ground, or low vegetation.</span></span>, and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">moss<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A forest floor layer comprising low-growing bryophytes. Bryophytes are usually found in moist habitats.</span></span> consumption
+</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Downed wood consumption</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Herbaceous consumption
+</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Shrub consumption</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Canopy consumption</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" colspan="6" style="text-align: center;"><b>Emissions</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Carbon monoxide</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Carbon dioxide</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Methane</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Non-methane hydrocarbon</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Particulate matter </td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Particulate matter 2.5</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Particulate matter 10</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyD-Column1-Body2" style="text-align: center;" colspan="6"><b>Heat Release</b>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat release, Ground fuel consumption
+</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Heat release, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">litter<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span>, lichen, and moss consumption</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat release, downed wood consumption</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Heat release, herbaceous consumption</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Heat release, shrub consumption</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyE-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyD-Column1-Body1" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">Heat release, canopy consumption</td>
+                    <td class="BodyB-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyB-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyB-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyB-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                    <td class="BodyA-Column1-Body2" style="text-align: center;font-weight: normal;">x</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

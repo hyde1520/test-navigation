@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Fire and Fuels Application (FFA) Tools|FEPS|Calculations" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Pollutant Emission Rates</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="FERAOver.htm">Fire and Fuels Application (FFA) Tools</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="FERA-FEPS.htm">FEPS</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbsSelf">Calculations</span><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Pollutant Emission Rates</span>
+                </div>
+            </div>
+        </div>
+        <h1>Pollutant Emission Rates</h1>
+        <p>Emissions rates by pollutant species are a function of empirical emission factors, the total <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">consumption<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The amount of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> by weight (tons/<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">acre<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A measure of land used in the Imperial and US systems; 43,560 square feet or 4,840 square yards. There are 640 acres in one square mile. One acre is 0.405 hectares.</span></span>) consumed within a specific combustion stage for a fuel category within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.  A fuelbed contains one or more fuelbed strata (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span>, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span>, etc).</span></span> stratum.</span></span> rate, and a calculated combustion efficiency.</p>
+        <h2>All Pollutants</h2>
+        <p>The following general equation applies to all pollutants.</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 142px;" class="Column-Column1" />
+            <col style="width: 163px;" class="Column-Column1" />
+            <col style="width: 542px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>ER<sub>a,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>lb/min</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Emission rate of pollutant a at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>CR<sub>Tot,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>tons/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Total consumption rate at hour i.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>K<sub>EF</sub><sub>,a</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>g/kg</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Emissions factor coefficient for pollutant a</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>EF<sub>a</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>g/kg</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Emissions factor coefficient for pollutant a</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>C<sub>Eff,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>%</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Combustion efficiency at hour i.</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>CR<sub>Tot</sub><sub>,</sub><sub>i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>%</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Total consumption rate at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>2</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Metric conversion factor lb/ton to g/kg </p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>60</p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>min/hr</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Minutes per hour conversion factor</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Emissions Factors Constants and Coefficients</h3>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" style="width: 147px;" />
+            <col class="Column-Column1" style="width: 328px;" />
+            <col class="Column-Column1" style="width: 170px;" />
+            <col class="Column-Column1" style="width: 248px;" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Pollutant</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Name</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Constant <br />(Kef; g/kg)</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Coefficient <br />(EFa; g/kg)</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>PM<sub>2.5</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Particulate matter &lt;2.5 µm</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>67.4</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>1833</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>PM<sub>10</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Particulate matter &lt;10 µm</p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>CO</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Carbon monoxide</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>961</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>984</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>CO<sub>2</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Carbon dioxide</p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>0</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>1833</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>CH<sub>4</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Methane</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>42.7</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>43.2</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>NO<sub>x</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Mono-nitrogen oxides</p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>NH<sub>3</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Ammonia</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>SO<sub>2</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Sulfur dioxide</p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>VOC</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>Volatile organic compounds</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>&#160;</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Combustion Efficiency</h2>
+        <p>Combustion efficiency is calculated as:</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col class="Column-Column1" />
+            <col class="Column-Column1" style="width: 107px;" />
+            <col class="Column-Column1" style="width: 714px;" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>C<sub>Eff,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Combustion efficiency at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>CR<sub>F,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Tons/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Flaming phase consumption rate at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>CR<sub>S,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>Tons/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Smoldering phase consumption rate at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>CR<sub>RS,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Tons/hr</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Residual smoldering phase consumption rate at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>0.9</p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>%</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Flaming phase combustion efficiency coefficient</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">
+                        <p>0.76</p>
+                    </td>
+                    <td class="BodyB-Column1-Body2">
+                        <p>%</p>
+                    </td>
+                    <td class="BodyA-Column1-Body2">
+                        <p>Combustion efficiency coefficient for smoldering and residual smoldering phase.</p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Total Emissions</h2>
+        <p>Total <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">emissions<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Pollutants produced within a specific combustion stage for a fuel category within a fuelbed stratum. For example, emissions can be carbon monoxide and particular matter that are released to the atmosphere from the combustion of biomass.</span></span> are calculated by numerically integrating the calculated hourly emission rates over the run. A trapezoidal approximation is used for the numerical integration.</p>
+        <p />
+        <p>The following table provides the definitions of these variables.</p>
+        <table style="mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 123px;" class="Column-Column1" />
+            <col style="width: 112px;" class="Column-Column1" />
+            <col style="width: 448px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">
+                        <p>Variable</p>
+                    </th>
+                    <th class="HeadE-Column1-Header1">
+                        <p>Units</p>
+                    </th>
+                    <th class="HeadD-Column1-Header1">
+                        <p>Definition</p>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>E<sub>a,total</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>lb/min</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Total emissions of pollutant a</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>ER<sub>a,i</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>lb/min</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Emissions rate of pollutant a at hour i</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">
+                        <p>ER<sub>a,i+1</sub></p>
+                    </td>
+                    <td class="BodyE-Column1-Body1">
+                        <p>lb/min</p>
+                    </td>
+                    <td class="BodyD-Column1-Body1">
+                        <p>Emissions rate of pollutant a at hour i+1</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">
+                        <p>Δt</p>
+                    </td>
+                    <td class="BodyE-Column1-Body2">
+                        <p>Min</p>
+                    </td>
+                    <td class="BodyD-Column1-Body2">
+                        <p>Time step, 60</p>
+                    </td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1">
+                        <p>N</p>
+                    </td>
+                    <td class="BodyB-Column1-Body1">
+                        <p>—</p>
+                    </td>
+                    <td class="BodyA-Column1-Body1">
+                        <p>Number of hours </p>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

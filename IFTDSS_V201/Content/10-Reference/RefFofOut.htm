@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Reference Material|Fire Effects Modules|Consumption, Emissions, and Tree Mortality (IFT-FOFEM)" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Consumption and Emissions Output Parameters</title>
+        <link href="../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <link href="../Resources/TableStyles/AlternatingRows.css" rel="stylesheet" />
+        <script src="../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="RefIntro.htm">Reference Material</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RefFireEffects.htm">Fire Effects Modules</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="RefFOFEM.htm">Consumption, Emissions, and Tree Mortality (IFT-FOFEM)</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Consumption and Emissions Output Parameters</span>
+                </div>
+            </div>
+        </div>
+        <h1><a name="kanchor418"></a>Consumption and Emissions Output Parameters</h1>
+        <h2>Consumption</h2>
+        <table style="caption-side: top;mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 15%;" class="Column-Column1" />
+            <col style="width: 20%;" class="Column-Column1" />
+            <col style="width: 65%;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Name
+					</th>
+                    <th class="HeadE-Column1-Header1">Units
+					</th>
+                    <th class="HeadD-Column1-Header1">Brief Description
+					</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor419"></a>Crown Branch Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">acre<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A measure of land used in the Imperial and US systems; 43,560 square feet or 4,840 square yards. There are 640 acres in one square mile. One acre is 0.405 hectares.</span></span>, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">Crown branch <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel loading<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Dry weight in tons/acre of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span>.</span></span> consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor420"></a>Crown Branch Segment of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">NWCG<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">National Wildfire Coordinating Group. An operational group that coordinates programs of participating wildfire management agencies.</span></span> Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span> Fuel Loading Remaining Post-burn 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The amount of burnable biomass made up by crown branches remaining onsite post-burn. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor421"></a>Crown Foliage Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The crown foliage biomass consumed during the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor422"></a>Crown Foliage Fuel Loading Remaining Post-burn 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The amount of biomass comprised of crown foliage remaining onsite post-burn. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor423"></a>Downed, Dead Rotten Woody 1000-hour + Post-burn Fuel Loading
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The amount of 1000-hour + dead, rotten, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">woody fuel<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Woody fuels have a true woody stem. Woody fuels include sound wood, rotten wood, and stumps.</span></span> biomass remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor424"></a>Downed, Dead Sound Woody 1000-hour + Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of 1000-hour + sound woody fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor425"></a>Downed, Dead Sound Woody 1000-hour + Fuel Loading Remaining Post-burn
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The amount of 1000-hour + dead, sound, woody fuel biomass remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor426"></a>Downed, Dead Woody 1-hour Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of 1-hour woody fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor427"></a>Downed, Dead Woody 1-hour Fuel Loading Remaining Post-burn 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The amount of 1-hour woody fuel biomass remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor428"></a>Downed, Dead Woody 10-hour Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of 10-hour woody fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor429"></a>Downed, Dead Woody 10-hour Fuel Loading Remaining Post Burn
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The amount of 10-hour woody fuel biomass remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor430"></a>Downed, Dead Woody 100-hour Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre 
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of 100-hour woody fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor431"></a>Downed, Dead Woody 100-hour Fuel Loading Remaining Post-burn
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The amount of 100-hour woody fuel biomass remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor432"></a>Downed, Dead, Rotten Woody 1000-hour + Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of 1000-hour + dead, rotten, woody fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor433"></a><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Duff<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The quantity of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">duff<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Duff is the dark, partially to fully decomposed organic material (unrecognizable plant forms) above mineral soil and below the litter layer. Duff has two layers: an upper (fermentation) layer and a lower (humus) layer.</span></span> biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor434"></a>Duff Fuel Loading Remaining Post-burn
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The amount of biomass present in the duff layer remaining onsite post-fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor435"></a>Herbaceous Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The quantity of herbaceous fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor436"></a>Herbaceous Fuel Loading Remaining Post-burn 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The amount of herbaceous fuel biomass remaining onsite post-burn. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor437"></a><span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">Litter<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body1">The quantity of <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">litter<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Litter is the leaves, needles, fine twigs (but not branches), and other recognizable organic material (such as leaves and flowers), on the forest or grassland floor that have undergone little or no decomposition. This layer sits on top of the duff layer.</span></span> biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor438"></a>Litter Fuel Loading remaining Post-burn 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The amount of unburned litter biomass remaining onsite after burning.
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor439"></a>Percent Mineral Soil Exposed
+					</td>
+                    <td class="BodyE-Column1-Body1">Percentage
+					</td>
+                    <td class="BodyD-Column1-Body1">Mineral soil exposed by fire as a result of duff and litter <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">consumption<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The amount of fuels by weight (tons/acre) consumed within a specific combustion stage for a fuel category within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuelbed<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A fuelbed is an area of similar fuel characteristics within a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">unit<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">A unit encompasses a single or group of fuelbeds that are part of a fuel treatment (e.g., harvest unit, prescribed burn unit) or wildland fire.</span></span>.  A fuelbed contains one or more fuelbed strata (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">canopy<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The stratum containing the crowns of the tallest vegetation present (living or dead), usually above 20 feet. (Source: NWCG Glossary of Wildland Fire Terminology.) Canopy characteristics (including canopy bulk density and canopy base height) for conifer stands are (1) Douglas-fir/lodgepole pine, (2) lodgepole pine, (3) Ponderosa pine/Douglas-fir, (4) Ponderosa pine, and (5) Sierra Nevada mixed conifer (Scott and Reinhardt, 2005).</span></span>, <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrubs<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">shrub<img style="border: none;margin-left: 5px;" src="../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Shrubs (also called bushes) are woody perennial plants that differ from trees by their low height and multiple basal stems. If a shrub is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span> is very small (such as a lavender plant), it might be called a subshrub. In parks, a group of cultivated shrubs is called a shrubbery.</span></span>, etc).</span></span> stratum.</span></span>. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor440"></a>Post-Burn Duff Depth 
+					</td>
+                    <td class="BodyE-Column1-Body2">Inches, centimeters
+					</td>
+                    <td class="BodyD-Column1-Body2">The depth of the duff layer remaining on site after burning. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1"><a name="kanchor441"></a>Pre-Burn Duff Depth 
+					</td>
+                    <td class="BodyE-Column1-Body1">Inches, centimeters
+					</td>
+                    <td class="BodyD-Column1-Body1">The depth of the duff layer before burning. 
+					</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2"><a name="kanchor442"></a>Shrub Fuel Loading Consumed 
+					</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyD-Column1-Body2">The quantity of shrub fuel biomass consumed by the fire. 
+					</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyB-Column1-Body1"><a name="kanchor443"></a>Shrub Fuel Loading Remaining Post-burn 
+					</td>
+                    <td class="BodyB-Column1-Body1">Tons per acre, kilograms per meter squared
+					</td>
+                    <td class="BodyA-Column1-Body1">The amount of shrub fuel biomass remaining onsite post-burn. 
+					</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>&#160;</p>
+        <h2>Emissions</h2>
+        <table style="caption-side: top;mc-table-style: url('../Resources/TableStyles/AlternatingRows.css');width: 768px;" class="TableStyle-AlternatingRows" cellspacing="0">
+            <col style="width: 119px;" class="Column-Column1" />
+            <col style="width: 20%;" class="Column-Column1" />
+            <col style="width: 379px;" class="Column-Column1" />
+            <thead>
+                <tr class="Head-Header1">
+                    <th class="HeadE-Column1-Header1">Name
+					</th>
+                    <th class="HeadE-Column1-Header1">Units
+					</th>
+                    <th class="HeadD-Column1-Header1">Brief Description
+					</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Carbon monoxide (CO), flaming </td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Carbon monoxide generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Carbon monoxide (CO), smoldering </td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Carbon monoxide generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Carbon dioxide (CO<sub>2</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Carbon dioxide generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Carbon dioxide (CO<sub>2</sub>), smoldering</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Carbon dioxide generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Methane (CH<sub>4</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Methane generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Methane (CH<sub>4</sub>), smoldering</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Methane generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Nitrogen oxides (NO<sub>x</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Nitrogen oxides generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Nitrogen oxides (NO<sub>x</sub>), smoldering</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Nitrogen oxides generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Particulate matter 10 (PM<sub>10</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Particulate matter 10 generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Particulate matter 10 (PM<sub>10</sub>), smoldering</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Particulate matter 10 generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Particulate matter 2.5 (PM<sub>2.5</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Particulate matter 2.5 generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyE-Column1-Body2">Particulate matter 2.5 (PM<sub>2.5</sub>), smoldering</td>
+                    <td class="BodyE-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body2">Particulate matter 2.5 generated during smoldering combustion.</td>
+                </tr>
+                <tr class="Body-Body1">
+                    <td class="BodyE-Column1-Body1">Sulfur dioxide (SO<sub>2</sub>), flaming</td>
+                    <td class="BodyE-Column1-Body1">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyD-Column1-Body1">Sulfur dioxide generated during flaming combustion.</td>
+                </tr>
+                <tr class="Body-Body2">
+                    <td class="BodyB-Column1-Body2">Sulfur dioxide (SO<sub>2</sub>), smoldering</td>
+                    <td class="BodyB-Column1-Body2">Tons per acre, kilograms per meter squared
+</td>
+                    <td class="BodyA-Column1-Body2">Sulfur dioxide generated during smoldering combustion.</td>
+                </tr>
+            </tbody>
+        </table>
+        <script type="text/javascript" src="../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Tutorials|Creating Values at Risk for Risk Assessment" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Response Functions (Definitions) </title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessTutorialIntro.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="Tutorial_H_0_Creating_VAR_Intro.htm">Creating Values at Risk for Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Response Functions (Definitions)</span>
+                </div>
+            </div>
+        </div>
+        <h1>Response Functions (Definitions) </h1>
+        <p>Response functions describe the effect of fire on the values-at-risk.</p>
+        <p>Response functions are mathematical relationships between fire characteristic (e.g., <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">flame length<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The flame length of a spreading surface fire within the flaming front is measured from midway in the active flaming combustion zone to the average tip of the flames. Flame length is an indicator of fire intensity. Flame lengths are divided into classes (low, medium, high, very high). In <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> risk assessment, you can define the lengths you want assigned for each class.</span></span>) and fire outcome. There are 14 pre-defined response functions.</p>
+        <table style="width: 100%;">
+            <col style="width: 70px;" />
+            <col style="width: 402px;" />
+            <col style="width: 50px;" />
+            <col style="width: 72px;" />
+            <col style="width: 48px;" />
+            <col style="width: 54px;" />
+            <tbody>
+                <tr>
+                    <td rowspan="2" class="centeredUC" style="font-size: 9pt;">Response Function</td>
+                    <td rowspan="2" class="centeredUC" style="font-size: 9pt;">&#160; Description</td>
+                    <td colspan="4" class="centeredUC" style="text-align: left;font-size: 9pt;">Net Value Change Multiplier Based on User-Defined Flame Length Classes</td>
+                </tr>
+                <tr>
+                    <td class="centeredUC" style="font-size: 9pt;">Low</td>
+                    <td class="centeredUC" style="font-size: 9pt;">Moderate</td>
+                    <td class="centeredUC" style="font-size: 9pt;">High</td>
+                    <td class="centeredUC" style="font-size: 9pt;">Very High</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>All fire is beneficial; strong benefit at low and moderate fire intensities and moderate benefit at high and very high intensity.</td>
+                    <td>+80</td>
+                    <td>+80</td>
+                    <td>+40</td>
+                    <td>+40</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">2</td>
+                    <td class="coloredbackground" style="text-align: left;">All fire is beneficial; moderate benefit at low fire intensity and mild benefit at higher intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">+50</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                    <td class="coloredbackground" style="text-align: left;">+20</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Strong benefit at low fire intensity, decreasing to a strong loss at very high intensity.</td>
+                    <td>+60</td>
+                    <td>+20</td>
+                    <td>-20</td>
+                    <td>-60</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">4</td>
+                    <td class="coloredbackground" style="text-align: left;">Moderate benefit at low fire intensity, decreasing to a moderate loss at very high fire intensity</td>
+                    <td class="coloredbackground" style="text-align: left;">+30</td>
+                    <td class="coloredbackground" style="text-align: left;">+10</td>
+                    <td class="coloredbackground" style="text-align: left;">-10</td>
+                    <td class="coloredbackground" style="text-align: left;">-30</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Slight benefit or loss at all fire intensities</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">6</td>
+                    <td class="coloredbackground" style="text-align: left;">Mild increasing loss from slight benefit or loss at low intensity to a moderate loss at very high intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-10</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-30</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Moderate increasing loss from mild loss at low intensity to a strong loss at very high intensity.</td>
+                    <td>-10</td>
+                    <td>-30</td>
+                    <td>-50</td>
+                    <td>-80</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">8</td>
+                    <td class="coloredbackground" style="text-align: left;">Slight benefit or loss at all fire intensities, except a moderate loss at very high intensity.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-50</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Slight benefit or loss at low and moderate fire intensities and a mild loss at high and very high intensities.</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td>-20</td>
+                    <td>-20</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">10</td>
+                    <td class="coloredbackground" style="text-align: left;">Mild loss at all fire intensities</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                    <td class="coloredbackground" style="text-align: left;">-20</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Moderate loss from fire at all fire intensities</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                    <td>-50</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">12</td>
+                    <td class="coloredbackground" style="text-align: left;">Strong loss from fire at all fire intensities.</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Loss increases from slight loss at low intensity to strong loss at very high intensity.</td>
+                    <td>-10</td>
+                    <td>-60</td>
+                    <td>-70</td>
+                    <td>-80</td>
+                </tr>
+                <tr>
+                    <td class="coloredbackground" style="text-align: left;">14</td>
+                    <td class="coloredbackground" style="text-align: left;">Slight benefit or loss from fire at low and moderate intensities and a strong loss from fire at high and very high intensities.</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">0</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                    <td class="coloredbackground" style="text-align: left;">-80</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>(Table modified from Calkin et al., 2010a)</p>
+        <p>
+            <MadCap:conditionalText MadCap:conditions="Default.ScreenOnly"><a href="Tutorial_H_1_Background.htm">&lt;&lt; Back: Background</a> | <a href="Tutorial_H_3_VAR_methods.htm">Next: Values-at-risk methods &gt;&gt;</a></MadCap:conditionalText>
+        </p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatapultSkin Version="1" Comment="This is the default skin" Anchors="Width" Width="800px" Height="600px" Top="0px" Left="0px" Bottom="0px" Right="0px" Tabs="TOC,Index,Search,Glossary,Favorites" DefaultTab="BrowseSequences" UseBrowserDefaultSize="true" UseDefaultBrowserSetup="True" EnableAboutBox="true" Title="IFTDSS Help" AutoSyncTOC="true">
+    <Index BinaryStorage="True" />
+    <HtmlHelpOptions ShowMenuBar="False" TopmostWindowStyle="False" Buttons="Hide,Locate,Back,Forward,Stop,Refresh,Home,Font,Print" EnableButtonCaptions="True" />
+    <Stylesheet Link="Stylesheet.xml">
+    </Stylesheet>
+    <Toolbar EnableCustomLayout="true" Buttons="Home|Separator|TopicRatings|Separator|EditUserProfile|AddTopicToFavorites|ToggleNavigationPane|Print|Separator|RemoveHighlight|Separator|Back|Forward|Separator|SelectTOC|SelectIndex|SelectSearch|SelectGlossary|SelectFavorites|SelectBrowseSequence|Separator|CurrentTopicIndex|NextTopic|PreviousTopic" ExcludeAccordionTitle="false" />
+    <WebHelpOptions HideNavigationOnStartup="false" NavigationPaneWidth="250" AboutBox="About.png" AboutBoxWidth="160" AboutBoxHeight="48">
+    </WebHelpOptions>
+</CatapultSkin>

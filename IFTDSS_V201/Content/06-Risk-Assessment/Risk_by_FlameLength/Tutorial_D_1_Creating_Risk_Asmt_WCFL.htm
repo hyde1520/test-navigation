@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" MadCap:tocPath="Tutorials|Risk Assessment|Tutorials" MadCap:InPreviewMode="false" MadCap:PreloadImages="false" MadCap:RuntimeFileType="Topic" MadCap:TargetType="WebHelp" lang="en-us" xml:lang="en-us" MadCap:PathToHelpSystem="../../../" MadCap:HelpSystemFileName="IFTDSS_Help.xml" MadCap:SearchType="Stem">
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><title>Tutorial D - Creating a Risk Assessment Using the Worst-Case Flame Lengths Approach: Assessing Potential Risks Across a Landscape</title>
+        <link href="../../SkinSupport/Slideshow.css" rel="stylesheet" />
+        <link href="../../SkinSupport/MadCap.css" rel="stylesheet" />
+        <link href="../../Resources/Stylesheets/IFTDSS_help.css" rel="stylesheet" />
+        <script src="../../SkinSupport/jquery.min.js">
+        </script>
+        <script src="../../SkinSupport/MadCapAll.js">
+        </script>
+        <script src="../../SkinSupport/MadCapTopicAll.js">
+        </script>
+    </head>
+    <body>
+        <p style="text-align: center;"><b style="font-size: 18pt; color: #ff4500;">ARCHIVED IN 2016 [<span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span> Ver. 2.0.1]</b>
+        </p>
+        <div>
+            <div class="nocontent">
+                <div class="MCBreadcrumbsBox_BorderUnder_0"><span class="MCBreadcrumbsPrefix">You are here: </span><a class="MCBreadcrumbsLink" href="../../03-Concepts/TutorialOverview.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessIntro.htm">Risk Assessment</a><span class="MCBreadcrumbsDivider"> &gt; </span><a class="MCBreadcrumbsLink" href="../risk_original/RiskAssessTutorialIntro.htm">Tutorials</a><span class="MCBreadcrumbsDivider"> &gt; </span><span class="MCBreadcrumbs">Tutorial D - Creating a Risk Assessment Using the Worst-Case Flame Lengths Approach: Assessing Potential Risks Across a Landscape</span>
+                </div>
+            </div>
+        </div>
+        <h1 class="Title"><a name="kanchor349"></a>Tutorial D - Creating a Risk Assessment Using the Worst-Case Flame Lengths Approach: Assessing Potential Risks Across a Landscape</h1>
+        <h1 class="Heading1">Overview <img src="../../Resources/Images/Tutorial_D_WCFL_2015/2_0_Tutorial_D_cap_38_269x187.png" style="left: 180px;top: 232px;float: right;width: 269;height: 187;" alt="Relative next value change displayed across a wildland urban interface. Many deep red pixels in this image indicate strong negative value change given a fire event." MadCap:conditions="Default.ScreenOnly" /></h1>
+        <p>Fire risk can be addressed in multiple ways.&#160; This tutorial uses one possible set of criteria for assessing <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fire risk<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">The chance that a fire might start based on the nature and incidence of its causative agents. Generally, for <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">IFTDSS<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Interagency Fuels Treatment Decision Support System. A web-based software integration framework that organizes and extends previously existing fire and <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuels<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take <span class="MCTextPopup"><a class="MCTextPopupSpot_Popup_0" href="javascript:void(0);" onclick="FMCTextPopup( event, this ); return false;">fuel<img style="border: none;margin-left: 5px;" src="../../SkinSupport/ExpandingClosed.gif" MadCap:altsrc="../../SkinSupport/ExpandingOpen.gif" onload="if ( typeof( FMCPreloadImage ) == 'function' ) { FMCPreloadImage( '../../SkinSupport/ExpandingOpen.gif' ); }" alt="Closed" MadCap:alt2="Open" class="MCExpandingIcon" /></a><span class="MCTextPopupBody_Popup_0" style="display: none; ">Combustable materials that a fire consumes in order to burn. The models in IFTDSS take fuel inputs such as trees, bushes, and grasslands.</span></span> inputs such as trees, bushes, and grasslands.</span></span> software applications to make fuels treatment planning and analysis more efficient and effective.</span></span>, fire risk is the probability that a fire ignites and then subsequently spreads to ignite adjacent fuels within a specified area and defined time frame (also see definition of risk from an engineering perspective).</span></span> across a landscape.&#160; In the process, this tutorial introduces some IFTDSS functionality. </p>
+        <p>In this risk assessment tutorial, you will:</p>
+        <ul>
+            <li value="1"><a href="Tutorial_D_2_Intro_background.htm">Learn the background behind the two risk assessment approaches within IFTDSS</a>
+            </li>
+            <li value="2"><a href="Tutorial_D_3_Setup_a_project.htm">Set up a project in IFTDSS (step by step walkthrough)</a>
+            </li>
+            <li value="3"><a href="Tutorial_D_4_Acquire_Landfire_data.htm">Acquire LANDFIRE data (step by step walkthrough)</a>
+            </li>
+            <li value="4"><a href="Tutorial_D_5_create_run.htm">Create a run focusing on risk assessment using the worst-case flame lengths approach (step by step walkthrough)</a>
+            </li>
+            <li value="5"><a href="Tutorial_D_6_caveats.htm">Read a discussion of the risk assessment caveats specific to IFTDSS</a>
+            </li>
+        </ul>
+        <p>To create a risk assessment run using the worst-case flame lengths approach you will:</p>
+        <ul>
+            <li value="1"><a href="Tutorial_D_7_defining_vals_at_risk.htm">Develop a values-at-risk map.</a>
+            </li>
+            <li value="2"><a href="Tutorial_D_8_input_parameters.htm">Establish environmental and simulation parameters.</a>
+            </li>
+            <li value="3"><a href="Tutorial_D_10_review_and_edit_lndscp_data.htm">Review/edit spatial landscape input data. </a>
+            </li>
+            <li value="4"><a href="Tutorial_D_11_exporting_google_earth.htm">Export data to Google Earth</a>
+            </li>
+            <li value="5"><a href="Tutorial_D_12_add_examine_in_g_earth.htm">Add and Examine Attributes in Google Earth</a>
+            </li>
+            <li value="6"><a href="Tutorial_D_12_add_examine_in_g_earth.htm">Assessing further needs</a>
+            </li>
+            <li value="7"><a href="file:///C:/Users/NIFTT/Documents/My Projects/REALPROJECT/IFTDSS Help/Content/06-Risk-Assessment/Risk_by_FlameLength/Tutorial_D_15_saving_data.htm">Saving Data for Future Use</a>
+            </li>
+            <li value="8"><a href="Tutorial_D_14_copy_runs.htm">Copying Runs for Future Use</a>
+            </li>
+            <li value="9"><a href="file:///C:/Users/NIFTT/Documents/My Projects/REALPROJECT/IFTDSS Help/Content/06-Risk-Assessment/Risk_by_FlameLength/Tutorial_D_16_review_wrapup.htm">Review and Wrap-up</a>
+            </li>
+        </ul>
+        <p class="centeredmiddle" MadCap:conditions="Default.ScreenOnly"><b><a href="Tutorial_D_10_29_15.pdf">A PDF version of this tutorial is available here.</a></b>
+        </p>
+        <div>
+            <form>
+                <fieldset class="note">
+                    <legend>&#160;&#160;&#160;Note&#160;&#160;&#160;</legend>
+                    <p class="noteBody">All references cited in this tutorial are in the IFTDSS online help bibliography; access it by navigating to <strong class="Strong">Reference Material &gt; Bibliography.</strong></p>
+                </fieldset>
+            </form>
+        </div>
+        <p MadCap:conditions="Default.ScreenOnly"><![CDATA[  ]]><a href="Tutorial_D_2_Intro_background.htm">Next: Introduction and background &gt;&gt;</a></p>
+        <script type="text/javascript" src="../../SkinSupport/MadCapBodyEnd.js">
+        </script>
+    </body>
+</html>
