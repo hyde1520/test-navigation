@@ -154,7 +154,6 @@ xmlAliasData += '    <Map Name=\"a_StartandCreateLCP\" Link=\"40-tutorials/short
 xmlAliasData += '    <Map Name=\"Chrome\" Link=\"00-concepts/chrome.htm\" ResolvedId=\"1103\" />';
 xmlAliasData += '    <Map Name=\"AgencyLeads\" Link=\"10-ftem/agencyleads.htm\" ResolvedId=\"1104\" />';
 xmlAliasData += '    <Map Name=\"DataTreatments\" Link=\"10-ftem/datatechnical/treatments.htm\" ResolvedId=\"1105\" />';
-xmlAliasData += '    <Map Name=\"DataUtilities\" Link=\"10-ftem/datatechnical/utilities.htm\" ResolvedId=\"1106\" />';
 xmlAliasData += '    <Map Name=\"DataWildfires\" Link=\"10-ftem/datatechnical/wildfires.htm\" ResolvedId=\"1107\" />';
 xmlAliasData += '    <Map Name=\"AddShapefile1\" Link=\"10-ftem/general/addshapefile.htm\" ResolvedId=\"1109\" />';
 xmlAliasData += '    <Map Name=\"geotiff_reclass\" Link=\"10-myworkspace/geotiff_reclass.htm\" ResolvedId=\"1110\" />';

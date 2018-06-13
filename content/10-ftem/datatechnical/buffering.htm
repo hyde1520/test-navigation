@@ -162,6 +162,8 @@
                                                 <li value="2">A wildifre perimeter consists of one or more polygons representing its outer burned edge, or perimeter, in addition to a point representing is approximate point of origin.  </li>
                                             </ul>
                                             <p>The same is true for treatments.  That is, some treatments only contain a point location and size while other treatments also include a multi-polygon shape to define their extent.  The purpose of this topic is two-fold.  That is, it discusses how wildfire treatment interactions are initially determined by a utility program as well as how they can be updated by FTEM users within the application.</p>
+                                            <p><a name="Wildfire_Points"></a>
+                                            </p>
                                             <h2>Wildfire Points</h2>
                                             <p>In all cases, a circle with its center at the wildfire’s point of origin is used to determine the potential treatment interactions for a wildfire point.  For the utility program, the radius of the circle is based upon calculating the length of an ellipse whose length is 1.5 times its width and whose area is equal to the size of the wildfire.  The radius of the circle equals the length of the ellipse. While the exact length of the ellipse varies by acreage, the distances below provide an indication of typical buffering distances given fire size:</p>
                                             <ul>
@@ -179,7 +181,7 @@
                                             <p>
                                                 <img src="../../resources/images/ftem/buffering.png" alt="buffering as described in text" class="border" />
                                             </p>
-                                            <h2>Wildfire Perimeters</h2>
+                                            <h2><a name="Wildfire_perimeters"></a>Wildfire Perimeters</h2>
                                             <p>In all cases, a buffered perimeter is used to determine the treatment interactions for a wildfire with an associated perimeter.  For the utility program, the perimeter is buffered by 1 meter.  Within the FTEM application, users may choose to specify a buffer size up to 1500 meters to buffer the perimeter.  For point treatments, the treatment is included if the point falls within the buffered perimeter.  For polygon treatments, the treatment is included if the polygon intersects the buffered perimeter.</p>
                                             <p>The area of intersection for polygon treatments is the area of intersection between the actual fire perimeter (as opposed to the buffered perimeter) and the polygon treatment.  The area of intersection must be set manually for point treatments.</p>
                                             <h2>Automated Setting of Treatment Interactions</h2>
