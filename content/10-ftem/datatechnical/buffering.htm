@@ -159,7 +159,7 @@
                                             <p>Within FTEM, there exist both wildfire points and perimeters: </p>
                                             <ul>
                                                 <li value="1">A wildfire point consists of a geographic location (latitude and longitude of the approximate point of origin) as well as a size in acres but contains no other information to define where the fire burned.  </li>
-                                                <li value="2">A wildifre perimeter consists of one or more polygons representing its outer burned edge, or perimeter, in addition to a point representing is approximate point of origin.  </li>
+                                                <li value="2">A wildfire perimeter consists of one or more polygons representing its outer burned edge, or perimeter, in addition to a point representing is approximate point of origin.  </li>
                                             </ul>
                                             <p>The same is true for treatments.  That is, some treatments only contain a point location and size while other treatments also include a multi-polygon shape to define their extent.  The purpose of this topic is two-fold.  That is, it discusses how wildfire treatment interactions are initially determined by a utility program as well as how they can be updated by FTEM users within the application.</p>
                                             <p><a name="Wildfire_Points"></a>
@@ -186,6 +186,10 @@
                                             <p>The area of intersection for polygon treatments is the area of intersection between the actual fire perimeter (as opposed to the buffered perimeter) and the polygon treatment.  The area of intersection must be set manually for point treatments.</p>
                                             <h2>Automated Setting of Treatment Interactions</h2>
                                             <p>Potential treatment interactions are only added when a fire is first added to FTEM.  When a new fire is added, a flag is set within the record for the wildfire indicating that treatment interactions have not been initialized for the wildfire.  A separate utility is run that uses this flag to determine that treatment interactions need to be set for a given wildfire.  During normal processing, wildfires (and updates to existing wildfires) are first pulled from IRWIN.  Next, perimeters (new as well as updates) are pulled from GeoMAC.  After this step is completed, point treatments are updated followed by polygon treatments.  The last utility to run is the utility that adds the potential treatment interactions.</p>
+                                            <p>For fire polygons, treatment interactions are defined by real spatial intersection between the perimeter and treatment points and polygons. If the fire has a perimeter (polygon) the treatment interaction is defined by real spatial interaction between the fire perimeter and the treatment point or polygons. </p>
+                                            <p>For fire points, treatment interaction is defined by real spatial interaction between the treatment point or polygons and a buffer created around the fire point. The buffer is created around the fire point using the following formula:&#160;</p>
+                                            <p style="font-style: italic;">Buffer in meters = math.sqrt(1.5 * 4046.85642 * dailyAcres / math.pi) * 2 </p>
+                                            <p>If no dailyAcres is specified a default value of 10 is used.</p>
                                         </div>
                                     </div>
                                 </div>
