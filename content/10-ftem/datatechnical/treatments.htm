@@ -155,7 +155,6 @@
                                                 </div>
                                             </div>
                                             <h1>Fuel Treatment Data Sources Used by FTEM (An Overview)</h1>
-                                            <p class="comment" style="font-weight: bold;">UNDER&#160;DEVELOPMENT</p>
                                             <h2>Introduction</h2>
                                             <p>The Fuels Treatment Effectiveness Monitoring (FTEM) process relies on Integrated Interagency Fuels Treatment geospatial datasets  that depict completed fuels treatments from four land management Agencies within the Department of Interior (National Park Service, Bureau of Land Management, US Fish and Wildlife Service, and Bureau of Indian Affairs) as well as the Department of Agriculture (USDA Forest Service). These spatial datasets consist of  point and polygon features.</p>
                                             <p>The FTEM Integrated Point and Polygon Fuels Treatment Layers are derived from data stored in:</p>
@@ -163,66 +162,78 @@
                                                 <li value="1">The Hazardous Fuels Reduction (HFR) Module of the National Fire Plan Operations and Reporting System (NFPORS). NFPORS is the national system for tracking combined fuels accomplishments for all agencies in the Department of Interior.</li>
                                                 <li value="2">The Forest Service Activity Tracking System (FACTS). FACTS is the official system for tracking U.S. Forest Service fuels accomplishments. FACTS data is shared with NFPORS to facilitate interagency reporting needs.</li>
                                             </ul>
-                                            <h2>Combining Data Sources</h2>
-                                            <p>If FACTS data is shared with NFPORS, why not just use NFPORS data in FTEM? Because the history and data structures of the two applications, which originated with different end goals, it isn’t that simple.</p>
-                                            <p>NFPORS contains both point and polygon fuels treatment data from the previously mentioned agencies within the Department of Interior and point data only for fuels treatments from the USDA Forest Service. Polygon data from the USDA&#160;Forest Service  is stored in FACTS, but not shared to NFPORS.</p>
-                                            <p>Point features represent all treatment records, from both FACTS and NFPORS; However, not all treatment records have an associated polygon due to variability in agency-specific reporting rules and system capabilities. This is especially true for older treatments. Another complicating factor is that NFPORS and FACTS use different attribute names, or fields, to describe similar information related to fuels treatments.</p>
-                                            <p>To overcome these challenges, the FTEM team created two fuels treatment layers, one point layer and one polygon layer. Together, these layers represent an integrated depiction of completed fuels treatments across five federal agencies. The FTEM Integrated  Point and Polygon Fuels Treatment Layers:</p>
-                                            <ul>
-                                                <li value="1">draw spatial and tabular information from both FACTS and NFPORS</li>
-                                                <li value="2">contain attributes that are crosswalked to the NWCG Fuel Treatment Polygon standard (see below for more detail on this process)</li>
-                                                <li value="3">are automatically updated nightly to reflect newly entered and revised data</li>
-                                                <li value="4">are filtered to remove duplicate records, where possible</li>
-                                            </ul>
-                                            <p>
-                                                <img src="../../resources/images/ftem/integrated_pointpoly.png" alt="data as described in text" class="border" />
-                                            </p>
-                                            <h2>Creating a Common Standard</h2>
-                                            <p>Combining NFPORS and FACTS polygon data into the FTEM Integrated Point and Polygon Fuels Treatment Layers was accomplished by using the National Wildfire Coordinating Group (NWCG) data standard for fuels treatments to identify the minimum attributes required the use of fuel treatment data. NWCG standards provide specifications for data that enable common usage across wildland fire information systems (<a href="https://www.nwcg.gov/data-standards" target="_blank">https://www.nwcg.gov/data-standards <a href="https://www.treesearch.fs.fed.us/pubs/6447" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></a>.).  After thoroughly reviewing FACTS and NFPORS polygon data, the FTEM team cross-walked treatment data from both sources to the standard, and combined the resulting data from the respective systems to create a single service for all fuel treatment perimeters from both departments.  This methodology includes a process to remove duplicate polygon records and duplicate point records.</p>
-                                            <p>The points within the FTEM Integrated Point and Polygon Fuels Treatment Layers are derived directly from NFPORS and maintain attribution as it exists in that system. No NWCG data standard for fuels treatment points currently exists, although the development of such a standard has been requested. This layer is filtered to remove those points that are already represented by polygons in the FTEM Integrated Fuels Treatment Layers.</p>
-                                            <p>Inevitably, some duplication of points and or polygons remains due to variance in how records are populated in the system of record. In the case of polygons, duplication most often occurs when fuels treatment work has been done on the same piece of ground multiple times, usually as part of a series of activities considered part of the same treatment.  For example, a thinning, followed by a piling activity, followed by a burning activity, might each be represented by separate, identical polygons.  While steps have been taken to display only the most recent activity in these scenarios in order to reduce duplication, some of the source data are organized in such a way that this is prohibitively difficult. Thus, some duplicates remain in the integrated data. However, this integration is first of its kind. No other cross-agency, integrated polygon and point coverage of completed fuels treatments currently exists.</p>
-                                            <div class="notificationImportant">
-                                                <p>Only treatments completed at or before 10 years prior to the fire start date are visible. </p>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Combining Data Sources</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>If FACTS data is shared with NFPORS, why not just use NFPORS data in FTEM? Because the history and data structures of the two applications, which originated with different end goals, it isn’t that simple. NFPORS contains both point and polygon fuels treatment data from the previously mentioned agencies within the Department of Interior and point data only for fuels treatments from the USDA Forest Service. Polygon data from the USDA&#160;Forest Service  is stored in FACTS, but not shared to NFPORS.</p>
+                                                    <p>Point features represent all treatment records, from both FACTS and NFPORS; However, not all treatment records have an associated polygon due to variability in agency-specific reporting rules and system capabilities. This is especially true for older treatments. Another complicating factor is that NFPORS and FACTS use different attribute names, or fields, to describe similar information related to fuels treatments.</p>
+                                                    <p>To overcome these challenges, the FTEM team created two fuels treatment layers, one point layer and one polygon layer. Together, these layers represent an integrated depiction of completed fuels treatments across five federal agencies. The FTEM Integrated  Point and Polygon Fuels Treatment Layers:</p>
+                                                    <ul>
+                                                        <li value="1">draw spatial and tabular information from both FACTS and NFPORS</li>
+                                                        <li value="2">contain attributes that are crosswalked to the NWCG Fuel Treatment Polygon standard (see below for more detail on this process)</li>
+                                                        <li value="3">are automatically updated nightly to reflect newly entered and revised data</li>
+                                                        <li value="4">are filtered to remove duplicate records, where possible</li>
+                                                    </ul>
+                                                    <p>
+                                                        <img src="../../resources/images/ftem/integrated_pointpoly.png" alt="data as described in text" class="border" />
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <div class="notificationImportant">
-                                                <p>If you do not see a wildfire or fuel treatment in FTEM, it is because it has not been included in one of the above systems. Please follow up with your <a href="../agencyleads.htm" target="_blank">FTEM&#160;Agency Lead</a> to have the information added to the system.</p>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Creating a Common Standard</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Combining NFPORS and FACTS polygon data into the FTEM Integrated Point and Polygon Fuels Treatment Layers was accomplished by using the National Wildfire Coordinating Group (NWCG) data standard for fuels treatments to identify the minimum attributes required the use of fuel treatment data. NWCG standards provide specifications for data that enable common usage across wildland fire information systems (<a href="https://www.nwcg.gov/data-standards" target="_blank">https://www.nwcg.gov/data-standards <a href="https://www.treesearch.fs.fed.us/pubs/6447" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a></a>.).  After thoroughly reviewing FACTS and NFPORS polygon data, the FTEM team cross-walked treatment data from both sources to the standard, and combined the resulting data from the respective systems to create a single service for all fuel treatment perimeters from both departments.  This methodology includes a process to remove duplicate polygon records and duplicate point records.</p>
+                                                    <p>The points within the FTEM Integrated Point and Polygon Fuels Treatment Layers are derived directly from NFPORS and maintain attribution as it exists in that system. No NWCG data standard for fuels treatment points currently exists, although the development of such a standard has been requested. This layer is filtered to remove those points that are already represented by polygons in the FTEM Integrated Fuels Treatment Layers.</p>
+                                                    <p>Inevitably, some duplication of points and or polygons remains due to variance in how records are populated in the system of record. In the case of polygons, duplication most often occurs when fuels treatment work has been done on the same piece of ground multiple times, usually as part of a series of activities considered part of the same treatment.  For example, a thinning, followed by a piling activity, followed by a burning activity, might each be represented by separate, identical polygons.  While steps have been taken to display only the most recent activity in these scenarios in order to reduce duplication, some of the source data are organized in such a way that this is prohibitively difficult. Thus, some duplicates remain in the integrated data. However, this integration is first of its kind. No other cross-agency, integrated polygon and point coverage of completed fuels treatments currently exists.</p>
+                                                    <div class="notificationImportant">
+                                                        <p>Only treatments completed at or before 10 years prior to the fire start date are visible. </p>
+                                                    </div>
+                                                    <div class="notificationImportant">
+                                                        <p>If you do not see a wildfire or fuel treatment in FTEM, it is because it has not been included in one of the above systems. Please follow up with your <a href="../agencyleads.htm" target="_blank">FTEM&#160;Agency Lead</a> to have the information added to the system.</p>
+                                                    </div>
+                                                </div>
                                             </div>
-                                            <h2>How Treatment Polygons are Loaded into FTEM</h2>
-                                            <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that were added or updated since the last pull.</p>
-                                            <p><b>URL:</b> <a href="">https://services.arcgis.com/4OV0eRKiLAYkbH2J/arcgis/rest/services/Integrated_Interagency_Fuels_Treatments_View/FeatureServer/0</a></p>
-                                            <p style="font-weight: bold;">Where Clause:</p>
-                                            <p><span class="code">ETL_Update &gt;= '" + modifiedAfter + "' and actualcompletiondate &gt;= '2005-01-01' and keypoint in (3,6)";</span>
-                                            </p>
-                                            <p><b>Fields:</b>
-                                            </p>
-                                            <p><span class="code">UniqueTreatmentID,ui_treatmentid,treatmentid,mapmethod,DateCurrent,comments,treatmentidentifierdatabase,treatmentname,treatmentcategory,treatmenttype,actualcompletiondate,treatmentacres,treatmentstatus,F_suid,subunit,agency,region,F_admin_fore,F_org,F_activity_code,F_activity,state,F_ownership,keypoint,F_fund_code,F_nepa_doc_name,F_implement_proj,f_treatment_name,unitname,N_FY,N_ACT_INIT_D,geometryid,N_prj_name,ETL_Action,ETL_Update</span>
-                                            </p>
-                                            <p style="font-weight: bold;">Filtering:</p>
-                                            <p>Filter FACTS points/polys with duplicate <span style="font-family: monospace; font-size: 12pt;">F_SUID</span> by only displaying those with the most recent <span style="font-family: monospace; font-size: 12pt;">ActualCompletionDate</span> date.  Where <span style="font-family: monospace; font-size: 12pt;">ActualCompletionDate</span> date is also duplicated, filter by <span style="font-family: monospace; font-size: 12pt;">TreatmentCategory</span> in this priority order (1-“Fire”, 2-“Mechanical”, 3-“Other”, 4-“Preparation for Treatment”).  Where <span style="font-family: monospace; font-size: 12pt;">CategoryName</span> is also duplicated, filter by <span style="font-family: monospace; font-size: 12pt;">F_Activity_Code</span> choosing the smallest numerical code in remaining treatments.</p>
-                                            <p>NFPORS poly data is not filtered for duplicates.</p>
-                                            <h2>How Treatment Points are Loaded into FTEM</h2>
-                                            <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that:</p>
-                                            <ul>
-                                                <li value="1">were added or updated since the last pull</li>
-                                                <li value="2">have a keypoint 3 or 6</li>
-                                                <li value="3">have an <span style="font-family: monospace;">acutalcompletiondate</span> after "2005-01-01"</li>
-                                            </ul>
-                                            <p>Current and the previous fiscal years are pulled in the above manner.</p>
-                                            <p><b>URLs</b>: ftem.gis.nfpors.service.currentFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/0</p>
-                                            <p>ftem.gis.nfpors.service.previousFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/1</p>
-                                            <p style="font-weight: bold;">Where Clause:</p>
-                                            <p><span class="code">actualcompletiondate &gt;= DATE '2005-01-01' and keypointname in ('Hazardous Fuels Reduction','Non-NFP')</span>
-                                            </p>
-                                            <p style="font-weight: bold;">Fields:</p>
-                                            <p style="font-family: monospace;">treatmentid,treatmentmodified,source,treatmentname,categoryname,typename,actualcompletiondate,</p>
-                                            <p style="font-family: monospace;">totalaccomplishment,unitofmeas,agencyname,regionname,regioncode,statename,unitname,completedfy,</p>
-                                            <p style="font-family: monospace;">actualinitiationdate,projectname,longitude,latitude,keypointname</p>
-                                            <p><b>Filtering:</b>
-                                            </p>
-                                            <p>After treatment data is pulled, it is filtered using the below rule: </p>
-                                            <p>Filter FACTS points/polys with duplicate <span style="font-family: monospace;">F_SUID</span> by only displaying those with the most recent <span style="font-family: monospace;">ActualCompletionDate</span> date.  Where <span style="font-family: monospace;">ActualCompletionDate</span> date is also duplicated, filter by <span style="font-family: monospace;">TreatmentCategory</span> in this priority order (1-“Fire”, 2-“Mechanical”, 3-“Other”, 4-“Preparation for Treatment”).  Where C<span style="font-family: monospace;">ategoryName</span> is also duplicated, filter by <span style="font-family: monospace;">F_Activity_Code</span> choosing the smallest numerical code in remaining treatments.</p>
-                                            <p>NFPORS poly data is not filtered for duplicates.</p>
-                                            <p>Following this filter, data is searched for existing treatment polygons with the same <span style="font-family: monospace;">treatmentid</span>. If a treatment polygon with same <span style="font-family: monospace;">treatmentid</span> is found, the treatment point is not loaded.</p>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />How Treatment Polygons are Loaded into FTEM</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that were added or updated since the last pull.</p>
+                                                    <p><b>URL:</b><a href="">https://services.arcgis.com/4OV0eRKiLAYkbH2J/arcgis/rest/services/Integrated_Interagency_Fuels_Treatments_View/FeatureServer/0</a>
+                                                    </p>
+                                                    <p style="font-weight: bold;">Where Clause:</p>
+                                                    <p><span class="code">ETL_Update &gt;= '" + modifiedAfter + "' and actualcompletiondate &gt;= '2005-01-01' and keypoint in (3,6)";</span>
+                                                    </p>
+                                                    <p><b>Fields:</b>
+                                                    </p>
+                                                    <p><span class="code">UniqueTreatmentID,ui_treatmentid,treatmentid,mapmethod,DateCurrent,comments,treatmentidentifierdatabase,treatmentname,treatmentcategory,treatmenttype,<br />actualcompletiondate,treatmentacres,treatmentstatus,F_suid,subunit,agency,region,F_admin_fore,F_org,F_activity_code,F_activity,state,F_ownership,keypoint,F_fund_code,F_nepa_doc_name,F_implement_proj,f_treatment_name,unitname,N_FY,N_ACT_INIT_D,geometryid,N_prj_name,ETL_Action,ETL_Update</span>
+                                                    </p>
+                                                    <p style="font-weight: bold;">Filtering:</p>
+                                                    <p>Filter FACTS points/polys with duplicate <span style="font-family: monospace; font-size: 12pt;">F_SUID</span> by only displaying those with the most recent <span style="font-family: monospace; font-size: 12pt;">ActualCompletionDate</span> date.  Where <span style="font-family: monospace; font-size: 12pt;">ActualCompletionDate</span> date is also duplicated, filter by <span style="font-family: monospace; font-size: 12pt;">TreatmentCategory</span> in this priority order (1-“Fire”, 2-“Mechanical”, 3-“Other”, 4-“Preparation for Treatment”).  Where <span style="font-family: monospace; font-size: 12pt;">CategoryName</span> is also duplicated, filter by <span style="font-family: monospace; font-size: 12pt;">F_Activity_Code</span> choosing the smallest numerical code in remaining treatments.</p>
+                                                    <p>NFPORS polygon data is not filtered for duplicates.</p>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />How Treatment Points are Loaded into FTEM</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <p>Data is pulled into the FTEM&#160;system nightly from AGOL Interagency Fuel Treatments that:</p>
+                                                    <ul>
+                                                        <li value="1">were added or updated since the last pull</li>
+                                                        <li value="2">have a keypoint 3 or 6</li>
+                                                        <li value="3">have an <span style="font-family: monospace;">acutalcompletiondate</span> after "2005-01-01"</li>
+                                                    </ul>
+                                                    <p>Current and the previous fiscal years are pulled in the above manner.</p>
+                                                    <p><b>URLs</b>: ftem.gis.nfpors.service.currentFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/0</p>
+                                                    <p>ftem.gis.nfpors.service.previousFY.url=https://usgs.nfpors.gov/arcgis/rest/services/nfpors_treats/FeatureServer/1</p>
+                                                    <p style="font-weight: bold;">Where Clause:</p>
+                                                    <p><span class="code">actualcompletiondate &gt;= DATE '2005-01-01' and keypointname in ('Hazardous Fuels Reduction','Non-NFP')</span>
+                                                    </p>
+                                                    <p style="font-weight: bold;">Fields:</p>
+                                                    <p style="font-family: monospace;">treatmentid,treatmentmodified,source,treatmentname,categoryname,typename,actualcompletiondate,</p>
+                                                    <p style="font-family: monospace;">totalaccomplishment,unitofmeas,agencyname,regionname,regioncode,statename,unitname,completedfy,</p>
+                                                    <p style="font-family: monospace;">actualinitiationdate,projectname,longitude,latitude,keypointname</p>
+                                                    <p><b>Filtering:</b>
+                                                    </p>
+                                                    <p>After treatment data is pulled, it is filtered using the below rule: </p>
+                                                    <p>Filter FACTS points/polys with duplicate <span style="font-family: monospace;">F_SUID</span> by only displaying those with the most recent <span style="font-family: monospace;">ActualCompletionDate</span> date.  Where <span style="font-family: monospace;">ActualCompletionDate</span> date is also duplicated, filter by <span style="font-family: monospace;">TreatmentCategory</span> in this priority order (1-“Fire”, 2-“Mechanical”, 3-“Other”, 4-“Preparation for Treatment”).  Where <span style="font-family: monospace;">categoryName</span> is also duplicated, filter by <span style="font-family: monospace;">F_Activity_Code</span> choosing the smallest numerical code in remaining treatments.</p>
+                                                    <p>USFS points are pulled from FACTS for historic treatments prior to May 2018. All USFS treatments after 2018 are pulled as polygons.</p>
+                                                    <p>Following this filter, data is searched for existing treatment polygons with the same <span style="font-family: monospace;">treatmentid</span>. If a treatment polygon with same <span style="font-family: monospace;">treatmentid</span> is found, the treatment point is not loaded.</p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

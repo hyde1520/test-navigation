@@ -212,7 +212,7 @@
                                             <h3>Changing Roles</h3>
                                             <p>A User’s role may be changed back to FTEM Viewer by an Administrator by de-selecting all checkboxes in the Agency Roles / Requests dialogue for a given user.</p>
                                             <h2>Pre-approved User Requests</h2>
-                                            <p>Each dropdown below describes a detailed account request scenario for Per-approved users.</p>
+                                            <p>Each drop-down below describes a detailed account request scenario for Per-approved users.</p>
                                             <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Pre-approved User requests a Viewer role for their agency (the agency that matches their email domain) and region, the edit box was not checked</a></span>
                                                 <div class="MCDropDownBody dropDownBody">
                                                     <p>In this scenario FTEM Agency Administrators will not receive a request. A Pre-approved user is automatically granted permission for the viewer role as follows:</p>
@@ -275,6 +275,84 @@
                                                     <p>&#160;</p>
                                                 </div>
                                             </div>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Pre-approved user requests Viewer access for a non-core agency and region.</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol style="list-style-type: upper-alpha;">
+                                                        <li value="1">
+                                                            <p>A pre-approved user requests access for a non-core agency and region.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/non_core_request.png" alt="ftem account request for TNC." class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>The user’s r request is sent to all FTEM&#160; Administrators via email. </p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/noncore_email_to_admins.png" alt="sample email sent to an ftem administrator." class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>The FTEM&#160;Administrator determines whether to accept or deny the request. If accepted, the Administrator clicks the username to see actions available for that account.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/noncore_userlist.png" alt="clicking on a user name shows the actions an administrator may perform for that account" class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>The FTEM&#160;Agency Administrator clicks <span class="UIcomponent">Grant FTEM Access</span> under the user’s name.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>The user receives a notification email informing them that their FTEM role has been modified.  They may now log in to access FTEM.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/email_user_editor_confirm.png" alt="example email confirming a user now has FTEM editor role." class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Pre-approved user requests viewer/editor access to an agency other than what their pre-approved email domain is (NPS email domain requesting access to BLM)</a></span>
+                                                <div class="MCDropDownBody dropDownBody">
+                                                    <ol style="list-style-type: upper-alpha;">
+                                                        <li value="1">
+                                                            <p>A pre-approved user requests access for a core agency and region other than their own.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/role_request_edit.png" alt="ftem user role page with information fields" class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="2">
+                                                            <p>The user’s  request is sent to the assigned FTEM&#160;Agency Administrator(s) via email. </p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/email_non_approved_req.png" alt="example of email request to an anministrator to approve a non pre-approved account request" class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="3">
+                                                            <p>The FTEM&#160;Agency Administrator accesses the FTEM user list and filters by <span class="UIcomponent">Pending</span>, <span class="UIcomponent">Agency</span>, and <span class="UIcomponent">Region</span> to find their user.  Users with email domains that are not pre-approved will remain in the <span class="UIcomponent">Pending</span> list until they are granted Viewer privileges by an Administrator.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/userlist_filter_find.png" alt="user list may be filtered by clicking the text categories displayed to the left of the list." class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="4">
+                                                            <p>The FTEM&#160;Agency Administrator clicks <span class="UIcomponent">Grant FTEM Access</span> under the user’s name.</p>
+                                                        </li>
+                                                        <li value="5">
+                                                            <p>The FTEM Agency Administrator checks the box next to the requested role and  clicks <span class="UIcomponent">Grant Access</span> in the dialogue box.</p>
+                                                            <p>&#160;</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/editor_approval_checked_nonagency.png" alt="a dialogue will allow the administrator to view account details before granting editor access" class="borderlist" />
+                                                            </p>
+                                                        </li>
+                                                        <li value="6">
+                                                            <p>The user receives a notification email informing them that their FTEM role has been approved.  They may now log in and have access to the requested agency role.</p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/email_user_editor_confirm.png" alt="example email confirming a user now has FTEM editor role." class="borderlist" />
+                                                            </p>
+                                                            <p>Users with more than one agency affiliation will see an agency box in the top right of their FTEM&#160;screen, and be able to toggle between the agencies they have roles for. </p>
+                                                            <p>
+                                                                <img src="../../resources/images/ftem/agency_toggle.png" alt="a dropdown list of different agencies for a given user" class="borderlist" />
+                                                                <br />
+                                                            </p>
+                                                        </li>
+                                                    </ol>
+                                                </div>
+                                            </div>
                                             <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Agency Viewer with a non pre-approved email domain requests Editor role for their Agency</a></span>
                                                 <div class="MCDropDownBody dropDownBody">
                                                     <ol style="list-style-type: upper-alpha;">
@@ -315,7 +393,7 @@
                                                 </div>
                                             </div>
                                             <h2>User Requests</h2>
-                                            <p>Each dropdown below describes a detailed account request scenario users (not pre-approved).</p>
+                                            <p>Each drop-down below describes a detailed account request scenario users (not pre-approved).</p>
                                             <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Non pre-approved user requests Viewer access for a pre-approved agency, the edit box was not checked.</a></span>
                                                 <div class="MCDropDownBody dropDownBody">
                                                     <ol style="list-style-type: upper-alpha;">
