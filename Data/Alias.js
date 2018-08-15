@@ -2,7 +2,6 @@ var xmlAliasData = "";
 xmlAliasData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
 xmlAliasData += '<CatapultAliasFile>';
 xmlAliasData += '    <Map Name=\"Home\" Link=\"home.htm\" ResolvedId=\"1000\" />';
-xmlAliasData += '    <Map Name=\"AboutIFTDSS\" Link=\"00-aboutiftdss/aboutiftdss.htm\" ResolvedId=\"1001\" />';
 xmlAliasData += '    <Map Name=\"Disclaimer\" Link=\"00-aboutiftdss/disclaimer.htm\" ResolvedId=\"1002\" />';
 xmlAliasData += '    <Map Name=\"FBFMFuelMoistures\" Link=\"00-concepts/fbfm/fbfmfuelmoistures.htm\" ResolvedId=\"1014\" />';
 xmlAliasData += '    <Map Name=\"UsingMyData\" Link=\"00-concepts/usingmydata.htm\" ResolvedId=\"1019\" />';
