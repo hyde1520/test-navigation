@@ -18,15 +18,14 @@
     <Map Name="LCPInfo" Link="10-mapstudio/files/lcpinfo.htm" ResolvedId="1034" />
     <Map Name="ShapefileInfo" Link="10-mapstudio/files/shapefileinfo.htm" ResolvedId="1035" />
     <Map Name="AddReferenceData" Link="10-mapstudio/functions/addreferencedata.htm" ResolvedId="1037" />
-    <Map Name="FlamMapBackground" Link="20-models/flammap/flammapbackground.htm" ResolvedId="1060" />
+    <Map Name="FlamMapBackground" Link="20-models/flammap/lfbtechdoc.htm" ResolvedId="1060" />
     <Map Name="FlamMapCrowns" Link="20-models/flammap/flammapcrowns.htm" ResolvedId="1061" />
-    <Map Name="FlamMapInput" Link="20-models/flammap/flammapinput.htm" ResolvedId="1062" />
-    <Map Name="FlamMapOutput" Link="20-models/flammap/flammapoutput.htm" ResolvedId="1063" />
+    <Map Name="FlamMapInput" Link="20-models/flammap/lfbinput.htm" ResolvedId="1062" />
+    <Map Name="FlamMapOutput" Link="20-models/flammap/lfboutput.htm" ResolvedId="1063" />
     <Map Name="MyWorkspaceAbout" Link="10-myworkspace/myworkspaceabout.htm" ResolvedId="1066" />
     <Map Name="ImplementationPlanAbout" Link="10-planningcycle/implementationplanabout.htm" ResolvedId="1073" />
     <Map Name="LandEvalAbout" Link="10-planningcycle/landevalabout.htm" ResolvedId="1081" />
     <Map Name="LandscapeEditAbout" Link="30-tasks/lndscpedit/landscapeeditabout.htm" ResolvedId="1083" />
-    <Map Name="LandscapeFireBhvrAbout" Link="20-models/flammap/landscapefirebhvrabout.htm" ResolvedId="1084" />
     <Map Name="LandSummaryAbout" Link="30-tasks/summaries/landsummaryabout.htm" ResolvedId="1086" />
     <Map Name="PlanningCycleAbout" Link="10-planningcycle/planningcycleabout.htm" ResolvedId="1017" />
     <Map Name="MonitoringAbout" Link="10-planningcycle/monitoringabout.htm" ResolvedId="1093" />
@@ -38,8 +37,8 @@
     <Map Name="MapFunctions" Link="10-mapstudio/functions/mapfunctions.htm" ResolvedId="1044" />
     <Map Name="Measurements" Link="10-mapstudio/functions/measurements.htm" ResolvedId="1045" />
     <Map Name="SimulationTools" Link="10-mapstudio/functions/simulationtools.htm" ResolvedId="1046" />
-    <Map Name="ModelsOverview" Link="20-models/modelsoverview.htm" ResolvedId="1050" />
-    <Map Name="FlamMapAbout" Link="20-models/flammap/flammapabout.htm" ResolvedId="1059" />
+    <Map Name="ModelsOverview" Link="10-myplayground/modelsoverview.htm" ResolvedId="1050" />
+    <Map Name="FlamMapAbout" Link="20-models/flammap/lfbabout.htm" ResolvedId="1059" />
     <Map Name="FBFMHeatValues" Link="00-concepts/fbfm/fbfmheatvalues.htm" ResolvedId="1015" />
     <Map Name="KnownIssues" Link="00-aboutiftdss/knownissues.htm" ResolvedId="1003" />
     <Map Name="EditTools" Link="10-mapstudio/functions/edittools.htm" ResolvedId="1040" />
@@ -78,8 +77,8 @@
     <Map Name="AccountProfile" Link="00-concepts/accounts/accountprofile.htm" ResolvedId="1178" />
     <Map Name="Resources" Link="41-references/resources.htm" ResolvedId="1182" />
     <Map Name="myworkspace_folders_hh" Link="50-hover/myworkspace/myworkspace_folders_hh.htm" ResolvedId="1190" />
-    <Map Name="FireBehavior" Link="20-models/flammap/flammapabout.htm" ResolvedId="1135" />
-    <Map Name="ModelingPlayground" Link="20-models/modelsoverview.htm" ResolvedId="1136" />
+    <Map Name="FireBehavior" Link="20-models/flammap/lfbabout.htm" ResolvedId="1135" />
+    <Map Name="ModelingPlayground" Link="10-myplayground/modelsoverview.htm" ResolvedId="1136" />
     <Map Name="AccountSetup1" Link="10-ftem/accountsroles/accountsetup.htm" ResolvedId="1005" />
     <Map Name="FTEMAbout1" Link="10-ftem/ftemabout.htm" ResolvedId="1006" />
     <Map Name="FTEMFaq" Link="10-ftem/faqs.htm" ResolvedId="1007" />
@@ -171,4 +170,14 @@
     <Map Name="EditingLandscapes" Link="40-tutorials/shorts/editinglandscapes.htm" ResolvedId="1129" />
     <Map Name="RunningLFBmodels" Link="40-tutorials/shorts/runninglfbmodels.htm" ResolvedId="1130" />
     <Map Name="ViewingOutputsMapStudio" Link="40-tutorials/shorts/viewingoutputsmapstudio.htm" ResolvedId="1131" />
+    <Map Name="simulation_time_hh" Link="50-hover/mtt/simulation_time_hh.htm" ResolvedId="9190" />
+    <Map Name="spotting_hh" Link="50-hover/mtt/spotting_hh.htm" ResolvedId="9191" />
+    <Map Name="DeadFMConditioning" Link="00-concepts/deadfmconditioning.htm" ResolvedId="1139" />
+    <Map Name="FlamMapWinds" Link="20-models/flammap/flammapwinds.htm" ResolvedId="1140" />
+    <Map Name="MTTAbout" Link="20-models/flammap/mttabout.htm" ResolvedId="1152" />
+    <Map Name="MTTInputs" Link="20-models/flammap/mttinputs.htm" ResolvedId="1157" />
+    <Map Name="MTTOutputs" Link="20-models/flammap/mttoutputs.htm" ResolvedId="1173" />
+    <Map Name="LCPCreateFromButton" Link="30-tasks/createlcp/lcpcreatefrombutton.htm" ResolvedId="1174" />
+    <Map Name="template_hh" Link="50-hover/mtt/template_hh.htm" ResolvedId="1175" />
+    <Map Name="ignition_hh" Link="50-hover/mtt/ignition_hh.htm" ResolvedId="9192" />
 </CatapultAliasFile>
