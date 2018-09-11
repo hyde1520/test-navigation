@@ -1,0 +1,1021 @@
+html {
+	overflow-x:hidden
+}
+
+body {
+  background-color:#f8f8f8;
+}
+th.report-header-color {
+	background-color:grey;
+}
+th.report-header2-color {
+	background-color:LightSteelBlue
+}
+a.disabled {
+	pointer-events: none;
+	cursor: default;
+	color: grey;
+}
+
+.btn_greenie.active
+{
+  background-color: #47a447;
+  border-color: #398439;
+}
+.btn_greenie.hover
+{
+  border-color: green;
+  border-width: 2px;
+  background-color: green;
+}
+
+.clippyHoverStyle {
+ 	border: 1px solid;
+ 	box-shadow: 1px 1px grey;
+ 	padding: 2px;
+}
+
+.angular-full {
+	position:relative;
+	top:50px;
+	width:100%;
+	padding-right:10px;
+	bottom:0;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.angular-view {
+	position:relative;
+	top:50px;
+	width:64%;
+	padding-right:10px;
+	left:15%;
+	right:20%;
+	bottom:0;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.angular-view-map {
+	position:relative;
+	top:50px;
+	width:40%;
+	left:60%;
+	right:0%;
+	bottom:0;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.hoverpanel {
+	display:none;
+	position:fixed;
+	top:50px;
+	right:0px;
+	width:20%;
+	height:90%;
+	background-color: rgba(204, 204, 204, 0.7);
+	/* background-color:#DDDDAA; */
+	border-color:#B8B8B8;
+	border-radius: 3px;
+	border-style: none;
+	border-width: 2px;
+	/* background-image:linear-gradient(to bottom, #CCCCCC 0%, #BBBBBB 100%); */
+	align-text:left;
+	font-size:14px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:15px;
+	padding-right:15px;
+	margin-right:15px;
+	margin-top:10px;
+	margin-bottom:10px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+.hoverpanel a:not(.btn) {
+	color: #337ab7;
+	cursor: pointer;
+}
+
+.hoverpaneltarget:hover + .hoverpanel {
+	display:block
+}
+
+/* Will use this when we use col-md-x bootstrap classes instead of percentage widths */
+.hoverpanel-responsive {
+	display:none;
+	background-color: rgba(204, 204, 204, 0.7);
+	border-radius: 3px;
+	align-text:left;
+	font-size:12px;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:10px;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+
+.hoverpaneltarget:hover + .hoverpanel-responsive {
+	display:block
+}
+
+.leftpanel {
+	position:fixed;
+	overflow-y:scroll;
+	top:150px;
+	left:0px;
+	width:15%;
+	height:90%
+}
+
+.leftpanelns {
+	position:fixed;
+	top:150px;
+	left:0px;
+	width:15%;
+}
+
+.topleftpanel {
+	position:fixed;
+	top:50px;
+	height:160px;
+	left:0px;
+	width:15%;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.toprightpanel {
+	position:fixed;
+	top:50px;
+	bottom:25%;
+	right:0px;
+	width:15%;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+
+.rightpanel{
+	position:fixed;
+	overflow-y:scroll;
+	top:70%;
+	bottom:0;
+	right:0px;
+	width:15%;
+	padding-left:20px;
+	padding-right:20px;
+	margin-right:5px;
+}
+
+.vert-scroll {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	height:300px; 
+	margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* Override the red background color of an open navbar drop-down */
+.navbar-default .navbar-nav > .open > a {
+	background-color:LightSteelBlue !important;
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:hover, 
+.nav-tabs>li.active>a:focus {
+	background-color:LightSteelBlue;
+}
+
+.nav-tabs>li>a,
+.nav-tabs>li>a:hover, 
+.nav-tabs>li>a:focus {
+	background-color:#E8E8E8;
+}
+
+.wait-spinning-sm {
+	background-image: url("../images/icons/wait-spinner.gif");
+	background-size: 12px 12px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.wait-spinning-md {
+	background-image: url("../images/icons/wait-spinner.gif");
+	background-size: 16px 16px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.refresh-spinning-sm {
+	background-image: url("../images/icons/refresh-spinner.gif");
+	background-size: 12px 12px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.refresh-spinning-md {
+	background-image: url("../images/icons/refresh-spinner.gif");
+	background-size: 16px 16px;
+	background-position:center;
+	background-repeat: no-repeat;
+}
+
+.show-with-fade {
+   opacity: 0.8;
+   transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+}
+.hide-with-fade {
+   opacity: 0.0;
+   transition: opacity .75s ease-in-out;
+   -moz-transition: opacity .75s ease-in-out;
+   -webkit-transition: opacity .75s ease-in-out;
+}
+.fade-50-percent {
+	opacity: 0.5;
+	transition: opacity .50s ease-in-out;
+	-moz-transition: opacity .50s ease-in-out;
+	-webkit-transition: opacity .50s ease-in-out;
+}
+
+.split-map-button {
+	margin-top:5px;
+}
+
+/*
+.hide-glyphicon {
+	color: transparent !important;
+}
+*/
+
+.guidance-success:before {
+	font-family: "Glyphicons Halflings";
+	content: "\e013";  /* glyphicon-ok */  
+	color: #5CB85C;    /* green */
+	margin-right: 3px;
+}
+
+.guidance-header {
+	background-color:LightSteelBlue;
+}
+
+.guidance-header .accordion-toggle:after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "\e114";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;         /* adjust as needed */
+}
+.guidance-header .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "\e080";    /* adjust as needed, taken from bootstrap.css */
+}
+
+.guidence-resource {
+	background-color:#F5F5F5;
+	/* border: none; */
+	border-style:solid;
+	border-color:#E8E8E8;
+	border-radius:2px;
+}
+
+.guidence-dialog {
+	background-color:#DDDDAA;
+	/* background-color:#D9E9F7; */
+	border-style: none;
+	/* border-style:solid;
+	border-color:#B0C4DE;
+	border-radius:5px */
+}
+
+.guidence-title {
+	background-color:#D9E9F7;
+	border-style:solid;
+	border-color:#B0C4DE;
+	border-radius:5px
+}
+
+.expand-o-row {
+	background-color: #D9E9F7;
+	border-top: 1px solid #DDD;
+	cursor: pointer;
+	padding: 5px;
+}
+
+.row-background-blue {
+	background-color: #D9E9F7!important;
+}
+
+.row-background-red {
+	background-color: #ffb9b9!important;
+}
+
+.row-background-yellow {
+	background-color: #ffff2b!important;
+}
+
+.row-background-orange {
+	background-color: #fdca53!important;
+}
+
+.row-background-green {
+	background-color: #85eb94!important;
+}
+
+.expand-o-row:hover {
+	background-color: #80ffff;
+}
+.expand-o-row-selected {
+	background-color: #80ffff;
+	border-top: 2px solid #00ffff;
+	border-left: 2px solid #00ffff;
+	border-right: 2px solid #00ffff;
+}
+.expand-o-name-selected {
+	font-weight: bold;
+}
+.expand-o-menu {
+	background-color: #80ffff;
+	padding: 5px;
+	border-bottom: 2px solid #00ffff;
+	border-left: 2px solid #00ffff;
+	border-right: 2px solid #00ffff;
+}
+
+/* Styling for min and max value form validation spans - leverages Angular's injection of ng-invalid-min/max classes */
+div.question > input.ng-invalid-min ~ span.belowMin {  
+	color: #B85C5C;    /* red */
+	margin-left: 5px;
+	display: inline;
+}
+div.question > input.ng-valid-min ~ span.belowMin { 
+	display: none;
+}
+div.question > input.ng-invalid-max ~ span.aboveMax {  
+	color: #B85C5C;    /* red */
+	margin-left: 5px;
+	display: inline;
+}
+div.question > input.ng-valid-max ~ span.aboveMax {
+	display: none;
+}
+
+
+.summary-panel {
+ border: 2px solid;
+ border-color:SteelBlue;
+}
+
+.summary-title {
+	 background-color:  #afbfd0; 
+}
+.summary-table {
+	background-color:LightGrey;
+}
+.summary-left {
+	background-color:LightBlueSteel;
+	color:white;
+}
+
+a {
+	color:black
+}
+
+a:hover {
+	color:black
+}
+
+.colomn
+
+div.hoverable:hover + tr.revealable {
+    display: block;
+}
+
+div.revealable:hover {
+    display: block;
+}
+
+div.revealable {
+    display: none;
+    background-color:rgba(0,0,0,.3);
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+}
+
+tr.revealable {
+    display: none;
+}
+
+label.control-label {
+	display:inline;
+}
+
+label.control-label div {
+	display:inline;
+}
+
+label.control-label div input {
+	display:inline;
+	background-color:#f5f6f6;
+}
+
+select option {
+   background: white;
+}
+
+select option:first-child{
+  color: green;
+}
+
+.panel input.ng-invalid.ng-dirty {
+	background-color:#EED4D4
+}
+
+td input.ng-pristine {
+	background-color:#f5f6f6;
+}
+
+td input.ng-valid {
+	background-color:#f5f6f6;
+}
+
+td input.ng-invalid.ng-dirty {
+	background-color:#EED4D4
+}
+
+/** css for scrollable dropdown menu **/
+.scrollable-menu {
+    height: auto;
+    max-height: 200px;
+    overflow-x: hidden;
+}
+
+.scrollable-menu::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 4px;        
+}    
+.scrollable-menu::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: lightgray;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.75);        
+}
+
+.dropdown-menu {
+	width:100%;
+}
+
+.btn-space {
+    margin-right: 5px;
+}
+
+/** css for map image hover on cycle main **/
+.hoverimg {
+	display:none;
+	position:absolute;
+	z-index:1000
+}
+
+area:hover + .hoverimg, area:hover + .hoverimg + .hoverpanel {
+	display:block
+}
+
+.hoverimg:hover, .hoverimg:hover + .hoverpanel {
+	display:block
+}
+
+.hoverwell {
+	height:600px;
+	width:300px;
+	display:none;
+	position:absolute;
+	left:600px;
+	top:0px;
+	background-color:#D9E5D4;
+	border-color:#9AC088;
+	background-image:linear-gradient(to bottom, #D9E5D4 0%, #9AC088 100%);
+	align-text:left;
+}
+
+/** fade-in class to animate a transition for ng-show and ng-hide **/
+.fade-in.ng-hide-add,
+.fade-in.ng-hide-remove {
+  -webkit-transition:0.5s linear all;
+  transition:0.5s linear all;
+
+  /* remember to add this */
+  display:block!important;
+  opacity:1;
+}
+.fade-in.ng-hide {
+  opacity:0;
+}
+ 
+
+/** css for animating the cycle **/
+.cycleMap.ng-hide-remove, .cycleMap.ng-hide-add {
+  -webkit-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+	
+}
+.cycleBreakComponent.ng-hide-add, .cycleBreakComponent.ng-hide-remove {
+  -webkit-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -moz-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -ms-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  -o-transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+  transition: 1000ms cubic-bezier(0.250, 0.250, 0.750, 0.750) all;
+}
+
+.cycleBreakComponent.ng-hide-add, .cycleBreakComponent.ng-hide-remove {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;
+}
+
+.cycleBreakComponent.ng-hide {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: top right;
+  -moz-transform-origin: top right;
+  -ms-transform-origin: top right;
+  -o-transform-origin: top right;
+  transform-origin: top right;	
+}
+
+.cycleComponent {
+	position:relative;
+	left:300px;
+	right:0px;
+	top:-300px;
+	bottom:0px;
+}
+
+.cycleMap.ng-hide-add, .cycleMap.ng-hide-remove {
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;
+}
+
+.cycleMap.ng-hide {
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  -o-transform-origin: top left;
+  transform-origin: top left;	
+}
+
+.backImage:hover + .backArrow, .backArrow:hover {
+	display:inline;
+}
+
+.backArrow {
+	display:none;
+}
+
+.cycleAction {
+	width:70%;
+	margin:0px;
+	padding:0px;
+	margin-top:-20px;
+	height:80px;
+	font-size:20px
+}
+
+.cycleActionTitle {
+	background-color:#4A4A4A;
+	border-style: solid;
+	border-color:#9B9B9B;
+	border-width:1px;
+	border-radius:0px 0px 0px 0px;
+	height:80px;
+	width:30%;
+	vertical-align:middle;
+	line-height:80px;
+	font-size:12px;
+	color:white;
+}
+
+.cycleActionDescription {
+	background-color:#D9E9F7;
+	border-style: solid;
+	border-color:#9B9B9B;
+	border-width:1px;
+	border-radius:0px 0px 0px 0px;
+	width:60%;
+	height:80px;
+	padding:0px;
+	vertical-align:middle;
+	font-size:10px
+}
+
+.cycleTaskList {
+	background-color:#D9E9F7;
+	border-style:none;
+	border-radius:0;
+	box-shadow:none;
+	margin:0px;
+	padding:0px;
+	height:100%;
+	width:100%;
+}
+
+.cycleTaskButton {
+	background-color:#D9E9F7;
+	border-style:solid;
+	border-color:#B0C4DE;
+	border-radius:0;
+	height:100%;
+}
+
+.cycleActionTitle.disabled {
+	border-style: dashed;
+}
+
+.cycleActionDescription.disabled {
+	background-color:#AFAEB3;
+	border-style: dashed;
+	border-color:grey;
+}
+
+.cycleTaskButton.disabled {
+	background-color:#b0b0b4;
+	border-style: dashed;
+	border-color:grey;
+}
+
+.cycleTaskList.disabled {
+	background-color:#b0b0b4;
+}
+/**
+.cycleActionTitle:hover, .cycleActionTitle:hover + .cycleActionDescription {
+	border-color:yellow;
+	border-width:5px;
+}
+**/
+
+.cycleTaskButton:hover {
+	border-color:yellow;
+	border-width:2px;
+}
+
+.cycleTopAction {
+	width:70%;
+	margin:0px;
+	margin-bottom:20px;
+	padding:0px;
+	height:80px;
+	font-size:20px;
+	font-color:white
+	
+}
+.cycleTopActionTitle {
+	background-color:#328443;
+	border-style: solid;
+	border-color:#9B9B9B;
+	border-width:1px;
+	border-radius:0px 0px 0px 0px;
+	height:80px;
+	width:30%;
+	vertical-align:middle;
+	line-height:80px;
+	font-size:15px;
+	color:white
+}
+
+.cycleTopActionDescription {
+	background-color:#2E3E4F;
+	border-style: solid;
+	border-color:#9B9B9B;
+	border-width:1px;
+	border-radius:0px 0px 0px 0px;
+	width:60%;
+	height:80px;
+	padding:0px;
+	vertical-align:middle;
+	font-size:10px;
+	font-color:white
+	
+}
+
+.hidden-submit {
+    border: 0 none;
+    height: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.inbox-message-button {
+	padding:5px;
+	margin:0px;
+    vertical-align:middle;
+    width:100%;
+    border-style:solid;
+    border-width:2px;
+    
+}
+.iftdss-help {
+	background-color:#A0A0A0;
+	right:0px; 
+	height:30px; 
+	border-style:none; 
+	background-color:transparent;
+	top:0px;"
+}
+.iftdss-help-color {
+	color: grey;
+}
+.iftdss-glyicon-green {
+	color: green;
+}
+.iftdss-glyicon-red {
+	color: red;
+	cursor: pointer;
+}
+.iftdss-glyicon-red {
+	color:#D9534F
+}
+.gi-1x {
+	font-size: 1em;
+}
+.custom-view-summary {
+    width: 130px !important;
+}
+.custom-create-summary {
+    width: 128px !important;
+}
+.custom-rerun-summary {
+    width: 160px !important;
+}
+
+
+// Styling for buttons in an image background on the Start Page
+.img-wrapper {
+  position: relative;
+ }
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  /*Delete Below to remove background image*/
+  background: url(../images/startPage/StartPage1_1280x689.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 40%;
+}
+
+.img-overlay-button {
+	margin:10px 20px;
+	padding:15px 40px;
+}
+
+  .bold-green-font {
+    font-weight: bold;
+    color: green;
+  }
+
+  .bold-font {
+    font-weight: bold;
+  }
+
+  .right-text {
+    text-align: right;
+  }
+
+  .large-font {
+    font-size: 15px;
+  }
+
+  .italic-darkblue-font {
+    font-style: italic;
+    color: darkblue;
+  }
+
+  .italic-purple-font {
+    font-style: italic;
+    color: purple;
+  }
+
+  .underline-blue-font {
+    text-decoration: underline;
+    color: blue;
+  }
+
+  .gold-border {
+    border: 3px solid gold;
+  }
+
+  .deeppink-border {
+    border: 3px solid deeppink;
+  }
+
+  .orange-background {
+    background-color: orange;
+  }
+  .gold-background {
+    background-color: gold;
+  }
+.compare1-background {
+    background-color: Lavender;
+  }
+  .copper-background {
+    background-color: copper;
+  }
+  .beige-background {
+    background-color: beige;
+  }
+   .silver-background {
+    background-color: silver;
+  }
+.compare2-background {
+    background-color: beige;
+  }
+
+  .beige-background {
+    background-color: beige;
+  }
+  
+  
+.filter-col{
+    padding-left:10px;
+    padding-right:10px;
+}
+
+.filter-container{
+    margin-top:30px;
+}
+.filter-glyph-color{
+    color:#396a93;
+}
+.filter-glyph-red {
+	color:#933951;
+}
+
+.highlight-input-field {
+	background-color: #ffff99;
+}
+  
+.checkbox-green {  
+	color: #5CB85C;    /* green */
+}
+.cancel-red { 
+	color: #B85C5C;    /* red */
+}
+
+.requiredField:before {
+  content: '* ';
+  color: red;
+}
+
+.requiredOrOptional {
+	font-size: small;
+	font-style: italic; 
+	color: DimGrey;
+}
+
+.status-yellow {
+    color: #ffaa00;
+}
+.status-bk-yellow {
+    background-color: #ffaa00;
+    color: white;
+}
+
+.status-red {
+	color: #ff5555;
+}
+.status-bk-red {
+	background-color: #ff5555;
+    color: white;
+}
+.status-grey {
+	color: grey;
+}
+.status-bk-grey {
+	background-color: grey;
+    color: white;
+}
+
+.status-green {
+	color: #38a800;
+}
+
+.status-bk-green {
+	background-color: #38a800;
+    color: white;
+}
+
+.background-yellow {
+	background-color: #ffffae;
+}
+
+.background-select {
+	background-color: #80ffff;
+}
+
+.filter-hover-button
+{
+  margin-left:3px; color:dimgrey; font-size:12px;
+}
+.filter-hover-button:hover
+{
+  margin-left:2px; color:black; font-size:12px; border:1px solid; border-color:lightgrey; cursor:pointer;
+}
+.filter-hover-button-clicked
+{
+  margin-left:2px; color:black; font-size:12px; border:1px solid; border-color:dimgrey; cursor:pointer;
+  background-color: #D9E9F7;
+  padding: 1px;
+  /* background-color: #ffff2b; */
+}
+
+.filter-values-heading
+{
+	background-color: LightSteelBlue; 
+	padding: 2px 3px 2px 10px;
+	border-style: solid;
+	border-width: 1px 0px 1px 0px;
+}
+
+/* Custom Date Input Field */
+input[type=date]::-webkit-inner-spin-button, 
+input[type=date]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+} 
+
+.ftem-date-input-container {
+	position: relative;
+	float: left;
+}
+
+.ftem-date-input {
+  border: 1px solid #1cbaa5;
+  padding: 5px 10px;
+  height: 30px;
+  width: 150px;
+}
+input.ftem-date-input.ng-invalid + span.ftem-date-input-button
+{
+	background: #EED4D4;
+}
+
+.ftem-date-input-button {
+  position: absolute;
+  top: 7px;
+  right: 5px;
+  width: 23px;
+  height: 20px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.ftem-date-input-button button {
+  border: none;
+  background: transparent;
+}

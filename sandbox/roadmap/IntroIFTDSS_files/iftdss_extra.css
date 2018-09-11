@@ -1,0 +1,914 @@
+/* line 1, ../../../scss/components/_cyclePage.scss */
+.col-centered {
+  float: none;
+  margin: 0 auto;
+}
+
+/* line 5, ../../../scss/components/_cyclePage.scss */
+.cycle-view {
+  position: relative;
+  top: 50px;
+    /* 
+
+    /*
+
+
+.FullWheel {max-width:872px; max-height:863px; }
+.FullWheel::after {content: ' ';display: inline-block; width:872px; height:863px; background-position: 0.09652509652509653% 50%;background-size: 218.80733944954127% 100.23174971031287%;background-image: url(cycleWheel.png);padding: 0; }
+div.FullWheel::after {max-width:872px; width:100%;height:0;padding: 0 0 98.96788990825688% 0;}
+
+.ImplementationPlanning(active) {
+    max-width:468px; 
+    max-height:287px; 
+}
+.ImplementationPlanning(active)::after {
+    content: ' ';
+    display: inline-block; 
+    width:468px; 
+    height:287px; 
+    background-position: 95% 0.17301038062283736%;
+    background-size: 407.6923076923077% 301.3937282229965%;
+    background-image: url(cycleWheel.png);
+    padding: 0; 
+}
+
+
+div.ImplementationPlanning(active)::after {max-width:468px; width:100%;height:0;padding: 0 0 61.324786324786324% 0;}
+.LandscapeEval(active) {max-width:493px; max-height:307px; }
+.LandscapeEval(active)::after {content: ' ';display: inline-block; width:493px; height:307px; background-position: 61.76678445229682% 0.17921146953405018%;background-size: 387.0182555780933% 281.75895765472313%;background-image: url(cycleWheel.png);padding: 0; }
+div.LandscapeEval(active)::after {max-width:493px; width:100%;height:0;padding: 0 0 62.27180527383367% 0;}
+.Monitoring(active) {max-width:375px; max-height:408px; }
+.Monitoring(active)::after {content: ' ';display: inline-block; width:375px; height:408px; background-position: 99.93476842791911% 63.23851203501094%;background-size: 508.8% 212.00980392156862%;background-image: url(cycleWheel.png);padding: 0; }
+div.Monitoring(active)::after {max-width:375px; width:100%;height:0;padding: 0 0 108.8% 0;}
+.Reporting(active) {max-width:367px; max-height:432px; }
+.Reporting(active)::after {content: ' ';display: inline-block; width:367px; height:432px; background-position: 56.71641791044776% 71.36258660508084%;background-size: 519.8910081743869% 200.2314814814815%;background-image: url(cycleWheel.png);padding: 0; }
+div.Reporting(active)::after {max-width:367px; width:100%;height:0;padding: 0 0 117.71117166212534% 0;}
+.StrategicPlanning(active) {max-width:289px; max-height:488px; }
+.StrategicPlanning(active)::after {content: ' ';display: inline-block; width:289px; height:488px; background-position: 76.71402100061766% 81.96286472148542%;background-size: 660.2076124567474% 177.25409836065575%;background-image: url(cycleWheel.png);padding: 0; }
+div.StrategicPlanning(active)::after {max-width:289px; width:100%;height:0;padding: 0 0 168.85813148788927% 0;}
+ */
+}
+/* line 8, ../../../scss/components/_cyclePage.scss */
+.cycle-view .title-container {
+  margin-bottom: 3%;
+  text-align: center;
+  color: white;
+}
+/* line 12, ../../../scss/components/_cyclePage.scss */
+.cycle-view .title-container .title {
+  background: #2E3E4F;
+  font-weight: bold;
+  text-align: center;
+  padding: 5%;
+  margin: 0;
+  font-size: 24px;
+  text-align: left;
+}
+/* line 62, ../../../scss/components/_cyclePage.scss */
+.cycle-view .FullWheel {
+  max-width: 872px;
+  max-height: 863px;
+}
+/* line 65, ../../../scss/components/_cyclePage.scss */
+.cycle-view .FullWheel::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  background-position: 0.09652509652509653% 50%;
+  background-size: 218.80733944954127% 100.23174971031287%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 76, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap {
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 76, ../../../scss/components/_cyclePage.scss */
+  .cycle-view .cycleMap {
+    max-width: 275px;
+  }
+}
+/* line 82, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle::after {
+  content: ' ';
+  display: inline-block;
+  background-position: 0.09652509652509653% 50%;
+  background-size: 218.80733944954127% 100.23174971031287%;
+  background-image: url(../images/cycleWheel.png);
+  width: 100%;
+  height: 0;
+  padding: 0 0 95.01557632398755% 0;
+}
+/* line 95, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .cycle-leaf {
+  cursor: pointer;
+  text-decoration: none;
+}
+/* line 101, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .landscape-eval-map {
+  position: absolute;
+  border-radius: 100%;
+  height: 33%;
+  width: 53%;
+  top: 2%;
+  left: 25%;
+}
+/* line 110, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .landscape-eval-map.tour-step-backdrop::after, .cycle-view .cycleMap .iftdss-cycle .landscape-eval-map:hover::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: 61.76678445229682% 0.17921146953405018%;
+  background-size: 387.0182555780933% 281.75895765472313%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 123, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .strategic-plan-map {
+  position: absolute;
+  border-radius: 50%;
+  height: 56%;
+  width: 32%;
+  background: transparent;
+  top: 13%;
+  right: 2%;
+}
+/* line 133, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .strategic-plan-map.tour-step-backdrop::after, .cycle-view .cycleMap .iftdss-cycle .strategic-plan-map:hover::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: 76.71402100061766% 81.96286472148542%;
+  background-size: 660.2076124567474% 177.25409836065575%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 145, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .implementation-plan-map {
+  position: absolute;
+  border-radius: 100%;
+  height: 33%;
+  width: 53%;
+  bottom: 2%;
+  right: 6%;
+}
+/* line 155, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .implementation-plan-map.tour-step-backdrop::after, .cycle-view .cycleMap .iftdss-cycle .implementation-plan-map:hover::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: 95% 0.17301038062283736%;
+  background-size: 407.6923076923077% 301.3937282229965%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 167, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .monitoring-map {
+  position: absolute;
+  border-radius: 50%;
+  height: 47%;
+  width: 42%;
+  background: transparent;
+  bottom: 2%;
+  left: 5%;
+}
+/* line 177, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .monitoring-map.tour-step-backdrop::after, .cycle-view .cycleMap .iftdss-cycle .monitoring-map:hover::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: 99.93476842791911% 63.23851203501094%;
+  background-size: 508.8% 212.00980392156862%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 189, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .reporting-map {
+  position: absolute;
+  border-radius: 50%;
+  height: 49%;
+  width: 41%;
+  background: transparent;
+  top: 13%;
+  left: 1%;
+}
+/* line 199, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .reporting-map.tour-step-backdrop::after, .cycle-view .cycleMap .iftdss-cycle .reporting-map:hover::after {
+  content: ' ';
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-position: 56.71641791044776% 71.36258660508084%;
+  background-size: 519.8910081743869% 200.2314814814815%;
+  background-image: url(../images/cycleWheel.png);
+  padding: 0;
+}
+/* line 211, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleMap .iftdss-cycle .mapstudio-map {
+  position: absolute;
+  border-radius: 50%;
+  height: 25%;
+  width: 24%;
+  background: transparent;
+  top: 51%;
+  left: 50%;
+  -webkit-transform: translate(-47%, -50%);
+  transform: translate(-47%, -50%);
+  /* &.tour-step-backdrop,{
+      &::after {
+          content: ' ';
+          display: inline-block; 
+          width: 100%;
+          height: 100%;
+          background-position: 56.71641791044776% 71.36258660508084%;
+          background-size: 519.8910081743869% 200.2314814814815%;
+          background-image: url(../images/center-map-studio.png);
+          padding: 0; 
+      }
+  } */
+}
+/* line 237, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleInfoPanel {
+  display: block;
+  margin-bottom: 3%;
+}
+/* line 239, ../../../scss/components/_cyclePage.scss */
+.cycle-view .cycleInfoPanel .title {
+  font-weight: bold;
+  text-align: center;
+}
+/* line 250, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container {
+  list-style: none;
+  padding-left: 0;
+  margin-right: -15px;
+  margin-left: -15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* line 263, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box {
+  margin-right: -10px;
+  margin-left: -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+/* line 269, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 1em;
+  width: 100%;
+  padding-top: 5%;
+  text-decoration: none;
+}
+/* line 278, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail {
+  cursor: pointer;
+  min-height: 138px;
+  position: relative;
+}
+/* line 282, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail:hover {
+  -webkit-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.75);
+  border: 1px solid #adadad;
+}
+/* line 288, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail.disabled {
+  cursor: not-allowed;
+}
+/* line 291, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title {
+  font-size: 35px;
+  margin: 0;
+  padding: 0;
+}
+/* line 295, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.green {
+  color: #417505;
+}
+/* line 298, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.orange {
+  color: #f5a623;
+}
+/* line 301, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.red {
+  color: #d0021b;
+}
+/* line 304, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.grey {
+  color: #9b9b9b;
+}
+/* line 307, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.brown {
+  color: #614126;
+}
+/* line 310, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .thumbnail-title.blue {
+  color: #0077fd;
+}
+/* line 317, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .caption-title {
+  display: inline;
+  margin-top: 3%;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+/* line 324, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .help {
+  display: inline;
+  color: #0077fd;
+}
+/* line 328, ../../../scss/components/_cyclePage.scss */
+.cycle-view .selector-box-container .selector-info-box a.thumbnail .coming-soon {
+  background: orange;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 3% 0 3% 0;
+  color: white;
+  font-weight: bolder;
+  font-size: 15px;
+  line-height: 15px;
+}
+/* line 346, ../../../scss/components/_cyclePage.scss */
+.cycle-view .help-panel-container {
+        /*.help-panel-open-tab{
+            display: none;
+        }
+
+        @media (max-width: $screen-sm-max) {
+            position:absolute;
+            right:-10000px;
+            top:auto;
+            width:1px;
+            height:1px;
+            overflow:hidden;
+        }*/
+}
+/* line 349, ../../../scss/components/_cyclePage.scss */
+.cycle-view .help-panel-container .help-pane-content {
+  background-color: rgba(204, 204, 204, 0.7);
+  color: black;
+  height: 100%;
+}
+/* line 354, ../../../scss/components/_cyclePage.scss */
+.cycle-view .help-panel-container .help-pane-content .title {
+  font-weight: bold;
+  text-align: center;
+}
+/* line 360, ../../../scss/components/_cyclePage.scss */
+.cycle-view .help-panel-container .help-pane-content .pagination li a {
+  cursor: pointer;
+}
+
+/* Large devices (large desktops, 1200px and up) */
+/* Medium devices (desktops, 992px and up) */
+/* Small devices (tablets, 768px and up) */
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* line 411, ../../../scss/components/_cyclePage.scss */
+.help-icon-container img {
+  height: 15px;
+  width: 15px;
+}
+
+/* line 2, ../../../scss/components/_loader.scss */
+#loader {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* Just to keep it at the very top */
+  display: flex;
+  justify-content: center;
+}
+
+/* line 13, ../../../scss/components/_loader.scss */
+#innerloader,
+.innerloader {
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  /* Just to keep it at the very top */
+  display: flex;
+  justify-content: center;
+}
+/* line 24, ../../../scss/components/_loader.scss */
+#innerloader.spinner,
+.innerloader.spinner {
+  margin: 0;
+}
+/* line 27, ../../../scss/components/_loader.scss */
+#innerloader.popup-spinner,
+.innerloader.popup-spinner {
+  width: 100% !important;
+}
+
+/* line 32, ../../../scss/components/_loader.scss */
+.spinner {
+  margin: 100px auto 0;
+  width: 100px;
+  text-align: center;
+}
+
+/* line 37, ../../../scss/components/_loader.scss */
+.spinner > div {
+  align-self: center;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.7s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.7s infinite ease-in-out both;
+  margin-right: 5px;
+}
+
+/* line 48, ../../../scss/components/_loader.scss */
+.spinner--black > div {
+  background: black;
+}
+
+/* line 51, ../../../scss/components/_loader.scss */
+.spinner--orange > div {
+  background: #FF9A27;
+}
+
+/* line 55, ../../../scss/components/_loader.scss */
+.spinner--cyan > div {
+  background: #3FCCA1;
+}
+
+/* line 59, ../../../scss/components/_loader.scss */
+.spinner--yellow > div {
+  background: #F2D915;
+}
+
+/* line 63, ../../../scss/components/_loader.scss */
+.spinner .spinner__item1 {
+  -webkit-animation-delay: -0.60s;
+  animation-delay: -0.60s;
+}
+
+/* line 68, ../../../scss/components/_loader.scss */
+.spinner .spinner__item2 {
+  -webkit-animation-delay: -0.40s;
+  animation-delay: -0.40s;
+}
+
+/* line 73, ../../../scss/components/_loader.scss */
+.spinner .spinner__item3 {
+  -webkit-animation-delay: -0.20s;
+  animation-delay: -0.20s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0;
+  }
+  40% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+/* line 4, ../../../scss/components/_summaryReportsPrintPage.scss */
+table.dataTable thead .sorting,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting_asc {
+  background-image: none !important;
+}
+
+/* line 12, ../../../scss/components/_summaryReportsPrintPage.scss */
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+/* line 16, ../../../scss/components/_summaryReportsPrintPage.scss */
+.summary-table {
+  position: relative;
+  width: 100%;
+}
+/* line 20, ../../../scss/components/_summaryReportsPrintPage.scss */
+.summary-table .summary-title h4 {
+  font-weight: bold;
+}
+/* line 24, ../../../scss/components/_summaryReportsPrintPage.scss */
+.summary-table .chart {
+  height: 500px;
+}
+/* line 26, ../../../scss/components/_summaryReportsPrintPage.scss */
+.summary-table .chart .landscape-img {
+  height: 100%;
+  width: 100%;
+}
+/* line 31, ../../../scss/components/_summaryReportsPrintPage.scss */
+.summary-table .tbl-btn-row {
+  display: inline;
+}
+
+/* line 41, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .summary-left {
+  height: 100%;
+  padding: 0;
+}
+/* line 46, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .summary-left .summary-container {
+  padding-top: 50px;
+  position: fixed;
+  height: 100%;
+  background-color: lightgrey;
+  width: inherit;
+  padding-left: 8px;
+}
+/* line 54, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .summary-left .title {
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 60, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .summary-left a.active {
+  font-weight: bold;
+  color: blue;
+  border-left: 2px solid grey;
+  padding-left: 1px;
+}
+/* line 69, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .no-pad {
+  padding: 0 !important;
+}
+/* line 72, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .basic-meta-container {
+  margin-top: 50px;
+}
+/* line 74, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .basic-meta-container p {
+  margin-bottom: 0;
+}
+/* line 78, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .basic-meta-container .table td, .cycle-view .report-display-container .basic-meta-container .table th {
+  text-align: center;
+}
+/* line 83, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container {
+  padding-bottom: 3%;
+}
+/* line 86, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .page-header {
+  margin-top: 0;
+  padding-top: 0;
+}
+/* line 89, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .page-header .title {
+  margin: 0;
+}
+/* line 92, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .page-header .description {
+  margin: 0;
+  /* &:last-of-type {
+      margin-bottom: 15px;
+  } */
+}
+/* line 99, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .dropdown-menu {
+  width: inherit;
+}
+/* line 101, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .dropdown-menu .header {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  line-height: 1.42857143;
+  color: #333;
+  white-space: nowrap;
+  border-bottom: 1px solid lightgrey;
+}
+/* line 111, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .header-group .dropdown-menu li a {
+  display: block !important;
+  cursor: pointer;
+}
+/* line 120, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .summary-report-table .row,
+.cycle-view .report-display-container .report-table-container .summary-report-table .row {
+  /* .flex-col {
+      display: flex;
+      display: -webkit-flex;
+      flex: 1;
+  	flex-flow: column nowrap;
+  	.flex-grow {
+  		display: flex;
+  	    -webkit-flex: 2;
+  	    flex: 2;
+  	    >div{
+  	    	width: 100%;
+  	    }
+  	}
+  } */
+}
+/* line 121, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel-container,
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 500px;
+}
+/* line 139, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel,
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel {
+  width: 100%;
+}
+/* line 141, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel .panel-body,
+.cycle-view .report-display-container .report-table-container .summary-report-table .row .panel .panel-body {
+  width: 100%;
+}
+/* line 161, ../../../scss/components/_summaryReportsPrintPage.scss */
+.cycle-view .report-display-container .report-table-container .summary-report-table .basic-output p,
+.cycle-view .report-display-container .report-table-container .summary-report-table .basic-output p {
+  margin: 0;
+}
+
+@media all {
+  /* line 2, ../../../scss/components/_printPage.scss */
+  .page-break {
+    display: none;
+  }
+}
+@media print {
+  /* line 6, ../../../scss/components/_printPage.scss */
+  .page-break {
+    display: block;
+    page-break-before: always;
+    margin-top: .5in;
+  }
+
+  /* line 11, ../../../scss/components/_printPage.scss */
+  div {
+    float: none !important;
+    position: static !important;
+    display: inline;
+    box-sizing: content-box !important;
+  }
+
+  /* line 17, ../../../scss/components/_printPage.scss */
+  div[class*='col-'] {
+    margin: 0;
+    padding: 0;
+  }
+
+  @page {
+    size: auto;
+    /* auto is the initial value */
+    margin: 0mm;
+    /* this affects the margin in the printer settings */
+  }
+  /* line 27, ../../../scss/components/_printPage.scss */
+  html {
+    background-color: #FFFFFF;
+    margin: 0px;
+    /* this affects the margin on the html before sending to printer */
+  }
+
+  /* line 32, ../../../scss/components/_printPage.scss */
+  body {
+    border: solid 1px blue !important;
+    margin: .5in;
+    /* margin you want for the content */
+  }
+
+  /* line 36, ../../../scss/components/_printPage.scss */
+  a[href]:after {
+    content: none !important;
+  }
+
+  /* line 39, ../../../scss/components/_printPage.scss */
+  .page-header {
+    padding: 0;
+    margin: 0;
+  }
+
+  /* line 43, ../../../scss/components/_printPage.scss */
+  .col-pr-6 {
+    width: 50% !important;
+  }
+  /* line 46, ../../../scss/components/_printPage.scss */
+  .col-pr-6 .panel-body div {
+    width: 50% !important;
+  }
+}
+/* .col-pr-6{
+    width: 50%!important;
+} */
+/* line 1, ../../../scss/components/_extra.scss */
+.print-btn-container {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 100;
+}
+
+/* line 9, ../../../scss/components/_extra.scss */
+.col-centered {
+  float: none !important;
+  margin: 0 auto !important;
+}
+
+/* line 16, ../../../scss/components/_extra.scss */
+.vertically-centered-modal-container .vertical-alignment-helper {
+  display: table;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+  /* This makes sure that we can still click outside of the modal to close it */
+}
+/* line 22, ../../../scss/components/_extra.scss */
+.vertically-centered-modal-container .vertical-align-center {
+  /* To center vertically */
+  display: table-cell;
+  vertical-align: middle;
+  pointer-events: none;
+}
+/* line 28, ../../../scss/components/_extra.scss */
+.vertically-centered-modal-container .modal-content {
+  /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+  width: inherit;
+  height: inherit;
+  /* To center horizontally */
+  margin: 0 auto;
+  pointer-events: all;
+}
+/* line 36, ../../../scss/components/_extra.scss */
+.vertically-centered-modal-container .modal-content h3 {
+  color: white;
+}
+/* line 39, ../../../scss/components/_extra.scss */
+.vertically-centered-modal-container .modal-content p {
+  font-weight: 100;
+}
+
+/* line 45, ../../../scss/components/_extra.scss */
+.center-vertically {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 52, ../../../scss/components/_extra.scss */
+.hidden-div {
+  height: 0;
+  visibility: hidden;
+}
+
+/* line 59, ../../../scss/components/_extra.scss */
+.helpFrame {
+  width: 100%;
+}
+
+/* line 63, ../../../scss/components/_extra.scss */
+.inline {
+  display: inline;
+}
+
+/* line 67, ../../../scss/components/_extra.scss */
+.popover-btn {
+  display: inline;
+  cursor: pointer;
+}
+
+/* line 72, ../../../scss/components/_extra.scss */
+#startTour {
+  cursor: pointer;
+}
+
+/* line 76, ../../../scss/components/_extra.scss */
+.help-icon {
+  height: 15px;
+  width: 15px;
+}
+
+/* line 81, ../../../scss/components/_extra.scss */
+.iftdssHelpPopover {
+  width: 500px;
+  height: 200px;
+  max-width: none;
+}
+/* line 85, ../../../scss/components/_extra.scss */
+.iftdssHelpPopover .popover-content {
+  padding: 0;
+}
+/* line 87, ../../../scss/components/_extra.scss */
+.iftdssHelpPopover .popover-content.single .helpFrame {
+  height: 100%;
+}
+
+/* line 1, ../../../scss/components/_help.scss */
+#help-assistant {
+  position: absolute;
+  top: 160px;
+  left: 90px;
+  height: 500px;
+  width: 461px;
+  background-color: white;
+}
+/* line 8, ../../../scss/components/_help.scss */
+#help-assistant .close-bar {
+  position: relative;
+  background-color: #333;
+  width: 100%;
+  height: 33px;
+  border-top: 5px solid #485566;
+}
+/* line 14, ../../../scss/components/_help.scss */
+#help-assistant .close-bar .close {
+  opacity: 1;
+  color: white;
+  margin-right: 5px;
+  margin-top: 2px;
+}
+/* line 21, ../../../scss/components/_help.scss */
+#help-assistant .content-container {
+  position: relative;
+  width: 100%;
+  /* Firefox */
+  height: -moz-calc(100% - 33px);
+  /* WebKit */
+  height: -webkit-calc(100% - 33px);
+  /* Opera */
+  height: -o-calc(100% - 33px);
+  /* Standard */
+  height: calc(100% - 33px);
+}
+/* line 32, ../../../scss/components/_help.scss */
+#help-assistant .content-container iframe {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 38, ../../../scss/components/_help.scss */
+#help-assistant-toggle {
+  background: #00adee;
+  border-radius: 50%;
+  height: 50px;
+  position: absolute;
+  bottom: 23px;
+  right: 10px;
+  color: white;
+}
+
+/* line 48, ../../../scss/components/_help.scss */
+.popover-link {
+  color: red;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/* line 52, ../../../scss/components/_help.scss */
+.popover-link:hover {
+  color: #990000;
+}

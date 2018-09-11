@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)https://iftdss.firenet.gov/#/home -->
+<html ng-app="mainApp" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- style sheets -->
+    <link rel="stylesheet" href="./IntroIFTDSS_files/bootstrap3.3.7.min.css">
+    <link rel="stylesheet" href="./IntroIFTDSS_files/bootstrap-theme3.3.7.min.css">
+    <link rel="stylesheet" href="./IntroIFTDSS_files/bootstrap-tour.min.css">
+    <!--
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.css" > 
+    -->
+    <link rel="stylesheet" href="./IntroIFTDSS_files/iftdss_extra.css"> 
+    <link rel="stylesheet" href="./IntroIFTDSS_files/iftdss_common.css"> 
+    <link rel="stylesheet" href="./IntroIFTDSS_files/iftdss_navbar.css"> 
+    <link rel="stylesheet" href="./IntroIFTDSS_files/octicons.css"> 
+    <link rel="stylesheet" href="./IntroIFTDSS_files/iftdss-icon.css"> 
+    <link rel="stylesheet" href="./IntroIFTDSS_files/MyHome.css"> 
+<!--STYLES TO ADD TO IFTDSS-->
+<style>
+
+p.big    {font-size: 1.5em;}
+.modal-dialog {}
+</style>
+
+    <!-- js libraries --
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-route.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-idle.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-file-upload.js"></script>
+    <!-- Why are we using Jquery 1.x and not 2.x or... 3.x for that matter -->
+    <!-- <script type='text/javascript' src="js/jquery.min.js"></script> -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/jquery-2.2.4.min.js"></script>
+    
+    <!--
+        <script type='text/javascript' src="js/bootstrap.min.js"></script>
+    -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/bootstrap3.3.7.min.js"></script>
+
+
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-animate.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/angular-websocket.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/iftdss.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/loader.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/rgbcolor.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/StackBlur.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/canvg.min.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/bootstrap-tour.min.js"></script>
+	<!-- <script type="text/javascript" src="js/dom-to-image.min.js"></script> -->
+
+    <!--  DataTables -->
+    <link rel="stylesheet" href="./IntroIFTDSS_files/datatables.min.css">
+    <script type="text/javascript" src="./IntroIFTDSS_files/datatables.min.js"></script>
+    <!--  DataTables -->
+
+
+    <script src="./IntroIFTDSS_files/highcharts.src.js"></script>
+    <script src="./IntroIFTDSS_files/exporting.js"></script>
+    <script src="./IntroIFTDSS_files/offline-exporting.js"></script>
+    <script src="./IntroIFTDSS_files/boost.js"></script>
+    <!-- High Charts -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/highcharts-iftdss.js"></script>
+    
+    <!-- High Charts -->
+
+    <!-- jsPDF -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/jspdf.min.js"></script>
+    <!-- jsPDF -->
+
+
+    <!-- application js -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/env.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/app.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/loginController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/signupController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/homePageController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/rulesOfBehaviorController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userProfileController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/changePasswordController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/changePasswordExpiredController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/changePasswordResetController.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/userListController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/resetPasswordController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/loginResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userListResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/workspaceResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/modelResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/modelInputService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/runResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/svcTxService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/basicResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/landscapeResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/reportService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/iftdssMapStudioMessages.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/landscapeEditService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/genericResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/breadcrumbResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/PersistanceUser.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/websocketService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/messageInboxResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/cycleGuidenceResource.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/ftemPrivilegesService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/mapStudioMessages.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userSessionService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/propertiesService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userPrefsService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/orgInfoService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/userAccessService.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/landscapeSummaryController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/compareSummaryController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/compareReportButtonDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/reportRequestDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/reportButtonDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/editLandscapeController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/editLandscapeDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/displayAppliedLandscapeRulesDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/createTreatmentAlternativesController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/developTreatAltCompareDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/modelrunController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/basicrunController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/landscapeCreationController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/modelValidationFactory.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/resourceDefDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/windDefDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/crownFireDefDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/weatherDefDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/fuelMoistureInitDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/selectBasicModelDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/basicInputDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/runModelDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/landscapeSelectDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/svcTxsController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/navbarController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/sessionTimeoutDialogDirective.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/uploadCtrl.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/inboxController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/breadcrumbController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/workspaceController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/cycleMainController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/cycleTaskController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/comparisonTaskController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/comparisonDashboardDirectives.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/mapStudioController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/comparisonDashboardController.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/scopedListController.js"></script>
+
+    <!-- Java Entity "Classes" -->
+    <script type="text/javascript" src="./IntroIFTDSS_files/LandscapeRuleFragment.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/LandscapeRule.js"></script>
+    <script type="text/javascript" src="./IntroIFTDSS_files/LFLURule.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/ModelInputBO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/ModelRunRequestBO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/InputWindDO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/InputCrownFireDO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/FuelMoistureDO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/FuelMoistureDOPK.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/DeleteRequestBO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/UserPreferenceBO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/ServiceTransactionDO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/UnitsBO.js"></script>
+	<script type="text/javascript" src="./IntroIFTDSS_files/AppMaintDO.js"></script>
+
+
+    <!-- MapCap Help Scripts -->
+   <script type="text/javascript" src="./IntroIFTDSS_files/firenetHelp.js"></script>
+   <script type="text/javascript" src="./IntroIFTDSS_files/csh.js"></script>
+   <script type="text/javascript" src="./IntroIFTDSS_files/index.js"></script>
+   <script type="text/javascript" src="./IntroIFTDSS_files/Default.js"></script>
+   <script type="text/javascript" src="./IntroIFTDSS_files/basicHover.js"></script>
+
+
+    <link rel="shortcut icon" href="https://iftdss.firenet.gov/images/icons/favicon.ico">
+    <link rel="icon" type="image/png" href="https://iftdss.firenet.gov/images/icons/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="https://iftdss.firenet.gov/images/icons/favicon-16x16.png" sizes="16x16">
+	<link rel="icon" type="image/png" href="https://iftdss.firenet.gov/images/icons/favicon-32x32.png" sizes="32x32">
+    <title>IFTDSS</title>
+  </head>
+  <body style="background-color:transparent">
+    <navbar-directive><section>
+<nav ng-show="current_user_id" class="navbar-default navbar-static-top ng-scope" ng-controller="navbarController" style="position:fixed;top:0px;left:0px:right:0px;height:50px]"> 
+<div class="container-fullwidth" ng-style="getNavBarStyle()" style="background-color: rgb(46, 62, 79); color: white;">
+	<div class="navbar-header">
+		<a class="navbar-brand" href="https://iftdss.firenet.gov/landing_page/indexNoLogin.html" style="padding-top:10px" target="_blank">
+			<img src="./IntroIFTDSS_files/IFTDSS_Logo_Flame_3d.png" style="height:35px; padding-bottom:7px; padding-top:2px; display:inline">
+			<strong style="height:35px; padding-bottom:7px; padding-top:2px; display:inline" ;="">IFTDSS</strong>
+		</a>
+	</div>
+	
+	<div id="navbar" class="collapse navbar-collapse">
+    	<ul class="nav navbar-nav">
+            <li class="divider-vertical"></li>
+ 			<li ng-hide="simple_nav_bar" ng-class="{ active: isActive(&#39;/home&#39;, &#39;/home&#39;) }" class="active">
+           		<a href="https://iftdss.firenet.gov/#/home" title="Click here to navigate to the Home page">
+           			<span class="octicon octicon-home" aria-hidden="true"></span> My Home
+           		</a>
+           </li>           
+            <li ng-hide="simple_nav_bar" ng-class="{ active: isActive(&#39;/cycle&#39;, &#39;/cycle&#39;) }" class="">
+           		<a href="https://iftdss.firenet.gov/#/cycle/landscape_eval" title="Click here to navigate to the Cycle page">
+           			<span class="icon-IFTDSS-wheel" aria-hidden="true"></span> Cycle
+           		</a>
+           </li>
+            <li ng-hide="simple_nav_bar" ng-class="{ active: isActive(&#39;/workspace&#39;,&#39;/workpace&#39;) }" class="">
+            	<a ng-click="openWorkspace(activeWorkspace)" title="Click here to navigate to the active Workspace" style="cursor:pointer" class="ng-binding">
+           			<span class="octicon octicon-browser" aria-hidden="true"></span> My Workspace
+           		</a>
+           </li>	
+           <li ng-hide="simple_nav_bar" ng-class="{ active: isActive(&#39;/iftdssDataStudio&#39;, &#39;/mapStudio&#39;) }" class="">
+           		<a href="https://iftdss.firenet.gov/#/iftdssDataStudio" title="Click here to navigate to the Map Studio">
+           			<span class="octicon octicon-globe" aria-hidden="true"></span> Map Studio
+           		</a>
+           </li>
+           <li ng-hide="simple_nav_bar" ng-class="{ active: isActive(&#39;/playground&#39;, &#39;/basic&#39;) }" class="">
+           		<a href="https://iftdss.firenet.gov/#/playground" title="Click here to navigate to the IFTDSS Playground">
+           			<span class="octicon octicon-flame" aria-hidden="true"></span> Playground
+           		</a>
+           </li>
+           <li ng-hide="simple_nav_bar || !revealFtem" ng-class="{ active: isActive(&#39;/ftem&#39;, &#39;/ftem&#39;) }" class="">
+           		<a ng-click="openFtem(false)" title="Click here to navigate to the FTEM Monitoring page" ng-mouseenter="hover_info = &#39;enter_ftem&#39;" style="cursor:pointer;">
+					<span class="octicon octicon-clippy" aria-hidden="true"></span> FTEM
+           		</a>
+           </li> 
+    	</ul>
+	
+		<ul class="nav navbar-nav navbar-right">
+		     <li ng-hide="!revealGeoBot" class="dropdown ng-hide">
+          		<a class="dropdown-toggle" data-toggle="dropdown"><b>ChatBot</b></a>
+            		<ul id="chatbot" class="dropdown-menu">
+                		<li>
+                            <!-- login form -->
+							<iframe id="chatBot" width="330px" height="410px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="min-width:330px; min-height:410px" src="./IntroIFTDSS_files/saved_resource.html"></iframe>
+    
+                </li>
+               </ul>
+            </li>
+			<li class="dropdown">
+				<a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+				<span class="octicon octicon-question" aria-hidden="true"></span> Help <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a onclick="MadCap.OpenHelp(1000, null, null, null);" title="Click here to navigate to the help index for IFTDSS" style="cursor:pointer;">
+						Help Center</a></li>
+					<li><a ng-click="getPageHelp()" title="Click here to navigate to the help index for IFTDSS" style="cursor:pointer;">
+						About this Page</a></li>
+					<li><a href="https://iftdsshelp.freshdesk.com/support/discussions" target="_blank" stitle="Click here to find out more about IFTDSS">
+						Q &amp; A Forum</a></li>
+					<li><a href="https://iftdss.firenet.gov/landing_page/supportNoLogin.html" title="Click here to provide feedback or get support" target="_blank">
+						Request Support</a></li>
+					<li ng-show="$root.showPopoverhelp" class="divider"></li>
+					<li><a ng-show="$root.showPopoverhelp" id="startTour" title="See Help Tour" class="">Help Tour</a></li>
+				</ul>
+			</li>
+    		<!-- <li ng-hide="simple_nav_bar"  inbox-directive class="dropdown" ng-controller="inboxController"></li>  -->
+			<li ng-hide="simple_nav_bar" class="dropdown" style="margin-right:10px;">
+				<a class="dropdown-toggle ng-binding" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"> Josh Hyde <span class="caret"></span></a>
+				<ul class="dropdown-menu">
+					<li><a href="https://iftdss.firenet.gov/#/userProfile" title="Click here to edit your personal profile">Edit Profile</a></li>
+					<li><a href="https://iftdss.firenet.gov/#/changePassword" title="Click here to change your password">Change Password</a></li>
+					<li ng-show="$root.current_user_role == &#39;admn&#39;" class=""><a href="https://iftdss.firenet.gov/#/userList" title="Click here to view the list of IFTDSS users">User List</a></li>
+					<li ng-show="$root.current_user_role == &#39;admn&#39;" class=""><a href="https://iftdss.firenet.gov/#/serviceTransactions" title="Click here to view service transactions">Work Requests</a></li>
+					<li><a ng-click="logout()" title="Click here to logout of IFTDSS" style="cursor:pointer">Logout</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</div>
+</nav>
+<session-timeout-dialog-directive><!-- Session Timeout Dialog content -->
+ <div id="sessionTimeoutDialog" class="modal fade" role="dialog" data-backdrop="static">
+	<div class="modal-dialog modal-sm" style="width:50%">
+		<!-- Modal Content -->
+		<div class="modal-content">
+			<form class="ng-pristine ng-valid">
+			<div class="modal-header" style="background-color:#cccc99;">
+				<button type="button" class="close" data-dismiss="modal">×</button>
+          		<h4 class="modal-title">Session Expiring</h4>
+			</div>
+			<div class="modal-body">
+				<div ng-show="successMessage" class="alert alert-success alert-dismissible ng-binding ng-hide" style="width:90%">
+					<button type="button" class="close" data-ng-click="successMessage = null" aria-label="Close"><span aria-hidden="true">×</span></button>
+					
+				</div>
+				<div ng-show="errorMessage" class="alert alert-danger alert-dismissible ng-binding ng-hide" style="width:90%">
+					<button type="button" class="close" data-ng-click="errorMessage = null" aria-label="Close"><span aria-hidden="true">×</span></button>
+					
+				</div>
+				<p ng-hide="successMessage" class="ng-binding">Your login session will expire in 0 seconds.  Press <em>OK</em> to refresh your session.</p>
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" style="margin-left:10px;margin-top:5px;" ng-hide="successMessage || errorMessage" ng-click="renewSession()" title="Renew your login session and dismiss this warning.">
+					OK
+				</button>
+				<button type="button" class="btn btn-default ng-hide" style="margin-left:10px;margin-top:5px;" ng-show="errorMessage" ng-click="closeDialog()" title="Close the timeout warning dialog">
+					Close
+				</button>
+				<button type="button" class="btn btn-default" style="margin-left:10px;margin-top:5px;" ng-hide="successMessage" ng-click="logoutButtonClicked()" title="Log out of IFTDSS and FTEM">
+					Logout
+				</button>
+			</div>
+			</form>
+		</div>
+		<!-- End Modal Content -->
+	</div>
+</div>
+ 
+ </session-timeout-dialog-directive>
+
+	<div id="sessionNotValidDialog" class="modal fade" role="dialog">
+		<div class="modal-dialog modal-sm">
+			<!-- Modal Content -->
+			<div class="modal-content">
+				<form class="ng-pristine ng-valid">
+				<div class="modal-body">
+					<p>It appears that your IFTDSS Login may have run out of time.    
+					   Please press the <strong>OK</strong> button to return to the login page
+					   or the <strong>Ignore Warning</strong> button to ignore this warning and continue.</p>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-default" ng-click="logout(true)" data-dismiss="modal">OK</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Ignore Warning</button>
+				</div>
+				</form>
+			</div>
+			<!-- End Modal Content -->
+		</div>
+	</div>
+
+</section></navbar-directive>
+  	<!-- ngView: --><ng-view class="ng-scope"><div ng-controller="homePageController" ng-init="init()" class="ng-scope">
+  
+  <!-- START: PLANNING CYCLE BLOCK -->
+  <header class="jumbotron-myhometop hero-spacer" style="padding-top:51px">
+    <div class="container">
+      <h1>Welcome to IFTDSS</h1>
+      <p>The Interagency Fuels Treatment Decision Support System </p>
+  </div></header>
+  <br>
+  <div class="container">
+  <div class="row row-eq-height">
+      <div class="col-md-5 col-md-gray">
+        <img class="img-responsive img-rounded" src="./IntroIFTDSS_files/cycle.png" alt="">
+      </div>
+      <div class="col-md-7 col-md-gray">
+      	<!-- ngInclude: 'firenetHelp/help/hoverPanel/planningcycleabout.html' --><div ng-include="&#39;firenetHelp/help/hoverPanel/planningcycleabout.html&#39;" class="ng-scope"><h1 class="ng-scope">The Planning Cycle</h1>
+<p class="ng-scope big">The IFTDSS Planning Cycle is designed for fuels management to address each major stage of planning.</p> 
+
+<p class="ng-scope big">Many of the tasks within these stages can be performed at any time, or completed in sequence for a guided approach.</p>
+
+<p class="ng-scope big">If you’d like to have a roadmap of where to start, here are a few examples of how to complete a  task</p>
+</div>
+      </div>
+  </div>
+  <!--END: PLANNING CYCLE BLOCK -->
+
+  
+  <!-- START: HIGHLIGHTS BLOCK -->
+  <div class="highlights-container">
+	<div class="container">
+		<div class="row">
+                  <hr>       
+        <h3 style="padding-left:19px;">Not sure where to start? See example workflows for common tasks:</h3>    
+        </div>
+        <div class="row">
+
+<!--MODAL1 Trigger-->
+
+<div class="selector-info-box col-md-3  text-center" data-toggle="modal" data-target="#modal1">
+    <a class="thumbnail" ng-mouseenter="hover_info = &#39;calc_landscape_burn&#39;">
+        <h1 class="thumbnail-title grey"><span class="glyphicon glyphicon-pencil"></span></h1>
+            <div class="caption">
+                <h4 class="caption-title">Plan a Fuels Treatment</h4>
+            </div>
+    </a>
+</div>
+<!--MODAL2 Trigger-->
+
+<div class="selector-info-box col-md-3  text-center" data-toggle="modal" data-target="#modal2">
+    <a class="thumbnail" ng-mouseenter="hover_info = &#39;calc_landscape_burn&#39;">
+        <h1 class="thumbnail-title grey"><span class="glyphicon glyphicon-pencil"></span></h1>
+            <div class="caption">
+                <h4 class="caption-title">Plan a Prescribed Burn</h4>
+            </div>
+    </a>
+</div>
+<!--MODAL3 Trigger-->
+
+<div class="selector-info-box col-md-3 text-center" data-toggle="modal" data-target="#modal3">
+    <a class="thumbnail" ng-mouseenter="hover_info = &#39;calc_landscape_burn&#39;">
+        <h1 class="thumbnail-title grey"><span class="glyphicon glyphicon-pencil"></span></h1>
+            <div class="caption">
+                <h4 class="caption-title">Report Effectiveness<br></h4>
+            </div>
+    </a>
+</div>
+<!--MODAL4 Trigger-->
+
+<div class="selector-info-box col-md-3  text-center" data-toggle="modal" data-target="#modal4">
+    <a class="thumbnail" ng-mouseenter="hover_info = &#39;calc_landscape_burn&#39;">
+        <h1 class="thumbnail-title grey"><span class="glyphicon glyphicon-pencil"></span></h1>
+            <div class="caption">
+                <h4 class="caption-title">Export an LCP<br></h4>
+            </div>
+    </a>
+</div>
+
+<!--Modal 1 Contents-->
+
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="min-width: 900px">
+            <div class="modal-header">
+                <h3 class="modal-title" id="exampleModalLongTitle">Plan a Fuels Treatment - Example Workflow</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <img src="plan_rx_fuels.png" alt="Smiley face" style="max-width:800px; height:auto;"> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal-->
+<!--Modal 2 Contents-->
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="min-width: 900px">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal2LongTitle">Plan a Prescribed Burn - Example Workflow</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <img src="plan_rx_burn.png" alt="Smiley face" style="max-width:800px; height:auto;"> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal-->
+<!--Modal 3 Contents-->
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="min-width: 900px">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal3LongTitle">Report Effectiveness - Example Workflow</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <img src="report_effectiveness.png" alt="Smiley face" style="max-width:800px; height:auto;"> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal-->
+<!--Modal 4 Contents-->
+
+<div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4Title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="min-width: 900px">
+            <div class="modal-header">
+                <h3 class="modal-title" id="modal4LongTitle">Export LCP - Example Workflow</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+            </div>
+            <div class="modal-body">
+                <img src="export.png" alt="Smiley face" style="max-width:800px; height:auto;"> 
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--End Modal-->
+
+
+      </div>
+    </div>
+  </div>
+  
+  <!-- END: HIGHLIGHTS BLOCK -->
+<p style="text-align:center; font-size:20px;"><strong>Example images for worflows are based on the layouts in the <a href="https://docs.google.com/presentation/d/1hBDKrc00kmG1_jM8BxNdVCV2ImXOzIY1zw1fgmC-P8Q/" style="color:blue; text-decoration:underline;" target="_blank">Gdrive Slide File</a></strong></p>
+</div></div></ng-view>
+  
+
+
+</body></html>

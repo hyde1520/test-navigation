@@ -1,0 +1,87 @@
+
+/* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+/* This ensures that the jumbotron-myhometop element starts just below the navbar */
+
+/* top jumbotron with image background */
+.jumbotron-myhometop {
+    margin-bottom: 0px;
+    background-image: url(/images/homePage/MyHome-banner.jpg);
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+}
+/* keeps the height of each column/container the same when used within a row */
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+}
+/* changes the background color of the containers used to store the cycle graphic and description */
+.col-md-gray {
+  background-color: #F5F5F5
+}
+
+/*Highlights containers */
+/* to get the design I wanted I had to borrow some css from another site. I paired this down to make sure it's all necessary. */
+.highlights-container {
+	background:white;
+
+}
+
+.highlights-container .row {
+	margin-bottom:0px;
+	margin-right:0px;
+}
+
+.highlights-container .img-container {
+	height:0px;
+	max-height:50px;
+	margin-bottom:5px;
+	opacity:0;
+	overflow:hidden;
+}
+
+.highlights-container .img-container img {
+	max-height:50px;
+}
+
+.highlights-container .highlights-item {
+
+	margin-top:0px;
+	margin-bottom:0px;
+	padding-left:0px;
+	padding-right:0px;
+	padding-top:0px;
+	padding-bottom:0px;
+
+}
+
+.highlights-item .highlights-text p {
+	color: #979797;
+}
+
+.highlights-item:hover .highlights-text p {
+	color:black;
+}
+
+
+.highlights-item:hover {
+
+	cursor: pointer;
+}
+
+.highlights-item .side-image {
+	margin-top:0px;
+	border-radius: 2px 2px 2px 2px;
+	-moz-border-radius: 2px 2px 2px 2px;
+	-webkit-border-radius: 2px 2px 2px 2px;
+  height: 90px;
+  width: 90px;
+}
+
+.highlights-item .row {
+	margin-bottom: 0px;
+  margin-top: 0px
+}

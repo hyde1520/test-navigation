@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'iftdss-icon';
+  src:  url('iftdss-icon.eot?ntxe52');
+  src:  url('iftdss-icon.eot?ntxe52#iefix') format('embedded-opentype'),
+    url('iftdss-icon.ttf?ntxe52') format('truetype'),
+    url('iftdss-icon.woff?ntxe52') format('woff'),
+    url('iftdss-icon.svg?ntxe52#iftdss-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iftdss-icon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-iftdss-swoosh:before {
+  content: "\e900";
+}
+.icon-IFTDSS-wheel:before {
+  content: "\e901";
+}
+
