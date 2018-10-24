@@ -64,7 +64,7 @@
 <body>
 <!-- Navigation -->
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container">
+<div class="container">
       <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -109,10 +109,9 @@
                   </ul>
           </div>
       </div>
-    </nav>
-<!-- End Navigation -->
-<!-- Page Content -->
-<!-- Jumbotron Header -------------------REMINDER HEADER SIZE REDUCED INLINE--> 
+    </nav>    
+<!-- END Navigation -->
+<!-- Jumbotron Header -------------------REMINDER HEADER SIZE REDUCED INLINE-->
 <header style="max-height:30%; padding-top:28px; padding-bottom:20px;" class="jumbotron hero-spacer  tour-step tour-step-one">
   <div class="container">
     <h1 style="margin-top:10px;">Welcome to IFTDSS</h1>
@@ -120,39 +119,37 @@
   </div>
 </header>
 <!-- End Header -->
-         
 <!-- Dynamically include an html snippet that's controlled by ANT deploy -->            
 <script>
-	var link = document.querySelector('#siteStatus');
-	if (link) {
-		var content = link.import;
-		if (content) {
-			var el = content.querySelector('.container');
-			if (el) {
-				document.body.appendChild(el.cloneNode(true));
-			}
-		}
-	}
-</script>                  
-            
+  var link = document.querySelector('#siteStatus');
+  if (link) {
+    var content = link.import;
+    if (content) {
+      var el = content.querySelector('.container');
+      if (el) {
+        document.body.appendChild(el.cloneNode(true));
+      }
+    }
+  }
+</script> 
 <div class="container">
 <br>
 <!--Chrome notice-->
 <div class="row">
-            <div class="col-lg-12">
-                <div class="well" style="padding-bottom: 8px">
-                    <div style="background-image: url(img/index/Chrome_sml.png); background-repeat: no-repeat;">
-      <div style="padding-right:15px; padding-left:15px;">
-      <p style="padding-left:40px"><strong>Use Google Chrome with IFTDSS</strong> IFTDSS has been developed and tested for Google Chrome.</a> If you don't currently have Google Chrome installed, visit our <a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/00-concepts/chrome.htm?Highlight=google%20chrome" target="_blank">Chrome help page</a> for agency-specific guidance.</p>
+  <div class="col-lg-12">
+    <div class="well" style="padding-bottom: 8px">
+      <div style="background-image: url(img/index/Chrome_sml.png); background-repeat: no-repeat;">
+        <div style="padding-right:15px; padding-left:15px;">
+          <p style="padding-left:40px"><strong>Use Google Chrome with IFTDSS</strong> IFTDSS has been developed and tested for Google Chrome.</a> If you don't currently have Google Chrome installed, visit our <a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/00-concepts/chrome.htm?Highlight=google%20chrome" target="_blank">Chrome help page</a> for agency-specific guidance.</p>
+        </div>
+      </div>
     </div>
   </div>
-                </div>
-            </div>
-        </div>
-
- <!-- Service Panels -->
-        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
-        <div class="row">
+</div>
+<!--END Chrome notice-->
+<!-- Service Panels -->
+<!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+<div class="row">
             <div class="col-md-3 col-sm-6">
                 <div class="panel panel-default text-center">
                     <div class="thumbnail" style="margin-bottom:10px;">
@@ -163,7 +160,7 @@
                         <p><a href="https://www.google.com/" target="_blank">Enhancements</a></p>
                         
                         <p><a href="https://www.google.com/" target="_blank">Download a PDF</a></p>
-                        <p>&nbsp;</p>
+                        <p>&nbsp;</p>                        <p>&nbsp;</p>
                         <!--<a href="#" class="btn btn-primary">Learn More</a>-->
                     </div>
                 </div>
@@ -179,6 +176,7 @@
                         <p><a href="https://www.youtube.com/watch?v=9cBAHSsf2Cc&list=PLKanPC1qRoPVvOl2uuTsIv161p8nBxRKW" target="_blank">Watch the Webinars</a></p>
                         <p><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Visit the Help Center</a></p>
                         <p><a href="https://www.google.com/" target="_blank">Coming Soon! Quantitative Risk</a></p>
+                        <p>&nbsp;</p>
                         <!--<a href="#" class="btn btn-primary">Learn More</a>-->
                     </div>
                 </div>
@@ -190,7 +188,7 @@
                     </div>
                     <div class="panel-body" style="padding-top:1px;">
                         <h4>FTEM is Here!</h4>
-                        <p>Fuels Treatment Effectiveness Monitoring now in IFTDSS</p>
+                        <p>FTEM is now in IFTDSS</p>
                         <p><a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ" target="_blank">Watch Videos</a></p>
                         <p><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Visit the Help Center</a></p>
                         <p><a href="https://www.youtube.com/watch?v=8Fcc614w_ns&list=PLKanPC1qRoPWMpqZbDGaGERrmtRmXkogS" target="_blank">Agency Webinars</a></p>
@@ -208,12 +206,14 @@
                         <p><a href="https://www.google.com/" target="_blank">Take a 5 min. Survey</a></p>
                         <p><a href="https://iftdsshelp.freshdesk.com/support/discussions" target="_blank">Check out the Forum</a></p>
                         <p>&nbsp;</p>
+                                                <p>&nbsp;</p>
                         
                         <!--<a href="#" class="btn btn-primary">Learn More</a>-->
                     </div>
                 </div>
             </div>
         </div>
+<!-- END Service Panels -->
 <!-- OUR TIMELINE-->
   <div class="row">
       <div style="margin:0px 15px 0px 15px;">
@@ -222,9 +222,6 @@
   </div>
   </div>
 <!-- END OUR TIMELINE-->
-
-
-        
         <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
@@ -235,80 +232,75 @@
                 </div>
             </div>
         </div>
-
-        <hr>
-
-        <!-- Highlights -->
-        <div class="row">
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive img-rounded" src="img/index/training.jpg" alt="">
-                    <div class="caption">
-                        <h2>Training</h2>
-                        <p>We're committed to helping you learn how to get the most out of the IFTDSS web app. Please visit our webinars page to learn about webinars and sign up for one today!</p>
-                        <!--<a class="btn btn-success btn-sm" href="webinars.html">Webinars & Trainings</a>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive img-rounded" src="img/index/support.jpg" alt="">
-                    <div class="caption">
-                        <h2>Support</h2>
-                        <p>IFTDSS has a four pronged support system that includes in-app support text, a robust help center, user forums, and a ticket system to get the help you need when you're stuck.</p>
-                        <!--<a class="btn btn-success btn-sm" href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a>-->
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 text-center">
-                <div class="thumbnail">
-                    <img class="img-responsive img-rounded" src="img/index/community.jpg" alt="">
-                    <div class="caption">
-                        <h2>Community</h2>
-                        <p>Building a community of knowledge is no small task. To help you get started we created the IFTDSS Forums. There is a Questions and Answers Forum and a ideas exchange for sharing suggestions.</p>
-                        <!--<a class="btn btn-success btn-sm" href="https://iftdsshelp.freshdesk.com/support/home" target="_blank">User Forums</a>-->
-                    </div>
-                </div>
-            </div>
-                    </div>
-                    <a class="btn btn-hc btn-block" href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a>
-                </div>
-            </div>
-        </div>
-     
-<!--<div class="postit">Check out this Post-it<br>It’s 100% CSS!</div>-->
-                  <footer>
-                    <footer class="footer-distributed">
-
-                      <div class="footer-left">
-                        <p class="text-center">Interagency Fuel Treatment Decision Support System</p>
-
-                        <p class="footer-links text-center">
-                          <img class="fixed_width" src="img/logos/BIA.gif" alt="">
-                          <img class="fixed_width" src="img/logos/BLM.png" alt="">
-                          <img class="fixed_width" src="img/logos/FWS.png" alt="">
-                          <img class="fixed_width" src="img/logos/NPS.gif" alt="">
-                          <img class="fixed_width" src="img/logos/USFS.png" alt="">
-                        </p>
-                      </div>
-
-                      <div class="footer-center">
-
-                      </div>
-                      <div class="footer-right text-center">
-                          <img class="img-responsive img-rounded center-block" src="img/footer/mailing-list.jpg" alt="">
-                            <a class="btn btn-warning btn-sm " href="http://eepurl.com/calULn" target="_blank">Subscribe</a>
-                          </div>
-                          </footer>
-                            <div class="row">
-                              <div class="col-lg-12 text-center">
-                                  <div class="well">
-                                      <p> Copyright &copy; US Department of Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</a> | <a href="legal.html">legal</p></a>
-
-                </div>
-              </div>
-            </div>
+<hr>
+<!-- Highlights -->
+  <div class="row">
+    <div class="col-md-4 text-center">
+      <div class="thumbnail">
+        <img class="img-responsive img-rounded" src="img/index/training.jpg" alt="">
+          <div class="caption">
+            <h2>Training</h2>
+            <p>We're committed to helping you learn how to get the most out of the IFTDSS web app. Please visit our webinars page to learn about webinars and sign up for one today!</p>
+            <!--<a class="btn btn-success btn-sm" href="webinars.html">Webinars & Trainings</a>-->
           </div>
-  <script src="js/mytour.js"></script>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="thumbnail">
+        <img class="img-responsive img-rounded" src="img/index/support.jpg" alt="">
+          <div class="caption">
+            <h2>Support</h2>
+            <p>IFTDSS has a four pronged support system that includes in-app support text, a robust help center, user forums, and a ticket system to get the help you need when you're stuck.</p>
+            <!--<a class="btn btn-success btn-sm" href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a>-->
+          </div>
+      </div>
+    </div>
+    <div class="col-md-4 text-center">
+      <div class="thumbnail">
+        <img class="img-responsive img-rounded" src="img/index/community.jpg" alt="">
+          <div class="caption">
+            <h2>Community</h2>
+            <p>Building a community of knowledge is no small task. To help you get started we created the IFTDSS Forums. There is a Questions and Answers Forum and a ideas exchange for sharing suggestions.</p>
+            <!--<a class="btn btn-success btn-sm" href="https://iftdsshelp.freshdesk.com/support/home" target="_blank">User Forums</a>-->
+          </div>
+      </div>
+    </div>
+    
+  </div>
+<!-- END Highlights -->
+<!-- Help Button-->
+    <a class="btn btn-hc btn-block" href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a>
+<!-- Help Button-->
+</div> 
+  <footer class="footer-distributed">
+    <div class="footer-left">
+      <p class="text-center">Interagency Fuel Treatment Decision Support System</p>
+      <p class="footer-links text-center">
+        <img class="fixed_width" src="img/logos/BIA.gif" alt="">
+        <img class="fixed_width" src="img/logos/BLM.png" alt="">
+        <img class="fixed_width" src="img/logos/FWS.png" alt="">
+        <img class="fixed_width" src="img/logos/NPS.gif" alt="">
+        <img class="fixed_width" src="img/logos/USFS.png" alt="">
+      </p>
+    </div>
+    <div class="footer-center">
+    </div>
+    <div class="footer-right text-center">
+      <img class="img-responsive img-rounded center-block" src="img/footer/mailing-list.jpg" alt="">
+        <a class="btn btn-warning btn-sm " href="http://eepurl.com/calULn" target="_blank">Subscribe</a>
+    </div>
+  </footer>
+
+
+
+  <div class="col-lg-12 text-center">
+    <div class="well">
+      <p> Copyright &copy; US Department of Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</a> | <a href="legal.html">legal</a></p>
+    </div>
+  </div>
+
+
+
+<script src="js/mytour.js"></script>
 </body>
 </html>
