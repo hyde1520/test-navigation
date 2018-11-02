@@ -1,58 +1,9 @@
-body {
-    padding-top: 51px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
-}
-.fixed_width {
-  height: 70px;
-  width: 70px;
-}
-.hero-spacer {
-    margin-top: 0px;
-}
-
-.gray-container {
-    background-color: #F5F5F5;
-}
-
-.hero-feature {
-    margin-bottom: 30px;
-}
-
-.container-full {
-    width: 100%;
-}
-
-footer {
-    margin: 50px 0;
-}
-.jumbotron {
-    margin-bottom: 0px;
-    background-image: url(../img/index/close-up-flames.jpg);
-    background-position: 0% 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    color: white;
-}
-/* keeps the height of each column/container the same when used within a row */
-.row-eq-height {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display:         flex;
-}
 /* Ben's Button Classes
 -------------------------------------------------- */
-.alert-DOI {
-  margin-bottom:0;
-}
-.alert-DOI {
-  color: #31708f;
-  background-color: #d9edf7;
-  border-color: #bce8f1;
-}
 .btn-ift-orange {
   color: #fff;
   background-color: #E37D39;
-  border-color: #E37D39;
+  border-color: #2E3E4F;
 }
 .btn-ift-blue {
   color: #fff;
@@ -80,21 +31,6 @@ footer {
   border-color: #2E3E4F;
 }
 /* End of Ben's Buttons */
-/* Beginning of Josh's Buttons */
-.btn-hc{
-color:#fff;
-background-color:#5cb85c;
-border-color:#4cae4c;
-font-size:24px;
-font-weight:normal;
-}
-.btn-hc:hover{
-color:#fff;
-background-color:#449d44;
-border-color:#398439
-}
-/* End of Josh's Buttons */
-
 .navbar-inverse {
   background-color: #2E3E4F;
   border-color: #2E3E4F; }
@@ -106,9 +42,9 @@ border-color:#398439
   .navbar-inverse .navbar-text {
     color: #9d9d9d; }
   .navbar-inverse .navbar-nav > li > a {
-    color: #fff; }
+    color: #9d9d9d; }
     .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-      color: #E37D39;
+      color: #fff;
       background-color: transparent; }
   .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #fff;
@@ -154,6 +90,55 @@ border-color:#398439
       color: #fff; }
     .navbar-inverse .btn-link[disabled]:hover, .navbar-inverse .btn-link[disabled]:focus, fieldset[disabled] .navbar-inverse .btn-link:hover, fieldset[disabled] .navbar-inverse .btn-link:focus {
       color: #444; }
+#login-dp{
+    min-width: 250px;
+    padding: 14px 14px 0;
+    overflow:hidden;
+    background-color:rgba(255,255,255,.8);
+}
+#login-dp .help-block{
+    font-size:12px    
+}
+#login-dp .bottom{
+    background-color:rgba(255,255,255,.8);
+    border-top:1px solid #ddd;
+    clear:both;
+    padding:14px;
+}
+#login-dp .social-buttons{
+    margin:12px 0    
+}
+#login-dp .social-buttons a{
+    width: 49%;
+}
+#login-dp .form-group {
+    margin-bottom: 10px;
+}
+.btn-fb{
+    color: #fff;
+    background-color:#3b5998;
+}
+.btn-fb:hover{
+    color: #fff;
+    background-color:#496ebc 
+}
+.btn-tw{
+    color: #fff;
+    background-color:#55acee;
+}
+.btn-tw:hover{
+    color: #fff;
+    background-color:#59b5fa;
+}
+@media(max-width:768px){
+    #login-dp{
+        background-color: inherit;
+        color: #fff;
+    }
+    #login-dp .bottom{
+        background-color: inherit;
+        border-top:0 none;
+    }
 }
 
 /* GLOBAL STYLES
@@ -289,67 +274,4 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
-}
-
-#login-dp{
-    min-width: 250px;
-    padding: 14px 14px 0;
-    overflow:hidden;
-    background-color:rgba(255,255,255,.8);
-}
-  /* Joshs Landing Page adjustments info panels */
- .paneliftdss {
-  margin-bottom: 20px;
-  background-color: #fff;
-  border: 1px solid transparent;
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-          box-shadow: 0 1px 1px rgba(0, 0, 0, 0);
-}
-.thumbnailiftdss {
-
-  display: block;
-  padding: 4px;
-  margin-bottom: 10px;
-  line-height: 1.42857143;
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  -webkit-transition: border .2s ease-in-out;
-       -o-transition: border .2s ease-in-out;
-          transition: border .2s ease-in-out;
-}
-  /* Joshs Landing Page adjustments hero/header */
-.jumbotron{
-  max-height:30%;
-  padding-top:28px;
-  padding-bottom:20px;
-}
-.jumbotron > .container > h1{
-  margin-top:10px;
-}
-  /* Joshs Landing Page adjustments chrome notice */
-.welliftdss{
-  min-height: 20px;
-  padding: 19px;
-  margin-bottom: 20px;
-  padding-bottom:8px;
-  background-color: #f5f5f5;
-  border: 1px solid #e3e3e3;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-          box-shadow: inset 0 1px 1px rgba(0, 0, 0, .05);
-}  
-.welliftdss > div {
-
-background-image: url(../img/index/Chrome_sml.png);
-background-repeat: no-repeat;
-}
-
-.welliftdss > div > div {
-padding:0px 15px 0px 15px;
-}
-
-.welliftdss > div > div > p {
-padding-left:40px;
 }
