@@ -1,21 +1,20 @@
 /*<meta />*/
 
-@media only screen and (max-width: 414px)
+@media only screen and (max-width: 767px)
 {
 	nav.title-bar
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background: #2e3e4f none;
-		-pie-background: #2e3e4f;
+		background-color: #2e3e4e;
 	}
 
 	.title-bar-layout a.logo
 	{
-		width: 213px;
-		height: 27px;
-		background: transparent url('Images/iftdss_helpcenter_2_50p_1.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/iftdss_helpcenter_2_50p_1.png') no-repeat center center;
+		width: 461px;
+		height: 25px;
+		background: transparent url('Images/iftdss_helpcenter_3_50p.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/iftdss_helpcenter_3_50p.png') no-repeat center center;
 	}
 
 	.search-bar .search-submit
@@ -89,12 +88,12 @@
 
 	.off-canvas
 	{
-		background-color: #333333;
+		background-color: #51677f;
 	}
 
 	.off-canvas ul ul
 	{
-		background-color: #333333;
+		background-color: #51677f;
 	}
 
 	ul.off-canvas-list li a
@@ -129,32 +128,32 @@
 
 	ul.off-canvas-list li a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list li a.selected
@@ -353,7 +352,7 @@
 	.search-bar .search-filter.selected
 	{
 		background-repeat: no-repeat;
-		background: transparent url('Images/Filter.png') no-repeat center center;
+		background: transparent url('Images/icon-filter-selected.png') no-repeat center center;
 	}
 
 	.search-filter-content ul li:hover
@@ -384,13 +383,13 @@
 	.search-bar.search-bar-container .search-submit
 	{
 		background-repeat: no-repeat;
-		background-color: #f5f5f5;
+		background: transparent url('Images/icon-search.png') no-repeat center center;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
 		background-repeat: no-repeat;
-		background-color: #f5f5f5;
+		background-color: transparent;
 	}
 }
 

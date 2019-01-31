@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Top_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Mapping|Map Functions">
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="en-us" xml:lang="en-us" class="_Skins_HTML5___Side_Navigation" data-mc-search-type="Stem" data-mc-help-system-file-name="index.xml" data-mc-path-to-help-system="../../../" data-mc-has-content-body="True" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic;Default" data-mc-preload-images="false" data-mc-in-preview-mode="false" data-mc-toc-path="Map Studio|Map Functions">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -17,6 +17,7 @@
         <link href="../../../Skins/Fluid/stylesheets/styles.css" rel="stylesheet" />
         <link href="../../../Skins/Fluid/stylesheets/tablet.css" rel="stylesheet" />
         <link href="../../../Skins/Fluid/stylesheets/mobile.css" rel="stylesheet" />
+        <link href="../../resources/stylesheets/font-awesome.css" rel="stylesheet" />
         <style>/*&lt;meta /&gt;*/
 
 .button.expand-print-button
@@ -40,7 +41,7 @@
 }
 
 </style>
-        <link href="../../resources/stylesheets/mainstyles.css" rel="stylesheet" />
+        <link href="../../resources/stylesheets/styles.css" rel="stylesheet" />
         <script src="../../../Resources/Scripts/custom.modernizr.js">
         </script>
         <script src="../../../Resources/Scripts/jquery.min.js">
@@ -62,12 +63,12 @@
         <div class="foundation-wrap off-canvas-wrapper">
             <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper="">
                 <aside class="off-canvas position-right" id="offCanvas" data-off-canvas="" data-position="right" data-mc-ignore="true">
-                    <ul class="off-canvas-drilldown vertical menu off-canvas-list" data-drilldown="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-drilldown-submenu-parent" data-mc-css-tree-node-collapsed="is-drilldown-submenu-parent" data-mc-css-sub-menu="vertical menu slide-in-right is-drilldown-submenu" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="True" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.drilldown" data-mc-toc="True">
+                    <ul class="off-canvas-accordion vertical menu off-canvas-list" data-accordion-menu="" data-mc-back-link="Back" data-mc-css-tree-node-expanded="is-accordion-submenu-parent" data-mc-css-tree-node-collapsed="is-accordion-submenu-parent" data-mc-css-sub-menu="vertical menu is-accordion-submenu nested" data-mc-include-indicator="False" data-mc-include-icon="False" data-mc-include-parent-link="True" data-mc-include-back="False" data-mc-defer-expand-event="True" data-mc-expand-event="click.zf.accordionMenu" data-mc-toc="True">
                     </ul>
                 </aside>
                 <div class="off-canvas-content inner-wrap" data-off-canvas-content="">
-                    <div>
-                        <nav class="title-bar tab-bar" data-mc-ignore="true">
+                    <div data-sticky-container="" class="title-bar-container">
+                        <nav class="title-bar tab-bar sticky" data-sticky="" data-options="marginTop:0" style="width:100%" data-sticky-on="only screen and (max-width: 1279px)" data-mc-ignore="true">
                             <div class="middle title-bar-section outer-row clearfix">
                                 <div class="menu-icon-container relative clearfix">
                                     <button class="menu-icon" data-toggle="offCanvas"><span></span>
@@ -117,6 +118,21 @@
                                 </div>
                             </div>
                             <div class="body-container" data-mc-content-body="True">
+                                <script>
+			/* <![CDATA[ */
+			var gaProperty = 'UA-109528589-1';
+ 
+			var disableStr = 'ga-disable-' + gaProperty;
+			if (document.cookie.indexOf(disableStr + '=true') > -1) {
+			window[disableStr] = true;
+			}
+ 
+			function gaOptout() {
+			document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+			window[disableStr] = true;
+			}
+			/* ]]> */
+		</script>
                                 <script src="https://www.google.com/jsapi" type="text/javascript">
                                 </script>
                                 <script>
@@ -127,94 +143,96 @@
 			})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
 			ga('create', 'UA-109528589-1', 'auto');
+			ga('set', 'anonymizeIp', true);
 			ga('send', 'pageview');
 
 			/* ]]> */
-			</script>
-                                <div class="content">
-                                    <div id="contentBody">
-                                        <div class="row collapse">
-                                            <div class="sideContent">
-                                                <div class="clearfix">
-                                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
-                                                        <div class="button-group-container-left">
-                                                            <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
-                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
-                                                            </button>
-                                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
-                                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <ul class="nocontent menu _Skins_SideMenu mc-component" data-mc-is-context-sensitive="True" data-mc-linked-toc="Data/Tocs/IFTDSS_Online_Output.js" data-mc-side-menu="True" data-mc-max-depth="1" data-mc-include-icon="False" data-mc-include-indicator="False" data-mc-include-children="True" data-mc-include-siblings="True" data-mc-include-parent="True" data-mc-toc="True">
-                                                </ul>
-                                            </div>
-                                            <div class="nocontent">
-                                                <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
-                                                </div>
-                                            </div>
-                                            <h1><a name="kanchor95"></a>Landscape Tools</h1>
-                                            <p class="no-print"><iframe class="youtube-player_0" src="https://www.youtube.com/embed/K75wbA0BqSE?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
-                                            </p>
-                                            <p>Landscape Tools enables you to view or create new landscape files from within <span class="GeneralMapStudio">Map Studio</span>. The options available include:</p>
-                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Add an Existing Landscape to the Map</a></span>
-                                                <div class="MCDropDownBody dropDownBody">
-                                                    <p>
-                                                        <img src="../../resources/images/mapstudio/lcp_tools/landscapetools_add.png" alt="Use the 'Add to map' option at the top of Landscape Tools to add a landscape file to your map" class="border" />
-                                                    </p>
-                                                    <p>The <span class="UIcomponent">Add to Map</span> option lists all the available landscape files for display. </p>
-                                                    <p>
-                                                        <img src="../../resources/images/mapstudio/lcp_tools/landscapetools_add2.png" alt="Once selected the landscape will become visible" class="border" />
-                                                    </p>
-                                                    <p>Once a landscape is chosen by selecting the checkbox next to it, it will become visible, and <span class="GeneralMapStudio">Map Studio</span> will automatically zoom to that landscape. </p>
-                                                    <p>The <span class="UIcomponent">Filter by Map Extent</span> option allows you to filter your available landscape by their spatial extent, this can be convenient if you have many different landscape files saved in your <span class="GeneralProductName">IFTDSS</span> account.</p>
-                                                    <p>The <span class="UIcomponent">Refresh</span> option refreshes the landscape list with the most recent files, this is convenient if you have just downloaded a landscape file but do not see it listed yet.</p>
-                                                    <div class="notificationNote">
-                                                        <p>It may take several minutes after creating a landscape file for it to become visible in the Landscape Tools list of available landscapes.</p>
-                                                    </div>
-                                                    <p>&#160;</p>
-                                                </div>
-                                            </div>
-                                            <div class="MCDropDown MCDropDown_Open dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="20" alt="Closed" data-mc-alt2="Open" />Create a New Landscape</a></span>
-                                                <div class="MCDropDownBody dropDownBody">
-                                                    <p>To create landscape from within <span class="GeneralMapStudio">Map Studio</span> click the <span class="UIcomponent">Landscape Tools</span> widget along the bottom of <span class="GeneralMapStudio">Map Studio</span>. In the Landscape Tools box, make sure the <span class="UIcomponent">Create new</span> tab is selected.</p>
-                                                    <p>
-                                                        <img src="../../resources/images/lcp_gen_smmry/mapstudio_createnew.png" class="borderlist" />
-                                                    </p>
-                                                    <p>In the <span class="UIcomponent">Create new</span> tab specify the requirements for your landscape:</p>
-                                                    <ol style="list-style-type: upper-alpha;">
-                                                        <li value="1">Use the <span class="GeneralMapStudio">Map Studio</span> tools such as zoom, basemap layers, etc. to locate your desired area.</li>
-                                                        <li value="2">Click the <span class="UIcomponent">Select draw mode</span>, mouse to your location on the map, hold down the left mouse key, and draw a rectangle around your desired area, releasing the button when you are finished.</li>
-                                                        <li value="3">Alternatively, if you wish to enter exact coordinates rather than draw a box around your area, you may do so by entering the coordinates, in degrees, for the west, east, south, and north bounds of your desired area. </li>
-                                                        <div class="notificationNote">
-                                                            <p>The maximum area for a landscape is 3.5 million acres.</p>
-                                                        </div>
-                                                        <li value="4">Choose the version of LANDFIRE data you would like to use.</li>
-                                                        <li value="5">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) you would like included in your landscape file.</li>
-                                                        <li value="6">Give your landscape a descriptive name, this will be helpful as you accumulate more landscape files in <span class="GeneralProductName">IFTDSS</span>.</li>
-                                                        <li value="7">Select the folder in which you would like to store your landscape file.</li>
-                                                        <li value="8">
-                                                            <p>Click <span class="UIcomponent">Create</span> to generate your landscape file.</p>
-                                                            <p>
-                                                                <img src="../../resources/images/lcp_gen_smmry/lcp_mapstudio_steps.png" alt="Draw and dropdown options under the 'create new' tab let you generate a landscape from within map studio." class="borderlist" />
-                                                            </p>
-                                                        </li>
-                                                    </ol>
-                                                    <p>Once you click <span class="UIcomponent">Create</span> a message will appear at the top of the <span class="UIcomponent">Landscape Tools</span> box to confirm your landscape is being created. it may take a few minutes to generate your landscape. You may check its status by refreshing the Layer List in <span class="GeneralMapStudio">Map Studio</span>.</p>
-                                                    <p>
-                                                        <img src="../../resources/images/lcp_gen_smmry/landscape_submitted_confirmation.png" alt="confirmation message that a landsape file is in the process of being downloaded" class="border" />
-                                                    </p>
-                                                    <div class="notificationNote">
-                                                        <p>If you have created a landscape in&#160;<span class="GeneralMapStudio">Map Studio</span> using the <span class="UIcomponent">Create in <span class="GeneralMapStudio">Map Studio</span></span> button (for example, this is an option in Landscape Summary, and other tasks) you will need to navigate back to your task to continue that process using your newly created landscape.</p>
-                                                    </div>
-                                                    <p>Once you click <span class="UIcomponent">Create</span> a message will appear at the top of the <span class="UIcomponent">Landscape Tools</span> box to confirm your landscape is being created. When complete, you will be able to add your new landscape to your map by clicking the <span class="UIcomponent">Add to map</span> tab (to the left of the Create new tab you are currently on), and selecting your newly created landscape. It will also be available in <span class="UIcomponent">My Workspace</span>.</p>
-                                                    <p>
-                                                        <img src="../../resources/images/lcp_gen_smmry/landscape_submitted_confirmation.png" alt="confirmation message that a landsape file is in the process of being downloaded" class="border" />
-                                                    </p>
-                                                </div>
-                                            </div>
+		</script>
+                                <div class="nocontent">
+                                    <div class="MCBreadcrumbsBox_0 breadcrumbs" data-mc-breadcrumbs-divider=" &gt; " data-mc-breadcrumbs-count="3" data-mc-toc="True"><span class="MCBreadcrumbsPrefix">You are here: </span>
+                                    </div>
+                                </div>
+                                <div class="clearfix" style="float: right">
+                                    <div class="buttons popup-container clearfix topicToolbarProxy _Skins_TopicToolBar mc-component nocontent">
+                                        <div class="button-group-container-left">
+                                            <button class="button needs-pie expand-print-button" onclick="MadCap.TextEffects.TextEffectControl.ExpandAll(&quot;open&quot;); setTimeout(function(){ window.print(); }, 1500);">
+                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand print" />
+                                            </button>
+                                            <button class="button needs-pie expand-all-button" data-state1-class="expand-all-button" data-state2-class="collapse-all-button" data-state2-title="Collapse all" title="Expand all" data-state1-title="Expand all">
+                                                <img src="../../../Skins/Default/Stylesheets/Images/transparent.gif" alt="expand all" />
+                                            </button>
                                         </div>
+                                    </div>
+                                </div>
+                                <h1><a name="kanchor60"></a>Landscape Tools</h1>
+                                <p class="no-print"><iframe title="Landscape Tools YouTube" class="youtube-player_0" src="https://www.youtube.com/embed/HUigL9rrZTE?" frameborder="0" allowfullscreen="1" width="560px" height="315px"></iframe>
+                                </p>
+                                <p>Landscape Tools enables you to view or create new landscape files from within <span class="GeneralMapStudio">Map Studio</span>. The options available include:</p>
+                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Add an Existing Landscape to the Map</a></span>
+                                    <div class="MCDropDownBody dropDownBody">
+                                        <p>
+                                            <img src="../../resources/images/mapstudio/lcp_tools/landscapetools_add.png" alt="Use the 'Add to map' option at the top of Landscape Tools to add a landscape file to your map" class="border" />
+                                        </p>
+                                        <p>The <span class="UIcomponent">Add to Map</span> option lists all the available landscape files for display. </p>
+                                        <p>
+                                            <img src="../../resources/images/mapstudio/lcp_tools/landscapetools_add2.png" alt="Once selected the landscape will become visible" class="border" />
+                                        </p>
+                                        <p>Once a landscape is chosen by selecting the checkbox next to it, it will become visible, and <span class="GeneralMapStudio">Map Studio</span> will automatically zoom to that landscape. </p>
+                                        <p>The <span class="UIcomponent">Filter by Map Extent</span> option allows you to filter your available landscape by their spatial extent, this can be convenient if you have many different landscape files saved in your <span class="GeneralProductName">IFTDSS</span> account.</p>
+                                        <p>The <span class="UIcomponent">Refresh</span> option refreshes the landscape list with the most recent files, this is convenient if you have just downloaded a landscape file but do not see it listed yet.</p>
+                                        <div class="notificationNote">
+                                            <p>It may take several minutes after creating a landscape file for it to become visible in the Landscape Tools list of available landscapes.</p>
+                                        </div>
+                                        <p>&#160;</p>
+                                    </div>
+                                </div>
+                                <div class="MCDropDown MCDropDown_Closed dropDown"><span class="MCDropDownHead dropDownHead"><a href="javascript:void(0);" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage"><img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="16" width="18" alt="Closed" data-mc-alt2="Open" />Create a New Landscape</a></span>
+                                    <div class="MCDropDownBody dropDownBody">
+                                        <p>To create landscape from within <span class="GeneralMapStudio">Map Studio</span> click the <span class="UIcomponent">Landscape Tools</span> widget along the bottom of <span class="GeneralMapStudio">Map Studio</span>. In the Landscape Tools box, make sure the <span class="UIcomponent">Create new</span> tab is selected.</p>
+                                        <p>
+                                            <img src="../../resources/images/mapstudio/lcp_tools/mapstudio_createnew.png" class="borderlist" alt="use the 'create new' tab to create a new landscape in map studio" />
+                                        </p>
+                                        <p>In the <span class="UIcomponent">Create new</span> tab specify the requirements for your landscape:</p>
+                                        <ol style="list-style-type: upper-alpha;">
+                                            <li value="1">Use the <span class="GeneralMapStudio">Map Studio</span> tools such as zoom, basemap layers,and so forth to locate your desired area.</li>
+                                            <li value="2">
+                                                <p>Define the area of your new landscape by doing one of the following:</p>
+                                                <ul>
+                                                    <li value="1">
+                                                        <p>Selecting an Area of Interest from the drop-down menu (this contains any shapes you've created or shapefiles you've uploaded).</p>
+                                                        <div class="notificationNote">
+                                                            <p>Your shape or shapefile must be within your current map extent to appear in the drop-down menu, so zoom in or out in Map Studio as needed.</p>
+                                                        </div>
+                                                    </li>
+                                                    <li value="2">Click <span class="UIcomponent">Select draw mode <img src="../../resources/images/mapstudio/add_graphic/addgraphic_extents.png" alt="extent button" style="width: 15px;height: 14px;" class="iftbutton" /></span>, mouse to your location on the map, hold down the left mouse key, and draw a rectangle around your desired area, releasing the button when you are finished. Clicking the black select extent button  then draw a box around your area by holding down the left mouse key, drawing, and release.</li>
+                                                    <li value="3">Enter exact coordinates rather than draw a box around your area, you may do so by entering the coordinates, in degrees, for the west, east, south, and north bounds of your desired area.</li>
+                                                </ul>
+                                            </li>
+                                            <div class="notificationNote">
+                                                <p>The maximum area for a landscape is 3.5 million acres.</p>
+                                            </div>
+                                            <li value="3">Choose the version of LANDFIRE data you would like to use.</li>
+                                            <li value="4">Choose the fire behavior fuel model (Fuel Model 40 or Fuel Model 13) to include in your landscape file.</li>
+                                            <li value="5">Give your landscape a descriptive name, this is helpful as you accumulate more landscape files in <span class="GeneralProductName">IFTDSS</span>. Spaces are allowed in names and we recommend including the LANDFIRE&#160;version and keeping the name less than 30 characters. For example, "Smith Project LF14".</li>
+                                            <li value="6">Select the folder to store your landscape file. If needed, you may use the <span class="UIcomponent">Add new Folder <img src="../../resources/images/buttonsgeneral/add_new_folder_13x15.png" alt="add new folder button" class="iftbutton" style="width: 13;height: 15;" /> </span>button to create a new folder for your landscape. If you do not specify an existing folder or create a new one in this step, your saved landscape defaults to the "Playground" folder of <span class="UIcomponent">My Workspace</span>.</li>
+                                            <li value="7">
+                                                <p>Click <span class="UIcomponent">Create</span> to generate your landscape file.</p>
+                                                <p>
+                                                    <img src="../../resources/images/mapstudio/lcp_tools/lcp_mapstudio_steps.png" alt="Draw and dropdown options under the 'create new' tab let you generate a landscape from within map studio." class="borderlist" />
+                                                </p>
+                                            </li>
+                                        </ol>
+                                        <p>Once you click <span class="UIcomponent">Create</span> a message appears at the top of the <span class="UIcomponent">Landscape Tools</span> box to confirm your landscape is being created. It may take a few minutes to generate your landscape. You may check its status by refreshing the Layer List in <span class="GeneralMapStudio">Map Studio</span>.</p>
+                                        <img src="../../resources/images/mapstudio/lcp_tools/landscape_submitted_confirmation.png" alt="confirmation message that a landsape file is in the process of being downloaded" class="border" />
+                                        <div class="notificationTip">
+                                            <p>Tip:&#160;To refresh your map view, click the Add to map tab, followed by the Filter by Map Extent button to show only your new landscape area, and then click Refresh. A checkbox will appear next to your landscape when it is completed.</p>
+                                            <img src="../../resources/images/mapstudio/lcp_tools/refresh.png" alt="filter and refresh buttons within the Landscape Tools widget." />
+                                        </div>
+                                        <p>Once you click <span class="UIcomponent">Create</span> a message will appear at the top of the <span class="UIcomponent">Landscape Tools</span> box to confirm your landscape is being created. When complete, you will be able to add your new landscape to your map by clicking the <span class="UIcomponent">Add to map</span> tab (to the left of the Create new tab you are currently on), and selecting your newly created landscape. It will also be available in <span class="UIcomponent">My Workspace</span>.</p>
+                                        <p>
+                                            <img src="../../resources/images/mapstudio/lcp_tools/landscape_submitted_confirmation.png" alt="confirmation message that a landsape file is in the process of being downloaded" class="border" />
+                                        </p>
+                                        <p>It may take a couple minutes before your landscape is available for viewing. If you are unsure of your landscape status, you may switch to the Add to Map tab of Landscape Tools and use the Refresh button to update the landscape list.</p>
                                     </div>
                                 </div>
                             </div>

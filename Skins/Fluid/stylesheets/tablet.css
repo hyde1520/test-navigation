@@ -1,6 +1,6 @@
 /*<meta />*/
 
-@media only screen and (max-width: 1024px)
+@media only screen and (max-width: 1279px)
 {
 	/* OffCanvas styles */
 
@@ -16,7 +16,7 @@
 		display: block;
 		height: 100%;
 		overflow-x: hidden;
-		background-color: #333333;
+		background-color: #51677f;
 	}
 
 	/* Foundation Overrides */
@@ -52,8 +52,9 @@
 	{
 		background-position: center top;
 		background-repeat: no-repeat;
-		background: #2e3e4f none;
-		-pie-background: #2e3e4f;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background-color: #2e3e4e;
 	}
 
 	/* Topbar Menu Styles */
@@ -80,10 +81,10 @@
 	{
 		top: 0;
 		margin: 0;
-		width: 213px;
-		height: 27px;
-		background: transparent url('Images/iftdss_helpcenter_2_50p_1.png') no-repeat center center;
-		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/iftdss_helpcenter_2_50p_1.png') no-repeat center center;
+		width: 461px;
+		height: 25px;
+		background: transparent url('Images/iftdss_helpcenter_3_50p.png') no-repeat center center;
+		-pie-background: transparent url('Skins/Fluid/Stylesheets/Images/iftdss_helpcenter_3_50p.png') no-repeat center center;
 	}
 
 	.title-bar .menu-icon span
@@ -141,32 +142,32 @@
 
 	ul.off-canvas-list li a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a:hover
 	{
-		background-color: #242424;
+		background-color: #2e3e4e;
 	}
 
 	.off-canvas ul.off-canvas-list li.is-drilldown-submenu-parent > a:after
@@ -183,8 +184,8 @@
 	{
 		font-size: 1em;
 		border-bottom: solid 1px #262626;
-		line-height: 1;
-		color: #C1C1C1;
+		line-height: inherit;
+		color: #ffffff;
 	}
 
 	ul.off-canvas-accordion ul > li > a
@@ -247,6 +248,8 @@
 	.body-container
 	{
 		overflow: inherit;
+		padding-left: 0px;
+		padding-right: 0px;
 	}
 
 	.off-canvas-wrapper-inner nav.title-bar .outer-row
@@ -267,7 +270,8 @@
 
 	.off-canvas-wrapper-inner .outer-row
 	{
-		
+		padding-left: 1em;
+		padding-right: 1em;
 	}
 
 	.main-section > .outer-row
@@ -277,32 +281,37 @@
 
 	.off-canvas ul ul
 	{
-		background-color: #333333;
+		background-color: #51677f;
 	}
 
 	ul.off-canvas-list ul > li > a
 	{
-		
+		margin-left: 1em;
 	}
 
 	ul.off-canvas-list ul ul > li > a
 	{
-		
+		margin-left: 2em;
 	}
 
 	ul.off-canvas-list ul ul ul > li > a
 	{
-		
+		margin-left: 3em;
 	}
 
 	ul.off-canvas-list ul ul ul ul > li > a
 	{
-		
+		margin-left: 4em;
 	}
 
 	ul.off-canvas-list li.js-drilldown-back > a
 	{
 		
+	}
+
+	ul.off-canvas-list li.is-accordion-submenu-parent > a span.submenu-toggle
+	{
+		border-top-color: #a1a8ac;
 	}
 
 	ul.off-canvas-list li a.selected
@@ -455,12 +464,14 @@
 
 	.nav-search-wrapper
 	{
+		justify-content: center;
 		flex-basis: 100%;
 	}
 
 	.nav-search
 	{
-		
+		width: 100%;
+		margin-top: 15px;
 	}
 
 	.search-bar .search-field
@@ -489,7 +500,7 @@
 	.search-bar .search-filter.selected
 	{
 		background-repeat: no-repeat;
-		background: transparent url('Images/Filter.png') no-repeat center center;
+		background: transparent url('Images/icon-filter-selected.png') no-repeat center center;
 	}
 
 	.search-filter-content ul li:hover
@@ -520,13 +531,13 @@
 	.search-bar.search-bar-container .search-submit
 	{
 		background-repeat: no-repeat;
-		background-color: #f5f5f5;
+		background: transparent url('Images/icon-search.png') no-repeat center center;
 	}
 
 	.search-bar.search-bar-container .search-submit:hover
 	{
 		background-repeat: no-repeat;
-		background-color: #f5f5f5;
+		background-color: transparent;
 	}
 }
 
