@@ -30,9 +30,6 @@
     <!-- bootstrap-tour css -->
     <link href="bootstrap-tour/css/bootstrap-tour.css" rel="stylesheet">
 
-    <!-- post it note css -->
-    <link href="css/post-it.css" rel="stylesheet">
-
     <!-- JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
@@ -73,7 +70,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="index.html" class="pull-left"><img src="img/common/iftdss-banner-big.png"></a> <!--this image should be resized as it spills out of the navbar -->
+          <a class="navbar-brand" href="index.html" class="pull-left"><img src="img/common/iftdss-banner-big.png" alt="burning twigs and duff with orange flames visible."></a> <!--this image should be resized as it spills out of the navbar -->
         </div>
       <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -112,7 +109,7 @@
     </nav>    
 <!-- END Navigation -->
 <!-- Jumbotron Header--> 
-<header class="jumbotron hero-spacer  tour-step tour-step-one">
+<header class="jumbotron hero-spacer" style="padding-bottom:0px">
   <div class="container">
     <h1>Welcome to IFTDSS</h1>
     <p>The Interagency Fuel Treatment Decision Support System </p>   
@@ -132,7 +129,20 @@
     }
   }
 </script> 
-<div class="container">
+
+<!--User notice
+<div class="row">
+  <div class="col-lg-12">
+    <div style="padding: 15px; background-color:#fbee83;">
+        <div style="padding-right:15px; padding-left:15px;">
+         <p style="font-size: 22px; font-weight:bold; text-align:left;">Attention Users!</p>
+<p style="font-size: 16px; font-weight:bold; text-align:left;">IFTDSS will be offline Monday 3/4 14:30 MST until Tuesday 3/5 for maintenance and updates. Thank you for your patience.</p>
+        </div>
+    </div>
+  </div>
+</div> -->
+<!--END User notice-->
+<div class="container" style="max-width:976px">
 <br>
 <!--Chrome notice-->
 <div class="row">
@@ -150,51 +160,37 @@
 <!-- Service Panels -->
 <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
 <div class="row">
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-12">
                 <div class="paneliftdss panel-default text-center">
-                    <div class="thumbnailiftdss">
-                        <img class="img-responsive" src="img/index/New_AK_Layer.png"></a>
+                    <div class="">
+                        <img class="img-responsive" src="img/index/landing1.png" alt="ALT TEXT HERE"></img>
                     </div>
                     <div class="panel-body">
-                        <h4><strong>Version 3.1.1 is Here!</strong><br><strong>(Nov. 2018)</strong></h4>
-                        <p><a href="whats-new.html" target="_blank">Read Whats New</a></p>
-                        <p><a href="https://youtu.be/GuNB65Oei08" target="_blank">See Whats New in 60 Sec.</a></p>
-                        <p><a href="pdfs/311_Release_Flyer_Nov_2018.pdf" target="_blank">Release Features (PDF)</a></p>
+                        <h4><strong>Risk Assessment Under Development</strong></h4>
+                        <p><a href="whats-new.html" target="_blank">Landscape Burn Probability Video</a></p>
+                        <p><a href="https://youtu.be/GuNB65Oei08" target="_blank">Burn Probability (PDF)</a></p>
+                        <p><a href="pdfs/311_Release_Flyer_Nov_2018.pdf" target="_blank">Risk Assessment (PDF)</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-12">
                 <div class="paneliftdss panel-default text-center">
                     <div class="thumbnailiftdss">
-                        <img class="img-responsive" src="img/index/iftdss2.png"></a>
+                        <img class="img-responsive" src="img/index/landing2.png" alt="ALT TEXT HERE"></img>
                     </div>
                     <div class="panel-body">
-                        <h4><strong>Learn About IFTDSS</strong></h4>
-                        <p><a href="https://www.youtube.com/watch?v=9cBAHSsf2Cc&list=PLKanPC1qRoPVvOl2uuTsIv161p8nBxRKW" target="_blank">Watch the Webinars</a></p>
-                        <p><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Visit the Help Center</a></p>
-                        <p><a href="pdfs/Risk_QRA_Flyer_Fall_2018_final.pdf" target="_blank">Coming Soon! Wildfire Risk Assessment (PDF)</a></p>
+                        <h4><strong>What's New in IFTDSS</strong></h4>
+                        <p><a href="https://www.youtube.com/watch?v=9cBAHSsf2Cc&list=PLKanPC1qRoPVvOl2uuTsIv161p8nBxRKW" target="_blank">Development Highlights 2019 (PDF)</a></p>
+                        <p><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">See whats new in 60 sec. video</a></p>
+                        <p><a href="pdfs/Risk_QRA_Flyer_Fall_2018_final.pdf" target="_blank">Visit the Help Center and YouTube</a></p>
+                        <p><a href="pdfs/Risk_QRA_Flyer_Fall_2018_final.pdf" target="_blank">Learn About FTEM (PDF)</a></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-3 col-sm-6">
+            <div class="col-md-4 col-sm-6">
                 <div class="paneliftdss panel-default text-center">
                     <div class="thumbnailiftdss">
-                        <img class="img-responsive" src="img/index/ftem2.png"></a>
-                    </div>
-                    <div class="panel-body">
-                        <h4><strong>FTEM is now in IFTDSS!</strong></h4>
-                        
-                        <p><a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ" target="_blank">Watch Videos</a></p>
-                        <p><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/10-ftem/ftemabout.htm" target="_blank">Visit the Help Center</a></p>
-                        <p><a href="https://www.youtube.com/watch?v=8Fcc614w_ns&list=PLKanPC1qRoPWMpqZbDGaGERrmtRmXkogS" target="_blank">Agency Webinars</a></p>
-                        <p><a href="pdfs/FTEM_Flyer_Fall_2018_PDF.pdf" target="_blank">FTEM Flyer (PDF)</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3 col-sm-6">
-                <div class="paneliftdss panel-default text-center">
-                    <div class="thumbnailiftdss">
-                        <img class="img-responsive" src="img/index/feedback.png"></a>
+                        <img class="img-responsive" src="img/index/landing3.png" alt="ALT TEXT HERE"></a>
                     </div>
                     <div class="panel-body">
                         <h4><strong>We want to Hear from You</strong></h4>
@@ -204,22 +200,90 @@
                 </div>
             </div>
         </div>
+
+
+       <!-- Portfolio Item Row -->
+        <div class="row">
+
+            <div class="col-md-12">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="margin-bottom:0px;">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img class="img-responsive" src="img/index/riskslide1.png" alt="ALT TEXT HERE">
+                            <div class="carousel-caption">
+                                <p class="slidertext"></p>
+                                <!--<p>text</p>-->
+                            </div>                        
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/index/riskslide2.png" alt="ALT TEXT HERE">
+                            <div class="carousel-caption">
+                                <p class="slidertext"></p>
+                                <!--<p>text</p>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/index/riskslide3.png" alt="ALT TEXT HERE">
+                              <div class="carousel-caption">
+                                <p class="slidertext"></p>
+                                <!--<p>text</p>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/index/riskslide4.png" alt="ALT TEXT HERE">
+                        
+                        <div class="carousel-caption">
+                                <p class="slidertext"></p>
+                                <!--<p>text</p>-->
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img class="img-responsive" src="img/whats-new/current-features/Help_Center.png" alt="IFTDSS Help Center landing page">
+                              <div class="carousel-caption">
+                                <p class="slidertext" style="color:black;">Improved Help Center</p>
+                                <!--<p>text</p>-->
+                            </div>
+                        </div>
+                    </div></div>
+
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left" aria-label="move carousel left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right" aria-label="move carousel right"></span>
+                    </a>
+                </div>
+            </div>
+
+
+
 <!-- END Service Panels -->
-<!-- OUR TIMELINE-->
+<!-- OUR TIMELINE--
   <div class="row">
       <div style="margin:0px 15px 0px 15px;">
-    <iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aFfSDXrlyadU8O0_xknIW5JFuueUh33Ypc8RxLVMXM4&font=Default&lang=en&initial_zoom=2&height=550' width='100%' height='550' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
+    <iframe title="interactive timeline of IFTDSS project milestones in pictures and text." src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1aFfSDXrlyadU8O0_xknIW5JFuueUh33Ypc8RxLVMXM4&font=Default&lang=en&initial_zoom=2&height=550' width='100%' height='550' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
     <hr>
   </div>
   </div>
-<!-- END OUR TIMELINE-->
+<!-- END OUR TIMELINE--><br><br>
         <!-- Call to Action Well -->
         <div class="row">
             <div class="col-lg-12">
                 <div class="well">
                   <h1>We Need Your Help!</h1>
                     <p>IFTDSS is always improving! The app is being built using modern agile development principles. This means that we’re always improving the existing features and adding more functionality. To make this all work we need to hear from <strong>YOU</strong>! Please use the Ideas Exchange Forum to tell us what you'd like to see in future IFTDSS versions.</p>
-                    <a class="btn btn-orangebl btn-sm" href="https://iftdsshelp.freshdesk.com/support/discussions/forums/22000059283" target="_blank">Ideas Exchange</a>
+                    <a class="btn btn-blorange btn-sm" href="https://iftdsshelp.freshdesk.com/support/discussions/forums/22000059283" target="_blank">Ideas Exchange</a>
                 </div>
             </div>
         </div>
@@ -228,7 +292,7 @@
   <div class="row">
     <div class="col-md-4 text-center">
       <div class="thumbnail">
-        <img class="img-responsive img-rounded" src="img/index/training.jpg" alt="">
+        <img class="img-responsive img-rounded" src="img/index/training.jpg" alt="Woman pointing out a fire polygon on a wall map.">
           <div class="caption">
             <h2>Training</h2>
             <p>We're committed to helping you learn how to get the most out of the IFTDSS web app. Please visit our webinars page to learn about webinars and sign up for one today!</p>
@@ -238,7 +302,7 @@
     </div>
     <div class="col-md-4 text-center">
       <div class="thumbnail">
-        <img class="img-responsive img-rounded" src="img/index/support.jpg" alt="">
+        <img class="img-responsive img-rounded" src="img/index/support.jpg" alt="firefighter in helmet and yellows unscrewing a drip torch to refill from nearby gas can.">
           <div class="caption">
             <h2>Support</h2>
             <p>IFTDSS has a four pronged support system that includes in-app support text, a robust help center, user forums, and a ticket system to get the help you need when you're stuck.</p>
@@ -248,7 +312,7 @@
     </div>
     <div class="col-md-4 text-center">
       <div class="thumbnail">
-        <img class="img-responsive img-rounded" src="img/index/community.jpg" alt="">
+        <img class="img-responsive img-rounded" src="img/index/community.jpg" alt="two firefighters in helmets and yellows using a cart to move a large crate.">
           <div class="caption">
             <h2>Community</h2>
             <p>Building a community of knowledge is no small task. To help you get started we created the IFTDSS Forums. There is a Questions and Answers Forum and a ideas exchange for sharing suggestions.</p>
@@ -267,31 +331,35 @@
     <div class="footer-left">
       <p class="text-center">Interagency Fuel Treatment Decision Support System</p>
       <p class="footer-links text-center">
-        <img class="fixed_width" src="img/logos/BIA.gif" alt="">
-        <img class="fixed_width" src="img/logos/BLM.png" alt="">
-        <img class="fixed_width" src="img/logos/FWS.png" alt="">
-        <img class="fixed_width" src="img/logos/NPS.gif" alt="">
-        <img class="fixed_width" src="img/logos/USFS.png" alt="">
+        <img class="fixed_width" src="img/logos/BIA.gif" alt="BIA logo">
+        <img class="fixed_width" src="img/logos/BLM.png" alt="BLM logo">
+        <img class="fixed_width" src="img/logos/FWS.png" alt="FWS logo">
+        <img class="fixed_width" src="img/logos/NPS.gif" alt="NPS logo">
+        <img class="fixed_width" src="img/logos/USFS.png" alt="USFS logo">
       </p>
     </div>
     <div class="footer-center">
     </div>
     <div class="footer-right text-center">
-      <img class="img-responsive img-rounded center-block" src="img/footer/mailing-list.jpg" alt="">
-        <a class="btn btn-warning btn-sm " href="http://eepurl.com/calULn" target="_blank">Subscribe</a>
+      <img class="img-responsive img-rounded center-block" src="img/footer/mailing-list.jpg" alt="a pair of quotation bubbles containing a check mark.">
+        <a class="btn btn-blorange btn-sm " href="http://eepurl.com/calULn" target="_blank">Subscribe</a>
     </div>
   </footer>
 
-
-
-  <div class="col-lg-12 text-center">
-    <div class="well">
-      <p> Copyright &copy; US Department of Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</a> | <a href="legal.html">legal</a></p>
-    </div>
-  </div>
-
-
+    <p style="text-align:center;"> Copyright &copy; US Department of Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</a> | <a href="legal.html">legal</a></p>
 
 <script src="js/mytour.js"></script>
 </body>
+<script type="text/javascript">
+	// Change the background color of the landing page's navbar to green on QA
+	if (window.location.href.includes('192.255.42.9')) {
+	  var elemList = document.getElementsByClassName('navbar-inverse');
+	  if (elemList && elemList.length > 0) {
+		  for (var i=0; i<elemList.length; i++) {
+			  var elem = elemList[i];
+			  if (elem)  elem.style.backgroundColor = "#0B6623";
+		  }
+	  }
+	}
+</script>
 </html>

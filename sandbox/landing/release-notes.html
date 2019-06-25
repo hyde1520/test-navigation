@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Interagency Fuel Treatment Decision Support System">
+    <meta name="author" content="Ben Butler">
+
+    <title>Release Notes</title>
+    <link rel="icon" href="img/common/favicon.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/modern-business.css" rel="stylesheet">
+
+    <!-- IFTDSS CSS -->
+    <link href="css/iftdss.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body>
+
+
+
+  <!-- Navigation -->
+     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+         <div class="container">
+             <!-- Brand and toggle get grouped for better mobile display -->
+             <div class="navbar-header">
+                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <span class="sr-only">Toggle navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                 </button>
+                 <a class="navbar-brand" href="index.html" aria-label="go to home page" class="pull-left"><img src="img/common/iftdss-banner-small.png" alt="orange flame shape followed by the word iftdss"></a> <!--this image should be resized as it spills out of the navbar -->
+             </div>
+             <!-- Collect the nav links, forms, and other content for toggling -->
+             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav navbar-right">
+                     <li>
+                         <a href="whats-new.html">What's New</a>
+                     </li>
+                     <li>
+                       <li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                               <li>
+                                   <a href="about.html">About</a>
+                               </li>
+                               <li>
+                                   <a href="development.html">Development</a>
+                               </li>
+                               <li>
+                                   <a href="history.html">History</a>
+                               </li>
+                               </ul>
+                     <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Support <b class="caret"></b></a>
+                         <ul class="dropdown-menu">
+                             <li>
+                                 <a href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a>
+                             </li>
+                             <li>
+                               <a href="/firenetHelp/help/pageHelp/content/00-aboutiftdss/knownissues.htm" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Known Issues</a>
+                             </li>
+                             <li>
+                                 <a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ" target="_blank">YouTube Videos</a>
+                             </li>
+                             <li>
+                                 <a href="webinars.html">Webinars &amp; Trainings</a>
+                             </li>
+                             <li>
+                                 <a href="https://iftdsshelp.freshdesk.com/support/discussions" target="_blank">Support Forums</a>
+                             </li>
+                             <li>
+                                 <a href="support.html">Support Requests</a>
+                             </li>
+                             </ul>
+                           </form>
+<!-- Login Dropdown -->
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+            <ul id="login-dp" class="dropdown-menu">
+                <li>
+                            <!-- login form -->
+							<iframe allowtransparency="true" id="loginPage" width="100%" height="255px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="/#/login"></iframe>
+
+                </li>
+            </ul>
+        </li>
+      </ul>
+    </div>
+    </div>
+    </nav>
+
+<!-- End Navigation -->
+
+    <!-- Page Content -->
+    <!-- Banner Image -->
+    <div class="container">
+
+        <!-- Image Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <img class="img-responsive" src="img/release-notes/release-notes-banner.jpg" alt="firefighters in helmets and yellows walking in a line carrying tools">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+             <h1>IFTDSS Release Notes (May 2017 - March 2019)</h1>
+        <h2>Patched 26 March 2019</h2>
+        <ul>
+            <li>Adds masking to Map Studio, users can now apply masks to landscapes and Landscape Fire Behavior outputs in Map Studio.</li>
+            <li>Improves the map displayed for areas of interest (AOI) in summary reports, showing only the AOI in the map when one is used to constrain the report.</li>
+            <li>Adds the option to create points and lines when creating shapes in Map Studio.</li>
+            <li>Adds a search field to Playground.</li>
+            <li>Updates inset vicinity map extent in summary reports.</li>
+        </ul>
+        <h2>Patched 5-6 March 2019</h2>
+        <ul>
+            <li>Symbology layer is included in Landscape Fire Behavior download files so users can match IFTDSS styling in ArcMap.</li>
+            <li>Adds an "All Content" folder in Workspace to display all files.</li>
+            <li>Adds a search tool in Workspace.</li>
+            <li>Improves accessibility (508 compliance) on most pages.</li>
+            <li>Adds model sub-type. This information is now displayed in Map Studio, Workspace, and Playground, and can be filtered in Workspace and Playground.</li>
+            <li>Alphabetizes all landscape and folder names in drop-down menus.</li>
+            <li>Fixed a bug that was causing the FTEM monitoring page to sometimes “twitch” upon resizing.</li>
+            <li>Fixed a projection issue when running reports with an area of interest (AOI).</li>
+            <li>Adds resampled versions of large landscapes and postfixes the new resolution to the end of the filename for resampled files.</li>
+        </ul>
+        <h2>Patched 3 December 2018</h2>
+        <ul>
+            <li>Fixed inconsistent spatial reference naming of downloaded TIFFs.</li>
+            <li>Added "Inactive fire perimeters" as a reference layer viewable in FTEM.</li>
+        </ul>
+
+
+        <h2>Version 3.1.1 - 25 October 2018</h2>
+        <ul>
+            <li>Adds an Area of Interest field for all summary reports (Auto97th, Landscape, and Model Outputs).</li>
+            <li>Adds a new wind input field in Landscape Fire Behavior modeling providing more wind direction options: "Generate Gridded Winds", "Wind Blowing Uphill", "Wind Blowing Downhill", and "Static Winds".</li>
+            <li>Adds a new fuel moisture conditioning field in Landscape Fire Behavior modeling to condition your initial fuel moistures either using classified weather streams or your own uploaded weather inputs.</li>
+            <li>Adds Alaska LANDFIRE 2014 LCP data for landscape creation.</li>
+            <li>Newly created landscapes now automatically have 5 km buffer area of LCP data included around them, in preparation for future modeling applications.</li>
+            <li>Adds a "Create Landscape" task in the "Landscape Evaluation" stage of the Planning Cycle.</li>
+            <li>Landscape Fire Behavior download files now also include an XML file and run inputs file.</li>
+            <li>When creating a landscape with the Landscape Tools widget, an area of interest can now be used to specify a landscape extent.</li>
+            <li>Adds a new Pyrome layer in Map Studio Reference Layers.</li>
+            <li>"View Input" button in Modeling Playground has been added to make it easy to view model inputs at a glance.</li>
+            <li>Additional model run metadata is now available in the Right Hand Panel of Modeling Playground when hovering over model name.</li>
+            <li>"Create in Map Studio" button has been removed from Modeling Playground.</li>
+            <li>"Request a Report" button has been removed from Modeling Playground.</li>                                    
+        </ul>
+        <h2>Patched 30 August 2018</h2>
+        <ul>
+            <li>Buffered Landscapes - Landscapes are now shown with a blue boundary line surrounding them in Map Studio and denoted by an "NB" in the file name for "No Buffer". In the next IFTDSS version, all new landscapes will be given a 5km buffer.</li>            
+        </ul>        
+        <h2>Patched 7 August 2018</h2>
+        <ul>
+            <li>New FlamMap DLLs version 2.1.0.6 have been implemented in IFTDSS.</li>
+        </ul>
+        <h2>Patched 3 July 2018</h2>
+        <ul>
+            <li>Model outputs from My Playground can now be downloaded to your local machine.</li>
+            <li>Improved interface and notifications for IFTDSS account creation and password resets.</li>
+            <li>Landscapes created in Map Studio now appear with a green boundary around the edge. This can be hidden by the user if they prefer.</li>
+            <li>Bug Fix: Agency Viewers can now see FTEM Reports.</li>
+            <li>Bug Fix: Additional updates to prevent Invalid User Session pop-ups.</li>
+        </ul>
+        <h2>Version 3.1.0 - 14 and 19 June 2018</h2>
+        <ul>
+            <li>New Fuels Treatment Effectiveness Monitoring (FTEM) functionality has been added to IFTDSS.</li>
+            <li>Updated Error Message: User is now notified when they try to upload a shapefile that does not define a projection.</li>
+        </ul>
+        <h2>Patched 1 June 2018</h2>
+        <ul>
+            <li>Bug Fix: Prevents Invalid User Session pop-ups </li>
+        </ul>
+        <h2>Patched 20 April 2018</h2>
+        <ul>
+            <li>Bug Fix: Failed landscapes never show as failed in My Workspace - they remain as "Requested"</li>
+            <li>User sees "Building" and "Failed" as statuses for Landscapes in the workspace.</li>
+            <li>Bug Fix: Login Session Not valid.</li>
+            <li>Update work requests page when a request has been killed/removed.</li>
+            <li>Send notification to remove requests from the queue.</li>
+            <li>Bug Fix: Invalid Login Session dialog sometimes displayed after Change Password Expired.</li>
+            <li>Extend login token (reset code) expire to 72 hrs.</li>
+            <li>Fixed error deleting compare reports with shared landscape.</li>
+            <li>User sees landing page with downtime details during Prod deploys.</li>
+            <li>Sort landscape names in landscape drop down lists and map studio.</li>
+            <li>Add text to new account emails to tell users to use Google Chrome browser.</li>
+            <li>Update workspace resource with "Cancelled" status when work request for it has been cancelled.</li>
+            <li>Service update - Fixed Error creating summary reports for minimal fire behavior.</li>
+        </ul>
+        <h2>Patched 23 March 2018</h2>
+        <ul>
+            <li>Fixed incorrect acreage shown in workspace for large (3m acres) landscapes.</li>
+            <li>Fixed elevation units on reports to be displayed as feet.</li>
+            <li>Fixed pixel counts to add up correctly on model output reports.</li>
+            <li>Services - Created an operational Landscape Service.</li>
+            <li>Fixed label for Jurisdictional Agency map reference layer.</li>
+            <li>Fixed accuracy of acreage listed for large landscapes.</li>
+            <li>Limit landscapes to 3.5 million acres.</li>
+            <li>Dramatically improved speed of creating and editing landscapes.</li>
+            <li>Dramatically improved speed of creating summary reports.</li>
+        </ul>
+        <h2>Patched 15 March 2018</h2>
+        <ul>
+            <li>Add Area of Interest (AOI) acres to reports with AOI: Auto 97th and Compare reports.</li>
+            <li>Remove decimal point from landscape totals in reports headers.</li>
+            <li>Remove "Weather Station Used" field from the templated map in model run reports.</li>
+            <li>Display Area of Interest intersecting with Landscape on reports.</li>
+            <li>Changed map so LANDFIRE layers are not displayed by default.</li>
+            <li>Adjust report titles to factor in AOI and Landscape acres.</li>
+            <li>Avoid auto-zoom after user adds reference layer to the map.</li>
+            <li>Changed “Add Reference Data” widget name to “Add Layers”.</li>
+            <li>Fixed report PDFs not opening in Adobe.</li>
+            <li>Fixed the Compare Report button (on 4th tab of Develop Treatment Alternatives) so that it is disabled if model run not complete.</li>
+            <li>Addressed issues with reset code emails to USFS accounts.</li>
+        </ul>
+        <h2>Version 3.0.1 - 22 February 2018</h2>
+        <ul>
+            <li>User can download Model Output file.</li>
+            <li>Users can download Landscape files from their workspace.</li>
+            <li>User sees English units of measure in Map Studio - identify tool, map display and legend (Elevation, Fire Behavior Outputs).</li>
+            <li>User selects shapefile for Area of Interest in Develop Treatment Alternatives.</li>
+            <li>User sees the shapefile on maps in reports when they use shapefiles as their Area of Interest.</li>
+            <li>User view landscape or model output reports that are summarized for a shapefile Area of Interest that the user selected.</li>
+            <li>User views landscape edited using a mask from a shapefile.</li>
+            <li>User sees polygon shapefiles listed in the Area of Interest drop-down for reports and edit landscape.</li>
+            <li>Map zooms to shapefile selected on the right panel of a split-map.</li>
+            <li>Adjust bin class labels from metric to English.</li>
+            <li>Prevent wrapping of legend entries in Model Summary reports.</li>
+            <li>Disallow some special characters when registering a new user ID.</li>
+            <li>Detect when a user clicks in the app to refresh the login session.</li>
+            <li>Set limit on landscape rule elevation to 20,000 feet max.</li>
+            <li>User can display shapefile from workspace as a layer on the map.</li>
+            <li>Increase size and brightness of tab buttons in map studio’s Attribute Table.</li>
+            <li>User can create a new shapefile on the map by selecting a subset of the polygons listed for an existing shapefile. New shapefile is in workspace and can be viewed on the map.</li>
+            <li>Differentiate between user created shapes and uploaded shapefiles with naming and annotations.</li>
+            <li>Only allow “.zip” file extensions for download landscape file names.</li>
+            <li>Send reset code to user if their privileges have been modified.</li>
+            <li>Allow users to clear Area of Interest selection on Landscape Summary page.</li>
+            <li>Fixed landscape layer coloring problem with certain fuel models.</li>
+            <li>Fix problem with disabled account after user changed password.</li>
+            <li>Fixed missing crown fire fraction burned in basic output.</li>
+            <li>Fixed “Can’t find raster ID for display” error on map for landscapes.</li>
+            <li>Fixed MTBS Burn Severity layer not displaying in production.</li>
+            <li>Fix deleting individual sub-reports when compare reports are deleted.</li>
+            <li>Fix landscape acres not being displayed in summary report headers.</li>
+            <li>Fixed broken IFTDSS help links.</li>
+            <li>Fixed deleted model inputs still displaying in some cases until page refresh.</li>
+            <li>Fix Admin users being an admin after password reset.</li>
+        </ul>
+        <h2>Patched December 18 2017</h2>
+        <ul>
+            <li>Fixed map studio tools hiding and scrunching on small screens.</li>
+            <li>Warn of an impending login session timeout in a browser dialog with option to refresh the session, and log out if user does not refresh before timer ends.</li>
+            <li>Fixed new users logging in for first time still can’t create landscapes.</li>
+            <li>Fixed issues with deleting model inputs within a landscape family.</li>
+            <li>Change “Firenet” text to “IFTDSS” within account emails.</li>
+        </ul>
+        <h2>Patched November 27-30 2017</h2>
+        <ul>
+            <li>New edited landscape not displayed in landscape family list after model has been run in Develop Treatment Alternatives (DTA).</li>
+            <li>Landscape mask created on split-screen map not listed in the Edit Landscape mask drop-down.</li>
+            <li>Fixed inability to create landscape editing rules on newly created landscape.</li>
+            <li>Fixed missing navigation bar for brand new accounts.</li>
+            <li>Fixed broken “Create New Landscape” link for new users with no landscapes.</li>
+            <li>Added clarity between temporary passcode and password for new users.</li>
+            <li>Fixed selected folders not getting removed from the screen when deleted.</li>
+            <li>Fixed playground not retaining the selected Finney crown fire method.</li>
+            <li>Close new folder dialog after user clicks Submit button.</li>
+            <li>Fixed how the canopy bulk density landscape edit rule multiplies.</li>
+            <li>Fixed new folder creation by new users at first login.</li>
+            <li>Fixed problem with created landscape edit rules not displaying or saving.</li>
+            <li>Fixed Create Auto-97th button not displayed in Landscape Summary dialog.</li>
+            <li>Clean up display of landscape status while it is being created.</li>
+            <li>Fixed model input entry appearing twice in the delete (of parent) list.</li>
+            <li>Fixed landscape edit rules being added as applied instead of pending. This was a serious problem when the edited landscape was created.</li>
+        </ul>
+        <h2>Patched November 9-15 2017</h2>
+        <ul>
+            <li>Add text "Login {n} (Max of 3 attempts)" to login panel after first failed attempt.</li>
+            <li>Fixed newly created area of interest not displayed immediately in Develop Treatment Alternatives (DTA) drop-down.</li>
+            <li>Add user name to account reset/unlock emails.</li>
+            <li>Fixed wind direction not displayed when equal to zero on completed model runs.</li>
+            <li>Fixed repeated notices about password reset.</li>
+            <li>Fixed unreadable security question in password reset email.</li>
+            <li>Fixed broken help link in Upload Shapefile widget in Map Studio.</li>
+            <li>Enhanced popover help and tours of the help links on a page for Fire Behavior and Landscape Edit interfaces.</li>
+            <li>Fixed reversal of herbaceous and woody fuel moistures in auto-97th basic runs.</li>
+        </ul>
+        <h2>Patched August 8 2017</h2>
+        <ul>
+            <li>Change title of 2nd landscape editing panel header from “Landscape Editing Rules” to “User Created Rules” on both landscape editing pages.</li>
+            <li>Fixed the "Compare in Summary Report" button above the list on the last tab of Develop Treatment Alternatives. It was not working.</li>
+            <li>Removed Area of Interest selection from playground.</li>
+            <li>Fixed problem saving model inputs with wind direction or speed equal to 0.</li>
+            <li>Fixed problem with Auto97th reports not showing model inputs.</li>
+            <li>Added the ability to delete empty folders from the IFTDSS workspace.</li>
+            <li>Fixed a problem with filtering polygons.</li>
+            <li>Fixed problem with creating a model run in Develop Treatment Alternatives (DTA) when one with same name exists in the playground.</li>
+            <li>Give users 72 hours to use temporary password after account is unlocked.</li>
+        </ul>
+        <h2>Patched July 12 2017</h2>
+        <ul>
+            <li>User applies area of interest polygon to LCP comparison reports.</li>
+            <li>Fixed the 'learn more' button on workspace page not working - 404 error.</li>
+            <li>Fix the wildfire list shown on different pages after adding wildfire name search.</li>
+            <li>Fix bugs on Compare Reports.</li>
+        </ul>
+        <h2>Patched July 7 2017</h2>
+        <ul>
+            <li>IFTDSS Reports implemented with HighCharts and new look and feel.</li>
+            <li>Fixed problem creating Auto97th and Landscape Reports.</li>
+            <li>Audit log for a user can be downloaded as a CSV file.</li>
+            <li>Fix for when “Name Edited Landscape” input field stays pink after “Save New Landscape” button is selected on the Edit Landscape page.</li>
+        </ul>
+        <h2>Patched June 9 2017</h2>
+        <ul>
+            <li>Fixed problem where user couldn’t set landscape values to zero in an Edit Landscape rule.</li>
+            <li>Fixed problem where new rules are created as applied to a new landscape, and not the landscape the user is editing, if the user just created a new edited landscape.</li>
+            <li>Fixed problem if Edit Landscape is run for the first time in a new month before Create Landscape. The Edit Landscape was dependent on Create Landscape to create new month folders (‘5’ for May, for example) and could not create new month folders itself.</li>
+            <li>Nightly job deployed to expire users’ passwords based on password expiration rules.</li>
+            <li>Fixed failed runs in Playground.</li>
+            <li>Allow user to change their password when they attempt to log in with an expired password.</li>
+            <li>Fixed incorrect AK landscape not available message in Map Studio.</li>
+            <li>Fixed problem where new folder not created - caused by change to prevent duplicate folders.</li>
+        </ul>
+        <h2>Patched May 2017</h2>
+        <ul>
+            <li>Auto97th report for full landscape, AOI creates two Auto97th flammap runs.</li>
+            <li>Prevent duplicate resource names for runs and folders.</li>
+            <li>Fixed issue with edited landscapes NoData values (elevation exported map).</li>
+            <li>Fixed switched names for some of the LFLU rules.</li>
+            <li>Added extensive form validation to Edit Landscape.</li>
+            <li>Utility to lock and disable user accounts.</li>
+            <li>Expose LANDFIRE 2014 data in Map Studio for create landscape.</li>
+            <li>Fixed delete of runs not working in Playground.</li>
+            <li>Handle special characters in user info.</li>
+        </ul>
+        <h2>IFTDSS 3.0.0 - Initial Release April 2017</h2>
+        <h2>Landscape Evaluation</h2>
+        <h3>Landscape Summary</h3>
+        <ul>
+            <li>Create a Landscape (LANDFIRE 2012) and view in map studio (ArcGIS Online based)</li>
+            <li>Generate a Landscape Summary report (summary of 8 LCP layers – aspect, Canopy Base Height, Canopy Bulk Density, Canopy Cover, Elevation, Fuel Model, slope, Stand Height)</li>
+            <li>Draw or upload a shapefile to outline an area of interest</li>
+            <li>Generate landscape summary report for area of interest (same as above)</li>
+            <li>AutoGenerate 97th percentile weather fire behavior run and include in summary report (Flame Length, Spread Rate, Fireline Intensity, Heat per Unit Area, Crown Fire Activity)</li>
+        </ul>
+        <h3>Landscape Edit</h3>
+        <ul>
+            <li>Edit Landscape (change fuel models for entire landscape or using a mask or a separate area) using manual rules or predetermined rules based on LandFire Lookup tables of disturbance (Help content to come)</li>
+        </ul>
+        <h3>Landscape Fire Behavior</h3>
+        <ul>
+            <li>Run Landscape fire behavior (essentially Basic FlamMap 5.0 - fire behavior outputs per pixel) NO spread models yet (MTT etc) Displays in Map Studio</li>
+        </ul>
+        <h2>Strategic Planning</h2>
+        <ul>
+            <li>Determine how different fuels treatments and their spatial arrangement affect landscape characteristics and fire behavior. Generate maps and reports to compare landscapes and fire behavior model outputs. Use these outcomes/outputs to determine the best fuels management strategy to meet your project objectives<ul><li>Select an originating landscape, edit your landscape as needed either manually or utilizing the Landfire lookup rules. Save new edited landscape</li><li>Enter Fire Behavior Model Inputs</li><li>Run Fire Behavior on selected Landscapes</li><li>Compare landscape changes and fire behavior model output differences</li></ul></li>
+        </ul>
+              <a class="btn btn-blorange btn-sm" href="whats-new.html">Back &raquo;</a>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer>
+              <div class="row">
+                  <div class="col-lg-12">
+                      <p><center>Copyright &copy; Department of the Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</center></a></p>
+                  </div>
+              </div>
+          </footer>
+      <!-- End Footer -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
