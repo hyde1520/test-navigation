@@ -33,6 +33,13 @@ p.slidertext {
   line-height: 1.1;
   color: inherit;
 }
+/*headings and titles for landing page*/
+  h2.cards{
+  font-size: 18px;
+  font-weight:700;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
 
 .panel-heading a{
   color:#1a70b9;
@@ -150,6 +157,13 @@ border-color:#E37D39;
     background-color: #090909;
     color: #fff; }
   @media (max-width: 767px) {
+    /*headings and titles for landing page*/
+  h2.cards{
+  font-size: 24px;
+  font-weight:700;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
       border-color: #090909; }
     .navbar-inverse .navbar-nav .open .dropdown-menu .divider {
@@ -219,6 +233,7 @@ body {
 /* Carousel base class */
 .carousel {
   height: 500px;
+  width:auto;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
@@ -229,6 +244,7 @@ body {
 /* Declare heights because of positioning of img element */
 .carousel .item {
   height: 500px;
+  width:auto;
   background-color: #777;
 }
 .carousel-inner > .item > img {
