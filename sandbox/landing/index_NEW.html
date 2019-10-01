@@ -25,15 +25,37 @@
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- footer Fonts -->
-    	<link rel="stylesheet" href="css/footer.css">
-      
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- bootstrap-tour css -->
+    <link href="bootstrap-tour/css/bootstrap-tour.css" rel="stylesheet">
+
     <!-- JavaScript -->
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="bootstrap-tour/js/bootstrap-tour.min.js"></script>
+    
 
-    	<link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    
+    <link rel="import" href="./site_status.html" id="siteStatus">
 
+    <!-- Session check script-->
+  <script type="text/javascript">
+    if (sessionStorage.getItem("IFTpersistUser")){
+       window.open("/#/home", '_self');
+    }
+  </script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-47323194-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body>
@@ -53,13 +75,13 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="whats-new.html" target="_blank">What's New</a></li>
+              <li><a href="whats-new.html">What's New</a></li>
               <li><li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="about.html" target="_blank">About</a></li>
-                    <li><a href="development.html" target="_blank">Development</a></li>
-                    <li><a href="history.html" target="_blank">History</a>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="development.html">Development</a></li>
+                    <li><a href="history.html">History</a>
                     </li></ul>
                      <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Support <b class="caret"></b></a>
@@ -67,10 +89,20 @@
                             <li><a href="/firenetHelp/help/pageHelp/content/home.htm?cshid=1000" target="_blank">Help Center</a></li>
                              <li><a href="/firenetHelp/help/pageHelp/content/00-aboutiftdss/knownissues.htm" target="_blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Known Issues</a></li>
                              <li><a href="https://www.youtube.com/channel/UC-Rwe70dxm0FTbxWZnigQsQ/playlists" target="_blank">YouTube Videos</a></li>
-                             <li><a href="webinars.html" target="_blank">Webinars &amp; Trainings</a></li>
+                             <li><a href="webinars.html">Webinars &amp; Trainings</a></li>
                              <li><a href="https://iftdsshelp.freshdesk.com/support/discussions" target="_blank">Support Forums</a></li>
-                             <li><a href="support.html" target="_blank">Support Ticket</a></li>
+                             <li><a href="support.html">Support Ticket</a></li>
                           </ul>
+                      <!-- Login Dropdown -->
+                      <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><b>Login</b></a>
+                          <ul id="login-dp" class="dropdown-menu">
+                            <li>
+                            <!-- login form -->
+                            <iframe allowtransparency="true" id="loginPage" width="100%" height="255px" frameborder="0" scrolling="yes" marginheight="0" marginwidth="0" src="/#/login"></iframe>
+                            </li>
+                          </ul>
+                      </li>
                   </ul>
           </div>
       </div>
@@ -97,6 +129,7 @@
     }
   }
 </script> 
+
 <!--User notice
 <div class="row">
   <div class="col-lg-12">
@@ -109,6 +142,7 @@
   </div>
 </div> -->
 <!--END User notice-->
+
 
 <div class="container">
 <br>
@@ -130,15 +164,15 @@
 <div class="row">
             
             <div class="col-md-3 col-sm-6">
-              <h2 class="cards" style="text-align:center; background-color:#334150; padding-top:5px; padding-bottom:5px; color:white;">NEW! Burn Probability</h2>
+              <h2 class="cards" style="text-align:center; background-color:#334150; padding-top:5px; padding-bottom:5px; color:white;">NEW! Map Values</h2>
                 <div class="paneliftdss panel-default text-center">
                     <div class="">
-                        <img class="img-responsive" src="img/index/landing2.png" alt="LBP modeling outputs displayed in Map Studio"></img>
+                        <img class="img-responsive" src="img/index/hvra_set.png" alt="LBP modeling outputs displayed in Map Studio"></img>
                     </div>
                     <div class="panel-body">
-                        <p><strong><a href="pdfs/32BP_release_Flyer_July_2019.pdf" target="_blank">Read about the all new Landscape Burn Probability model (PDF)</a></strong></strong></p>
-                        <p><strong><a href="https://iftdss.firenet.gov/firenetHelp/help/pageHelp/content/20-models/lbp/about.htm" target="_blank"> Check out the Help Center and learn how to get started</a></strong></p>
-                        <p><strong><a href="https://youtu.be/3zZSf1nkOWc" target="_blank"> Watch an intro to Landscape Burn Probability</a></strong></p>
+                        <p><strong><a href="pdfs/32BP_release_Flyer_July_2019.pdf" target="_blank">Read about Map Values (PDF)</a></strong></strong></p>
+                        <p><strong><a href="" target="_blank"> Watch the intro to Map Values video</a></strong></p>
+                        <p><strong><a href="" target="_blank"> Get started with Map Values in the Help Center</a></strong></p>
                         <!--<p><a href="" target="_blank">Watch an Introduction to LBP</a></p>-->
                     </div>
                 </div>
@@ -147,11 +181,12 @@
               <h2 class="cards" style="text-align:center; background-color:#334150; padding-top:5px; padding-bottom:5px; color:white;">Phasing in Risk Assessment</h2>
                 <div class="paneliftdss panel-default text-center">
                     <div class="">
-                        <img class="img-responsive" src="img/index/landing1.png" alt="Risk flow figure from scott and others 2013"></img>
+                        <img class="img-responsive" src="img/index/landing2.png" alt="LBP modeling outputs displayed in Map Studio"></img>
                     </div>
                     <div class="panel-body">
                         <p><strong><a href="pdfs/Risk_QRA_Flyer_summer_2019.pdf" target="_blank">Read about Quantitative Wildfire Risk Assessment (PDF)</a></strong></p>
-                        <p><strong>Watch a video about Risk Assessment (Coming Soon)</strong></p>
+                        <p><strong><a href="" target="_blank">Get Started with Landscape Burn Probability</a></strong></p>
+                        <!--<p><strong>Watch a video about Risk Assessment (Coming Soon)</strong></p>-->
                     </div>
                 </div>
             </div>
@@ -263,8 +298,6 @@
 
     <p style="text-align:center;"> Copyright &copy; US Department of Interior - <a href="https://wfmrda.nwcg.gov" target="_blank">Wildland Fire Management RD&A</a> | <a href="legal.html">legal</a></p>
 
-
-
 <script src="js/mytour.js"></script>
 </body>
 <script type="text/javascript">
@@ -279,4 +312,5 @@
       }
     }
 </script>
+
 </html>
